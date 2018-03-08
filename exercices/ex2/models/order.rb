@@ -3,6 +3,8 @@ class Order < ActiveRecord::Base
   has_many :order_items
   has_many :products, through: :order_items
 
+  around_update :update_stock
+
   # Ne marche pas car le test est fait avant qu'un order items soie créé
   # validates :products, presence: true
 
@@ -17,5 +19,12 @@ class Order < ActiveRecord::Base
 
     order_items.sum {|oi| oi.price}
   end
-
+  
+  def update_stock
+    if status === 2
+      self.order_items.each {|order_item| puts "#{order_item.quantity} #{order_item.product}"}
+    end
+    yield
+    #do something else...
+  end
 end

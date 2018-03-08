@@ -2552,3 +2552,1165 @@ D, [2018-03-08T08:22:09.049982 #1068] DEBUG -- :    (0.0ms)  COMMIT
 D, [2018-03-08T08:22:09.049982 #1068] DEBUG -- :    (0.0ms)  BEGIN
 D, [2018-03-08T08:22:09.049982 #1068] DEBUG -- :   SQL (0.0ms)  INSERT INTO `comments` (`content`, `client_id`, `commentable_type`, `commentable_id`) VALUES ('Yes, merci', 26, 'Product', 27)
 D, [2018-03-08T08:22:09.049982 #1068] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:22:07.186737 #1460] DEBUG -- :    (0.0ms)  SET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483
+D, [2018-03-08T09:22:07.186737 #1460] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:22:07.186737 #1460] DEBUG -- :   SQL (0.0ms)  INSERT INTO `clients` (`firstname`, `lastname`, `type`) VALUES ('Bernard', 'Margouille', 'Particular')
+D, [2018-03-08T09:22:07.186737 #1460] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:22:07.186737 #1460] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:22:07.186737 #1460] DEBUG -- :   SQL (0.0ms)  INSERT INTO `clients` (`firstname`, `lastname`, `type`) VALUES ('Marcel', 'Liota', 'Particular')
+D, [2018-03-08T09:22:07.202337 #1460] DEBUG -- :    (15.6ms)  COMMIT
+D, [2018-03-08T09:22:07.202337 #1460] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:22:07.202337 #1460] DEBUG -- :   SQL (0.0ms)  INSERT INTO `clients` (`firstname`, `lastname`, `type`) VALUES ('Fabien', 'Carlotta', 'Particular')
+D, [2018-03-08T09:22:07.202337 #1460] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:22:07.202337 #1460] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:22:07.202337 #1460] DEBUG -- :   SQL (0.0ms)  INSERT INTO `clients` (`firstname`, `lastname`, `type`) VALUES ('Sullyvan', 'Butoxx', 'Company')
+D, [2018-03-08T09:22:07.202337 #1460] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:22:07.202337 #1460] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:22:07.202337 #1460] DEBUG -- :   SQL (0.0ms)  INSERT INTO `suppliers` (`name`) VALUES ('Digitec')
+D, [2018-03-08T09:22:07.217937 #1460] DEBUG -- :    (15.6ms)  COMMIT
+D, [2018-03-08T09:22:07.217937 #1460] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:22:07.217937 #1460] DEBUG -- :   SQL (0.0ms)  INSERT INTO `suppliers` (`name`) VALUES ('Microspot')
+D, [2018-03-08T09:22:07.217937 #1460] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:22:07.217937 #1460] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:22:07.217937 #1460] DEBUG -- :   SQL (0.0ms)  INSERT INTO `suppliers` (`name`) VALUES ('Galaxus')
+D, [2018-03-08T09:22:07.217937 #1460] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:22:07.217937 #1460] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:22:07.217937 #1460] DEBUG -- :   SQL (0.0ms)  INSERT INTO `suppliers` (`name`) VALUES ('Steg')
+D, [2018-03-08T09:22:07.217937 #1460] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:22:07.217937 #1460] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:22:07.217937 #1460] DEBUG -- :   SQL (0.0ms)  INSERT INTO `suppliers` (`name`) VALUES ('Ebay')
+D, [2018-03-08T09:22:07.233537 #1460] DEBUG -- :    (15.6ms)  COMMIT
+D, [2018-03-08T09:22:07.233537 #1460] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:22:07.233537 #1460] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories` (`name`, `description`) VALUES ('Audio', 'Pour les pros et les amateurs')
+D, [2018-03-08T09:22:07.233537 #1460] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:22:07.233537 #1460] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:22:07.233537 #1460] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories` (`name`, `description`) VALUES ('Video', 'Pour les pros et les amateurs')
+D, [2018-03-08T09:22:07.233537 #1460] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:22:07.280337 #1460] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:22:07.280337 #1460] DEBUG -- :   SQL (0.0ms)  INSERT INTO `products` (`name`, `price`, `description`, `supplier_id`, `stock`) VALUES ('Casque sans fil Sony', 125.0, 'Très bon produit', 39, 1548)
+D, [2018-03-08T09:22:07.280337 #1460] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories_products` (`category_id`, `product_id`) VALUES (15, 29)
+D, [2018-03-08T09:22:07.295937 #1460] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories_products` (`category_id`, `product_id`) VALUES (16, 29)
+D, [2018-03-08T09:22:07.295937 #1460] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:22:07.295937 #1460] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:22:07.295937 #1460] DEBUG -- :   SQL (0.0ms)  INSERT INTO `products` (`name`, `price`, `description`, `supplier_id`, `stock`) VALUES ('Câble HDMI 12m', 1500.0, 'Très bon produit', 37, 5)
+D, [2018-03-08T09:22:07.295937 #1460] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories_products` (`category_id`, `product_id`) VALUES (16, 30)
+D, [2018-03-08T09:22:07.295937 #1460] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:22:07.295937 #1460] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:22:07.295937 #1460] DEBUG -- :   SQL (0.0ms)  INSERT INTO `products` (`name`, `price`, `description`, `supplier_id`, `stock`) VALUES ('Câble VGA 156m', 2684.25, 'Très bon produit', 36, 9)
+D, [2018-03-08T09:22:07.295937 #1460] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories_products` (`category_id`, `product_id`) VALUES (16, 31)
+D, [2018-03-08T09:22:07.311537 #1460] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:22:07.311537 #1460] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:22:07.311537 #1460] DEBUG -- :   SQL (0.0ms)  INSERT INTO `products` (`name`, `price`, `description`, `supplier_id`, `stock`) VALUES ('Câble Jack vers Jack', 10.0, 'Très bon produit', 36, 145454)
+D, [2018-03-08T09:22:07.311537 #1460] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories_products` (`category_id`, `product_id`) VALUES (15, 32)
+D, [2018-03-08T09:22:07.311537 #1460] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:22:07.327137 #1460] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:22:07.327137 #1460] DEBUG -- :   SQL (0.0ms)  INSERT INTO `orders` (`created_at`, `status`, `client_id`) VALUES ('2018-03-08', 1, 31)
+D, [2018-03-08T09:22:07.327137 #1460] DEBUG -- :   SQL (0.0ms)  INSERT INTO `order_items` (`quantity`, `item_price`, `order_id`, `product_id`) VALUES (5, 2684.25, 15, 31)
+D, [2018-03-08T09:22:07.327137 #1460] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:22:07.327137 #1460] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:22:07.342737 #1460] DEBUG -- :   SQL (0.0ms)  INSERT INTO `orders` (`created_at`, `status`, `client_id`) VALUES ('2018-03-08', 1, 32)
+D, [2018-03-08T09:22:07.342737 #1460] DEBUG -- :   SQL (0.0ms)  INSERT INTO `order_items` (`quantity`, `item_price`, `order_id`, `product_id`) VALUES (150, 10.0, 16, 32)
+D, [2018-03-08T09:22:07.342737 #1460] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:22:07.342737 #1460] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:22:07.358337 #1460] DEBUG -- :   SQL (0.0ms)  INSERT INTO `comments` (`content`, `client_id`, `commentable_type`, `commentable_id`) VALUES ('Super produit', 32, 'Supplier', 38)
+D, [2018-03-08T09:22:07.358337 #1460] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:22:07.358337 #1460] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:22:07.358337 #1460] DEBUG -- :   SQL (0.0ms)  INSERT INTO `comments` (`content`, `client_id`, `commentable_type`, `commentable_id`) VALUES ('Yes, merci', 30, 'Product', 31)
+D, [2018-03-08T09:22:07.358337 #1460] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:23:24.888737 #6364] DEBUG -- :    (0.0ms)  SET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483
+D, [2018-03-08T09:23:24.904337 #6364] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:23:24.904337 #6364] DEBUG -- :   SQL (0.0ms)  INSERT INTO `clients` (`firstname`, `lastname`, `type`) VALUES ('Bernard', 'Margouille', 'Particular')
+D, [2018-03-08T09:23:24.951137 #6364] DEBUG -- :    (46.8ms)  COMMIT
+D, [2018-03-08T09:23:24.951137 #6364] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:23:24.951137 #6364] DEBUG -- :   SQL (0.0ms)  INSERT INTO `clients` (`firstname`, `lastname`, `type`) VALUES ('Marcel', 'Liota', 'Particular')
+D, [2018-03-08T09:23:24.966737 #6364] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:23:24.966737 #6364] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:23:24.966737 #6364] DEBUG -- :   SQL (0.0ms)  INSERT INTO `clients` (`firstname`, `lastname`, `type`) VALUES ('Fabien', 'Carlotta', 'Particular')
+D, [2018-03-08T09:23:24.966737 #6364] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:23:24.966737 #6364] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:23:24.982337 #6364] DEBUG -- :   SQL (15.6ms)  INSERT INTO `clients` (`firstname`, `lastname`, `type`) VALUES ('Sullyvan', 'Butoxx', 'Company')
+D, [2018-03-08T09:23:25.013537 #6364] DEBUG -- :    (31.2ms)  COMMIT
+D, [2018-03-08T09:23:25.013537 #6364] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:23:25.013537 #6364] DEBUG -- :   SQL (0.0ms)  INSERT INTO `suppliers` (`name`) VALUES ('Digitec')
+D, [2018-03-08T09:23:25.029137 #6364] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:23:25.029137 #6364] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:23:25.029137 #6364] DEBUG -- :   SQL (0.0ms)  INSERT INTO `suppliers` (`name`) VALUES ('Microspot')
+D, [2018-03-08T09:23:25.075937 #6364] DEBUG -- :    (46.8ms)  COMMIT
+D, [2018-03-08T09:23:25.075937 #6364] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:23:25.075937 #6364] DEBUG -- :   SQL (0.0ms)  INSERT INTO `suppliers` (`name`) VALUES ('Galaxus')
+D, [2018-03-08T09:23:25.075937 #6364] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:23:25.075937 #6364] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:23:25.075937 #6364] DEBUG -- :   SQL (0.0ms)  INSERT INTO `suppliers` (`name`) VALUES ('Steg')
+D, [2018-03-08T09:23:25.075937 #6364] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:23:25.075937 #6364] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:23:25.091537 #6364] DEBUG -- :   SQL (0.0ms)  INSERT INTO `suppliers` (`name`) VALUES ('Ebay')
+D, [2018-03-08T09:23:25.091537 #6364] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:23:25.091537 #6364] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:23:25.091537 #6364] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories` (`name`, `description`) VALUES ('Audio', 'Pour les pros et les amateurs')
+D, [2018-03-08T09:23:25.091537 #6364] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:23:25.107137 #6364] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:23:25.107137 #6364] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories` (`name`, `description`) VALUES ('Video', 'Pour les pros et les amateurs')
+D, [2018-03-08T09:23:25.107137 #6364] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:23:25.185137 #6364] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:23:25.185137 #6364] DEBUG -- :   SQL (0.0ms)  INSERT INTO `products` (`name`, `price`, `description`, `supplier_id`, `stock`) VALUES ('Casque sans fil Sony', 125.0, 'Très bon produit', 44, 1548)
+D, [2018-03-08T09:23:25.185137 #6364] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories_products` (`category_id`, `product_id`) VALUES (17, 33)
+D, [2018-03-08T09:23:25.185137 #6364] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories_products` (`category_id`, `product_id`) VALUES (18, 33)
+D, [2018-03-08T09:23:25.200737 #6364] DEBUG -- :    (15.6ms)  COMMIT
+D, [2018-03-08T09:23:25.200737 #6364] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:23:25.200737 #6364] DEBUG -- :   SQL (0.0ms)  INSERT INTO `products` (`name`, `price`, `description`, `supplier_id`, `stock`) VALUES ('Câble HDMI 12m', 1500.0, 'Très bon produit', 42, 5)
+D, [2018-03-08T09:23:25.200737 #6364] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories_products` (`category_id`, `product_id`) VALUES (18, 34)
+D, [2018-03-08T09:23:25.200737 #6364] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:23:25.200737 #6364] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:23:25.200737 #6364] DEBUG -- :   SQL (0.0ms)  INSERT INTO `products` (`name`, `price`, `description`, `supplier_id`, `stock`) VALUES ('Câble VGA 156m', 2684.25, 'Très bon produit', 41, 9)
+D, [2018-03-08T09:23:25.216337 #6364] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories_products` (`category_id`, `product_id`) VALUES (18, 35)
+D, [2018-03-08T09:23:25.216337 #6364] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:23:25.216337 #6364] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:23:25.216337 #6364] DEBUG -- :   SQL (0.0ms)  INSERT INTO `products` (`name`, `price`, `description`, `supplier_id`, `stock`) VALUES ('Câble Jack vers Jack', 10.0, 'Très bon produit', 41, 14000)
+D, [2018-03-08T09:23:25.216337 #6364] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories_products` (`category_id`, `product_id`) VALUES (17, 36)
+D, [2018-03-08T09:23:25.216337 #6364] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:23:25.247537 #6364] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:23:25.247537 #6364] DEBUG -- :   SQL (0.0ms)  INSERT INTO `orders` (`created_at`, `status`, `client_id`) VALUES ('2018-03-08', 1, 35)
+D, [2018-03-08T09:23:25.247537 #6364] DEBUG -- :   SQL (0.0ms)  INSERT INTO `order_items` (`quantity`, `item_price`, `order_id`, `product_id`) VALUES (5, 2684.25, 17, 35)
+D, [2018-03-08T09:23:25.278737 #6364] DEBUG -- :    (31.2ms)  COMMIT
+D, [2018-03-08T09:23:25.278737 #6364] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:23:25.278737 #6364] DEBUG -- :   SQL (0.0ms)  INSERT INTO `orders` (`created_at`, `status`, `client_id`) VALUES ('2018-03-08', 1, 36)
+D, [2018-03-08T09:23:25.294337 #6364] DEBUG -- :   SQL (0.0ms)  INSERT INTO `order_items` (`quantity`, `item_price`, `order_id`, `product_id`) VALUES (150, 10.0, 18, 36)
+D, [2018-03-08T09:23:25.294337 #6364] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:23:25.309937 #6364] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:23:25.309937 #6364] DEBUG -- :   SQL (0.0ms)  INSERT INTO `comments` (`content`, `client_id`, `commentable_type`, `commentable_id`) VALUES ('Super produit', 36, 'Supplier', 43)
+D, [2018-03-08T09:23:25.309937 #6364] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:23:25.325537 #6364] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:23:25.325537 #6364] DEBUG -- :   SQL (0.0ms)  INSERT INTO `comments` (`content`, `client_id`, `commentable_type`, `commentable_id`) VALUES ('Yes, merci', 34, 'Product', 35)
+D, [2018-03-08T09:23:25.325537 #6364] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:24:34.365337 #8508] DEBUG -- :    (0.0ms)  SET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483
+D, [2018-03-08T09:24:34.380937 #8508] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:24:34.380937 #8508] DEBUG -- :   SQL (0.0ms)  INSERT INTO `clients` (`firstname`, `lastname`, `type`) VALUES ('Bernard', 'Margouille', 'Particular')
+D, [2018-03-08T09:24:34.380937 #8508] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:24:34.380937 #8508] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:24:34.380937 #8508] DEBUG -- :   SQL (0.0ms)  INSERT INTO `clients` (`firstname`, `lastname`, `type`) VALUES ('Marcel', 'Liota', 'Particular')
+D, [2018-03-08T09:24:34.380937 #8508] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:24:34.396537 #8508] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:24:34.396537 #8508] DEBUG -- :   SQL (0.0ms)  INSERT INTO `clients` (`firstname`, `lastname`, `type`) VALUES ('Fabien', 'Carlotta', 'Particular')
+D, [2018-03-08T09:24:34.396537 #8508] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:24:34.396537 #8508] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:24:34.396537 #8508] DEBUG -- :   SQL (0.0ms)  INSERT INTO `clients` (`firstname`, `lastname`, `type`) VALUES ('Sullyvan', 'Butoxx', 'Company')
+D, [2018-03-08T09:24:34.396537 #8508] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:24:34.412137 #8508] DEBUG -- :    (15.6ms)  BEGIN
+D, [2018-03-08T09:24:34.412137 #8508] DEBUG -- :   SQL (0.0ms)  INSERT INTO `suppliers` (`name`) VALUES ('Digitec')
+D, [2018-03-08T09:24:34.412137 #8508] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:24:34.412137 #8508] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:24:34.412137 #8508] DEBUG -- :   SQL (0.0ms)  INSERT INTO `suppliers` (`name`) VALUES ('Microspot')
+D, [2018-03-08T09:24:34.412137 #8508] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:24:34.412137 #8508] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:24:34.412137 #8508] DEBUG -- :   SQL (0.0ms)  INSERT INTO `suppliers` (`name`) VALUES ('Galaxus')
+D, [2018-03-08T09:24:34.412137 #8508] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:24:34.412137 #8508] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:24:34.412137 #8508] DEBUG -- :   SQL (0.0ms)  INSERT INTO `suppliers` (`name`) VALUES ('Steg')
+D, [2018-03-08T09:24:34.427737 #8508] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:24:34.427737 #8508] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:24:34.427737 #8508] DEBUG -- :   SQL (0.0ms)  INSERT INTO `suppliers` (`name`) VALUES ('Ebay')
+D, [2018-03-08T09:24:34.427737 #8508] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:24:34.427737 #8508] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:24:34.427737 #8508] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories` (`name`, `description`) VALUES ('Audio', 'Pour les pros et les amateurs')
+D, [2018-03-08T09:24:34.427737 #8508] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:24:34.427737 #8508] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:24:34.443337 #8508] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories` (`name`, `description`) VALUES ('Video', 'Pour les pros et les amateurs')
+D, [2018-03-08T09:24:34.443337 #8508] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:24:34.474537 #8508] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:24:34.490137 #8508] DEBUG -- :   SQL (15.6ms)  INSERT INTO `products` (`name`, `price`, `description`, `supplier_id`, `stock`) VALUES ('Casque sans fil Sony', 125.0, 'Très bon produit', 49, 1548)
+D, [2018-03-08T09:24:34.490137 #8508] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories_products` (`category_id`, `product_id`) VALUES (19, 37)
+D, [2018-03-08T09:24:34.490137 #8508] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories_products` (`category_id`, `product_id`) VALUES (20, 37)
+D, [2018-03-08T09:24:34.490137 #8508] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:24:34.490137 #8508] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:24:34.490137 #8508] DEBUG -- :   SQL (0.0ms)  INSERT INTO `products` (`name`, `price`, `description`, `supplier_id`, `stock`) VALUES ('Câble HDMI 12m', 1500.0, 'Très bon produit', 47, 5)
+D, [2018-03-08T09:24:34.490137 #8508] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories_products` (`category_id`, `product_id`) VALUES (20, 38)
+D, [2018-03-08T09:24:34.490137 #8508] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:24:34.505737 #8508] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:24:34.505737 #8508] DEBUG -- :   SQL (0.0ms)  INSERT INTO `products` (`name`, `price`, `description`, `supplier_id`, `stock`) VALUES ('Câble VGA 156m', 2684.25, 'Très bon produit', 46, 9)
+D, [2018-03-08T09:24:34.505737 #8508] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories_products` (`category_id`, `product_id`) VALUES (20, 39)
+D, [2018-03-08T09:24:34.505737 #8508] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:24:34.505737 #8508] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:24:34.505737 #8508] DEBUG -- :   SQL (0.0ms)  INSERT INTO `products` (`name`, `price`, `description`, `supplier_id`, `stock`) VALUES ('Câble Jack vers Jack', 10.0, 'Très bon produit', 46, 14000)
+D, [2018-03-08T09:24:34.505737 #8508] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories_products` (`category_id`, `product_id`) VALUES (19, 40)
+D, [2018-03-08T09:24:34.505737 #8508] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:24:34.521337 #8508] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:24:34.521337 #8508] DEBUG -- :   SQL (0.0ms)  INSERT INTO `orders` (`created_at`, `status`, `client_id`) VALUES ('2018-03-08', 1, 39)
+D, [2018-03-08T09:24:34.536937 #8508] DEBUG -- :   SQL (0.0ms)  INSERT INTO `order_items` (`quantity`, `item_price`, `order_id`, `product_id`) VALUES (5, 2684.25, 19, 39)
+D, [2018-03-08T09:24:34.536937 #8508] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:24:34.536937 #8508] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:24:34.536937 #8508] DEBUG -- :   SQL (0.0ms)  INSERT INTO `orders` (`created_at`, `status`, `client_id`) VALUES ('2018-03-08', 1, 40)
+D, [2018-03-08T09:24:34.536937 #8508] DEBUG -- :   SQL (0.0ms)  INSERT INTO `order_items` (`quantity`, `item_price`, `order_id`, `product_id`) VALUES (150, 10.0, 20, 40)
+D, [2018-03-08T09:24:34.536937 #8508] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:24:34.552537 #8508] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:24:34.552537 #8508] DEBUG -- :   SQL (0.0ms)  INSERT INTO `comments` (`content`, `client_id`, `commentable_type`, `commentable_id`) VALUES ('Super produit', 40, 'Supplier', 48)
+D, [2018-03-08T09:24:34.552537 #8508] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:24:34.552537 #8508] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:24:34.552537 #8508] DEBUG -- :   SQL (0.0ms)  INSERT INTO `comments` (`content`, `client_id`, `commentable_type`, `commentable_id`) VALUES ('Yes, merci', 38, 'Product', 39)
+D, [2018-03-08T09:24:34.568137 #8508] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:25:17.021537 #8648] DEBUG -- :    (0.0ms)  SET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483
+D, [2018-03-08T09:25:17.037137 #8648] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:25:17.037137 #8648] DEBUG -- :   SQL (0.0ms)  INSERT INTO `clients` (`firstname`, `lastname`, `type`) VALUES ('Bernard', 'Margouille', 'Particular')
+D, [2018-03-08T09:25:17.037137 #8648] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:25:17.037137 #8648] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:25:17.037137 #8648] DEBUG -- :   SQL (0.0ms)  INSERT INTO `clients` (`firstname`, `lastname`, `type`) VALUES ('Marcel', 'Liota', 'Particular')
+D, [2018-03-08T09:25:17.037137 #8648] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:25:17.037137 #8648] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:25:17.037137 #8648] DEBUG -- :   SQL (0.0ms)  INSERT INTO `clients` (`firstname`, `lastname`, `type`) VALUES ('Fabien', 'Carlotta', 'Particular')
+D, [2018-03-08T09:25:17.037137 #8648] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:25:17.037137 #8648] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:25:17.052737 #8648] DEBUG -- :   SQL (0.0ms)  INSERT INTO `clients` (`firstname`, `lastname`, `type`) VALUES ('Sullyvan', 'Butoxx', 'Company')
+D, [2018-03-08T09:25:17.052737 #8648] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:25:17.052737 #8648] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:25:17.052737 #8648] DEBUG -- :   SQL (0.0ms)  INSERT INTO `suppliers` (`name`) VALUES ('Digitec')
+D, [2018-03-08T09:25:17.052737 #8648] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:25:17.052737 #8648] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:25:17.052737 #8648] DEBUG -- :   SQL (0.0ms)  INSERT INTO `suppliers` (`name`) VALUES ('Microspot')
+D, [2018-03-08T09:25:17.052737 #8648] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:25:17.052737 #8648] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:25:17.052737 #8648] DEBUG -- :   SQL (0.0ms)  INSERT INTO `suppliers` (`name`) VALUES ('Galaxus')
+D, [2018-03-08T09:25:17.068337 #8648] DEBUG -- :    (15.6ms)  COMMIT
+D, [2018-03-08T09:25:17.068337 #8648] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:25:17.068337 #8648] DEBUG -- :   SQL (0.0ms)  INSERT INTO `suppliers` (`name`) VALUES ('Steg')
+D, [2018-03-08T09:25:17.068337 #8648] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:25:17.068337 #8648] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:25:17.068337 #8648] DEBUG -- :   SQL (0.0ms)  INSERT INTO `suppliers` (`name`) VALUES ('Ebay')
+D, [2018-03-08T09:25:17.068337 #8648] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:25:17.068337 #8648] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:25:17.068337 #8648] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories` (`name`, `description`) VALUES ('Audio', 'Pour les pros et les amateurs')
+D, [2018-03-08T09:25:17.068337 #8648] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:25:17.068337 #8648] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:25:17.068337 #8648] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories` (`name`, `description`) VALUES ('Video', 'Pour les pros et les amateurs')
+D, [2018-03-08T09:25:17.083937 #8648] DEBUG -- :    (15.6ms)  COMMIT
+D, [2018-03-08T09:25:17.115137 #8648] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:25:17.115137 #8648] DEBUG -- :   SQL (0.0ms)  INSERT INTO `products` (`name`, `price`, `description`, `supplier_id`, `stock`) VALUES ('Casque sans fil Sony', 125.0, 'Très bon produit', 54, 1548)
+D, [2018-03-08T09:25:17.115137 #8648] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories_products` (`category_id`, `product_id`) VALUES (21, 41)
+D, [2018-03-08T09:25:17.130737 #8648] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories_products` (`category_id`, `product_id`) VALUES (22, 41)
+D, [2018-03-08T09:25:17.130737 #8648] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:25:17.130737 #8648] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:25:17.130737 #8648] DEBUG -- :   SQL (0.0ms)  INSERT INTO `products` (`name`, `price`, `description`, `supplier_id`, `stock`) VALUES ('Câble HDMI 12m', 1500.0, 'Très bon produit', 52, 5)
+D, [2018-03-08T09:25:17.130737 #8648] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories_products` (`category_id`, `product_id`) VALUES (22, 42)
+D, [2018-03-08T09:25:17.130737 #8648] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:25:17.130737 #8648] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:25:17.130737 #8648] DEBUG -- :   SQL (0.0ms)  INSERT INTO `products` (`name`, `price`, `description`, `supplier_id`, `stock`) VALUES ('Câble VGA 156m', 2684.25, 'Très bon produit', 51, 9)
+D, [2018-03-08T09:25:17.130737 #8648] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories_products` (`category_id`, `product_id`) VALUES (22, 43)
+D, [2018-03-08T09:25:17.146337 #8648] DEBUG -- :    (15.6ms)  COMMIT
+D, [2018-03-08T09:25:17.146337 #8648] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:25:17.146337 #8648] DEBUG -- :   SQL (0.0ms)  INSERT INTO `products` (`name`, `price`, `description`, `supplier_id`, `stock`) VALUES ('Câble Jack vers Jack', 10.0, 'Très bon produit', 51, 14000)
+D, [2018-03-08T09:25:17.146337 #8648] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories_products` (`category_id`, `product_id`) VALUES (21, 44)
+D, [2018-03-08T09:25:17.146337 #8648] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:25:17.161937 #8648] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:25:17.161937 #8648] DEBUG -- :   SQL (0.0ms)  INSERT INTO `orders` (`created_at`, `status`, `client_id`) VALUES ('2018-03-08', 1, 43)
+D, [2018-03-08T09:25:17.161937 #8648] DEBUG -- :   SQL (0.0ms)  INSERT INTO `order_items` (`quantity`, `item_price`, `order_id`, `product_id`) VALUES (5, 2684.25, 21, 43)
+D, [2018-03-08T09:25:17.161937 #8648] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:25:17.161937 #8648] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:25:17.161937 #8648] DEBUG -- :   SQL (0.0ms)  INSERT INTO `orders` (`created_at`, `status`, `client_id`) VALUES ('2018-03-08', 1, 44)
+D, [2018-03-08T09:25:17.177537 #8648] DEBUG -- :   SQL (15.6ms)  INSERT INTO `order_items` (`quantity`, `item_price`, `order_id`, `product_id`) VALUES (150, 10.0, 22, 44)
+D, [2018-03-08T09:25:17.177537 #8648] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:25:17.193137 #8648] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:25:17.193137 #8648] DEBUG -- :   SQL (0.0ms)  INSERT INTO `comments` (`content`, `client_id`, `commentable_type`, `commentable_id`) VALUES ('Super produit', 44, 'Supplier', 53)
+D, [2018-03-08T09:25:17.193137 #8648] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:25:17.193137 #8648] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:25:17.193137 #8648] DEBUG -- :   SQL (0.0ms)  INSERT INTO `comments` (`content`, `client_id`, `commentable_type`, `commentable_id`) VALUES ('Yes, merci', 42, 'Product', 43)
+D, [2018-03-08T09:25:17.193137 #8648] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:25:44.645937 #2492] DEBUG -- :    (0.0ms)  SET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483
+D, [2018-03-08T09:25:44.661537 #2492] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:25:44.661537 #2492] DEBUG -- :   SQL (0.0ms)  INSERT INTO `clients` (`firstname`, `lastname`, `type`) VALUES ('Bernard', 'Margouille', 'Particular')
+D, [2018-03-08T09:25:44.661537 #2492] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:25:44.661537 #2492] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:25:44.661537 #2492] DEBUG -- :   SQL (0.0ms)  INSERT INTO `clients` (`firstname`, `lastname`, `type`) VALUES ('Marcel', 'Liota', 'Particular')
+D, [2018-03-08T09:25:44.661537 #2492] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:25:44.661537 #2492] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:25:44.677137 #2492] DEBUG -- :   SQL (15.6ms)  INSERT INTO `clients` (`firstname`, `lastname`, `type`) VALUES ('Fabien', 'Carlotta', 'Particular')
+D, [2018-03-08T09:25:44.677137 #2492] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:25:44.677137 #2492] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:25:44.677137 #2492] DEBUG -- :   SQL (0.0ms)  INSERT INTO `clients` (`firstname`, `lastname`, `type`) VALUES ('Sullyvan', 'Butoxx', 'Company')
+D, [2018-03-08T09:25:44.677137 #2492] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:25:44.677137 #2492] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:25:44.677137 #2492] DEBUG -- :   SQL (0.0ms)  INSERT INTO `suppliers` (`name`) VALUES ('Digitec')
+D, [2018-03-08T09:25:44.692737 #2492] DEBUG -- :    (15.6ms)  COMMIT
+D, [2018-03-08T09:25:44.692737 #2492] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:25:44.692737 #2492] DEBUG -- :   SQL (0.0ms)  INSERT INTO `suppliers` (`name`) VALUES ('Microspot')
+D, [2018-03-08T09:25:44.692737 #2492] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:25:44.692737 #2492] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:25:44.692737 #2492] DEBUG -- :   SQL (0.0ms)  INSERT INTO `suppliers` (`name`) VALUES ('Galaxus')
+D, [2018-03-08T09:25:44.692737 #2492] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:25:44.692737 #2492] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:25:44.692737 #2492] DEBUG -- :   SQL (0.0ms)  INSERT INTO `suppliers` (`name`) VALUES ('Steg')
+D, [2018-03-08T09:25:44.692737 #2492] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:25:44.692737 #2492] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:25:44.708337 #2492] DEBUG -- :   SQL (0.0ms)  INSERT INTO `suppliers` (`name`) VALUES ('Ebay')
+D, [2018-03-08T09:25:44.708337 #2492] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:25:44.708337 #2492] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:25:44.708337 #2492] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories` (`name`, `description`) VALUES ('Audio', 'Pour les pros et les amateurs')
+D, [2018-03-08T09:25:44.708337 #2492] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:25:44.708337 #2492] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:25:44.708337 #2492] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories` (`name`, `description`) VALUES ('Video', 'Pour les pros et les amateurs')
+D, [2018-03-08T09:25:44.723937 #2492] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:25:44.755137 #2492] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:25:44.770737 #2492] DEBUG -- :   SQL (0.0ms)  INSERT INTO `products` (`name`, `price`, `description`, `supplier_id`, `stock`) VALUES ('Casque sans fil Sony', 125.0, 'Très bon produit', 59, 1548)
+D, [2018-03-08T09:25:44.770737 #2492] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories_products` (`category_id`, `product_id`) VALUES (23, 45)
+D, [2018-03-08T09:25:44.770737 #2492] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories_products` (`category_id`, `product_id`) VALUES (24, 45)
+D, [2018-03-08T09:25:44.770737 #2492] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:25:44.770737 #2492] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:25:44.770737 #2492] DEBUG -- :   SQL (0.0ms)  INSERT INTO `products` (`name`, `price`, `description`, `supplier_id`, `stock`) VALUES ('Câble HDMI 12m', 1500.0, 'Très bon produit', 57, 5)
+D, [2018-03-08T09:25:44.770737 #2492] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories_products` (`category_id`, `product_id`) VALUES (24, 46)
+D, [2018-03-08T09:25:44.770737 #2492] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:25:44.786337 #2492] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:25:44.786337 #2492] DEBUG -- :   SQL (0.0ms)  INSERT INTO `products` (`name`, `price`, `description`, `supplier_id`, `stock`) VALUES ('Câble VGA 156m', 2684.25, 'Très bon produit', 56, 9)
+D, [2018-03-08T09:25:44.786337 #2492] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories_products` (`category_id`, `product_id`) VALUES (24, 47)
+D, [2018-03-08T09:25:44.786337 #2492] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:25:44.786337 #2492] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:25:44.786337 #2492] DEBUG -- :   SQL (0.0ms)  INSERT INTO `products` (`name`, `price`, `description`, `supplier_id`, `stock`) VALUES ('Câble Jack vers Jack', 10.0, 'Très bon produit', 56, 14000)
+D, [2018-03-08T09:25:44.786337 #2492] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories_products` (`category_id`, `product_id`) VALUES (23, 48)
+D, [2018-03-08T09:25:44.801937 #2492] DEBUG -- :    (15.6ms)  COMMIT
+D, [2018-03-08T09:25:44.817537 #2492] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:25:44.817537 #2492] DEBUG -- :   SQL (0.0ms)  INSERT INTO `orders` (`created_at`, `status`, `client_id`) VALUES ('2018-03-08', 1, 47)
+D, [2018-03-08T09:25:44.817537 #2492] DEBUG -- :   SQL (0.0ms)  INSERT INTO `order_items` (`quantity`, `item_price`, `order_id`, `product_id`) VALUES (5, 2684.25, 23, 47)
+D, [2018-03-08T09:25:44.817537 #2492] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:25:44.817537 #2492] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:25:44.817537 #2492] DEBUG -- :   SQL (0.0ms)  INSERT INTO `orders` (`created_at`, `status`, `client_id`) VALUES ('2018-03-08', 1, 48)
+D, [2018-03-08T09:25:44.817537 #2492] DEBUG -- :   SQL (0.0ms)  INSERT INTO `order_items` (`quantity`, `item_price`, `order_id`, `product_id`) VALUES (150, 10.0, 24, 48)
+D, [2018-03-08T09:25:44.817537 #2492] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:25:44.833137 #2492] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:25:44.833137 #2492] DEBUG -- :   SQL (0.0ms)  INSERT INTO `comments` (`content`, `client_id`, `commentable_type`, `commentable_id`) VALUES ('Super produit', 48, 'Supplier', 58)
+D, [2018-03-08T09:25:44.833137 #2492] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:25:44.833137 #2492] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:25:44.833137 #2492] DEBUG -- :   SQL (0.0ms)  INSERT INTO `comments` (`content`, `client_id`, `commentable_type`, `commentable_id`) VALUES ('Yes, merci', 46, 'Product', 47)
+D, [2018-03-08T09:25:44.833137 #2492] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:25:55.460937 #7204] DEBUG -- :    (0.0ms)  SET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483
+D, [2018-03-08T09:25:55.460937 #7204] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:25:55.460937 #7204] DEBUG -- :   SQL (0.0ms)  INSERT INTO `clients` (`firstname`, `lastname`, `type`) VALUES ('Bernard', 'Margouille', 'Particular')
+D, [2018-03-08T09:25:55.460937 #7204] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:25:55.460937 #7204] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:25:55.460937 #7204] DEBUG -- :   SQL (0.0ms)  INSERT INTO `clients` (`firstname`, `lastname`, `type`) VALUES ('Marcel', 'Liota', 'Particular')
+D, [2018-03-08T09:25:55.476537 #7204] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:25:55.476537 #7204] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:25:55.476537 #7204] DEBUG -- :   SQL (0.0ms)  INSERT INTO `clients` (`firstname`, `lastname`, `type`) VALUES ('Fabien', 'Carlotta', 'Particular')
+D, [2018-03-08T09:25:55.476537 #7204] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:25:55.476537 #7204] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:25:55.476537 #7204] DEBUG -- :   SQL (0.0ms)  INSERT INTO `clients` (`firstname`, `lastname`, `type`) VALUES ('Sullyvan', 'Butoxx', 'Company')
+D, [2018-03-08T09:25:55.492137 #7204] DEBUG -- :    (15.6ms)  COMMIT
+D, [2018-03-08T09:25:55.492137 #7204] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:25:55.492137 #7204] DEBUG -- :   SQL (0.0ms)  INSERT INTO `suppliers` (`name`) VALUES ('Digitec')
+D, [2018-03-08T09:25:55.492137 #7204] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:25:55.492137 #7204] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:25:55.492137 #7204] DEBUG -- :   SQL (0.0ms)  INSERT INTO `suppliers` (`name`) VALUES ('Microspot')
+D, [2018-03-08T09:25:55.492137 #7204] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:25:55.492137 #7204] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:25:55.492137 #7204] DEBUG -- :   SQL (0.0ms)  INSERT INTO `suppliers` (`name`) VALUES ('Galaxus')
+D, [2018-03-08T09:25:55.507737 #7204] DEBUG -- :    (15.6ms)  COMMIT
+D, [2018-03-08T09:25:55.507737 #7204] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:25:55.507737 #7204] DEBUG -- :   SQL (0.0ms)  INSERT INTO `suppliers` (`name`) VALUES ('Steg')
+D, [2018-03-08T09:25:55.507737 #7204] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:25:55.507737 #7204] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:25:55.507737 #7204] DEBUG -- :   SQL (0.0ms)  INSERT INTO `suppliers` (`name`) VALUES ('Ebay')
+D, [2018-03-08T09:25:55.507737 #7204] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:25:55.507737 #7204] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:25:55.523337 #7204] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories` (`name`, `description`) VALUES ('Audio', 'Pour les pros et les amateurs')
+D, [2018-03-08T09:25:55.523337 #7204] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:25:55.523337 #7204] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:25:55.523337 #7204] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories` (`name`, `description`) VALUES ('Video', 'Pour les pros et les amateurs')
+D, [2018-03-08T09:25:55.523337 #7204] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:25:55.570137 #7204] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:25:55.570137 #7204] DEBUG -- :   SQL (0.0ms)  INSERT INTO `products` (`name`, `price`, `description`, `supplier_id`, `stock`) VALUES ('Casque sans fil Sony', 125.0, 'Très bon produit', 64, 1548)
+D, [2018-03-08T09:25:55.570137 #7204] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories_products` (`category_id`, `product_id`) VALUES (25, 49)
+D, [2018-03-08T09:25:55.570137 #7204] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories_products` (`category_id`, `product_id`) VALUES (26, 49)
+D, [2018-03-08T09:25:55.570137 #7204] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:25:55.570137 #7204] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:25:55.585737 #7204] DEBUG -- :   SQL (15.6ms)  INSERT INTO `products` (`name`, `price`, `description`, `supplier_id`, `stock`) VALUES ('Câble HDMI 12m', 1500.0, 'Très bon produit', 62, 5)
+D, [2018-03-08T09:25:55.585737 #7204] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories_products` (`category_id`, `product_id`) VALUES (26, 50)
+D, [2018-03-08T09:25:55.585737 #7204] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:25:55.585737 #7204] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:25:55.585737 #7204] DEBUG -- :   SQL (0.0ms)  INSERT INTO `products` (`name`, `price`, `description`, `supplier_id`, `stock`) VALUES ('Câble VGA 156m', 2684.25, 'Très bon produit', 61, 9)
+D, [2018-03-08T09:25:55.585737 #7204] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories_products` (`category_id`, `product_id`) VALUES (26, 51)
+D, [2018-03-08T09:25:55.585737 #7204] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:25:55.601337 #7204] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:25:55.601337 #7204] DEBUG -- :   SQL (0.0ms)  INSERT INTO `products` (`name`, `price`, `description`, `supplier_id`, `stock`) VALUES ('Câble Jack vers Jack', 10.0, 'Très bon produit', 61, 14000)
+D, [2018-03-08T09:25:55.601337 #7204] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories_products` (`category_id`, `product_id`) VALUES (25, 52)
+D, [2018-03-08T09:25:55.601337 #7204] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:25:55.616937 #7204] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:25:55.616937 #7204] DEBUG -- :   SQL (0.0ms)  INSERT INTO `orders` (`created_at`, `status`, `client_id`) VALUES ('2018-03-08', 1, 51)
+D, [2018-03-08T09:25:55.616937 #7204] DEBUG -- :   SQL (0.0ms)  INSERT INTO `order_items` (`quantity`, `item_price`, `order_id`, `product_id`) VALUES (5, 2684.25, 25, 51)
+D, [2018-03-08T09:25:55.616937 #7204] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:25:55.632537 #7204] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:25:55.632537 #7204] DEBUG -- :   SQL (0.0ms)  INSERT INTO `orders` (`created_at`, `status`, `client_id`) VALUES ('2018-03-08', 1, 52)
+D, [2018-03-08T09:25:55.632537 #7204] DEBUG -- :   SQL (0.0ms)  INSERT INTO `order_items` (`quantity`, `item_price`, `order_id`, `product_id`) VALUES (150, 10.0, 26, 52)
+D, [2018-03-08T09:25:55.632537 #7204] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:25:55.648137 #7204] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:25:55.648137 #7204] DEBUG -- :   SQL (0.0ms)  INSERT INTO `comments` (`content`, `client_id`, `commentable_type`, `commentable_id`) VALUES ('Super produit', 52, 'Supplier', 63)
+D, [2018-03-08T09:25:55.648137 #7204] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:25:55.648137 #7204] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:25:55.663737 #7204] DEBUG -- :   SQL (15.6ms)  INSERT INTO `comments` (`content`, `client_id`, `commentable_type`, `commentable_id`) VALUES ('Yes, merci', 50, 'Product', 51)
+D, [2018-03-08T09:25:55.663737 #7204] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:35:11.057945 #8804] DEBUG -- :    (0.0ms)  SET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483
+D, [2018-03-08T09:35:11.073545 #8804] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:35:11.073545 #8804] DEBUG -- :   SQL (0.0ms)  INSERT INTO `clients` (`firstname`, `lastname`, `type`) VALUES ('Bernard', 'Margouille', 'Particular')
+D, [2018-03-08T09:35:11.073545 #8804] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:35:11.073545 #8804] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:35:11.073545 #8804] DEBUG -- :   SQL (0.0ms)  INSERT INTO `clients` (`firstname`, `lastname`, `type`) VALUES ('Marcel', 'Liota', 'Particular')
+D, [2018-03-08T09:35:11.073545 #8804] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:35:11.073545 #8804] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:35:11.073545 #8804] DEBUG -- :   SQL (0.0ms)  INSERT INTO `clients` (`firstname`, `lastname`, `type`) VALUES ('Fabien', 'Carlotta', 'Particular')
+D, [2018-03-08T09:35:11.089145 #8804] DEBUG -- :    (15.6ms)  COMMIT
+D, [2018-03-08T09:35:11.089145 #8804] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:35:11.089145 #8804] DEBUG -- :   SQL (0.0ms)  INSERT INTO `clients` (`firstname`, `lastname`, `type`) VALUES ('Sullyvan', 'Butoxx', 'Company')
+D, [2018-03-08T09:35:11.089145 #8804] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:35:11.089145 #8804] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:35:11.089145 #8804] DEBUG -- :   SQL (0.0ms)  INSERT INTO `suppliers` (`name`) VALUES ('Digitec')
+D, [2018-03-08T09:35:11.089145 #8804] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:35:11.089145 #8804] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:35:11.089145 #8804] DEBUG -- :   SQL (0.0ms)  INSERT INTO `suppliers` (`name`) VALUES ('Microspot')
+D, [2018-03-08T09:35:11.089145 #8804] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:35:11.089145 #8804] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:35:11.089145 #8804] DEBUG -- :   SQL (0.0ms)  INSERT INTO `suppliers` (`name`) VALUES ('Galaxus')
+D, [2018-03-08T09:35:11.104746 #8804] DEBUG -- :    (15.6ms)  COMMIT
+D, [2018-03-08T09:35:11.104746 #8804] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:35:11.104746 #8804] DEBUG -- :   SQL (0.0ms)  INSERT INTO `suppliers` (`name`) VALUES ('Steg')
+D, [2018-03-08T09:35:11.104746 #8804] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:35:11.104746 #8804] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:35:11.104746 #8804] DEBUG -- :   SQL (0.0ms)  INSERT INTO `suppliers` (`name`) VALUES ('Ebay')
+D, [2018-03-08T09:35:11.104746 #8804] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:35:11.104746 #8804] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:35:11.104746 #8804] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories` (`name`, `description`) VALUES ('Audio', 'Pour les pros et les amateurs')
+D, [2018-03-08T09:35:11.120346 #8804] DEBUG -- :    (15.6ms)  COMMIT
+D, [2018-03-08T09:35:11.120346 #8804] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:35:11.120346 #8804] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories` (`name`, `description`) VALUES ('Video', 'Pour les pros et les amateurs')
+D, [2018-03-08T09:35:11.120346 #8804] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:35:11.167146 #8804] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:35:11.167146 #8804] DEBUG -- :   SQL (0.0ms)  INSERT INTO `products` (`name`, `price`, `description`, `supplier_id`, `stock`) VALUES ('Casque sans fil Sony', 125.0, 'Très bon produit', 69, 1548)
+D, [2018-03-08T09:35:11.167146 #8804] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories_products` (`category_id`, `product_id`) VALUES (27, 53)
+D, [2018-03-08T09:35:11.167146 #8804] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories_products` (`category_id`, `product_id`) VALUES (28, 53)
+D, [2018-03-08T09:35:11.167146 #8804] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:35:11.167146 #8804] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:35:11.167146 #8804] DEBUG -- :   SQL (0.0ms)  INSERT INTO `products` (`name`, `price`, `description`, `supplier_id`, `stock`) VALUES ('Câble HDMI 12m', 1500.0, 'Très bon produit', 67, 5)
+D, [2018-03-08T09:35:11.167146 #8804] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories_products` (`category_id`, `product_id`) VALUES (28, 54)
+D, [2018-03-08T09:35:11.182747 #8804] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:35:11.182747 #8804] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:35:11.182747 #8804] DEBUG -- :   SQL (0.0ms)  INSERT INTO `products` (`name`, `price`, `description`, `supplier_id`, `stock`) VALUES ('Câble VGA 156m', 2684.25, 'Très bon produit', 66, 9)
+D, [2018-03-08T09:35:11.182747 #8804] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories_products` (`category_id`, `product_id`) VALUES (28, 55)
+D, [2018-03-08T09:35:11.182747 #8804] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:35:11.182747 #8804] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:35:11.182747 #8804] DEBUG -- :   SQL (0.0ms)  INSERT INTO `products` (`name`, `price`, `description`, `supplier_id`, `stock`) VALUES ('Câble Jack vers Jack', 10.0, 'Très bon produit', 66, 14000)
+D, [2018-03-08T09:35:11.182747 #8804] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories_products` (`category_id`, `product_id`) VALUES (27, 56)
+D, [2018-03-08T09:35:11.182747 #8804] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:35:11.198347 #8804] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:35:11.198347 #8804] DEBUG -- :   SQL (0.0ms)  INSERT INTO `orders` (`created_at`, `status`, `client_id`) VALUES ('2018-03-08', 1, 55)
+D, [2018-03-08T09:35:11.213947 #8804] DEBUG -- :   SQL (15.6ms)  INSERT INTO `order_items` (`quantity`, `item_price`, `order_id`, `product_id`) VALUES (5, 2684.25, 27, 55)
+D, [2018-03-08T09:35:11.213947 #8804] DEBUG -- :    (0.0ms)  ROLLBACK
+D, [2018-03-08T09:52:55.004913 #7860] DEBUG -- :    (0.0ms)  SET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483
+D, [2018-03-08T09:52:55.020513 #7860] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:52:55.020513 #7860] DEBUG -- :   SQL (0.0ms)  INSERT INTO `clients` (`firstname`, `lastname`, `type`) VALUES ('Bernard', 'Margouille', 'Particular')
+D, [2018-03-08T09:52:55.020513 #7860] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:52:55.020513 #7860] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:52:55.020513 #7860] DEBUG -- :   SQL (0.0ms)  INSERT INTO `clients` (`firstname`, `lastname`, `type`) VALUES ('Marcel', 'Liota', 'Particular')
+D, [2018-03-08T09:52:55.020513 #7860] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:52:55.020513 #7860] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:52:55.036113 #7860] DEBUG -- :   SQL (0.0ms)  INSERT INTO `clients` (`firstname`, `lastname`, `type`) VALUES ('Fabien', 'Carlotta', 'Particular')
+D, [2018-03-08T09:52:55.036113 #7860] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:52:55.036113 #7860] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:52:55.036113 #7860] DEBUG -- :   SQL (0.0ms)  INSERT INTO `clients` (`firstname`, `lastname`, `type`) VALUES ('Sullyvan', 'Butoxx', 'Company')
+D, [2018-03-08T09:52:55.036113 #7860] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:52:55.036113 #7860] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:52:55.036113 #7860] DEBUG -- :   SQL (0.0ms)  INSERT INTO `suppliers` (`name`) VALUES ('Digitec')
+D, [2018-03-08T09:52:55.051713 #7860] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:52:55.051713 #7860] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:52:55.051713 #7860] DEBUG -- :   SQL (0.0ms)  INSERT INTO `suppliers` (`name`) VALUES ('Microspot')
+D, [2018-03-08T09:52:55.051713 #7860] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:52:55.051713 #7860] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:52:55.051713 #7860] DEBUG -- :   SQL (0.0ms)  INSERT INTO `suppliers` (`name`) VALUES ('Galaxus')
+D, [2018-03-08T09:52:55.051713 #7860] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:52:55.051713 #7860] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:52:55.051713 #7860] DEBUG -- :   SQL (0.0ms)  INSERT INTO `suppliers` (`name`) VALUES ('Steg')
+D, [2018-03-08T09:52:55.067313 #7860] DEBUG -- :    (15.6ms)  COMMIT
+D, [2018-03-08T09:52:55.067313 #7860] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:52:55.067313 #7860] DEBUG -- :   SQL (0.0ms)  INSERT INTO `suppliers` (`name`) VALUES ('Ebay')
+D, [2018-03-08T09:52:55.067313 #7860] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:52:55.067313 #7860] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:52:55.067313 #7860] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories` (`name`, `description`) VALUES ('Audio', 'Pour les pros et les amateurs')
+D, [2018-03-08T09:52:55.067313 #7860] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:52:55.067313 #7860] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:52:55.067313 #7860] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories` (`name`, `description`) VALUES ('Video', 'Pour les pros et les amateurs')
+D, [2018-03-08T09:52:55.082913 #7860] DEBUG -- :    (15.6ms)  COMMIT
+D, [2018-03-08T09:52:55.114114 #7860] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:52:55.114114 #7860] DEBUG -- :   SQL (0.0ms)  INSERT INTO `products` (`name`, `price`, `description`, `supplier_id`, `stock`) VALUES ('Casque sans fil Sony', 125.0, 'Très bon produit', 74, 1548)
+D, [2018-03-08T09:52:55.114114 #7860] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories_products` (`category_id`, `product_id`) VALUES (29, 57)
+D, [2018-03-08T09:52:55.129714 #7860] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories_products` (`category_id`, `product_id`) VALUES (30, 57)
+D, [2018-03-08T09:52:55.129714 #7860] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:52:55.129714 #7860] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:52:55.129714 #7860] DEBUG -- :   SQL (0.0ms)  INSERT INTO `products` (`name`, `price`, `description`, `supplier_id`, `stock`) VALUES ('Câble HDMI 12m', 1500.0, 'Très bon produit', 72, 5)
+D, [2018-03-08T09:52:55.129714 #7860] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories_products` (`category_id`, `product_id`) VALUES (30, 58)
+D, [2018-03-08T09:52:55.129714 #7860] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:52:55.145314 #7860] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:52:55.145314 #7860] DEBUG -- :   SQL (0.0ms)  INSERT INTO `products` (`name`, `price`, `description`, `supplier_id`, `stock`) VALUES ('Câble VGA 156m', 2684.25, 'Très bon produit', 71, 9)
+D, [2018-03-08T09:52:55.145314 #7860] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories_products` (`category_id`, `product_id`) VALUES (30, 59)
+D, [2018-03-08T09:52:55.145314 #7860] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:52:55.145314 #7860] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:52:55.145314 #7860] DEBUG -- :   SQL (0.0ms)  INSERT INTO `products` (`name`, `price`, `description`, `supplier_id`, `stock`) VALUES ('Câble Jack vers Jack', 10.0, 'Très bon produit', 71, 14000)
+D, [2018-03-08T09:52:55.145314 #7860] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories_products` (`category_id`, `product_id`) VALUES (29, 60)
+D, [2018-03-08T09:52:55.145314 #7860] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:52:55.160914 #7860] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:52:55.176514 #7860] DEBUG -- :   SQL (0.0ms)  INSERT INTO `orders` (`created_at`, `status`, `client_id`) VALUES ('2018-03-08', 1, 59)
+D, [2018-03-08T09:52:55.176514 #7860] DEBUG -- :   SQL (0.0ms)  INSERT INTO `order_items` (`quantity`, `item_price`, `order_id`, `product_id`) VALUES (5, 2684.25, 28, 59)
+D, [2018-03-08T09:52:55.176514 #7860] DEBUG -- :    (0.0ms)  ROLLBACK
+D, [2018-03-08T09:53:47.498038 #8812] DEBUG -- :    (0.0ms)  SET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483
+D, [2018-03-08T09:53:47.498038 #8812] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:53:47.498038 #8812] DEBUG -- :   SQL (0.0ms)  INSERT INTO `clients` (`firstname`, `lastname`, `type`) VALUES ('Bernard', 'Margouille', 'Particular')
+D, [2018-03-08T09:53:47.513638 #8812] DEBUG -- :    (15.6ms)  COMMIT
+D, [2018-03-08T09:53:47.513638 #8812] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:53:47.513638 #8812] DEBUG -- :   SQL (0.0ms)  INSERT INTO `clients` (`firstname`, `lastname`, `type`) VALUES ('Marcel', 'Liota', 'Particular')
+D, [2018-03-08T09:53:47.513638 #8812] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:53:47.513638 #8812] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:53:47.513638 #8812] DEBUG -- :   SQL (0.0ms)  INSERT INTO `clients` (`firstname`, `lastname`, `type`) VALUES ('Fabien', 'Carlotta', 'Particular')
+D, [2018-03-08T09:53:47.513638 #8812] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:53:47.513638 #8812] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:53:47.529238 #8812] DEBUG -- :   SQL (15.6ms)  INSERT INTO `clients` (`firstname`, `lastname`, `type`) VALUES ('Sullyvan', 'Butoxx', 'Company')
+D, [2018-03-08T09:53:47.529238 #8812] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:53:47.529238 #8812] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:53:47.529238 #8812] DEBUG -- :   SQL (0.0ms)  INSERT INTO `suppliers` (`name`) VALUES ('Digitec')
+D, [2018-03-08T09:53:47.529238 #8812] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:53:47.529238 #8812] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:53:47.529238 #8812] DEBUG -- :   SQL (0.0ms)  INSERT INTO `suppliers` (`name`) VALUES ('Microspot')
+D, [2018-03-08T09:53:47.529238 #8812] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:53:47.529238 #8812] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:53:47.529238 #8812] DEBUG -- :   SQL (0.0ms)  INSERT INTO `suppliers` (`name`) VALUES ('Galaxus')
+D, [2018-03-08T09:53:47.544838 #8812] DEBUG -- :    (15.6ms)  COMMIT
+D, [2018-03-08T09:53:47.544838 #8812] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:53:47.544838 #8812] DEBUG -- :   SQL (0.0ms)  INSERT INTO `suppliers` (`name`) VALUES ('Steg')
+D, [2018-03-08T09:53:47.544838 #8812] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:53:47.544838 #8812] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:53:47.544838 #8812] DEBUG -- :   SQL (0.0ms)  INSERT INTO `suppliers` (`name`) VALUES ('Ebay')
+D, [2018-03-08T09:53:47.544838 #8812] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:53:47.544838 #8812] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:53:47.560438 #8812] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories` (`name`, `description`) VALUES ('Audio', 'Pour les pros et les amateurs')
+D, [2018-03-08T09:53:47.560438 #8812] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:53:47.560438 #8812] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:53:47.560438 #8812] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories` (`name`, `description`) VALUES ('Video', 'Pour les pros et les amateurs')
+D, [2018-03-08T09:53:47.560438 #8812] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:53:47.607238 #8812] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:53:47.607238 #8812] DEBUG -- :   SQL (0.0ms)  INSERT INTO `products` (`name`, `price`, `description`, `supplier_id`, `stock`) VALUES ('Casque sans fil Sony', 125.0, 'Très bon produit', 79, 1548)
+D, [2018-03-08T09:53:47.607238 #8812] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories_products` (`category_id`, `product_id`) VALUES (31, 61)
+D, [2018-03-08T09:53:47.607238 #8812] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories_products` (`category_id`, `product_id`) VALUES (32, 61)
+D, [2018-03-08T09:53:47.607238 #8812] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:53:47.607238 #8812] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:53:47.607238 #8812] DEBUG -- :   SQL (0.0ms)  INSERT INTO `products` (`name`, `price`, `description`, `supplier_id`, `stock`) VALUES ('Câble HDMI 12m', 1500.0, 'Très bon produit', 77, 5)
+D, [2018-03-08T09:53:47.622838 #8812] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories_products` (`category_id`, `product_id`) VALUES (32, 62)
+D, [2018-03-08T09:53:47.622838 #8812] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:53:47.622838 #8812] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:53:47.622838 #8812] DEBUG -- :   SQL (0.0ms)  INSERT INTO `products` (`name`, `price`, `description`, `supplier_id`, `stock`) VALUES ('Câble VGA 156m', 2684.25, 'Très bon produit', 76, 9)
+D, [2018-03-08T09:53:47.622838 #8812] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories_products` (`category_id`, `product_id`) VALUES (32, 63)
+D, [2018-03-08T09:53:47.622838 #8812] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:53:47.622838 #8812] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:53:47.638438 #8812] DEBUG -- :   SQL (15.6ms)  INSERT INTO `products` (`name`, `price`, `description`, `supplier_id`, `stock`) VALUES ('Câble Jack vers Jack', 10.0, 'Très bon produit', 76, 14000)
+D, [2018-03-08T09:53:47.638438 #8812] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories_products` (`category_id`, `product_id`) VALUES (31, 64)
+D, [2018-03-08T09:53:47.638438 #8812] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:53:47.654039 #8812] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:53:47.654039 #8812] DEBUG -- :   SQL (0.0ms)  INSERT INTO `orders` (`created_at`, `status`, `client_id`) VALUES ('2018-03-08', 1, 63)
+D, [2018-03-08T09:53:47.654039 #8812] DEBUG -- :   SQL (0.0ms)  INSERT INTO `order_items` (`quantity`, `item_price`, `order_id`, `product_id`) VALUES (5, 2684.25, 29, 63)
+D, [2018-03-08T09:53:47.654039 #8812] DEBUG -- :   SQL (0.0ms)  UPDATE `products` SET `stock` = 4 WHERE `products`.`id` = 63
+D, [2018-03-08T09:53:47.654039 #8812] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:53:47.654039 #8812] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:53:47.654039 #8812] DEBUG -- :   SQL (0.0ms)  INSERT INTO `orders` (`created_at`, `status`, `client_id`) VALUES ('2018-03-08', 1, 64)
+D, [2018-03-08T09:53:47.654039 #8812] DEBUG -- :   SQL (0.0ms)  INSERT INTO `order_items` (`quantity`, `item_price`, `order_id`, `product_id`) VALUES (150, 10.0, 30, 64)
+D, [2018-03-08T09:53:47.669639 #8812] DEBUG -- :   SQL (0.0ms)  UPDATE `products` SET `stock` = 13850 WHERE `products`.`id` = 64
+D, [2018-03-08T09:53:47.669639 #8812] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:53:47.669639 #8812] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:53:47.685239 #8812] DEBUG -- :   SQL (0.0ms)  INSERT INTO `comments` (`content`, `client_id`, `commentable_type`, `commentable_id`) VALUES ('Super produit', 64, 'Supplier', 78)
+D, [2018-03-08T09:53:47.685239 #8812] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:53:47.685239 #8812] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:53:47.685239 #8812] DEBUG -- :   SQL (0.0ms)  INSERT INTO `comments` (`content`, `client_id`, `commentable_type`, `commentable_id`) VALUES ('Yes, merci', 62, 'Product', 63)
+D, [2018-03-08T09:53:47.685239 #8812] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:54:44.786115 #5616] DEBUG -- :    (0.0ms)  SET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483
+D, [2018-03-08T09:54:44.786115 #5616] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:54:44.786115 #5616] DEBUG -- :   SQL (0.0ms)  INSERT INTO `clients` (`firstname`, `lastname`, `type`) VALUES ('Bernard', 'Margouille', 'Particular')
+D, [2018-03-08T09:54:44.786115 #5616] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:54:44.801715 #5616] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:54:44.801715 #5616] DEBUG -- :   SQL (0.0ms)  INSERT INTO `clients` (`firstname`, `lastname`, `type`) VALUES ('Marcel', 'Liota', 'Particular')
+D, [2018-03-08T09:54:44.801715 #5616] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:54:44.801715 #5616] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:54:44.801715 #5616] DEBUG -- :   SQL (0.0ms)  INSERT INTO `clients` (`firstname`, `lastname`, `type`) VALUES ('Fabien', 'Carlotta', 'Particular')
+D, [2018-03-08T09:54:44.801715 #5616] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:54:44.801715 #5616] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:54:44.801715 #5616] DEBUG -- :   SQL (0.0ms)  INSERT INTO `clients` (`firstname`, `lastname`, `type`) VALUES ('Sullyvan', 'Butoxx', 'Company')
+D, [2018-03-08T09:54:44.801715 #5616] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:54:44.817315 #5616] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:54:44.817315 #5616] DEBUG -- :   SQL (0.0ms)  INSERT INTO `suppliers` (`name`) VALUES ('Digitec')
+D, [2018-03-08T09:54:44.817315 #5616] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:54:44.817315 #5616] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:54:44.817315 #5616] DEBUG -- :   SQL (0.0ms)  INSERT INTO `suppliers` (`name`) VALUES ('Microspot')
+D, [2018-03-08T09:54:44.817315 #5616] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:54:44.817315 #5616] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:54:44.817315 #5616] DEBUG -- :   SQL (0.0ms)  INSERT INTO `suppliers` (`name`) VALUES ('Galaxus')
+D, [2018-03-08T09:54:44.817315 #5616] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:54:44.817315 #5616] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:54:44.817315 #5616] DEBUG -- :   SQL (0.0ms)  INSERT INTO `suppliers` (`name`) VALUES ('Steg')
+D, [2018-03-08T09:54:44.832915 #5616] DEBUG -- :    (15.6ms)  COMMIT
+D, [2018-03-08T09:54:44.832915 #5616] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:54:44.832915 #5616] DEBUG -- :   SQL (0.0ms)  INSERT INTO `suppliers` (`name`) VALUES ('Ebay')
+D, [2018-03-08T09:54:44.832915 #5616] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:54:44.832915 #5616] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:54:44.832915 #5616] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories` (`name`, `description`) VALUES ('Audio', 'Pour les pros et les amateurs')
+D, [2018-03-08T09:54:44.832915 #5616] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:54:44.832915 #5616] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:54:44.832915 #5616] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories` (`name`, `description`) VALUES ('Video', 'Pour les pros et les amateurs')
+D, [2018-03-08T09:54:44.848515 #5616] DEBUG -- :    (15.6ms)  COMMIT
+D, [2018-03-08T09:54:44.879715 #5616] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:54:44.879715 #5616] DEBUG -- :   SQL (0.0ms)  INSERT INTO `products` (`name`, `price`, `description`, `supplier_id`, `stock`) VALUES ('Casque sans fil Sony', 125.0, 'Très bon produit', 84, 1548)
+D, [2018-03-08T09:54:44.895315 #5616] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories_products` (`category_id`, `product_id`) VALUES (33, 65)
+D, [2018-03-08T09:54:44.895315 #5616] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories_products` (`category_id`, `product_id`) VALUES (34, 65)
+D, [2018-03-08T09:54:44.895315 #5616] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:54:44.895315 #5616] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:54:44.895315 #5616] DEBUG -- :   SQL (0.0ms)  INSERT INTO `products` (`name`, `price`, `description`, `supplier_id`, `stock`) VALUES ('Câble HDMI 12m', 1500.0, 'Très bon produit', 82, 5)
+D, [2018-03-08T09:54:44.895315 #5616] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories_products` (`category_id`, `product_id`) VALUES (34, 66)
+D, [2018-03-08T09:54:44.895315 #5616] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:54:44.895315 #5616] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:54:44.910915 #5616] DEBUG -- :   SQL (0.0ms)  INSERT INTO `products` (`name`, `price`, `description`, `supplier_id`, `stock`) VALUES ('Câble VGA 156m', 2684.25, 'Très bon produit', 81, 9)
+D, [2018-03-08T09:54:44.910915 #5616] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories_products` (`category_id`, `product_id`) VALUES (34, 67)
+D, [2018-03-08T09:54:44.910915 #5616] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:54:44.910915 #5616] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:54:44.910915 #5616] DEBUG -- :   SQL (0.0ms)  INSERT INTO `products` (`name`, `price`, `description`, `supplier_id`, `stock`) VALUES ('Câble Jack vers Jack', 10.0, 'Très bon produit', 81, 14000)
+D, [2018-03-08T09:54:44.910915 #5616] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories_products` (`category_id`, `product_id`) VALUES (33, 68)
+D, [2018-03-08T09:54:44.910915 #5616] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:54:44.926515 #5616] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:54:44.926515 #5616] DEBUG -- :   SQL (0.0ms)  INSERT INTO `orders` (`created_at`, `status`, `client_id`) VALUES ('2018-03-08', 1, 67)
+D, [2018-03-08T09:54:44.942115 #5616] DEBUG -- :   SQL (0.0ms)  INSERT INTO `order_items` (`quantity`, `item_price`, `order_id`, `product_id`) VALUES (5, 2684.25, 31, 67)
+D, [2018-03-08T09:54:44.942115 #5616] DEBUG -- :    (0.0ms)  ROLLBACK
+D, [2018-03-08T09:55:49.117515 #6648] DEBUG -- :    (0.0ms)  SET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483
+D, [2018-03-08T09:55:49.133115 #6648] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:55:49.133115 #6648] DEBUG -- :   SQL (0.0ms)  INSERT INTO `clients` (`firstname`, `lastname`, `type`) VALUES ('Bernard', 'Margouille', 'Particular')
+D, [2018-03-08T09:55:49.133115 #6648] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:55:49.133115 #6648] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:55:49.133115 #6648] DEBUG -- :   SQL (0.0ms)  INSERT INTO `clients` (`firstname`, `lastname`, `type`) VALUES ('Marcel', 'Liota', 'Particular')
+D, [2018-03-08T09:55:49.133115 #6648] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:55:49.133115 #6648] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:55:49.133115 #6648] DEBUG -- :   SQL (0.0ms)  INSERT INTO `clients` (`firstname`, `lastname`, `type`) VALUES ('Fabien', 'Carlotta', 'Particular')
+D, [2018-03-08T09:55:49.148715 #6648] DEBUG -- :    (15.6ms)  COMMIT
+D, [2018-03-08T09:55:49.148715 #6648] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:55:49.148715 #6648] DEBUG -- :   SQL (0.0ms)  INSERT INTO `clients` (`firstname`, `lastname`, `type`) VALUES ('Sullyvan', 'Butoxx', 'Company')
+D, [2018-03-08T09:55:49.148715 #6648] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:55:49.148715 #6648] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:55:49.148715 #6648] DEBUG -- :   SQL (0.0ms)  INSERT INTO `suppliers` (`name`) VALUES ('Digitec')
+D, [2018-03-08T09:55:49.148715 #6648] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:55:49.148715 #6648] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:55:49.148715 #6648] DEBUG -- :   SQL (0.0ms)  INSERT INTO `suppliers` (`name`) VALUES ('Microspot')
+D, [2018-03-08T09:55:49.148715 #6648] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:55:49.164315 #6648] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:55:49.164315 #6648] DEBUG -- :   SQL (0.0ms)  INSERT INTO `suppliers` (`name`) VALUES ('Galaxus')
+D, [2018-03-08T09:55:49.164315 #6648] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:55:49.164315 #6648] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:55:49.164315 #6648] DEBUG -- :   SQL (0.0ms)  INSERT INTO `suppliers` (`name`) VALUES ('Steg')
+D, [2018-03-08T09:55:49.164315 #6648] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:55:49.164315 #6648] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:55:49.164315 #6648] DEBUG -- :   SQL (0.0ms)  INSERT INTO `suppliers` (`name`) VALUES ('Ebay')
+D, [2018-03-08T09:55:49.164315 #6648] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:55:49.164315 #6648] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:55:49.164315 #6648] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories` (`name`, `description`) VALUES ('Audio', 'Pour les pros et les amateurs')
+D, [2018-03-08T09:55:49.179915 #6648] DEBUG -- :    (15.6ms)  COMMIT
+D, [2018-03-08T09:55:49.179915 #6648] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:55:49.179915 #6648] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories` (`name`, `description`) VALUES ('Video', 'Pour les pros et les amateurs')
+D, [2018-03-08T09:55:49.179915 #6648] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:55:49.226715 #6648] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:55:49.226715 #6648] DEBUG -- :   SQL (0.0ms)  INSERT INTO `products` (`name`, `price`, `description`, `supplier_id`, `stock`) VALUES ('Casque sans fil Sony', 125.0, 'Très bon produit', 89, 1548)
+D, [2018-03-08T09:55:49.226715 #6648] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories_products` (`category_id`, `product_id`) VALUES (35, 69)
+D, [2018-03-08T09:55:49.226715 #6648] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories_products` (`category_id`, `product_id`) VALUES (36, 69)
+D, [2018-03-08T09:55:49.226715 #6648] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:55:49.226715 #6648] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:55:49.226715 #6648] DEBUG -- :   SQL (0.0ms)  INSERT INTO `products` (`name`, `price`, `description`, `supplier_id`, `stock`) VALUES ('Câble HDMI 12m', 1500.0, 'Très bon produit', 87, 5)
+D, [2018-03-08T09:55:49.226715 #6648] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories_products` (`category_id`, `product_id`) VALUES (36, 70)
+D, [2018-03-08T09:55:49.226715 #6648] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:55:49.226715 #6648] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:55:49.226715 #6648] DEBUG -- :   SQL (0.0ms)  INSERT INTO `products` (`name`, `price`, `description`, `supplier_id`, `stock`) VALUES ('Câble VGA 156m', 2684.25, 'Très bon produit', 86, 9)
+D, [2018-03-08T09:55:49.226715 #6648] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories_products` (`category_id`, `product_id`) VALUES (36, 71)
+D, [2018-03-08T09:55:49.242315 #6648] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:55:49.242315 #6648] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:55:49.242315 #6648] DEBUG -- :   SQL (0.0ms)  INSERT INTO `products` (`name`, `price`, `description`, `supplier_id`, `stock`) VALUES ('Câble Jack vers Jack', 10.0, 'Très bon produit', 86, 14000)
+D, [2018-03-08T09:55:49.242315 #6648] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories_products` (`category_id`, `product_id`) VALUES (35, 72)
+D, [2018-03-08T09:55:49.242315 #6648] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:55:49.257915 #6648] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:55:49.257915 #6648] DEBUG -- :   SQL (0.0ms)  INSERT INTO `orders` (`created_at`, `status`, `client_id`) VALUES ('2018-03-08', 1, 71)
+D, [2018-03-08T09:55:49.257915 #6648] DEBUG -- :   SQL (0.0ms)  INSERT INTO `order_items` (`quantity`, `item_price`, `order_id`, `product_id`) VALUES (5, 2684.25, 32, 71)
+D, [2018-03-08T09:55:49.257915 #6648] DEBUG -- :   SQL (0.0ms)  UPDATE `products` SET `stock` = 4 WHERE `products`.`id` = 71
+D, [2018-03-08T09:55:49.257915 #6648] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:55:49.257915 #6648] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:55:49.257915 #6648] DEBUG -- :   SQL (0.0ms)  INSERT INTO `orders` (`created_at`, `status`, `client_id`) VALUES ('2018-03-08', 1, 72)
+D, [2018-03-08T09:55:49.257915 #6648] DEBUG -- :   SQL (0.0ms)  INSERT INTO `order_items` (`quantity`, `item_price`, `order_id`, `product_id`) VALUES (150, 10.0, 33, 72)
+D, [2018-03-08T09:55:49.273515 #6648] DEBUG -- :   SQL (0.0ms)  UPDATE `products` SET `stock` = 13850 WHERE `products`.`id` = 72
+D, [2018-03-08T09:55:49.273515 #6648] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T09:55:49.273515 #6648] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:55:49.273515 #6648] DEBUG -- :   SQL (0.0ms)  INSERT INTO `comments` (`content`, `client_id`, `commentable_type`, `commentable_id`) VALUES ('Super produit', 72, 'Supplier', 88)
+D, [2018-03-08T09:55:49.289115 #6648] DEBUG -- :    (15.6ms)  COMMIT
+D, [2018-03-08T09:55:49.289115 #6648] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T09:55:49.289115 #6648] DEBUG -- :   SQL (0.0ms)  INSERT INTO `comments` (`content`, `client_id`, `commentable_type`, `commentable_id`) VALUES ('Yes, merci', 70, 'Product', 71)
+D, [2018-03-08T09:55:49.289115 #6648] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T10:25:58.983060 #8760] DEBUG -- :    (0.0ms)  SET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483
+D, [2018-03-08T10:25:58.983060 #8760] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T10:25:58.983060 #8760] DEBUG -- :   SQL (0.0ms)  INSERT INTO `clients` (`firstname`, `lastname`, `type`) VALUES ('Bernard', 'Margouille', 'Particular')
+D, [2018-03-08T10:25:58.998660 #8760] DEBUG -- :    (15.6ms)  COMMIT
+D, [2018-03-08T10:25:58.998660 #8760] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T10:25:58.998660 #8760] DEBUG -- :   SQL (0.0ms)  INSERT INTO `clients` (`firstname`, `lastname`, `type`) VALUES ('Marcel', 'Liota', 'Particular')
+D, [2018-03-08T10:25:58.998660 #8760] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T10:25:58.998660 #8760] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T10:25:58.998660 #8760] DEBUG -- :   SQL (0.0ms)  INSERT INTO `clients` (`firstname`, `lastname`, `type`) VALUES ('Fabien', 'Carlotta', 'Particular')
+D, [2018-03-08T10:25:58.998660 #8760] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T10:25:59.014260 #8760] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T10:25:59.014260 #8760] DEBUG -- :   SQL (0.0ms)  INSERT INTO `clients` (`firstname`, `lastname`, `type`) VALUES ('Sullyvan', 'Butoxx', 'Company')
+D, [2018-03-08T10:25:59.014260 #8760] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T10:25:59.014260 #8760] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T10:25:59.014260 #8760] DEBUG -- :   SQL (0.0ms)  INSERT INTO `suppliers` (`name`) VALUES ('Digitec')
+D, [2018-03-08T10:25:59.014260 #8760] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T10:25:59.014260 #8760] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T10:25:59.029860 #8760] DEBUG -- :   SQL (0.0ms)  INSERT INTO `suppliers` (`name`) VALUES ('Microspot')
+D, [2018-03-08T10:25:59.029860 #8760] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T10:25:59.029860 #8760] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T10:25:59.029860 #8760] DEBUG -- :   SQL (0.0ms)  INSERT INTO `suppliers` (`name`) VALUES ('Galaxus')
+D, [2018-03-08T10:25:59.029860 #8760] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T10:25:59.029860 #8760] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T10:25:59.029860 #8760] DEBUG -- :   SQL (0.0ms)  INSERT INTO `suppliers` (`name`) VALUES ('Steg')
+D, [2018-03-08T10:25:59.029860 #8760] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T10:25:59.029860 #8760] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T10:25:59.029860 #8760] DEBUG -- :   SQL (0.0ms)  INSERT INTO `suppliers` (`name`) VALUES ('Ebay')
+D, [2018-03-08T10:25:59.045460 #8760] DEBUG -- :    (15.6ms)  COMMIT
+D, [2018-03-08T10:25:59.045460 #8760] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T10:25:59.045460 #8760] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories` (`name`, `description`) VALUES ('Audio', 'Pour les pros et les amateurs')
+D, [2018-03-08T10:25:59.045460 #8760] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T10:25:59.045460 #8760] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T10:25:59.045460 #8760] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories` (`name`, `description`) VALUES ('Video', 'Pour les pros et les amateurs')
+D, [2018-03-08T10:25:59.045460 #8760] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T10:25:59.092261 #8760] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T10:25:59.092261 #8760] DEBUG -- :   SQL (0.0ms)  INSERT INTO `products` (`name`, `price`, `description`, `supplier_id`, `stock`) VALUES ('Casque sans fil Sony', 125.0, 'Très bon produit', 94, 1548)
+D, [2018-03-08T10:25:59.092261 #8760] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories_products` (`category_id`, `product_id`) VALUES (37, 73)
+D, [2018-03-08T10:25:59.092261 #8760] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories_products` (`category_id`, `product_id`) VALUES (38, 73)
+D, [2018-03-08T10:25:59.107861 #8760] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T10:25:59.107861 #8760] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T10:25:59.107861 #8760] DEBUG -- :   SQL (0.0ms)  INSERT INTO `products` (`name`, `price`, `description`, `supplier_id`, `stock`) VALUES ('Câble HDMI 12m', 1500.0, 'Très bon produit', 92, 5)
+D, [2018-03-08T10:25:59.107861 #8760] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories_products` (`category_id`, `product_id`) VALUES (38, 74)
+D, [2018-03-08T10:25:59.107861 #8760] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T10:25:59.107861 #8760] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T10:25:59.123461 #8760] DEBUG -- :   SQL (15.6ms)  INSERT INTO `products` (`name`, `price`, `description`, `supplier_id`, `stock`) VALUES ('Câble VGA 156m', 2684.25, 'Très bon produit', 91, 9)
+D, [2018-03-08T10:25:59.123461 #8760] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories_products` (`category_id`, `product_id`) VALUES (38, 75)
+D, [2018-03-08T10:25:59.123461 #8760] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T10:25:59.123461 #8760] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T10:25:59.123461 #8760] DEBUG -- :   SQL (0.0ms)  INSERT INTO `products` (`name`, `price`, `description`, `supplier_id`, `stock`) VALUES ('Câble Jack vers Jack', 10.0, 'Très bon produit', 91, 14000)
+D, [2018-03-08T10:25:59.123461 #8760] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories_products` (`category_id`, `product_id`) VALUES (37, 76)
+D, [2018-03-08T10:25:59.139061 #8760] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T10:25:59.154661 #8760] DEBUG -- :    (15.6ms)  BEGIN
+D, [2018-03-08T10:25:59.154661 #8760] DEBUG -- :   SQL (0.0ms)  INSERT INTO `orders` (`created_at`, `status`, `client_id`) VALUES ('2018-03-08', 1, 75)
+D, [2018-03-08T10:25:59.154661 #8760] DEBUG -- :   SQL (0.0ms)  INSERT INTO `order_items` (`quantity`, `item_price`, `order_id`, `product_id`) VALUES (5, 2684.25, 34, 75)
+D, [2018-03-08T10:25:59.154661 #8760] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T10:25:59.154661 #8760] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T10:25:59.154661 #8760] DEBUG -- :   SQL (0.0ms)  INSERT INTO `orders` (`created_at`, `status`, `client_id`) VALUES ('2018-03-08', 1, 76)
+D, [2018-03-08T10:25:59.154661 #8760] DEBUG -- :   SQL (0.0ms)  INSERT INTO `order_items` (`quantity`, `item_price`, `order_id`, `product_id`) VALUES (150, 10.0, 35, 76)
+D, [2018-03-08T10:25:59.154661 #8760] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T10:25:59.170261 #8760] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T10:25:59.170261 #8760] DEBUG -- :   SQL (0.0ms)  INSERT INTO `comments` (`content`, `client_id`, `commentable_type`, `commentable_id`) VALUES ('Super produit', 76, 'Supplier', 93)
+D, [2018-03-08T10:25:59.170261 #8760] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T10:25:59.170261 #8760] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T10:25:59.170261 #8760] DEBUG -- :   SQL (0.0ms)  INSERT INTO `comments` (`content`, `client_id`, `commentable_type`, `commentable_id`) VALUES ('Yes, merci', 74, 'Product', 75)
+D, [2018-03-08T10:25:59.185861 #8760] DEBUG -- :    (15.6ms)  COMMIT
+D, [2018-03-08T10:30:15.607607 #8624] DEBUG -- :    (0.0ms)  SET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483
+D, [2018-03-08T10:30:15.623207 #8624] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T10:30:15.623207 #8624] DEBUG -- :   SQL (0.0ms)  INSERT INTO `clients` (`firstname`, `lastname`, `type`) VALUES ('Bernard', 'Margouille', 'Particular')
+D, [2018-03-08T10:30:15.623207 #8624] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T10:30:15.623207 #8624] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T10:30:15.623207 #8624] DEBUG -- :   SQL (0.0ms)  INSERT INTO `clients` (`firstname`, `lastname`, `type`) VALUES ('Marcel', 'Liota', 'Particular')
+D, [2018-03-08T10:30:15.638807 #8624] DEBUG -- :    (15.6ms)  COMMIT
+D, [2018-03-08T10:30:15.638807 #8624] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T10:30:15.638807 #8624] DEBUG -- :   SQL (0.0ms)  INSERT INTO `clients` (`firstname`, `lastname`, `type`) VALUES ('Fabien', 'Carlotta', 'Particular')
+D, [2018-03-08T10:30:15.638807 #8624] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T10:30:15.638807 #8624] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T10:30:15.638807 #8624] DEBUG -- :   SQL (0.0ms)  INSERT INTO `clients` (`firstname`, `lastname`, `type`) VALUES ('Sullyvan', 'Butoxx', 'Company')
+D, [2018-03-08T10:30:15.638807 #8624] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T10:30:15.654407 #8624] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T10:30:15.654407 #8624] DEBUG -- :   SQL (0.0ms)  INSERT INTO `suppliers` (`name`) VALUES ('Digitec')
+D, [2018-03-08T10:30:15.654407 #8624] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T10:30:15.654407 #8624] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T10:30:15.654407 #8624] DEBUG -- :   SQL (0.0ms)  INSERT INTO `suppliers` (`name`) VALUES ('Microspot')
+D, [2018-03-08T10:30:15.654407 #8624] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T10:30:15.654407 #8624] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T10:30:15.654407 #8624] DEBUG -- :   SQL (0.0ms)  INSERT INTO `suppliers` (`name`) VALUES ('Galaxus')
+D, [2018-03-08T10:30:15.670007 #8624] DEBUG -- :    (15.6ms)  COMMIT
+D, [2018-03-08T10:30:15.670007 #8624] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T10:30:15.670007 #8624] DEBUG -- :   SQL (0.0ms)  INSERT INTO `suppliers` (`name`) VALUES ('Steg')
+D, [2018-03-08T10:30:15.670007 #8624] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T10:30:15.670007 #8624] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T10:30:15.670007 #8624] DEBUG -- :   SQL (0.0ms)  INSERT INTO `suppliers` (`name`) VALUES ('Ebay')
+D, [2018-03-08T10:30:15.670007 #8624] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T10:30:15.670007 #8624] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T10:30:15.685607 #8624] DEBUG -- :   SQL (15.6ms)  INSERT INTO `categories` (`name`, `description`) VALUES ('Audio', 'Pour les pros et les amateurs')
+D, [2018-03-08T10:30:15.685607 #8624] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T10:30:15.685607 #8624] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T10:30:15.685607 #8624] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories` (`name`, `description`) VALUES ('Video', 'Pour les pros et les amateurs')
+D, [2018-03-08T10:30:15.685607 #8624] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T10:30:15.732407 #8624] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T10:30:15.732407 #8624] DEBUG -- :   SQL (0.0ms)  INSERT INTO `products` (`name`, `price`, `description`, `supplier_id`, `stock`) VALUES ('Casque sans fil Sony', 125.0, 'Très bon produit', 99, 1548)
+D, [2018-03-08T10:30:15.732407 #8624] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories_products` (`category_id`, `product_id`) VALUES (39, 77)
+D, [2018-03-08T10:30:15.732407 #8624] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories_products` (`category_id`, `product_id`) VALUES (40, 77)
+D, [2018-03-08T10:30:15.732407 #8624] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T10:30:15.748007 #8624] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T10:30:15.748007 #8624] DEBUG -- :   SQL (0.0ms)  INSERT INTO `products` (`name`, `price`, `description`, `supplier_id`, `stock`) VALUES ('Câble HDMI 12m', 1500.0, 'Très bon produit', 97, 5)
+D, [2018-03-08T10:30:15.748007 #8624] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories_products` (`category_id`, `product_id`) VALUES (40, 78)
+D, [2018-03-08T10:30:15.748007 #8624] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T10:30:15.748007 #8624] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T10:30:15.748007 #8624] DEBUG -- :   SQL (0.0ms)  INSERT INTO `products` (`name`, `price`, `description`, `supplier_id`, `stock`) VALUES ('Câble VGA 156m', 2684.25, 'Très bon produit', 96, 9)
+D, [2018-03-08T10:30:15.748007 #8624] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories_products` (`category_id`, `product_id`) VALUES (40, 79)
+D, [2018-03-08T10:30:15.763607 #8624] DEBUG -- :    (15.6ms)  COMMIT
+D, [2018-03-08T10:30:15.763607 #8624] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T10:30:15.763607 #8624] DEBUG -- :   SQL (0.0ms)  INSERT INTO `products` (`name`, `price`, `description`, `supplier_id`, `stock`) VALUES ('Câble Jack vers Jack', 10.0, 'Très bon produit', 96, 14000)
+D, [2018-03-08T10:30:15.763607 #8624] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories_products` (`category_id`, `product_id`) VALUES (39, 80)
+D, [2018-03-08T10:30:15.763607 #8624] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T10:30:15.779207 #8624] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T10:30:15.779207 #8624] DEBUG -- :   SQL (0.0ms)  INSERT INTO `orders` (`created_at`, `status`, `client_id`) VALUES ('2018-03-08', 1, 79)
+D, [2018-03-08T10:30:15.779207 #8624] DEBUG -- :   SQL (0.0ms)  INSERT INTO `order_items` (`quantity`, `item_price`, `order_id`, `product_id`) VALUES (5, 2684.25, 36, 79)
+D, [2018-03-08T10:30:15.779207 #8624] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T10:30:15.794807 #8624] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T10:30:15.794807 #8624] DEBUG -- :   SQL (0.0ms)  INSERT INTO `orders` (`created_at`, `status`, `client_id`) VALUES ('2018-03-08', 1, 80)
+D, [2018-03-08T10:30:15.794807 #8624] DEBUG -- :   SQL (0.0ms)  INSERT INTO `order_items` (`quantity`, `item_price`, `order_id`, `product_id`) VALUES (150, 10.0, 37, 80)
+D, [2018-03-08T10:30:15.794807 #8624] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T10:30:15.810407 #8624] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T10:30:15.810407 #8624] DEBUG -- :   SQL (0.0ms)  INSERT INTO `comments` (`content`, `client_id`, `commentable_type`, `commentable_id`) VALUES ('Super produit', 80, 'Supplier', 98)
+D, [2018-03-08T10:30:15.810407 #8624] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T10:30:15.810407 #8624] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T10:30:15.826007 #8624] DEBUG -- :   SQL (0.0ms)  INSERT INTO `comments` (`content`, `client_id`, `commentable_type`, `commentable_id`) VALUES ('Yes, merci', 78, 'Product', 79)
+D, [2018-03-08T10:30:15.826007 #8624] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T10:30:43.868607 #6868] DEBUG -- :    (0.0ms)  SET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483
+D, [2018-03-08T10:30:43.868607 #6868] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T10:30:43.868607 #6868] DEBUG -- :   SQL (0.0ms)  INSERT INTO `clients` (`firstname`, `lastname`, `type`) VALUES ('Bernard', 'Margouille', 'Particular')
+D, [2018-03-08T10:30:43.884207 #6868] DEBUG -- :    (15.6ms)  COMMIT
+D, [2018-03-08T10:30:43.884207 #6868] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T10:30:43.884207 #6868] DEBUG -- :   SQL (0.0ms)  INSERT INTO `clients` (`firstname`, `lastname`, `type`) VALUES ('Marcel', 'Liota', 'Particular')
+D, [2018-03-08T10:30:43.884207 #6868] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T10:30:43.884207 #6868] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T10:30:43.884207 #6868] DEBUG -- :   SQL (0.0ms)  INSERT INTO `clients` (`firstname`, `lastname`, `type`) VALUES ('Fabien', 'Carlotta', 'Particular')
+D, [2018-03-08T10:30:43.884207 #6868] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T10:30:43.899807 #6868] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T10:30:43.899807 #6868] DEBUG -- :   SQL (0.0ms)  INSERT INTO `clients` (`firstname`, `lastname`, `type`) VALUES ('Sullyvan', 'Butoxx', 'Company')
+D, [2018-03-08T10:30:43.899807 #6868] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T10:30:43.899807 #6868] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T10:30:43.899807 #6868] DEBUG -- :   SQL (0.0ms)  INSERT INTO `suppliers` (`name`) VALUES ('Digitec')
+D, [2018-03-08T10:30:43.899807 #6868] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T10:30:43.899807 #6868] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T10:30:43.899807 #6868] DEBUG -- :   SQL (0.0ms)  INSERT INTO `suppliers` (`name`) VALUES ('Microspot')
+D, [2018-03-08T10:30:43.915407 #6868] DEBUG -- :    (15.6ms)  COMMIT
+D, [2018-03-08T10:30:43.915407 #6868] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T10:30:43.915407 #6868] DEBUG -- :   SQL (0.0ms)  INSERT INTO `suppliers` (`name`) VALUES ('Galaxus')
+D, [2018-03-08T10:30:43.915407 #6868] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T10:30:43.915407 #6868] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T10:30:43.915407 #6868] DEBUG -- :   SQL (0.0ms)  INSERT INTO `suppliers` (`name`) VALUES ('Steg')
+D, [2018-03-08T10:30:43.915407 #6868] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T10:30:43.915407 #6868] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T10:30:43.915407 #6868] DEBUG -- :   SQL (0.0ms)  INSERT INTO `suppliers` (`name`) VALUES ('Ebay')
+D, [2018-03-08T10:30:43.931007 #6868] DEBUG -- :    (15.6ms)  COMMIT
+D, [2018-03-08T10:30:43.931007 #6868] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T10:30:43.931007 #6868] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories` (`name`, `description`) VALUES ('Audio', 'Pour les pros et les amateurs')
+D, [2018-03-08T10:30:43.931007 #6868] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T10:30:43.931007 #6868] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T10:30:43.931007 #6868] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories` (`name`, `description`) VALUES ('Video', 'Pour les pros et les amateurs')
+D, [2018-03-08T10:30:43.946607 #6868] DEBUG -- :    (15.6ms)  COMMIT
+D, [2018-03-08T10:30:43.977807 #6868] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T10:30:43.977807 #6868] DEBUG -- :   SQL (0.0ms)  INSERT INTO `products` (`name`, `price`, `description`, `supplier_id`, `stock`) VALUES ('Casque sans fil Sony', 125.0, 'Très bon produit', 104, 1548)
+D, [2018-03-08T10:30:43.993407 #6868] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories_products` (`category_id`, `product_id`) VALUES (41, 81)
+D, [2018-03-08T10:30:43.993407 #6868] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories_products` (`category_id`, `product_id`) VALUES (42, 81)
+D, [2018-03-08T10:30:43.993407 #6868] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T10:30:43.993407 #6868] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T10:30:43.993407 #6868] DEBUG -- :   SQL (0.0ms)  INSERT INTO `products` (`name`, `price`, `description`, `supplier_id`, `stock`) VALUES ('Câble HDMI 12m', 1500.0, 'Très bon produit', 102, 5)
+D, [2018-03-08T10:30:43.993407 #6868] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories_products` (`category_id`, `product_id`) VALUES (42, 82)
+D, [2018-03-08T10:30:43.993407 #6868] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T10:30:44.009007 #6868] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T10:30:44.009007 #6868] DEBUG -- :   SQL (0.0ms)  INSERT INTO `products` (`name`, `price`, `description`, `supplier_id`, `stock`) VALUES ('Câble VGA 156m', 2684.25, 'Très bon produit', 101, 9)
+D, [2018-03-08T10:30:44.009007 #6868] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories_products` (`category_id`, `product_id`) VALUES (42, 83)
+D, [2018-03-08T10:30:44.009007 #6868] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T10:30:44.009007 #6868] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T10:30:44.009007 #6868] DEBUG -- :   SQL (0.0ms)  INSERT INTO `products` (`name`, `price`, `description`, `supplier_id`, `stock`) VALUES ('Câble Jack vers Jack', 10.0, 'Très bon produit', 101, 14000)
+D, [2018-03-08T10:30:44.009007 #6868] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories_products` (`category_id`, `product_id`) VALUES (41, 84)
+D, [2018-03-08T10:30:44.024607 #6868] DEBUG -- :    (15.6ms)  COMMIT
+D, [2018-03-08T10:30:44.024607 #6868] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T10:30:44.040207 #6868] DEBUG -- :   SQL (0.0ms)  INSERT INTO `orders` (`created_at`, `status`, `client_id`) VALUES ('2018-03-08', 1, 83)
+D, [2018-03-08T10:30:44.040207 #6868] DEBUG -- :   SQL (0.0ms)  INSERT INTO `order_items` (`quantity`, `item_price`, `order_id`, `product_id`) VALUES (5, 2684.25, 38, 83)
+D, [2018-03-08T10:30:44.040207 #6868] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T10:30:44.040207 #6868] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T10:30:44.040207 #6868] DEBUG -- :   SQL (0.0ms)  INSERT INTO `orders` (`created_at`, `status`, `client_id`) VALUES ('2018-03-08', 1, 84)
+D, [2018-03-08T10:30:44.040207 #6868] DEBUG -- :   SQL (0.0ms)  INSERT INTO `order_items` (`quantity`, `item_price`, `order_id`, `product_id`) VALUES (150, 10.0, 39, 84)
+D, [2018-03-08T10:30:44.040207 #6868] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T10:30:44.055807 #6868] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T10:30:44.055807 #6868] DEBUG -- :   SQL (0.0ms)  INSERT INTO `comments` (`content`, `client_id`, `commentable_type`, `commentable_id`) VALUES ('Super produit', 84, 'Supplier', 103)
+D, [2018-03-08T10:30:44.071407 #6868] DEBUG -- :    (15.6ms)  COMMIT
+D, [2018-03-08T10:30:44.071407 #6868] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T10:30:44.071407 #6868] DEBUG -- :   SQL (0.0ms)  INSERT INTO `comments` (`content`, `client_id`, `commentable_type`, `commentable_id`) VALUES ('Yes, merci', 82, 'Product', 83)
+D, [2018-03-08T10:30:44.071407 #6868] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T10:30:44.071407 #6868] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T10:30:44.087007 #6868] DEBUG -- :   Product Load (0.0ms)  SELECT `products`.* FROM `products` INNER JOIN `order_items` ON `products`.`id` = `order_items`.`product_id` WHERE `order_items`.`order_id` = 39
+D, [2018-03-08T10:30:44.087007 #6868] DEBUG -- :   SQL (0.0ms)  UPDATE `orders` SET `shipped_at` = '2018-03-08', `status` = 2 WHERE `orders`.`id` = 39
+D, [2018-03-08T10:30:44.087007 #6868] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T10:31:45.175407 #6484] DEBUG -- :    (0.0ms)  SET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483
+D, [2018-03-08T10:31:45.191007 #6484] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T10:31:45.191007 #6484] DEBUG -- :   SQL (0.0ms)  INSERT INTO `clients` (`firstname`, `lastname`, `type`) VALUES ('Bernard', 'Margouille', 'Particular')
+D, [2018-03-08T10:31:45.191007 #6484] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T10:31:45.191007 #6484] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T10:31:45.191007 #6484] DEBUG -- :   SQL (0.0ms)  INSERT INTO `clients` (`firstname`, `lastname`, `type`) VALUES ('Marcel', 'Liota', 'Particular')
+D, [2018-03-08T10:31:45.191007 #6484] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T10:31:45.191007 #6484] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T10:31:45.191007 #6484] DEBUG -- :   SQL (0.0ms)  INSERT INTO `clients` (`firstname`, `lastname`, `type`) VALUES ('Fabien', 'Carlotta', 'Particular')
+D, [2018-03-08T10:31:45.191007 #6484] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T10:31:45.206607 #6484] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T10:31:45.206607 #6484] DEBUG -- :   SQL (0.0ms)  INSERT INTO `clients` (`firstname`, `lastname`, `type`) VALUES ('Sullyvan', 'Butoxx', 'Company')
+D, [2018-03-08T10:31:45.206607 #6484] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T10:31:45.206607 #6484] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T10:31:45.206607 #6484] DEBUG -- :   SQL (0.0ms)  INSERT INTO `suppliers` (`name`) VALUES ('Digitec')
+D, [2018-03-08T10:31:45.206607 #6484] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T10:31:45.206607 #6484] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T10:31:45.206607 #6484] DEBUG -- :   SQL (0.0ms)  INSERT INTO `suppliers` (`name`) VALUES ('Microspot')
+D, [2018-03-08T10:31:45.222207 #6484] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T10:31:45.222207 #6484] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T10:31:45.222207 #6484] DEBUG -- :   SQL (0.0ms)  INSERT INTO `suppliers` (`name`) VALUES ('Galaxus')
+D, [2018-03-08T10:31:45.222207 #6484] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T10:31:45.222207 #6484] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T10:31:45.222207 #6484] DEBUG -- :   SQL (0.0ms)  INSERT INTO `suppliers` (`name`) VALUES ('Steg')
+D, [2018-03-08T10:31:45.222207 #6484] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T10:31:45.222207 #6484] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T10:31:45.222207 #6484] DEBUG -- :   SQL (0.0ms)  INSERT INTO `suppliers` (`name`) VALUES ('Ebay')
+D, [2018-03-08T10:31:45.222207 #6484] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T10:31:45.237807 #6484] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T10:31:45.237807 #6484] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories` (`name`, `description`) VALUES ('Audio', 'Pour les pros et les amateurs')
+D, [2018-03-08T10:31:45.237807 #6484] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T10:31:45.237807 #6484] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T10:31:45.237807 #6484] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories` (`name`, `description`) VALUES ('Video', 'Pour les pros et les amateurs')
+D, [2018-03-08T10:31:45.237807 #6484] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T10:31:45.284607 #6484] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T10:31:45.284607 #6484] DEBUG -- :   SQL (0.0ms)  INSERT INTO `products` (`name`, `price`, `description`, `supplier_id`, `stock`) VALUES ('Casque sans fil Sony', 125.0, 'Très bon produit', 109, 1548)
+D, [2018-03-08T10:31:45.284607 #6484] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories_products` (`category_id`, `product_id`) VALUES (43, 85)
+D, [2018-03-08T10:31:45.284607 #6484] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories_products` (`category_id`, `product_id`) VALUES (44, 85)
+D, [2018-03-08T10:31:45.284607 #6484] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T10:31:45.284607 #6484] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T10:31:45.300207 #6484] DEBUG -- :   SQL (0.0ms)  INSERT INTO `products` (`name`, `price`, `description`, `supplier_id`, `stock`) VALUES ('Câble HDMI 12m', 1500.0, 'Très bon produit', 107, 5)
+D, [2018-03-08T10:31:45.300207 #6484] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories_products` (`category_id`, `product_id`) VALUES (44, 86)
+D, [2018-03-08T10:31:45.300207 #6484] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T10:31:45.300207 #6484] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T10:31:45.300207 #6484] DEBUG -- :   SQL (0.0ms)  INSERT INTO `products` (`name`, `price`, `description`, `supplier_id`, `stock`) VALUES ('Câble VGA 156m', 2684.25, 'Très bon produit', 106, 9)
+D, [2018-03-08T10:31:45.300207 #6484] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories_products` (`category_id`, `product_id`) VALUES (44, 87)
+D, [2018-03-08T10:31:45.300207 #6484] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T10:31:45.315807 #6484] DEBUG -- :    (15.6ms)  BEGIN
+D, [2018-03-08T10:31:45.315807 #6484] DEBUG -- :   SQL (0.0ms)  INSERT INTO `products` (`name`, `price`, `description`, `supplier_id`, `stock`) VALUES ('Câble Jack vers Jack', 10.0, 'Très bon produit', 106, 14000)
+D, [2018-03-08T10:31:45.315807 #6484] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories_products` (`category_id`, `product_id`) VALUES (43, 88)
+D, [2018-03-08T10:31:45.315807 #6484] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T10:31:45.331407 #6484] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T10:31:45.331407 #6484] DEBUG -- :   SQL (0.0ms)  INSERT INTO `orders` (`created_at`, `status`, `client_id`) VALUES ('2018-03-08', 1, 87)
+D, [2018-03-08T10:31:45.331407 #6484] DEBUG -- :   SQL (0.0ms)  INSERT INTO `order_items` (`quantity`, `item_price`, `order_id`, `product_id`) VALUES (5, 2684.25, 40, 87)
+D, [2018-03-08T10:31:45.331407 #6484] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T10:31:45.331407 #6484] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T10:31:45.331407 #6484] DEBUG -- :   SQL (0.0ms)  INSERT INTO `orders` (`created_at`, `status`, `client_id`) VALUES ('2018-03-08', 1, 88)
+D, [2018-03-08T10:31:45.331407 #6484] DEBUG -- :   SQL (0.0ms)  INSERT INTO `order_items` (`quantity`, `item_price`, `order_id`, `product_id`) VALUES (150, 10.0, 41, 88)
+D, [2018-03-08T10:31:45.347007 #6484] DEBUG -- :    (15.6ms)  COMMIT
+D, [2018-03-08T10:31:45.347007 #6484] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T10:31:45.347007 #6484] DEBUG -- :   SQL (0.0ms)  INSERT INTO `comments` (`content`, `client_id`, `commentable_type`, `commentable_id`) VALUES ('Super produit', 88, 'Supplier', 108)
+D, [2018-03-08T10:31:45.362607 #6484] DEBUG -- :    (15.6ms)  COMMIT
+D, [2018-03-08T10:31:45.362607 #6484] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T10:31:45.362607 #6484] DEBUG -- :   SQL (0.0ms)  INSERT INTO `comments` (`content`, `client_id`, `commentable_type`, `commentable_id`) VALUES ('Yes, merci', 86, 'Product', 87)
+D, [2018-03-08T10:31:45.362607 #6484] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T10:31:45.362607 #6484] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T10:31:45.378207 #6484] DEBUG -- :   Product Load (0.0ms)  SELECT `products`.* FROM `products` INNER JOIN `order_items` ON `products`.`id` = `order_items`.`product_id` WHERE `order_items`.`order_id` = 41
+D, [2018-03-08T10:31:45.378207 #6484] DEBUG -- :   SQL (0.0ms)  UPDATE `orders` SET `shipped_at` = '2018-03-08', `status` = 2 WHERE `orders`.`id` = 41
+D, [2018-03-08T10:31:45.378207 #6484] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T10:33:41.554407 #8564] DEBUG -- :    (0.0ms)  SET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483
+D, [2018-03-08T10:33:41.554407 #8564] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T10:33:41.554407 #8564] DEBUG -- :   SQL (0.0ms)  INSERT INTO `clients` (`firstname`, `lastname`, `type`) VALUES ('Bernard', 'Margouille', 'Particular')
+D, [2018-03-08T10:33:41.554407 #8564] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T10:33:41.554407 #8564] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T10:33:41.570007 #8564] DEBUG -- :   SQL (0.0ms)  INSERT INTO `clients` (`firstname`, `lastname`, `type`) VALUES ('Marcel', 'Liota', 'Particular')
+D, [2018-03-08T10:33:41.570007 #8564] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T10:33:41.570007 #8564] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T10:33:41.570007 #8564] DEBUG -- :   SQL (0.0ms)  INSERT INTO `clients` (`firstname`, `lastname`, `type`) VALUES ('Fabien', 'Carlotta', 'Particular')
+D, [2018-03-08T10:33:41.570007 #8564] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T10:33:41.570007 #8564] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T10:33:41.570007 #8564] DEBUG -- :   SQL (0.0ms)  INSERT INTO `clients` (`firstname`, `lastname`, `type`) VALUES ('Sullyvan', 'Butoxx', 'Company')
+D, [2018-03-08T10:33:41.570007 #8564] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T10:33:41.570007 #8564] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T10:33:41.585607 #8564] DEBUG -- :   SQL (0.0ms)  INSERT INTO `suppliers` (`name`) VALUES ('Digitec')
+D, [2018-03-08T10:33:41.585607 #8564] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T10:33:41.585607 #8564] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T10:33:41.585607 #8564] DEBUG -- :   SQL (0.0ms)  INSERT INTO `suppliers` (`name`) VALUES ('Microspot')
+D, [2018-03-08T10:33:41.585607 #8564] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T10:33:41.585607 #8564] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T10:33:41.585607 #8564] DEBUG -- :   SQL (0.0ms)  INSERT INTO `suppliers` (`name`) VALUES ('Galaxus')
+D, [2018-03-08T10:33:41.585607 #8564] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T10:33:41.585607 #8564] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T10:33:41.585607 #8564] DEBUG -- :   SQL (0.0ms)  INSERT INTO `suppliers` (`name`) VALUES ('Steg')
+D, [2018-03-08T10:33:41.601207 #8564] DEBUG -- :    (15.6ms)  COMMIT
+D, [2018-03-08T10:33:41.601207 #8564] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T10:33:41.601207 #8564] DEBUG -- :   SQL (0.0ms)  INSERT INTO `suppliers` (`name`) VALUES ('Ebay')
+D, [2018-03-08T10:33:41.601207 #8564] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T10:33:41.601207 #8564] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T10:33:41.601207 #8564] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories` (`name`, `description`) VALUES ('Audio', 'Pour les pros et les amateurs')
+D, [2018-03-08T10:33:41.601207 #8564] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T10:33:41.616807 #8564] DEBUG -- :    (15.6ms)  BEGIN
+D, [2018-03-08T10:33:41.616807 #8564] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories` (`name`, `description`) VALUES ('Video', 'Pour les pros et les amateurs')
+D, [2018-03-08T10:33:41.616807 #8564] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T10:33:41.648007 #8564] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T10:33:41.648007 #8564] DEBUG -- :   SQL (0.0ms)  INSERT INTO `products` (`name`, `price`, `description`, `supplier_id`, `stock`) VALUES ('Casque sans fil Sony', 125.0, 'Très bon produit', 114, 1548)
+D, [2018-03-08T10:33:41.663607 #8564] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories_products` (`category_id`, `product_id`) VALUES (45, 89)
+D, [2018-03-08T10:33:41.663607 #8564] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories_products` (`category_id`, `product_id`) VALUES (46, 89)
+D, [2018-03-08T10:33:41.663607 #8564] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T10:33:41.663607 #8564] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T10:33:41.663607 #8564] DEBUG -- :   SQL (0.0ms)  INSERT INTO `products` (`name`, `price`, `description`, `supplier_id`, `stock`) VALUES ('Câble HDMI 12m', 1500.0, 'Très bon produit', 112, 5)
+D, [2018-03-08T10:33:41.663607 #8564] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories_products` (`category_id`, `product_id`) VALUES (46, 90)
+D, [2018-03-08T10:33:41.663607 #8564] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T10:33:41.663607 #8564] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T10:33:41.679207 #8564] DEBUG -- :   SQL (0.0ms)  INSERT INTO `products` (`name`, `price`, `description`, `supplier_id`, `stock`) VALUES ('Câble VGA 156m', 2684.25, 'Très bon produit', 111, 9)
+D, [2018-03-08T10:33:41.679207 #8564] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories_products` (`category_id`, `product_id`) VALUES (46, 91)
+D, [2018-03-08T10:33:41.679207 #8564] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T10:33:41.679207 #8564] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T10:33:41.679207 #8564] DEBUG -- :   SQL (0.0ms)  INSERT INTO `products` (`name`, `price`, `description`, `supplier_id`, `stock`) VALUES ('Câble Jack vers Jack', 10.0, 'Très bon produit', 111, 14000)
+D, [2018-03-08T10:33:41.679207 #8564] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories_products` (`category_id`, `product_id`) VALUES (45, 92)
+D, [2018-03-08T10:33:41.694807 #8564] DEBUG -- :    (15.6ms)  COMMIT
+D, [2018-03-08T10:33:41.694807 #8564] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T10:33:41.710407 #8564] DEBUG -- :   SQL (0.0ms)  INSERT INTO `orders` (`created_at`, `status`, `client_id`) VALUES ('2018-03-08', 1, 91)
+D, [2018-03-08T10:33:41.710407 #8564] DEBUG -- :   SQL (0.0ms)  INSERT INTO `order_items` (`quantity`, `item_price`, `order_id`, `product_id`) VALUES (5, 2684.25, 42, 91)
+D, [2018-03-08T10:33:41.710407 #8564] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T10:33:41.710407 #8564] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T10:33:41.710407 #8564] DEBUG -- :   SQL (0.0ms)  INSERT INTO `orders` (`created_at`, `status`, `client_id`) VALUES ('2018-03-08', 1, 92)
+D, [2018-03-08T10:33:41.726007 #8564] DEBUG -- :   SQL (15.6ms)  INSERT INTO `order_items` (`quantity`, `item_price`, `order_id`, `product_id`) VALUES (150, 10.0, 43, 92)
+D, [2018-03-08T10:33:41.726007 #8564] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T10:33:41.726007 #8564] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T10:33:41.726007 #8564] DEBUG -- :   SQL (0.0ms)  INSERT INTO `comments` (`content`, `client_id`, `commentable_type`, `commentable_id`) VALUES ('Super produit', 92, 'Supplier', 113)
+D, [2018-03-08T10:33:41.741607 #8564] DEBUG -- :    (15.6ms)  COMMIT
+D, [2018-03-08T10:33:41.741607 #8564] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T10:33:41.741607 #8564] DEBUG -- :   SQL (0.0ms)  INSERT INTO `comments` (`content`, `client_id`, `commentable_type`, `commentable_id`) VALUES ('Yes, merci', 90, 'Product', 91)
+D, [2018-03-08T10:33:41.741607 #8564] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T10:33:41.741607 #8564] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T10:33:41.757207 #8564] DEBUG -- :   Product Load (0.0ms)  SELECT `products`.* FROM `products` INNER JOIN `order_items` ON `products`.`id` = `order_items`.`product_id` WHERE `order_items`.`order_id` = 43
+D, [2018-03-08T10:33:41.757207 #8564] DEBUG -- :    (0.0ms)  ROLLBACK
+D, [2018-03-08T10:34:40.761207 #7116] DEBUG -- :    (0.0ms)  SET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483
+D, [2018-03-08T10:34:40.761207 #7116] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T10:34:40.761207 #7116] DEBUG -- :   SQL (0.0ms)  INSERT INTO `clients` (`firstname`, `lastname`, `type`) VALUES ('Bernard', 'Margouille', 'Particular')
+D, [2018-03-08T10:34:40.761207 #7116] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T10:34:40.776807 #7116] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T10:34:40.776807 #7116] DEBUG -- :   SQL (0.0ms)  INSERT INTO `clients` (`firstname`, `lastname`, `type`) VALUES ('Marcel', 'Liota', 'Particular')
+D, [2018-03-08T10:34:40.776807 #7116] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T10:34:40.776807 #7116] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T10:34:40.776807 #7116] DEBUG -- :   SQL (0.0ms)  INSERT INTO `clients` (`firstname`, `lastname`, `type`) VALUES ('Fabien', 'Carlotta', 'Particular')
+D, [2018-03-08T10:34:40.776807 #7116] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T10:34:40.776807 #7116] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T10:34:40.776807 #7116] DEBUG -- :   SQL (0.0ms)  INSERT INTO `clients` (`firstname`, `lastname`, `type`) VALUES ('Sullyvan', 'Butoxx', 'Company')
+D, [2018-03-08T10:34:40.792407 #7116] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T10:34:40.792407 #7116] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T10:34:40.792407 #7116] DEBUG -- :   SQL (0.0ms)  INSERT INTO `suppliers` (`name`) VALUES ('Digitec')
+D, [2018-03-08T10:34:40.792407 #7116] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T10:34:40.792407 #7116] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T10:34:40.792407 #7116] DEBUG -- :   SQL (0.0ms)  INSERT INTO `suppliers` (`name`) VALUES ('Microspot')
+D, [2018-03-08T10:34:40.808007 #7116] DEBUG -- :    (15.6ms)  COMMIT
+D, [2018-03-08T10:34:40.808007 #7116] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T10:34:40.808007 #7116] DEBUG -- :   SQL (0.0ms)  INSERT INTO `suppliers` (`name`) VALUES ('Galaxus')
+D, [2018-03-08T10:34:40.808007 #7116] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T10:34:40.808007 #7116] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T10:34:40.808007 #7116] DEBUG -- :   SQL (0.0ms)  INSERT INTO `suppliers` (`name`) VALUES ('Steg')
+D, [2018-03-08T10:34:40.808007 #7116] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T10:34:40.808007 #7116] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T10:34:40.823607 #7116] DEBUG -- :   SQL (0.0ms)  INSERT INTO `suppliers` (`name`) VALUES ('Ebay')
+D, [2018-03-08T10:34:40.823607 #7116] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T10:34:40.823607 #7116] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T10:34:40.823607 #7116] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories` (`name`, `description`) VALUES ('Audio', 'Pour les pros et les amateurs')
+D, [2018-03-08T10:34:40.839207 #7116] DEBUG -- :    (15.6ms)  COMMIT
+D, [2018-03-08T10:34:40.854807 #7116] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T10:34:40.854807 #7116] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories` (`name`, `description`) VALUES ('Video', 'Pour les pros et les amateurs')
+D, [2018-03-08T10:34:40.854807 #7116] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T10:34:40.901607 #7116] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T10:34:40.901607 #7116] DEBUG -- :   SQL (0.0ms)  INSERT INTO `products` (`name`, `price`, `description`, `supplier_id`, `stock`) VALUES ('Casque sans fil Sony', 125.0, 'Très bon produit', 119, 1548)
+D, [2018-03-08T10:34:40.901607 #7116] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories_products` (`category_id`, `product_id`) VALUES (47, 93)
+D, [2018-03-08T10:34:40.901607 #7116] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories_products` (`category_id`, `product_id`) VALUES (48, 93)
+D, [2018-03-08T10:34:40.901607 #7116] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T10:34:40.917207 #7116] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T10:34:40.917207 #7116] DEBUG -- :   SQL (0.0ms)  INSERT INTO `products` (`name`, `price`, `description`, `supplier_id`, `stock`) VALUES ('Câble HDMI 12m', 1500.0, 'Très bon produit', 117, 5)
+D, [2018-03-08T10:34:40.917207 #7116] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories_products` (`category_id`, `product_id`) VALUES (48, 94)
+D, [2018-03-08T10:34:40.917207 #7116] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T10:34:40.917207 #7116] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T10:34:40.932807 #7116] DEBUG -- :   SQL (15.6ms)  INSERT INTO `products` (`name`, `price`, `description`, `supplier_id`, `stock`) VALUES ('Câble VGA 156m', 2684.25, 'Très bon produit', 116, 9)
+D, [2018-03-08T10:34:40.948407 #7116] DEBUG -- :   SQL (15.6ms)  INSERT INTO `categories_products` (`category_id`, `product_id`) VALUES (48, 95)
+D, [2018-03-08T10:34:40.948407 #7116] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T10:34:40.948407 #7116] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T10:34:40.948407 #7116] DEBUG -- :   SQL (0.0ms)  INSERT INTO `products` (`name`, `price`, `description`, `supplier_id`, `stock`) VALUES ('Câble Jack vers Jack', 10.0, 'Très bon produit', 116, 14000)
+D, [2018-03-08T10:34:40.948407 #7116] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories_products` (`category_id`, `product_id`) VALUES (47, 96)
+D, [2018-03-08T10:34:40.948407 #7116] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T10:34:40.964007 #7116] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T10:34:40.964007 #7116] DEBUG -- :   SQL (0.0ms)  INSERT INTO `orders` (`created_at`, `status`, `client_id`) VALUES ('2018-03-08', 1, 95)
+D, [2018-03-08T10:34:40.979607 #7116] DEBUG -- :   SQL (15.6ms)  INSERT INTO `order_items` (`quantity`, `item_price`, `order_id`, `product_id`) VALUES (5, 2684.25, 44, 95)
+D, [2018-03-08T10:34:40.995207 #7116] DEBUG -- :    (15.6ms)  COMMIT
+D, [2018-03-08T10:34:40.995207 #7116] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T10:34:40.995207 #7116] DEBUG -- :   SQL (0.0ms)  INSERT INTO `orders` (`created_at`, `status`, `client_id`) VALUES ('2018-03-08', 1, 96)
+D, [2018-03-08T10:34:40.995207 #7116] DEBUG -- :   SQL (0.0ms)  INSERT INTO `order_items` (`quantity`, `item_price`, `order_id`, `product_id`) VALUES (150, 10.0, 45, 96)
+D, [2018-03-08T10:34:41.010807 #7116] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T10:34:41.010807 #7116] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T10:34:41.026407 #7116] DEBUG -- :   SQL (0.0ms)  INSERT INTO `comments` (`content`, `client_id`, `commentable_type`, `commentable_id`) VALUES ('Super produit', 96, 'Supplier', 118)
+D, [2018-03-08T10:34:41.042007 #7116] DEBUG -- :    (15.6ms)  COMMIT
+D, [2018-03-08T10:34:41.057607 #7116] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T10:34:41.057607 #7116] DEBUG -- :   SQL (0.0ms)  INSERT INTO `comments` (`content`, `client_id`, `commentable_type`, `commentable_id`) VALUES ('Yes, merci', 94, 'Product', 95)
+D, [2018-03-08T10:34:41.057607 #7116] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T10:34:41.057607 #7116] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T10:34:41.073207 #7116] DEBUG -- :   Product Load (0.0ms)  SELECT `products`.* FROM `products` INNER JOIN `order_items` ON `products`.`id` = `order_items`.`product_id` WHERE `order_items`.`order_id` = 45
+D, [2018-03-08T10:34:41.104407 #7116] DEBUG -- :    (0.0ms)  ROLLBACK
+D, [2018-03-08T10:35:14.331807 #6304] DEBUG -- :    (0.0ms)  SET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483
+D, [2018-03-08T10:35:14.331807 #6304] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T10:35:14.331807 #6304] DEBUG -- :   SQL (0.0ms)  INSERT INTO `clients` (`firstname`, `lastname`, `type`) VALUES ('Bernard', 'Margouille', 'Particular')
+D, [2018-03-08T10:35:14.331807 #6304] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T10:35:14.331807 #6304] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T10:35:14.347407 #6304] DEBUG -- :   SQL (0.0ms)  INSERT INTO `clients` (`firstname`, `lastname`, `type`) VALUES ('Marcel', 'Liota', 'Particular')
+D, [2018-03-08T10:35:14.347407 #6304] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T10:35:14.347407 #6304] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T10:35:14.347407 #6304] DEBUG -- :   SQL (0.0ms)  INSERT INTO `clients` (`firstname`, `lastname`, `type`) VALUES ('Fabien', 'Carlotta', 'Particular')
+D, [2018-03-08T10:35:14.347407 #6304] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T10:35:14.347407 #6304] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T10:35:14.347407 #6304] DEBUG -- :   SQL (0.0ms)  INSERT INTO `clients` (`firstname`, `lastname`, `type`) VALUES ('Sullyvan', 'Butoxx', 'Company')
+D, [2018-03-08T10:35:14.347407 #6304] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T10:35:14.363007 #6304] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T10:35:14.363007 #6304] DEBUG -- :   SQL (0.0ms)  INSERT INTO `suppliers` (`name`) VALUES ('Digitec')
+D, [2018-03-08T10:35:14.363007 #6304] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T10:35:14.363007 #6304] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T10:35:14.363007 #6304] DEBUG -- :   SQL (0.0ms)  INSERT INTO `suppliers` (`name`) VALUES ('Microspot')
+D, [2018-03-08T10:35:14.363007 #6304] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T10:35:14.363007 #6304] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T10:35:14.363007 #6304] DEBUG -- :   SQL (0.0ms)  INSERT INTO `suppliers` (`name`) VALUES ('Galaxus')
+D, [2018-03-08T10:35:14.363007 #6304] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T10:35:14.363007 #6304] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T10:35:14.363007 #6304] DEBUG -- :   SQL (0.0ms)  INSERT INTO `suppliers` (`name`) VALUES ('Steg')
+D, [2018-03-08T10:35:14.378607 #6304] DEBUG -- :    (15.6ms)  COMMIT
+D, [2018-03-08T10:35:14.378607 #6304] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T10:35:14.378607 #6304] DEBUG -- :   SQL (0.0ms)  INSERT INTO `suppliers` (`name`) VALUES ('Ebay')
+D, [2018-03-08T10:35:14.378607 #6304] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T10:35:14.378607 #6304] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T10:35:14.378607 #6304] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories` (`name`, `description`) VALUES ('Audio', 'Pour les pros et les amateurs')
+D, [2018-03-08T10:35:14.378607 #6304] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T10:35:14.378607 #6304] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T10:35:14.378607 #6304] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories` (`name`, `description`) VALUES ('Video', 'Pour les pros et les amateurs')
+D, [2018-03-08T10:35:14.378607 #6304] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T10:35:14.425407 #6304] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T10:35:14.425407 #6304] DEBUG -- :   SQL (0.0ms)  INSERT INTO `products` (`name`, `price`, `description`, `supplier_id`, `stock`) VALUES ('Casque sans fil Sony', 125.0, 'Très bon produit', 124, 1548)
+D, [2018-03-08T10:35:14.425407 #6304] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories_products` (`category_id`, `product_id`) VALUES (49, 97)
+D, [2018-03-08T10:35:14.441007 #6304] DEBUG -- :   SQL (15.6ms)  INSERT INTO `categories_products` (`category_id`, `product_id`) VALUES (50, 97)
+D, [2018-03-08T10:35:14.441007 #6304] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T10:35:14.441007 #6304] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T10:35:14.441007 #6304] DEBUG -- :   SQL (0.0ms)  INSERT INTO `products` (`name`, `price`, `description`, `supplier_id`, `stock`) VALUES ('Câble HDMI 12m', 1500.0, 'Très bon produit', 122, 5)
+D, [2018-03-08T10:35:14.441007 #6304] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories_products` (`category_id`, `product_id`) VALUES (50, 98)
+D, [2018-03-08T10:35:14.441007 #6304] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T10:35:14.441007 #6304] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T10:35:14.441007 #6304] DEBUG -- :   SQL (0.0ms)  INSERT INTO `products` (`name`, `price`, `description`, `supplier_id`, `stock`) VALUES ('Câble VGA 156m', 2684.25, 'Très bon produit', 121, 9)
+D, [2018-03-08T10:35:14.441007 #6304] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories_products` (`category_id`, `product_id`) VALUES (50, 99)
+D, [2018-03-08T10:35:14.441007 #6304] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T10:35:14.456607 #6304] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T10:35:14.456607 #6304] DEBUG -- :   SQL (0.0ms)  INSERT INTO `products` (`name`, `price`, `description`, `supplier_id`, `stock`) VALUES ('Câble Jack vers Jack', 10.0, 'Très bon produit', 121, 14000)
+D, [2018-03-08T10:35:14.456607 #6304] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories_products` (`category_id`, `product_id`) VALUES (49, 100)
+D, [2018-03-08T10:35:14.456607 #6304] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T10:35:14.472207 #6304] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T10:35:14.472207 #6304] DEBUG -- :   SQL (0.0ms)  INSERT INTO `orders` (`created_at`, `status`, `client_id`) VALUES ('2018-03-08', 1, 99)
+D, [2018-03-08T10:35:14.472207 #6304] DEBUG -- :   SQL (0.0ms)  INSERT INTO `order_items` (`quantity`, `item_price`, `order_id`, `product_id`) VALUES (5, 2684.25, 46, 99)
+D, [2018-03-08T10:35:14.472207 #6304] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T10:35:14.472207 #6304] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T10:35:14.472207 #6304] DEBUG -- :   SQL (0.0ms)  INSERT INTO `orders` (`created_at`, `status`, `client_id`) VALUES ('2018-03-08', 1, 100)
+D, [2018-03-08T10:35:14.472207 #6304] DEBUG -- :   SQL (0.0ms)  INSERT INTO `order_items` (`quantity`, `item_price`, `order_id`, `product_id`) VALUES (150, 10.0, 47, 100)
+D, [2018-03-08T10:35:14.487807 #6304] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T10:35:14.487807 #6304] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T10:35:14.487807 #6304] DEBUG -- :   SQL (0.0ms)  INSERT INTO `comments` (`content`, `client_id`, `commentable_type`, `commentable_id`) VALUES ('Super produit', 100, 'Supplier', 123)
+D, [2018-03-08T10:35:14.503407 #6304] DEBUG -- :    (15.6ms)  COMMIT
+D, [2018-03-08T10:35:14.503407 #6304] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T10:35:14.503407 #6304] DEBUG -- :   SQL (0.0ms)  INSERT INTO `comments` (`content`, `client_id`, `commentable_type`, `commentable_id`) VALUES ('Yes, merci', 98, 'Product', 99)
+D, [2018-03-08T10:35:14.503407 #6304] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-08T10:35:14.503407 #6304] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-08T10:35:14.503407 #6304] DEBUG -- :   OrderItem Load (0.0ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 47
+D, [2018-03-08T10:35:14.503407 #6304] DEBUG -- :   SQL (0.0ms)  UPDATE `orders` SET `shipped_at` = '2018-03-08', `status` = 2 WHERE `orders`.`id` = 47
+D, [2018-03-08T10:35:14.503407 #6304] DEBUG -- :    (0.0ms)  COMMIT

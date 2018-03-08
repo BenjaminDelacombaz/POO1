@@ -30,8 +30,8 @@ new_category2 = Category.create(name: 'Video', description: 'Pour les pros et le
 # Create products
 new_product = Product.create(name: 'Casque sans fil Sony', price: 125, description: 'Très bon produit', categories: [new_category, new_category2], supplier: new_supplier4, stock: 1548)
 new_product2 = Product.create(name: 'Câble HDMI 12m', price: 1500, description: 'Très bon produit', categories: [new_category2], supplier: new_supplier2, stock: 5)
-new_product3 = Product.create(name: 'Câble VGA 156m', price: 2684.25, description: 'Très bon produit', categories: [new_category2], supplier: new_supplier, stock: 4)
-new_product4 = Product.create(name: 'Câble Jack vers Jack', price: 10, description: 'Très bon produit', categories: [new_category], supplier: new_supplier, stock: 25)
+new_product3 = Product.create(name: 'Câble VGA 156m', price: 2684.25, description: 'Très bon produit', categories: [new_category2], supplier: new_supplier, stock: 9)
+new_product4 = Product.create(name: 'Câble Jack vers Jack', price: 10, description: 'Très bon produit', categories: [new_category], supplier: new_supplier, stock: 14000)
 
 # Create some orders
 new_order = Order.new(created_at: Date.today, shipped_at: nil, status: 1, client: new_client3)
@@ -47,3 +47,8 @@ new_order3.save
 # Create some comments
 new_comment = Comment.create(content: 'Super produit', commentable: new_supplier3, client: new_client4)
 new_comment2 = Comment.create(content: 'Yes, merci', commentable: new_product3, client: new_client2)
+
+# Mark an order as shipped
+new_order3.status = 2
+new_order3.shipped_at = Date.today
+new_order3.save

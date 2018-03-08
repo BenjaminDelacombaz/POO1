@@ -23,5 +23,4 @@ class OrderItem < ActiveRecord::Base
   protected def set_price
     self.item_price ||= product.price
   end
-  
 end
