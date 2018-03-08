@@ -8,10 +8,10 @@ require_relative 'models/order'
 require_relative 'models/order_item'
 require_relative 'models/supplier'
 require_relative 'models/comment'
-require_relative 'observers/product_stock_observer'
+# require_relative 'observers/product_stock_observer'
 
-ActiveRecord::Base.observers += [:product_stock_observer]
-ActiveRecord::Base.instantiate_observers
+# ActiveRecord::Base.observers += [:product_stock_observer]
+# ActiveRecord::Base.instantiate_observers
 
 # client = Client.last
 
