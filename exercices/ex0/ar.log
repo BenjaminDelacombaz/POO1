@@ -1,0 +1,41 @@
+# Logfile created on 2018-02-01 10:29:29 +0100 by logger.rb/61378
+D, [2018-02-01T10:29:29.126591 #7008] DEBUG -- :    (0.0ms)  SET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483
+D, [2018-02-01T10:29:29.126591 #7008] DEBUG -- :    (0.0ms)  SELECT 1
+D, [2018-02-02T10:47:18.696226 #9252] DEBUG -- :    (15.6ms)  SET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483
+D, [2018-02-02T10:47:18.696226 #9252] DEBUG -- :    (0.0ms)  SELECT 1
+D, [2018-02-02T11:33:09.553176 #8608] DEBUG -- :    (0.0ms)  SET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483
+D, [2018-02-02T11:33:09.553176 #8608] DEBUG -- :    (0.0ms)  SELECT 1
+D, [2018-02-02T11:33:22.424506 #9308] DEBUG -- :    (0.0ms)  SET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483
+D, [2018-02-02T11:33:22.424506 #9308] DEBUG -- :    (0.0ms)  SELECT 1
+D, [2018-02-02T11:37:00.791661 #9308] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-02T11:37:00.838462 #9308] DEBUG -- :   SQL (0.0ms)  INSERT INTO `cars` (`name`, `color`) VALUES ('Fiat Panda', 'Vert fonce')
+D, [2018-02-02T11:37:00.838462 #9308] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-02-02T11:42:38.920486 #9308] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-02T11:42:38.920486 #9308] DEBUG -- :   SQL (0.0ms)  INSERT INTO `cars` (`name`, `color`) VALUES ('Ferrari F12', 'Rouge')
+D, [2018-02-02T11:42:38.920486 #9308] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-02-02T11:43:02.190040 #9308] DEBUG -- :   Car Load (0.0ms)  SELECT  `cars`.* FROM `cars` LIMIT 11
+D, [2018-02-02T11:43:14.560365 #9308] DEBUG -- :   Car Load (0.0ms)  SELECT  `cars`.* FROM `cars` LIMIT 11
+D, [2018-02-02T11:43:19.583371 #9308] DEBUG -- :   Car Load (0.0ms)  SELECT  `cars`.* FROM `cars` LIMIT 11
+D, [2018-02-02T11:43:50.236192 #9308] DEBUG -- :   Car Load (0.0ms)  SELECT `cars`.* FROM `cars`
+D, [2018-02-02T11:44:26.083614 #9308] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-02T11:44:26.083614 #9308] DEBUG -- :   SQL (0.0ms)  UPDATE `cars` SET `color` = 'orange' WHERE `cars`.`id` = 2
+D, [2018-02-02T11:44:26.083614 #9308] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-02-02T11:44:54.134804 #9308] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-02T11:44:54.134804 #9308] DEBUG -- :   SQL (0.0ms)  DELETE FROM `cars` WHERE `cars`.`id` = 2
+D, [2018-02-02T11:44:54.134804 #9308] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-02-02T11:49:12.056522 #9308] DEBUG -- :   Car Load (0.0ms)  SELECT  `cars`.* FROM `cars` WHERE `cars`.`id` = 1 LIMIT 1
+D, [2018-02-02T11:50:09.666583 #3868] DEBUG -- :    (0.0ms)  SET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483
+D, [2018-02-02T11:50:09.666583 #3868] DEBUG -- :    (0.0ms)  SELECT 1
+D, [2018-02-02T11:50:18.294273 #3868] DEBUG -- :   Car Load (0.0ms)  SELECT  `cars`.* FROM `cars` WHERE `cars`.`id` = 1 LIMIT 1
+D, [2018-02-02T11:52:15.339572 #3868] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-02T11:52:15.339572 #3868] DEBUG -- :   SQL (0.0ms)  INSERT INTO `engines` (`power`, `car_id`) VALUES (150, 1)
+D, [2018-02-02T11:52:15.339572 #3868] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-02-02T11:55:15.028214 #3868] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-02T11:55:15.028214 #3868] DEBUG -- :   SQL (0.0ms)  INSERT INTO `engines` (`power`, `car_id`) VALUES (150, 856)
+D, [2018-02-02T11:55:15.028214 #3868] DEBUG -- :    (0.0ms)  ROLLBACK
+D, [2018-02-02T11:55:29.473814 #3868] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-02T11:55:29.473814 #3868] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-02-02T11:56:13.281414 #3868] DEBUG -- :   Car Load (0.0ms)  SELECT  `cars`.* FROM `cars` WHERE `cars`.`id` = 1 LIMIT 1
+D, [2018-02-02T11:56:33.764214 #3868] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-02T11:56:33.764214 #3868] DEBUG -- :   SQL (0.0ms)  UPDATE `cars` SET `color` = 'violet' WHERE `cars`.`id` = 1
+D, [2018-02-02T11:56:33.764214 #3868] DEBUG -- :    (0.0ms)  COMMIT

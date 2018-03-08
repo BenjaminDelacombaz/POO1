@@ -1,0 +1,3 @@
+class Particular < Client
+
+end
