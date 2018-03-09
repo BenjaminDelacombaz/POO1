@@ -42,3 +42,25 @@ D, [2018-03-09T11:55:45.938735 #6836] DEBUG -- :    (0.0ms)  COMMIT
 D, [2018-03-09T11:55:45.938735 #6836] DEBUG -- :    (0.0ms)  BEGIN
 D, [2018-03-09T11:55:45.938735 #6836] DEBUG -- :   SQL (0.0ms)  INSERT INTO `users` (`firstname`, `lastname`, `email`) VALUES ('Sullyvan', 'Butoxx', 'sullyvan.butoxx@reservoxx.ch')
 D, [2018-03-09T11:55:45.938735 #6836] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-09T12:06:40.208503 #7288] DEBUG -- :    (0.0ms)  SET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483
+D, [2018-03-09T12:06:40.208503 #7288] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-09T12:06:40.208503 #7288] DEBUG -- :   SQL (0.0ms)  INSERT INTO `users` (`firstname`, `lastname`, `email`) VALUES ('Bernard', 'Margouille', 'bernard.margouille@reservoxx.ch')
+D, [2018-03-09T12:06:40.208503 #7288] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-09T12:06:40.208503 #7288] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-09T12:06:40.208503 #7288] DEBUG -- :   SQL (0.0ms)  INSERT INTO `users` (`firstname`, `lastname`, `email`) VALUES ('Marcel', 'Liota', 'marcel.liota@reservoxx.ch')
+D, [2018-03-09T12:06:40.208503 #7288] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-09T12:06:40.224104 #7288] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-09T12:06:40.224104 #7288] DEBUG -- :   SQL (0.0ms)  INSERT INTO `users` (`firstname`, `lastname`, `email`) VALUES ('Fabien', 'Carlotta', 'fabien.carlotta@reservoxx.ch')
+D, [2018-03-09T12:06:40.224104 #7288] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-09T12:06:40.224104 #7288] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-09T12:06:40.224104 #7288] DEBUG -- :   SQL (0.0ms)  INSERT INTO `users` (`firstname`, `lastname`, `email`) VALUES ('Sullyvan', 'Butoxx', 'sullyvan.butoxx@reservoxx.ch')
+D, [2018-03-09T12:06:40.224104 #7288] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-09T12:06:40.224104 #7288] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-09T12:06:40.224104 #7288] DEBUG -- :   SQL (0.0ms)  INSERT INTO `groups` (`name`) VALUES ('Admin')
+D, [2018-03-09T12:06:40.224104 #7288] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-09T12:06:40.239705 #7288] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-09T12:06:40.239705 #7288] DEBUG -- :   SQL (0.0ms)  INSERT INTO `groups` (`name`) VALUES ('Reservation')
+D, [2018-03-09T12:06:40.239705 #7288] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-03-09T12:06:40.239705 #7288] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-03-09T12:06:40.239705 #7288] DEBUG -- :   SQL (0.0ms)  INSERT INTO `groups` (`name`) VALUES ('Event')
+D, [2018-03-09T12:06:40.239705 #7288] DEBUG -- :    (0.0ms)  COMMIT
