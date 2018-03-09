@@ -1,5 +1,6 @@
 *.gem
 *.rbc
+/exercices/ex3/ar.log
 /.config
 /coverage/
 /InstalledFiles
