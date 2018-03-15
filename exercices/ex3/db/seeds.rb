@@ -4,6 +4,7 @@ require_relative '../models/group'
 require_relative '../models/event'
 require_relative '../models/room'
 require_relative '../models/vehicle'
+require_relative '../models/equipment'
 
 # Create some groups
 group1 = Group.create(name: 'Admin')
@@ -34,3 +35,10 @@ vehicle2 = Vehicle.create(name: 'Skoda Octavia', manual: "app/manuals/skoda_octa
 vehicle3 = Vehicle.create(name: 'Fiat Panda 4x4', manual: "app/manuals/fiat_panda_4x4.pdf")
 vehicle4 = Vehicle.create(name: 'Citroen C3 Picasso', manual: "app/manuals/citroen_c3_picasso.pdf")
 vehicle5 = Vehicle.create(name: 'Peugeot 207 Break', manual: "app/manuals/peugeot_207_break.pdf")
+
+# Create some equipments
+room1 = Equipment.create(name: 'Beamer Optoma')
+room2 = Equipment.create(name: 'Beamer Asus')
+room3 = Equipment.create(name: 'Tablette Samsung')
+room4 = Equipment.create(name: 'Haut-Parleurs Boze')
+room5 = Equipment.create(name: 'Pointeur laser')
