@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180315091525) do
+ActiveRecord::Schema.define(version: 20180315092733) do
 
   create_table "equipment", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string "name", limit: 50
@@ -53,6 +53,11 @@ ActiveRecord::Schema.define(version: 20180315091525) do
     t.bigint "created_for_user_id"
     t.index ["created_for_user_id"], name: "index_reservations_on_created_for_user_id"
     t.index ["creator_user_id"], name: "index_reservations_on_creator_user_id"
+  end
+
+  create_table "reservations_users", id: false, force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.bigint "reservation_id", null: false
+    t.bigint "user_id", null: false
   end
 
   create_table "rooms", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|

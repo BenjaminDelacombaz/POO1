@@ -46,7 +46,7 @@ room5 = Equipment.create(name: 'Pointeur laser', users: [user4])
 
 # Create some reservations
 reservation1 = Reservation.create(name: 'Séance direction', start: '2018-05-06 18:25:00', end: '2018-05-06 19:30:00', creator_user: user4, created_for_user: user1)
-reservation2 = Reservation.create(name: 'TPI', start: '2018-05-06 18:25:00', end: '2018-05-06 19:30:00', creator_user: user3, created_for_user: user2)
-reservation3 = Reservation.create(name: 'California Tour', start: '2018-07-06 09:30:00', end: '2018-07-16 18:00:00', creator_user: user4)
+reservation2 = Reservation.create(name: 'TPI', start: '2018-05-06 18:25:00', end: '2018-05-06 19:30:00', creator_user: user3, created_for_user: user2, users: [user1, user4])
+reservation3 = Reservation.create(name: 'California Tour', start: '2018-07-06 09:30:00', end: '2018-07-16 18:00:00', creator_user: user4, users: [user2])
 reservation4 = Reservation.create(name: 'Séance achat', start: '2018-03-20 10:30:00', end: '2018-03-20 11:55:00', creator_user: user1, created_for_user: user4)
-reservation5 = Reservation.create(name: 'Film', start: '2019-01-24 15:30:00', end: '2019-01-24 17:00:00', creator_user: user2, created_for_user: user3)
+reservation5 = Reservation.create(name: 'Film', start: '2019-01-24 15:30:00', end: '2019-01-24 17:00:00', creator_user: user2, created_for_user: user3, users: [user4, user1])
