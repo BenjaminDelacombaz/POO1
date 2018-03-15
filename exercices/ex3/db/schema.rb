@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180315081505) do
+ActiveRecord::Schema.define(version: 20180315082440) do
 
   create_table "events", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string "name", limit: 50
@@ -44,6 +44,11 @@ ActiveRecord::Schema.define(version: 20180315081505) do
     t.string "firstname", limit: 50
     t.string "lastname", limit: 50
     t.string "email"
+  end
+
+  create_table "vehicles", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.string "name", limit: 50
+    t.string "manual"
   end
 
   add_foreign_key "events", "users", column: "created_for_user_id"
