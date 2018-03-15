@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180315090243) do
+ActiveRecord::Schema.define(version: 20180315091525) do
 
   create_table "equipment", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string "name", limit: 50
@@ -45,6 +45,16 @@ ActiveRecord::Schema.define(version: 20180315090243) do
     t.bigint "user_id", null: false
   end
 
+  create_table "reservations", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.string "name", limit: 50
+    t.datetime "start"
+    t.datetime "end"
+    t.bigint "creator_user_id"
+    t.bigint "created_for_user_id"
+    t.index ["created_for_user_id"], name: "index_reservations_on_created_for_user_id"
+    t.index ["creator_user_id"], name: "index_reservations_on_creator_user_id"
+  end
+
   create_table "rooms", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string "name", limit: 50
   end
@@ -62,4 +72,6 @@ ActiveRecord::Schema.define(version: 20180315090243) do
 
   add_foreign_key "events", "users", column: "created_for_user_id"
   add_foreign_key "events", "users", column: "creator_user_id"
+  add_foreign_key "reservations", "users", column: "created_for_user_id"
+  add_foreign_key "reservations", "users", column: "creator_user_id"
 end
