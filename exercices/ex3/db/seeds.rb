@@ -37,8 +37,8 @@ vehicle4 = Vehicle.create(name: 'Citroen C3 Picasso', manual: "app/manuals/citro
 vehicle5 = Vehicle.create(name: 'Peugeot 207 Break', manual: "app/manuals/peugeot_207_break.pdf")
 
 # Create some equipments
-room1 = Equipment.create(name: 'Beamer Optoma')
-room2 = Equipment.create(name: 'Beamer Asus')
-room3 = Equipment.create(name: 'Tablette Samsung')
-room4 = Equipment.create(name: 'Haut-Parleurs Boze')
-room5 = Equipment.create(name: 'Pointeur laser')
+room1 = Equipment.create(name: 'Beamer Optoma', users: [user1, user4])
+room2 = Equipment.create(name: 'Beamer Asus', users: [user1, user4, user3, user2])
+room3 = Equipment.create(name: 'Tablette Samsung', users: [user1])
+room4 = Equipment.create(name: 'Haut-Parleurs Boze', users: [user1, user3, user2])
+room5 = Equipment.create(name: 'Pointeur laser', users: [user4])
