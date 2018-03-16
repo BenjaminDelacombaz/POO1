@@ -52,6 +52,7 @@ reservation3 = Reservation.create(name: 'California Tour', start: '2018-07-06 09
 reservation4 = Reservation.create(name: 'Séance achat', start: '2018-03-20 10:30:00', end: '2018-03-20 11:55:00', creator_user: user1, created_for_user: user4)
 reservation5 = Reservation.create(name: 'Film', start: '2019-01-24 15:30:00', end: '2019-01-24 17:00:00', creator_user: user2, created_for_user: user3, users: [user4, user1])
 
+# Link some reserved_item with a reservation
 reserveditem1 = ReservedItem.create(reservation: reservation1, reservable: equipment1)
 reserveditem2 = ReservedItem.create(reservation: reservation1, reservable: equipment5)
 reserveditem3 = ReservedItem.create(reservation: reservation1, reservable: room4)
