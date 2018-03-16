@@ -1,4 +1,5 @@
 class Room < ActiveRecord::Base
+  has_many :reservations, as: :reservable
 
   def to_s
     "#{name}"

@@ -6,6 +6,7 @@ require_relative '../models/room'
 require_relative '../models/vehicle'
 require_relative '../models/equipment'
 require_relative '../models/reservation'
+require_relative '../models/reserved_item'
 
 # Create some groups
 group1 = Group.create(name: 'Admin')
@@ -38,11 +39,11 @@ vehicle4 = Vehicle.create(name: 'Citroen C3 Picasso', manual: "app/manuals/citro
 vehicle5 = Vehicle.create(name: 'Peugeot 207 Break', manual: "app/manuals/peugeot_207_break.pdf")
 
 # Create some equipments
-room1 = Equipment.create(name: 'Beamer Optoma', users: [user1, user4])
-room2 = Equipment.create(name: 'Beamer Asus', users: [user1, user4, user3, user2])
-room3 = Equipment.create(name: 'Tablette Samsung', users: [user1])
-room4 = Equipment.create(name: 'Haut-Parleurs Boze', users: [user1, user3, user2])
-room5 = Equipment.create(name: 'Pointeur laser', users: [user4])
+equipment1 = Equipment.create(name: 'Beamer Optoma', users: [user1, user4])
+equipment2 = Equipment.create(name: 'Beamer Asus', users: [user1, user4, user3, user2])
+equipment3 = Equipment.create(name: 'Tablette Samsung', users: [user1])
+equipment4 = Equipment.create(name: 'Haut-Parleurs Boze', users: [user1, user3, user2])
+equipment5 = Equipment.create(name: 'Pointeur laser', users: [user4])
 
 # Create some reservations
 reservation1 = Reservation.create(name: 'Séance direction', start: '2018-05-06 18:25:00', end: '2018-05-06 19:30:00', creator_user: user4, created_for_user: user1)
@@ -50,3 +51,9 @@ reservation2 = Reservation.create(name: 'TPI', start: '2018-05-06 18:25:00', end
 reservation3 = Reservation.create(name: 'California Tour', start: '2018-07-06 09:30:00', end: '2018-07-16 18:00:00', creator_user: user4, users: [user2])
 reservation4 = Reservation.create(name: 'Séance achat', start: '2018-03-20 10:30:00', end: '2018-03-20 11:55:00', creator_user: user1, created_for_user: user4)
 reservation5 = Reservation.create(name: 'Film', start: '2019-01-24 15:30:00', end: '2019-01-24 17:00:00', creator_user: user2, created_for_user: user3, users: [user4, user1])
+
+reserveditem1 = ReservedItem.create(reservation: reservation1, reservable: equipment1)
+reserveditem2 = ReservedItem.create(reservation: reservation1, reservable: equipment5)
+reserveditem3 = ReservedItem.create(reservation: reservation1, reservable: room4)
+reserveditem4 = ReservedItem.create(reservation: reservation2, reservable: equipment3)
+reserveditem5 = ReservedItem.create(reservation: reservation3, reservable: vehicle1)
