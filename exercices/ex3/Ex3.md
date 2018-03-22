@@ -12,7 +12,7 @@ Vous devez modéliser (BD et modèle objet) le système complet pour satisfaire 
   - Une date/heure de fin (OK)
   - Des utilisateurs participants (facultatif) (OK)
 
-- A chaque création, modification ou suppression d'un événement, une notification est envoyée par mail au différents utilisateurs renseignés dans cet événement.
+- A chaque création, modification ou suppression d'un événement, une notification est envoyée par mail au différents utilisateurs renseignés dans cet événement. (OK)
 
 - Les choses réservables sont:
   - Des salles, identifiées par leurs nom (OK)
@@ -33,7 +33,7 @@ Vous devez modéliser (BD et modèle objet) le système complet pour satisfaire 
   
 - Il n'est bien sûr pas possible de réserver une chose qui l'est déjà.
 
-- A chaque création, modification ou suppression d'une réservation, une notification est envoyée par mail au différents utilisateurs renseignés dans cette réservation.
+- A chaque création, modification ou suppression d'une réservation, une notification est envoyée par mail au différents utilisateurs renseignés dans cette réservation. (OK)
   De plus, les responsables de matériel mobiliers seront aussi notifiés.
 
 Votre programme principal démontrera toutes ces fonctionnalités en affichant des messages sur la console (User friendly).

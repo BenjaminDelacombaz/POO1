@@ -7,4 +7,8 @@ class Event < ActiveRecord::Base
   def to_s
     "#{name}"
   end
+
+  def participants
+    (users + [created_for_user, creator_user]).compact.uniq
+  end
 end
