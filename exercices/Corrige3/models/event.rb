@@ -7,7 +7,10 @@ class Event < ActiveRecord::Base
   validate :time_lapse, if: ->(booking) { booking.starts_at && booking.ends_at}
 
   scope :between, proc {|start, stop| where(['starts_at < :stop AND ends_at > :start', start.is_a?(Range) ? {start: start.begin, stop: start.end} : {start: start, stop: stop}]) }
-  
+
+  # Scope for view event with the longest duration doesn't work
+  # scope :longest_duration, -> { limit(1).having('MAX(TIMESTAMPDIFF(SECOND, starts_at, ends_at))') }
+
   def participants
     (attendees + [created_by, created_for]).compact
   end

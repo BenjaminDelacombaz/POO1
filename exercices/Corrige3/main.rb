@@ -122,3 +122,22 @@ test "Creating a booking with forbidden items" do
     items: Equipment.all
 end
 
+test "Delete emtpy groups" do
+  groups = Group.delete_empty_groups!
+  puts "This groups: #{groups} has been deleted"
+end
+
+test "Show bookable items without booking" do
+  items = BookableItem.items_without_booking
+  puts "This bookable items: #{items} doesn't have a booking"
+end
+
+test "Show bookable items reserved today" do
+  items = BookableItem.reserved_items(NOW)
+  puts "This bookable items: #{items.each {|item|}} is booked today"
+end
+
+test "Date have reservation ?" do
+  puts "Today have reservation ? #{BookableItem.have_reservation?(NOW)}"
+  puts "2017-01-01 have reservation ? #{BookableItem.have_reservation?('2017-01-01')}"
+end

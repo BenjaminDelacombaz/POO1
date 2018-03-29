@@ -25,6 +25,8 @@ module DB
     good = Group.create! name: 'The good'
     bad  = Group.create! name: 'The bad'
     ugly = Group.create! name: 'The ugly'
+    sherif = Group.create! name: 'Sherif'
+    cowboy = Group.create! name: 'Cowboy'
     
     good.users << lucky
     ugly.users << jolly
@@ -45,6 +47,7 @@ module DB
     
     saloon = Room.create! name: 'Saloon'
     church = Room.create! name: 'Church'
+    desert = Room.create! name: 'Desert'
     
     # setup bookable items groups
     dilly.groups   << good << bad << ugly
