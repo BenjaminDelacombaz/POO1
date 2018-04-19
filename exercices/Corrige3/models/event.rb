@@ -8,8 +8,12 @@ class Event < ActiveRecord::Base
 
   scope :between, proc {|start, stop| where(['starts_at < :stop AND ends_at > :start', start.is_a?(Range) ? {start: start.begin, stop: start.end} : {start: start, stop: stop}]) }
 
-  # Scope for view event with the longest duration doesn't work
-  # scope :longest_duration, -> { limit(1).having('MAX(TIMESTAMPDIFF(SECOND, starts_at, ends_at))') }
+  # Scope for view event with the longest duration
+  scope :longest_duration, -> { order('(ends_at - starts_at) desc') }
+
+  def to_s
+    "#{title} from #{starts_at} to #{ends_at}"
+  end
 
   def participants
     (attendees + [created_by, created_for]).compact

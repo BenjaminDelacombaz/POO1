@@ -7,6 +7,6 @@ class Group < ActiveRecord::Base
 
   # Static function for delete empty groups from the DB
   def self.delete_empty_groups!
-    Group.empty_groups.each {|group| group.destroy! }
+    Group.empty_groups.destroy_all
   end
 end

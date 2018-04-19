@@ -98,7 +98,7 @@ test "Creating a booking without items" do
 end
 
 test "Creating a single item booking" do
-  Booking.create! title: "Mini fiesta", starts_at: NOW, ends_at: NOW + 1.hour,
+  Booking.create! title: "Mini fiesta", starts_at: NOW, ends_at: NOW + 5.hour,
     created_by: User.find_by(firstname: 'Joe'),
     items: [Room.find_by(name: 'Saloon')]
 end
@@ -129,7 +129,7 @@ end
 
 test "Show bookable items without booking" do
   items = BookableItem.items_without_booking
-  puts "This bookable items: #{items} doesn't have a booking"
+  puts "This bookable items: #{items.each {|item|}} doesn't have a booking"
 end
 
 test "Show bookable items reserved today" do
@@ -140,4 +140,8 @@ end
 test "Date have reservation ?" do
   puts "Today have reservation ? #{BookableItem.have_reservation?(NOW)}"
   puts "2017-01-01 have reservation ? #{BookableItem.have_reservation?('2017-01-01')}"
+end
+
+test "Longest duration event" do
+  puts "The longest event is : #{Event.longest_duration.first}"
 end

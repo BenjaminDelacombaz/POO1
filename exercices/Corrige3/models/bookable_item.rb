@@ -19,4 +19,10 @@ class BookableItem < ActiveRecord::Base
   def self.have_reservation? date
     self.reserved_items(date).any?
   end
+
+  def used_by
+    participants = Array.new
+    bookings.each { |booking| participants.push(booking.participants).uniq}
+    participants
+  end
 end
