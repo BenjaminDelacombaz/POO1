@@ -251,3 +251,27 @@ Starts at: 2018-04-19 10:22:04 UTC
 Ends at  : 2018-04-19 11:22:04 UTC
 Items: Tar, Feather
 
+D, [2018-04-19T10:22:05.098293 #8796] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-04-19T10:22:05.098293 #8796] DEBUG -- :   User Load (0.0ms)  SELECT  `users`.* FROM `users` WHERE `users`.`firstname` = 'Averell' LIMIT 1
+D, [2018-04-19T10:22:05.113893 #8796] DEBUG -- :   Equipment Load (15.6ms)  SELECT `bookable_items`.* FROM `bookable_items` WHERE `bookable_items`.`type` IN ('Equipment')
+D, [2018-04-19T10:22:05.113893 #8796] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-04-19T10:22:05.113893 #8796] DEBUG -- :   Booking Exists (0.0ms)  SELECT  1 AS one FROM `events` INNER JOIN `bookings_items` ON `events`.`id` = `bookings_items`.`booking_id` WHERE `events`.`type` IN ('Booking') AND `bookings_items`.`bookable_item_id` = 3 AND (starts_at < '2018-04-19 11:22:04' AND ends_at > '2018-04-19 10:22:04') LIMIT 1
+D, [2018-04-19T10:22:05.113893 #8796] DEBUG -- :   Booking Exists (0.0ms)  SELECT  1 AS one FROM `events` INNER JOIN `bookings_items` ON `events`.`id` = `bookings_items`.`booking_id` WHERE `events`.`type` IN ('Booking') AND `bookings_items`.`bookable_item_id` = 4 AND (starts_at < '2018-04-19 11:22:04' AND ends_at > '2018-04-19 10:22:04') LIMIT 1
+D, [2018-04-19T10:22:05.113893 #8796] DEBUG -- :   Group Load (0.0ms)  SELECT `groups`.* FROM `groups` INNER JOIN `bookable_items_groups` ON `groups`.`id` = `bookable_items_groups`.`group_id` WHERE `bookable_items_groups`.`bookable_item_id` = 3
+D, [2018-04-19T10:22:05.113893 #8796] DEBUG -- :   Group Load (0.0ms)  SELECT `groups`.* FROM `groups` INNER JOIN `bookable_items_groups` ON `groups`.`id` = `bookable_items_groups`.`group_id` WHERE `bookable_items_groups`.`bookable_item_id` = 4
+D, [2018-04-19T10:22:05.113893 #8796] DEBUG -- :   Group Load (0.0ms)  SELECT `groups`.* FROM `groups` INNER JOIN `groups_users` ON `groups`.`id` = `groups_users`.`group_id` WHERE `groups_users`.`user_id` = 2
+D, [2018-04-19T10:22:05.113893 #8796] DEBUG -- :    (0.0ms)  ROLLBACK
+D, [2018-04-19T10:22:05.113893 #8796] DEBUG -- :   Group Load (0.0ms)  SELECT `groups`.* FROM `groups` LEFT OUTER JOIN `groups_users` ON `groups_users`.`group_id` = `groups`.`id` LEFT OUTER JOIN `users` ON `users`.`id` = `groups_users`.`user_id` WHERE `users`.`id` IS NULL
+D, [2018-04-19T10:22:05.113893 #8796] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-04-19T10:22:05.113893 #8796] DEBUG -- :   SQL (0.0ms)  DELETE FROM `groups_users` WHERE `groups_users`.`group_id` = 4
+D, [2018-04-19T10:22:05.113893 #8796] DEBUG -- :   SQL (0.0ms)  DELETE FROM `groups` WHERE `groups`.`id` = 4
+D, [2018-04-19T10:22:05.113893 #8796] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-04-19T10:22:05.113893 #8796] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-04-19T10:22:05.113893 #8796] DEBUG -- :   SQL (0.0ms)  DELETE FROM `groups_users` WHERE `groups_users`.`group_id` = 5
+D, [2018-04-19T10:22:05.113893 #8796] DEBUG -- :   SQL (0.0ms)  DELETE FROM `groups` WHERE `groups`.`id` = 5
+D, [2018-04-19T10:22:05.113893 #8796] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-04-19T10:22:05.129493 #8796] DEBUG -- :   BookableItem Load (0.0ms)  SELECT `bookable_items`.* FROM `bookable_items` LEFT OUTER JOIN `bookings_items` ON `bookings_items`.`bookable_item_id` = `bookable_items`.`id` LEFT OUTER JOIN `events` ON `events`.`id` = `bookings_items`.`booking_id` AND `events`.`type` IN ('Booking') WHERE `events`.`id` IS NULL
+D, [2018-04-19T10:22:05.129493 #8796] DEBUG -- :   BookableItem Load (0.0ms)  SELECT `bookable_items`.* FROM `bookable_items` INNER JOIN `bookings_items` ON `bookings_items`.`bookable_item_id` = `bookable_items`.`id` INNER JOIN `events` ON `events`.`id` = `bookings_items`.`booking_id` AND `events`.`type` IN ('Booking') WHERE (YEAR(starts_at) >= '2018-04-19 08:22:04.957893') AND (YEAR(ends_at) <= '2018-04-19 08:22:04.957893')
+D, [2018-04-19T10:22:05.129493 #8796] DEBUG -- :   BookableItem Exists (0.0ms)  SELECT  1 AS one FROM `bookable_items` INNER JOIN `bookings_items` ON `bookings_items`.`bookable_item_id` = `bookable_items`.`id` INNER JOIN `events` ON `events`.`id` = `bookings_items`.`booking_id` AND `events`.`type` IN ('Booking') WHERE (YEAR(starts_at) >= '2018-04-19 08:22:04.957893') AND (YEAR(ends_at) <= '2018-04-19 08:22:04.957893') LIMIT 1
+D, [2018-04-19T10:22:05.129493 #8796] DEBUG -- :   BookableItem Exists (0.0ms)  SELECT  1 AS one FROM `bookable_items` INNER JOIN `bookings_items` ON `bookings_items`.`bookable_item_id` = `bookable_items`.`id` INNER JOIN `events` ON `events`.`id` = `bookings_items`.`booking_id` AND `events`.`type` IN ('Booking') WHERE (YEAR(starts_at) >= '2018-01-01') AND (YEAR(ends_at) <= '2018-01-01') LIMIT 1
+D, [2018-04-19T10:22:05.129493 #8796] DEBUG -- :   Event Load (0.0ms)  SELECT  `events`.* FROM `events` ORDER BY (ends_at - starts_at) desc LIMIT 1

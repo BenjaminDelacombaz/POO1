@@ -20,9 +20,20 @@ class BookableItem < ActiveRecord::Base
     self.reserved_items(date).any?
   end
 
+  # Old beurk
+  # def used_by
+  #   participants = Array.new
+  #   bookings.each { |booking| participants.push(booking.participants).uniq}
+  #   participants
+  # end
+
+  # Old mais bon
+  # def used_by
+  #   bookings.map { |booking| booking.participants.flatten.uniq }
+  # end
+
+  # The best
   def used_by
-    participants = Array.new
-    bookings.each { |booking| participants.push(booking.participants).uniq}
-    participants
+    bookings.flat_map(&:participants).uniq
   end
 end
