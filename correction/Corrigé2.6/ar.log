@@ -1,0 +1,44 @@
+D, [2017-03-16T15:29:37.656006 #59395] DEBUG -- :   Company Load (0.3ms)  SELECT  `clients`.* FROM `clients` WHERE `clients`.`type` IN ('Company') AND `clients`.`name` = 'Tricatel' LIMIT 1
+D, [2017-03-16T15:29:37.664887 #59395] DEBUG -- :    (0.1ms)  BEGIN
+D, [2017-03-16T15:29:37.680197 #59395] DEBUG -- :    (0.1ms)  ROLLBACK
+D, [2017-03-16T15:29:37.682015 #59395] DEBUG -- :   Individual Load (0.4ms)  SELECT  `clients`.* FROM `clients` WHERE `clients`.`type` IN ('Individual') AND `clients`.`lastname` = 'Duchemin' LIMIT 1
+D, [2017-03-16T15:29:37.686071 #59395] DEBUG -- :    (0.1ms)  BEGIN
+D, [2017-03-16T15:29:37.692879 #59395] DEBUG -- :   SQL (5.7ms)  INSERT INTO `clients` (`firstname`, `lastname`, `type`) VALUES ('Charles', 'Duchemin', 'Individual')
+D, [2017-03-16T15:29:37.699576 #59395] DEBUG -- :    (6.3ms)  COMMIT
+D, [2017-03-16T15:29:37.700537 #59395] DEBUG -- :   Company Load (0.3ms)  SELECT `clients`.* FROM `clients` WHERE `clients`.`type` IN ('Company')
+D, [2017-03-16T15:29:37.701134 #59395] DEBUG -- :   Individual Load (0.2ms)  SELECT `clients`.* FROM `clients` WHERE `clients`.`type` IN ('Individual')
+D, [2017-03-16T15:32:17.739236 #59451] DEBUG -- :   Company Load (0.3ms)  SELECT  `clients`.* FROM `clients` WHERE `clients`.`type` IN ('Company') AND `clients`.`name` = 'Tricatel' LIMIT 1
+D, [2017-03-16T15:32:17.749980 #59451] DEBUG -- :    (0.1ms)  BEGIN
+D, [2017-03-16T15:32:17.756666 #59451] DEBUG -- :   SQL (5.8ms)  INSERT INTO `clients` (`type`, `name`) VALUES ('Company', 'Tricatel')
+D, [2017-03-16T15:32:17.763392 #59451] DEBUG -- :    (6.3ms)  COMMIT
+D, [2017-03-16T15:32:17.765044 #59451] DEBUG -- :   Individual Load (0.3ms)  SELECT  `clients`.* FROM `clients` WHERE `clients`.`type` IN ('Individual') AND `clients`.`lastname` = 'Duchemin' LIMIT 1
+D, [2017-03-16T15:32:17.770300 #59451] DEBUG -- :   Company Load (0.3ms)  SELECT `clients`.* FROM `clients` WHERE `clients`.`type` IN ('Company')
+D, [2017-03-16T15:32:17.771055 #59451] DEBUG -- :   Individual Load (0.2ms)  SELECT `clients`.* FROM `clients` WHERE `clients`.`type` IN ('Individual')
+D, [2017-03-16T15:32:20.787338 #59484] DEBUG -- :   Company Load (0.3ms)  SELECT  `clients`.* FROM `clients` WHERE `clients`.`type` IN ('Company') AND `clients`.`name` = 'Tricatel' LIMIT 1
+D, [2017-03-16T15:32:20.796225 #59484] DEBUG -- :   Individual Load (0.3ms)  SELECT  `clients`.* FROM `clients` WHERE `clients`.`type` IN ('Individual') AND `clients`.`lastname` = 'Duchemin' LIMIT 1
+D, [2017-03-16T15:32:20.799372 #59484] DEBUG -- :   Company Load (0.3ms)  SELECT `clients`.* FROM `clients` WHERE `clients`.`type` IN ('Company')
+D, [2017-03-16T15:32:20.800155 #59484] DEBUG -- :   Individual Load (0.2ms)  SELECT `clients`.* FROM `clients` WHERE `clients`.`type` IN ('Individual')
+D, [2017-03-16T15:34:31.535676 #59576] DEBUG -- :   Company Load (0.2ms)  SELECT  `clients`.* FROM `clients` WHERE `clients`.`type` IN ('Company') AND `clients`.`name` = 'Tricatel' LIMIT 1
+D, [2017-03-16T15:34:31.556782 #59576] DEBUG -- :   Individual Load (0.3ms)  SELECT  `clients`.* FROM `clients` WHERE `clients`.`type` IN ('Individual') AND `clients`.`lastname` = 'Duchemin' LIMIT 1
+D, [2017-03-16T15:34:31.560367 #59576] DEBUG -- :   Company Load (0.3ms)  SELECT `clients`.* FROM `clients` WHERE `clients`.`type` IN ('Company')
+D, [2017-03-16T15:34:31.561045 #59576] DEBUG -- :   Individual Load (0.2ms)  SELECT `clients`.* FROM `clients` WHERE `clients`.`type` IN ('Individual')
+D, [2018-03-01T08:57:53.021279 #35322] DEBUG -- :   Company Load (7.9ms)  SELECT  `clients`.* FROM `clients` WHERE `clients`.`type` IN ('Company') AND `clients`.`name` = 'Tricatel' LIMIT 1
+D, [2018-03-01T08:57:53.076590 #35322] DEBUG -- :   Individual Load (0.3ms)  SELECT  `clients`.* FROM `clients` WHERE `clients`.`type` IN ('Individual') AND `clients`.`lastname` = 'Duchemin' LIMIT 1
+D, [2018-03-01T08:57:53.080189 #35322] DEBUG -- :   Company Load (0.3ms)  SELECT `clients`.* FROM `clients` WHERE `clients`.`type` IN ('Company')
+D, [2018-03-01T08:57:53.080817 #35322] DEBUG -- :   Individual Load (0.2ms)  SELECT `clients`.* FROM `clients` WHERE `clients`.`type` IN ('Individual')
+D, [2018-03-01T11:07:43.319524 #38029] DEBUG -- :   Company Load (0.4ms)  SELECT  `clients`.* FROM `clients` WHERE `clients`.`type` IN ('Company') AND `clients`.`name` = 'Tricatel' LIMIT 1
+D, [2018-03-01T11:07:43.332286 #38029] DEBUG -- :    (0.2ms)  BEGIN
+D, [2018-03-01T11:07:43.338978 #38029] DEBUG -- :   SQL (5.5ms)  INSERT INTO `clients` (`type`, `name`) VALUES ('Company', 'Tricatel')
+D, [2018-03-01T11:07:43.345752 #38029] DEBUG -- :    (6.4ms)  COMMIT
+D, [2018-03-01T11:07:43.347670 #38029] DEBUG -- :   Individual Load (0.5ms)  SELECT  `clients`.* FROM `clients` WHERE `clients`.`type` IN ('Individual') AND `clients`.`lastname` = 'Duchemin' LIMIT 1
+D, [2018-03-01T11:07:43.352279 #38029] DEBUG -- :    (0.2ms)  BEGIN
+D, [2018-03-01T11:07:43.354527 #38029] DEBUG -- :   SQL (1.3ms)  INSERT INTO `clients` (`firstname`, `lastname`, `type`) VALUES ('Charles', 'Duchemin', 'Individual')
+D, [2018-03-01T11:07:43.355249 #38029] DEBUG -- :    (0.3ms)  COMMIT
+D, [2018-03-01T11:07:43.356210 #38029] DEBUG -- :   Company Load (0.3ms)  SELECT `clients`.* FROM `clients` WHERE `clients`.`type` IN ('Company')
+D, [2018-03-01T11:07:43.359540 #38029] DEBUG -- :   Individual Load (0.5ms)  SELECT `clients`.* FROM `clients` WHERE `clients`.`type` IN ('Individual')
+D, [2018-03-08T10:15:25.993598 #1406] DEBUG -- :    (0.7ms)  SET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483
+D, [2018-03-08T10:15:26.033799 #1406] DEBUG -- :   Company Load (4.7ms)  SELECT  `clients`.* FROM `clients` WHERE `clients`.`type` IN ('Company') AND `clients`.`name` = 'Tricatel' LIMIT 1
+D, [2018-03-08T10:15:26.074661 #1406] DEBUG -- :   Individual Load (0.4ms)  SELECT  `clients`.* FROM `clients` WHERE `clients`.`type` IN ('Individual') AND `clients`.`lastname` = 'Duchemin' LIMIT 1
+D, [2018-03-08T10:15:26.078844 #1406] DEBUG -- :   Company Load (0.4ms)  SELECT `clients`.* FROM `clients` WHERE `clients`.`type` IN ('Company')
+D, [2018-03-08T10:15:26.079556 #1406] DEBUG -- :   Individual Load (0.3ms)  SELECT `clients`.* FROM `clients` WHERE `clients`.`type` IN ('Individual')
+D, [2018-03-08T10:15:52.804879 #1406] DEBUG -- :   Client Load (0.6ms)  SELECT  `clients`.* FROM `clients` ORDER BY `clients`.`id` ASC LIMIT 1

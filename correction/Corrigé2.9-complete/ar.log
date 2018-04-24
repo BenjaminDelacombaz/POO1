@@ -1,0 +1,298 @@
+D, [2017-03-23T14:16:18.742518 #10325] DEBUG -- :   Client Load (5.4ms)  SELECT  `clients`.* FROM `clients` ORDER BY `clients`.`id` ASC LIMIT 1
+D, [2017-03-23T14:16:18.841209 #10325] DEBUG -- :   Product Load (0.2ms)  SELECT  `products`.* FROM `products` ORDER BY `products`.`id` ASC LIMIT 1
+D, [2017-03-23T14:16:18.876565 #10325] DEBUG -- :   Product Load (0.2ms)  SELECT  `products`.* FROM `products` ORDER BY `products`.`id` DESC LIMIT 1
+D, [2017-03-23T14:16:18.877445 #10325] DEBUG -- :    (0.1ms)  BEGIN
+D, [2017-03-23T14:16:18.878010 #10325] DEBUG -- :    (0.1ms)  ROLLBACK
+D, [2017-03-23T14:17:19.757866 #10396] DEBUG -- :   Client Load (0.1ms)  SELECT  `clients`.* FROM `clients` ORDER BY `clients`.`id` ASC LIMIT 1
+D, [2017-03-23T14:17:19.787776 #10396] DEBUG -- :   Product Load (0.1ms)  SELECT  `products`.* FROM `products` ORDER BY `products`.`id` ASC LIMIT 1
+D, [2017-03-23T14:17:19.799107 #10396] DEBUG -- :   Product Load (0.3ms)  SELECT  `products`.* FROM `products` ORDER BY `products`.`id` DESC LIMIT 1
+D, [2017-03-23T14:17:19.800069 #10396] DEBUG -- :    (0.1ms)  BEGIN
+D, [2017-03-23T14:17:19.800603 #10396] DEBUG -- :    (0.1ms)  ROLLBACK
+D, [2017-03-23T14:17:37.339919 #10429] DEBUG -- :   Client Load (0.1ms)  SELECT  `clients`.* FROM `clients` ORDER BY `clients`.`id` ASC LIMIT 1
+D, [2017-03-23T14:17:37.365724 #10429] DEBUG -- :   Product Load (0.2ms)  SELECT  `products`.* FROM `products` ORDER BY `products`.`id` ASC LIMIT 1
+D, [2017-03-23T14:17:37.376562 #10429] DEBUG -- :   Product Load (0.2ms)  SELECT  `products`.* FROM `products` ORDER BY `products`.`id` DESC LIMIT 1
+D, [2017-03-23T14:17:37.377422 #10429] DEBUG -- :    (0.1ms)  BEGIN
+D, [2017-03-23T14:17:37.378068 #10429] DEBUG -- :    (0.1ms)  ROLLBACK
+D, [2017-03-23T14:18:16.307956 #10463] DEBUG -- :   Client Load (0.2ms)  SELECT  `clients`.* FROM `clients` ORDER BY `clients`.`id` ASC LIMIT 1
+D, [2017-03-23T14:18:16.334150 #10463] DEBUG -- :   Product Load (0.2ms)  SELECT  `products`.* FROM `products` ORDER BY `products`.`id` ASC LIMIT 1
+D, [2017-03-23T14:18:16.344861 #10463] DEBUG -- :   Product Load (0.2ms)  SELECT  `products`.* FROM `products` ORDER BY `products`.`id` DESC LIMIT 1
+D, [2017-03-23T14:18:16.345614 #10463] DEBUG -- :    (0.1ms)  BEGIN
+D, [2017-03-23T14:18:16.349377 #10463] DEBUG -- :   SQL (2.6ms)  INSERT INTO `orders` (`created_at`, `client_id`) VALUES ('2017-03-23 13:18:16', 1)
+D, [2017-03-23T14:18:16.386687 #10463] DEBUG -- :   SQL (35.2ms)  INSERT INTO `order_items` (`quantity`, `item_price`, `order_id`, `product_id`) VALUES (2, 327.5, 12, 1)
+D, [2017-03-23T14:18:16.388409 #10463] DEBUG -- :   SQL (0.3ms)  INSERT INTO `order_items` (`quantity`, `item_price`, `order_id`, `product_id`) VALUES (4, 0.1, 12, 5)
+D, [2017-03-23T14:18:16.395617 #10463] DEBUG -- :   SQL (1.1ms)  UPDATE `products` SET `stock_count` = 0 WHERE `products`.`id` = 1
+D, [2017-03-23T14:18:16.397244 #10463] DEBUG -- :    (1.2ms)  ROLLBACK
+D, [2017-03-23T14:19:13.195888 #10500] DEBUG -- :   Client Load (0.2ms)  SELECT  `clients`.* FROM `clients` ORDER BY `clients`.`id` ASC LIMIT 1
+D, [2017-03-23T14:19:13.223208 #10500] DEBUG -- :   Product Load (0.2ms)  SELECT  `products`.* FROM `products` ORDER BY `products`.`id` ASC LIMIT 1
+D, [2017-03-23T14:19:13.233351 #10500] DEBUG -- :   Product Load (0.2ms)  SELECT  `products`.* FROM `products` ORDER BY `products`.`id` DESC LIMIT 1
+D, [2017-03-23T14:19:13.234293 #10500] DEBUG -- :    (0.1ms)  BEGIN
+D, [2017-03-23T14:19:13.238112 #10500] DEBUG -- :   SQL (2.1ms)  INSERT INTO `orders` (`created_at`, `client_id`) VALUES ('2017-03-23 13:19:13', 1)
+D, [2017-03-23T14:19:13.239640 #10500] DEBUG -- :   SQL (0.2ms)  INSERT INTO `order_items` (`quantity`, `item_price`, `order_id`, `product_id`) VALUES (2, 327.5, 13, 1)
+D, [2017-03-23T14:19:13.240551 #10500] DEBUG -- :   SQL (0.2ms)  INSERT INTO `order_items` (`quantity`, `item_price`, `order_id`, `product_id`) VALUES (4, 0.1, 13, 5)
+D, [2017-03-23T14:19:13.247856 #10500] DEBUG -- :   SQL (1.8ms)  UPDATE `products` SET `stock_count` = 0 WHERE `products`.`id` = 1
+D, [2017-03-23T14:19:13.249023 #10500] DEBUG -- :    (0.4ms)  ROLLBACK
+D, [2017-03-23T14:19:44.564475 #10534] DEBUG -- :   Client Load (0.2ms)  SELECT  `clients`.* FROM `clients` ORDER BY `clients`.`id` ASC LIMIT 1
+D, [2017-03-23T14:19:44.597400 #10534] DEBUG -- :   Product Load (0.2ms)  SELECT  `products`.* FROM `products` ORDER BY `products`.`id` ASC LIMIT 1
+D, [2017-03-23T14:19:44.607933 #10534] DEBUG -- :   Product Load (0.2ms)  SELECT  `products`.* FROM `products` ORDER BY `products`.`id` DESC LIMIT 1
+D, [2017-03-23T14:19:44.608712 #10534] DEBUG -- :    (0.1ms)  BEGIN
+D, [2017-03-23T14:19:44.610288 #10534] DEBUG -- :   SQL (0.3ms)  INSERT INTO `orders` (`created_at`, `client_id`) VALUES ('2017-03-23 13:19:44', 1)
+D, [2017-03-23T14:19:44.615652 #10534] DEBUG -- :   SQL (4.3ms)  INSERT INTO `order_items` (`quantity`, `item_price`, `order_id`, `product_id`) VALUES (2, 327.5, 14, 1)
+D, [2017-03-23T14:19:44.622320 #10534] DEBUG -- :   SQL (5.7ms)  INSERT INTO `order_items` (`quantity`, `item_price`, `order_id`, `product_id`) VALUES (4, 0.1, 14, 5)
+D, [2017-03-23T14:19:44.628943 #10534] DEBUG -- :   SQL (0.3ms)  UPDATE `products` SET `stock_count` = 0 WHERE `products`.`id` = 1
+D, [2017-03-23T14:19:44.630333 #10534] DEBUG -- :   SQL (0.2ms)  UPDATE `products` SET `stock_count` = 0 WHERE `products`.`id` = 5
+D, [2017-03-23T14:19:44.630979 #10534] DEBUG -- :    (0.3ms)  COMMIT
+D, [2017-03-23T14:20:08.470997 #10594] DEBUG -- :   Client Load (0.2ms)  SELECT  `clients`.* FROM `clients` ORDER BY `clients`.`id` ASC LIMIT 1
+D, [2017-03-23T14:20:08.494697 #10594] DEBUG -- :   Product Load (0.2ms)  SELECT  `products`.* FROM `products` ORDER BY `products`.`id` ASC LIMIT 1
+D, [2017-03-23T14:20:08.505007 #10594] DEBUG -- :   Product Load (0.2ms)  SELECT  `products`.* FROM `products` ORDER BY `products`.`id` DESC LIMIT 1
+D, [2017-03-23T14:20:08.505802 #10594] DEBUG -- :    (0.1ms)  BEGIN
+D, [2017-03-23T14:20:08.523214 #10594] DEBUG -- :    (0.2ms)  ROLLBACK
+D, [2017-03-23T14:21:05.954851 #10638] DEBUG -- :   Client Load (0.2ms)  SELECT  `clients`.* FROM `clients` ORDER BY `clients`.`id` ASC LIMIT 1
+D, [2017-03-23T14:21:05.976963 #10638] DEBUG -- :   Product Load (0.1ms)  SELECT  `products`.* FROM `products` ORDER BY `products`.`id` ASC LIMIT 1
+D, [2017-03-23T14:21:05.986788 #10638] DEBUG -- :   Product Load (0.2ms)  SELECT  `products`.* FROM `products` ORDER BY `products`.`id` DESC LIMIT 1
+D, [2017-03-23T14:21:05.987681 #10638] DEBUG -- :    (0.1ms)  BEGIN
+D, [2017-03-23T14:21:05.996745 #10638] DEBUG -- :    (0.1ms)  ROLLBACK
+D, [2017-03-23T14:21:45.568057 #10672] DEBUG -- :   Client Load (0.2ms)  SELECT  `clients`.* FROM `clients` ORDER BY `clients`.`id` ASC LIMIT 1
+D, [2017-03-23T14:21:45.593425 #10672] DEBUG -- :   Product Load (0.1ms)  SELECT  `products`.* FROM `products` ORDER BY `products`.`id` ASC LIMIT 1
+D, [2017-03-23T14:21:45.604289 #10672] DEBUG -- :   Product Load (0.3ms)  SELECT  `products`.* FROM `products` ORDER BY `products`.`id` DESC LIMIT 1
+D, [2017-03-23T14:21:45.605738 #10672] DEBUG -- :    (0.1ms)  BEGIN
+D, [2017-03-23T14:21:45.620426 #10672] DEBUG -- :    (0.1ms)  ROLLBACK
+D, [2017-03-23T14:41:52.502575 #10982] DEBUG -- :   Client Load (0.3ms)  SELECT  `clients`.* FROM `clients` ORDER BY `clients`.`id` ASC LIMIT 1
+D, [2017-03-23T14:41:52.570425 #10982] DEBUG -- :   Product Load (0.2ms)  SELECT  `products`.* FROM `products` ORDER BY `products`.`id` ASC LIMIT 1
+D, [2017-03-23T14:41:52.620172 #10982] DEBUG -- :   Product Load (0.3ms)  SELECT  `products`.* FROM `products` ORDER BY `products`.`id` DESC LIMIT 1
+D, [2017-03-23T14:41:52.621313 #10982] DEBUG -- :    (0.1ms)  BEGIN
+D, [2017-03-23T14:41:52.641522 #10982] DEBUG -- :    (0.2ms)  ROLLBACK
+D, [2017-03-23T14:42:43.797837 #11018] DEBUG -- :   Client Load (0.2ms)  SELECT  `clients`.* FROM `clients` ORDER BY `clients`.`id` ASC LIMIT 1
+D, [2017-03-23T14:42:43.821796 #11018] DEBUG -- :   Product Load (0.2ms)  SELECT  `products`.* FROM `products` ORDER BY `products`.`id` ASC LIMIT 1
+D, [2017-03-23T14:42:43.832174 #11018] DEBUG -- :   Product Load (0.2ms)  SELECT  `products`.* FROM `products` ORDER BY `products`.`id` DESC LIMIT 1
+D, [2017-03-23T14:42:43.832959 #11018] DEBUG -- :    (0.1ms)  BEGIN
+D, [2017-03-23T14:42:43.845133 #11018] DEBUG -- :    (0.1ms)  ROLLBACK
+D, [2017-03-23T14:43:36.173275 #11053] DEBUG -- :   Client Load (0.2ms)  SELECT  `clients`.* FROM `clients` ORDER BY `clients`.`id` ASC LIMIT 1
+D, [2017-03-23T14:43:36.197259 #11053] DEBUG -- :   Product Load (0.2ms)  SELECT  `products`.* FROM `products` ORDER BY `products`.`id` ASC LIMIT 1
+D, [2017-03-23T14:43:36.210836 #11053] DEBUG -- :   Product Load (0.2ms)  SELECT  `products`.* FROM `products` ORDER BY `products`.`id` DESC LIMIT 1
+D, [2017-03-23T14:43:36.211780 #11053] DEBUG -- :    (0.1ms)  BEGIN
+D, [2017-03-23T14:43:36.214248 #11053] DEBUG -- :   SQL (1.0ms)  INSERT INTO `orders` (`created_at`, `client_id`) VALUES ('2017-03-23 13:43:36', 1)
+D, [2017-03-23T14:43:36.244727 #11053] DEBUG -- :   SQL (28.4ms)  INSERT INTO `order_items` (`quantity`, `item_price`, `order_id`, `product_id`) VALUES (2, 327.5, 15, 1)
+D, [2017-03-23T14:43:36.246378 #11053] DEBUG -- :   SQL (0.3ms)  INSERT INTO `order_items` (`quantity`, `item_price`, `order_id`, `product_id`) VALUES (4, 0.1, 15, 5)
+D, [2017-03-23T14:43:36.249195 #11053] DEBUG -- :   SQL (0.2ms)  UPDATE `products` SET `stock_count` = 1 WHERE `products`.`id` = 1
+D, [2017-03-23T14:43:36.250256 #11053] DEBUG -- :   SQL (0.2ms)  UPDATE `products` SET `stock_count` = 3 WHERE `products`.`id` = 5
+D, [2017-03-23T14:43:36.250932 #11053] DEBUG -- :    (0.3ms)  COMMIT
+D, [2017-03-23T14:49:16.780508 #11170] DEBUG -- :   Client Load (0.2ms)  SELECT  `clients`.* FROM `clients` ORDER BY `clients`.`id` ASC LIMIT 1
+D, [2017-03-23T14:49:16.806644 #11170] DEBUG -- :   Product Load (0.2ms)  SELECT  `products`.* FROM `products` ORDER BY `products`.`id` ASC LIMIT 1
+D, [2017-03-23T14:49:16.817023 #11170] DEBUG -- :   Product Load (0.2ms)  SELECT  `products`.* FROM `products` ORDER BY `products`.`id` ASC LIMIT 1
+D, [2017-03-23T14:49:16.818029 #11170] DEBUG -- :   Product Load (0.2ms)  SELECT  `products`.* FROM `products` ORDER BY `products`.`id` DESC LIMIT 1
+D, [2017-03-23T14:49:16.818976 #11170] DEBUG -- :    (0.1ms)  BEGIN
+D, [2017-03-23T14:49:16.821589 #11170] DEBUG -- :   SQL (1.0ms)  INSERT INTO `orders` (`created_at`, `client_id`) VALUES ('2017-03-23 13:49:16', 1)
+D, [2017-03-23T14:49:16.823993 #11170] DEBUG -- :   SQL (1.1ms)  INSERT INTO `order_items` (`quantity`, `item_price`, `order_id`, `product_id`) VALUES (2, 327.5, 16, 1)
+D, [2017-03-23T14:49:16.828470 #11170] DEBUG -- :   SQL (0.2ms)  INSERT INTO `order_items` (`quantity`, `item_price`, `order_id`, `product_id`) VALUES (2, 327.5, 16, 1)
+D, [2017-03-23T14:49:16.829173 #11170] DEBUG -- :   SQL (0.1ms)  INSERT INTO `order_items` (`quantity`, `item_price`, `order_id`, `product_id`) VALUES (4, 0.1, 16, 5)
+D, [2017-03-23T14:49:16.831194 #11170] DEBUG -- :   SQL (0.2ms)  UPDATE `products` SET `stock_count` = 3 WHERE `products`.`id` = 1
+D, [2017-03-23T14:49:16.832078 #11170] DEBUG -- :   SQL (0.2ms)  UPDATE `products` SET `stock_count` = 3 WHERE `products`.`id` = 1
+D, [2017-03-23T14:49:16.832856 #11170] DEBUG -- :   SQL (0.2ms)  UPDATE `products` SET `stock_count` = 1 WHERE `products`.`id` = 5
+D, [2017-03-23T14:49:16.833476 #11170] DEBUG -- :    (0.4ms)  COMMIT
+D, [2018-03-08T11:28:23.633814 #2383] DEBUG -- :    (5.8ms)  SET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483
+D, [2018-03-08T11:28:23.681000 #2383] DEBUG -- :   Client Load (7.2ms)  SELECT  `clients`.* FROM `clients` ORDER BY `clients`.`id` ASC LIMIT 1
+D, [2018-03-08T11:28:23.808567 #2383] DEBUG -- :   Product Load (7.4ms)  SELECT  `products`.* FROM `products` ORDER BY `products`.`id` ASC LIMIT 1
+D, [2018-03-08T11:28:23.883119 #2383] DEBUG -- :   Product Load (0.5ms)  SELECT  `products`.* FROM `products` ORDER BY `products`.`id` ASC LIMIT 1
+D, [2018-03-08T11:28:23.884502 #2383] DEBUG -- :   Product Load (0.3ms)  SELECT  `products`.* FROM `products` ORDER BY `products`.`id` DESC LIMIT 1
+D, [2018-03-08T11:28:23.885519 #2383] DEBUG -- :    (0.2ms)  BEGIN
+D, [2018-03-08T11:28:23.900345 #2383] DEBUG -- :    (0.2ms)  ROLLBACK
+D, [2018-03-08T11:29:12.789618 #2419] DEBUG -- :    (0.3ms)  SET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483
+D, [2018-03-08T11:29:12.823048 #2419] DEBUG -- :   Client Load (0.5ms)  SELECT  `clients`.* FROM `clients` ORDER BY `clients`.`id` ASC LIMIT 1
+D, [2018-03-08T11:29:12.954334 #2419] DEBUG -- :   Product Load (0.3ms)  SELECT  `products`.* FROM `products` ORDER BY `products`.`id` ASC LIMIT 1
+D, [2018-03-08T11:29:13.000056 #2419] DEBUG -- :   Product Load (0.4ms)  SELECT  `products`.* FROM `products` ORDER BY `products`.`id` ASC LIMIT 1
+D, [2018-03-08T11:29:13.001854 #2419] DEBUG -- :   Product Load (1.0ms)  SELECT  `products`.* FROM `products` ORDER BY `products`.`id` DESC LIMIT 1
+D, [2018-03-08T11:29:13.007375 #2419] DEBUG -- :    (4.3ms)  BEGIN
+D, [2018-03-08T11:29:13.020729 #2419] DEBUG -- :    (0.3ms)  ROLLBACK
+D, [2018-03-08T11:30:19.185464 #2474] DEBUG -- :    (0.3ms)  SET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483
+D, [2018-03-08T11:30:19.193586 #2474] DEBUG -- :   Client Load (0.4ms)  SELECT  `clients`.* FROM `clients` ORDER BY `clients`.`id` ASC LIMIT 1
+D, [2018-03-08T11:30:19.276222 #2474] DEBUG -- :   Product Load (0.3ms)  SELECT  `products`.* FROM `products` ORDER BY `products`.`id` ASC LIMIT 1
+D, [2018-03-08T11:30:19.329717 #2474] DEBUG -- :   Product Load (0.4ms)  SELECT  `products`.* FROM `products` ORDER BY `products`.`id` ASC LIMIT 1
+D, [2018-03-08T11:30:19.330849 #2474] DEBUG -- :   Product Load (0.3ms)  SELECT  `products`.* FROM `products` ORDER BY `products`.`id` DESC LIMIT 1
+D, [2018-03-08T11:30:19.332115 #2474] DEBUG -- :    (0.2ms)  BEGIN
+D, [2018-03-08T11:30:19.367914 #2474] DEBUG -- :   SQL (34.2ms)  INSERT INTO `orders` (`created_at`, `client_id`) VALUES ('2018-03-08 10:30:19', 1)
+D, [2018-03-08T11:30:19.402859 #2474] DEBUG -- :   SQL (32.7ms)  INSERT INTO `order_items` (`quantity`, `item_price`, `order_id`, `product_id`) VALUES (2, 327.5, 18, 1)
+D, [2018-03-08T11:30:19.404838 #2474] DEBUG -- :   SQL (0.4ms)  INSERT INTO `order_items` (`quantity`, `item_price`, `order_id`, `product_id`) VALUES (3, 327.5, 18, 1)
+D, [2018-03-08T11:30:19.405923 #2474] DEBUG -- :   SQL (0.3ms)  INSERT INTO `order_items` (`quantity`, `item_price`, `order_id`, `product_id`) VALUES (4, 0.1, 18, 5)
+D, [2018-03-08T11:30:19.411383 #2474] DEBUG -- :    (5.2ms)  COMMIT
+D, [2018-03-08T11:49:03.678997 #2686] DEBUG -- :    (0.4ms)  SET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483
+D, [2018-03-08T11:49:03.694461 #2686] DEBUG -- :   Client Load (0.5ms)  SELECT  `clients`.* FROM `clients` ORDER BY `clients`.`id` ASC LIMIT 1
+D, [2018-03-08T11:49:03.776605 #2686] DEBUG -- :   Product Load (0.3ms)  SELECT  `products`.* FROM `products` ORDER BY `products`.`id` ASC LIMIT 1
+D, [2018-03-08T11:49:03.815913 #2686] DEBUG -- :   Product Load (0.4ms)  SELECT  `products`.* FROM `products` ORDER BY `products`.`id` ASC LIMIT 1
+D, [2018-03-08T11:49:03.817010 #2686] DEBUG -- :   Product Load (0.3ms)  SELECT  `products`.* FROM `products` ORDER BY `products`.`id` DESC LIMIT 1
+D, [2018-03-08T11:49:03.817835 #2686] DEBUG -- :    (0.2ms)  BEGIN
+D, [2018-03-08T11:49:03.825130 #2686] DEBUG -- :   SQL (5.9ms)  INSERT INTO `orders` (`created_at`, `client_id`) VALUES ('2018-03-08 10:49:03', 1)
+D, [2018-03-08T11:49:03.827316 #2686] DEBUG -- :   SQL (0.4ms)  INSERT INTO `order_items` (`quantity`, `item_price`, `order_id`, `product_id`) VALUES (2, 327.5, 19, 1)
+D, [2018-03-08T11:49:03.828654 #2686] DEBUG -- :   SQL (0.4ms)  INSERT INTO `order_items` (`quantity`, `item_price`, `order_id`, `product_id`) VALUES (3, 327.5, 19, 1)
+D, [2018-03-08T11:49:03.829761 #2686] DEBUG -- :   SQL (0.3ms)  INSERT INTO `order_items` (`quantity`, `item_price`, `order_id`, `product_id`) VALUES (4, 0.1, 19, 5)
+D, [2018-03-08T11:49:03.830879 #2686] DEBUG -- :    (0.9ms)  COMMIT
+D, [2018-03-08T11:49:03.831281 #2686] DEBUG -- :    (0.2ms)  BEGIN
+D, [2018-03-08T11:49:03.832360 #2686] DEBUG -- :    (0.2ms)  ROLLBACK
+D, [2018-03-08T11:49:35.469425 #2722] DEBUG -- :    (0.3ms)  SET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483
+D, [2018-03-08T11:49:35.471375 #2722] DEBUG -- :   Client Load (0.2ms)  SELECT  `clients`.* FROM `clients` ORDER BY `clients`.`id` ASC LIMIT 1
+D, [2018-03-08T11:49:35.502568 #2722] DEBUG -- :   Product Load (0.3ms)  SELECT  `products`.* FROM `products` ORDER BY `products`.`id` ASC LIMIT 1
+D, [2018-03-08T11:49:35.517556 #2722] DEBUG -- :   Product Load (0.4ms)  SELECT  `products`.* FROM `products` ORDER BY `products`.`id` ASC LIMIT 1
+D, [2018-03-08T11:49:35.518609 #2722] DEBUG -- :   Product Load (0.3ms)  SELECT  `products`.* FROM `products` ORDER BY `products`.`id` DESC LIMIT 1
+D, [2018-03-08T11:49:35.519377 #2722] DEBUG -- :    (0.1ms)  BEGIN
+D, [2018-03-08T11:49:35.521593 #2722] DEBUG -- :   SQL (0.8ms)  INSERT INTO `orders` (`created_at`, `client_id`) VALUES ('2018-03-08 10:49:35', 1)
+D, [2018-03-08T11:49:35.522615 #2722] DEBUG -- :   SQL (0.2ms)  INSERT INTO `order_items` (`quantity`, `item_price`, `order_id`, `product_id`) VALUES (2, 327.5, 20, 1)
+D, [2018-03-08T11:49:35.523346 #2722] DEBUG -- :   SQL (0.2ms)  INSERT INTO `order_items` (`quantity`, `item_price`, `order_id`, `product_id`) VALUES (3, 327.5, 20, 1)
+D, [2018-03-08T11:49:35.524031 #2722] DEBUG -- :   SQL (0.2ms)  INSERT INTO `order_items` (`quantity`, `item_price`, `order_id`, `product_id`) VALUES (4, 0.1, 20, 5)
+D, [2018-03-08T11:49:35.524457 #2722] DEBUG -- :    (0.3ms)  COMMIT
+D, [2018-03-08T11:49:35.524722 #2722] DEBUG -- :    (0.1ms)  BEGIN
+D, [2018-03-08T11:49:35.528572 #2722] DEBUG -- :   SQL (2.7ms)  UPDATE `orders` SET `status` = 'shipping' WHERE `orders`.`id` = 20
+D, [2018-03-08T11:49:35.530901 #2722] DEBUG -- :   Product Load (1.3ms)  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1
+D, [2018-03-08T11:49:35.532486 #2722] DEBUG -- :   SQL (0.3ms)  UPDATE `products` SET `stock_count` = 1 WHERE `products`.`id` = 1
+D, [2018-03-08T11:49:35.533318 #2722] DEBUG -- :   Product Load (0.2ms)  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1
+D, [2018-03-08T11:49:35.534332 #2722] DEBUG -- :   SQL (0.5ms)  UPDATE `products` SET `stock_count` = -2 WHERE `products`.`id` = 1
+D, [2018-03-08T11:49:35.535113 #2722] DEBUG -- :   Product Load (0.3ms)  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 5 LIMIT 1
+D, [2018-03-08T11:49:35.536116 #2722] DEBUG -- :   SQL (0.2ms)  UPDATE `products` SET `stock_count` = 96 WHERE `products`.`id` = 5
+D, [2018-03-08T11:49:35.536793 #2722] DEBUG -- :    (0.3ms)  COMMIT
+D, [2018-03-08T11:50:45.755380 #2756] DEBUG -- :    (0.3ms)  SET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483
+D, [2018-03-08T11:50:45.761065 #2756] DEBUG -- :   Client Load (0.2ms)  SELECT  `clients`.* FROM `clients` ORDER BY `clients`.`id` ASC LIMIT 1
+D, [2018-03-08T11:50:45.792991 #2756] DEBUG -- :   Product Load (0.3ms)  SELECT  `products`.* FROM `products` ORDER BY `products`.`id` ASC LIMIT 1
+D, [2018-03-08T11:50:45.808451 #2756] DEBUG -- :   Product Load (0.4ms)  SELECT  `products`.* FROM `products` ORDER BY `products`.`id` ASC LIMIT 1
+D, [2018-03-08T11:50:45.809376 #2756] DEBUG -- :   Product Load (0.3ms)  SELECT  `products`.* FROM `products` ORDER BY `products`.`id` DESC LIMIT 1
+D, [2018-03-08T11:50:45.810243 #2756] DEBUG -- :    (0.2ms)  BEGIN
+D, [2018-03-08T11:50:45.824562 #2756] DEBUG -- :    (0.3ms)  ROLLBACK
+D, [2018-03-08T11:50:59.232544 #2790] DEBUG -- :    (0.3ms)  SET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483
+D, [2018-03-08T11:50:59.234785 #2790] DEBUG -- :   Client Load (0.3ms)  SELECT  `clients`.* FROM `clients` ORDER BY `clients`.`id` ASC LIMIT 1
+D, [2018-03-08T11:50:59.262883 #2790] DEBUG -- :   Product Load (0.4ms)  SELECT  `products`.* FROM `products` ORDER BY `products`.`id` ASC LIMIT 1
+D, [2018-03-08T11:50:59.276362 #2790] DEBUG -- :   Product Load (0.3ms)  SELECT  `products`.* FROM `products` ORDER BY `products`.`id` ASC LIMIT 1
+D, [2018-03-08T11:50:59.277762 #2790] DEBUG -- :   Product Load (0.3ms)  SELECT  `products`.* FROM `products` ORDER BY `products`.`id` DESC LIMIT 1
+D, [2018-03-08T11:50:59.278729 #2790] DEBUG -- :    (0.2ms)  BEGIN
+D, [2018-03-08T11:50:59.281151 #2790] DEBUG -- :   SQL (1.0ms)  INSERT INTO `orders` (`created_at`, `client_id`) VALUES ('2018-03-08 10:50:59', 1)
+D, [2018-03-08T11:50:59.282240 #2790] DEBUG -- :   SQL (0.2ms)  INSERT INTO `order_items` (`quantity`, `item_price`, `order_id`, `product_id`) VALUES (2, 327.5, 21, 1)
+D, [2018-03-08T11:50:59.283127 #2790] DEBUG -- :   SQL (0.2ms)  INSERT INTO `order_items` (`quantity`, `item_price`, `order_id`, `product_id`) VALUES (3, 327.5, 21, 1)
+D, [2018-03-08T11:50:59.283963 #2790] DEBUG -- :   SQL (0.2ms)  INSERT INTO `order_items` (`quantity`, `item_price`, `order_id`, `product_id`) VALUES (4, 0.1, 21, 5)
+D, [2018-03-08T11:50:59.284425 #2790] DEBUG -- :    (0.3ms)  COMMIT
+D, [2018-03-08T11:50:59.284677 #2790] DEBUG -- :    (0.1ms)  BEGIN
+D, [2018-03-08T11:50:59.286680 #2790] DEBUG -- :   SQL (1.0ms)  UPDATE `orders` SET `status` = 'shipping' WHERE `orders`.`id` = 21
+D, [2018-03-08T11:50:59.287515 #2790] DEBUG -- :   Product Load (0.3ms)  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1
+D, [2018-03-08T11:50:59.288615 #2790] DEBUG -- :   SQL (0.2ms)  UPDATE `products` SET `stock_count` = 8 WHERE `products`.`id` = 1
+D, [2018-03-08T11:50:59.289272 #2790] DEBUG -- :   Product Load (0.2ms)  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1
+D, [2018-03-08T11:50:59.290018 #2790] DEBUG -- :   SQL (0.2ms)  UPDATE `products` SET `stock_count` = 5 WHERE `products`.`id` = 1
+D, [2018-03-08T11:50:59.290585 #2790] DEBUG -- :   Product Load (0.2ms)  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 5 LIMIT 1
+D, [2018-03-08T11:50:59.291307 #2790] DEBUG -- :   SQL (0.2ms)  UPDATE `products` SET `stock_count` = 92 WHERE `products`.`id` = 5
+D, [2018-03-08T11:50:59.291847 #2790] DEBUG -- :    (0.3ms)  COMMIT
+D, [2018-03-08T11:51:23.804993 #2824] DEBUG -- :    (0.3ms)  SET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483
+D, [2018-03-08T11:51:23.809861 #2824] DEBUG -- :   Client Load (0.3ms)  SELECT  `clients`.* FROM `clients` ORDER BY `clients`.`id` ASC LIMIT 1
+D, [2018-03-08T11:51:23.858701 #2824] DEBUG -- :   Product Load (0.4ms)  SELECT  `products`.* FROM `products` ORDER BY `products`.`id` ASC LIMIT 1
+D, [2018-03-08T11:51:23.874736 #2824] DEBUG -- :   Product Load (0.5ms)  SELECT  `products`.* FROM `products` ORDER BY `products`.`id` ASC LIMIT 1
+D, [2018-03-08T11:51:23.876306 #2824] DEBUG -- :   Product Load (0.3ms)  SELECT  `products`.* FROM `products` ORDER BY `products`.`id` DESC LIMIT 1
+D, [2018-03-08T11:51:23.877264 #2824] DEBUG -- :    (0.1ms)  BEGIN
+D, [2018-03-08T11:51:23.880291 #2824] DEBUG -- :   SQL (1.6ms)  INSERT INTO `orders` (`created_at`, `client_id`) VALUES ('2018-03-08 10:51:23', 1)
+D, [2018-03-08T11:51:23.881337 #2824] DEBUG -- :   SQL (0.2ms)  INSERT INTO `order_items` (`quantity`, `item_price`, `order_id`, `product_id`) VALUES (2, 327.5, 22, 1)
+D, [2018-03-08T11:51:23.882040 #2824] DEBUG -- :   SQL (0.2ms)  INSERT INTO `order_items` (`quantity`, `item_price`, `order_id`, `product_id`) VALUES (3, 327.5, 22, 1)
+D, [2018-03-08T11:51:23.882736 #2824] DEBUG -- :   SQL (0.2ms)  INSERT INTO `order_items` (`quantity`, `item_price`, `order_id`, `product_id`) VALUES (4, 0.1, 22, 5)
+D, [2018-03-08T11:51:23.883543 #2824] DEBUG -- :    (0.5ms)  COMMIT
+D, [2018-03-08T11:51:23.883816 #2824] DEBUG -- :    (0.1ms)  BEGIN
+D, [2018-03-08T11:51:23.887552 #2824] DEBUG -- :   SQL (2.7ms)  UPDATE `orders` SET `status` = 'shipping' WHERE `orders`.`id` = 22
+D, [2018-03-08T11:51:23.889194 #2824] DEBUG -- :   Product Load (1.1ms)  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1
+D, [2018-03-08T11:51:23.890302 #2824] DEBUG -- :   SQL (0.2ms)  UPDATE `products` SET `stock_count` = 3 WHERE `products`.`id` = 1
+D, [2018-03-08T11:51:23.891202 #2824] DEBUG -- :   Product Load (0.3ms)  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1
+D, [2018-03-08T11:51:23.892026 #2824] DEBUG -- :   SQL (0.2ms)  UPDATE `products` SET `stock_count` = 0 WHERE `products`.`id` = 1
+D, [2018-03-08T11:51:23.892733 #2824] DEBUG -- :   Product Load (0.3ms)  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 5 LIMIT 1
+D, [2018-03-08T11:51:23.893446 #2824] DEBUG -- :   SQL (0.2ms)  UPDATE `products` SET `stock_count` = 88 WHERE `products`.`id` = 5
+D, [2018-03-08T11:51:23.895181 #2824] DEBUG -- :    (1.4ms)  COMMIT
+D, [2018-03-08T11:51:39.577658 #2875] DEBUG -- :    (0.4ms)  SET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483
+D, [2018-03-08T11:51:39.582685 #2875] DEBUG -- :   Client Load (2.8ms)  SELECT  `clients`.* FROM `clients` ORDER BY `clients`.`id` ASC LIMIT 1
+D, [2018-03-08T11:51:39.610326 #2875] DEBUG -- :   Product Load (0.2ms)  SELECT  `products`.* FROM `products` ORDER BY `products`.`id` ASC LIMIT 1
+D, [2018-03-08T11:51:39.623582 #2875] DEBUG -- :   Product Load (0.4ms)  SELECT  `products`.* FROM `products` ORDER BY `products`.`id` ASC LIMIT 1
+D, [2018-03-08T11:51:39.624700 #2875] DEBUG -- :   Product Load (0.2ms)  SELECT  `products`.* FROM `products` ORDER BY `products`.`id` DESC LIMIT 1
+D, [2018-03-08T11:51:39.625497 #2875] DEBUG -- :    (0.2ms)  BEGIN
+D, [2018-03-08T11:51:39.638475 #2875] DEBUG -- :    (0.2ms)  ROLLBACK
+D, [2018-03-08T11:51:53.628867 #2910] DEBUG -- :    (0.3ms)  SET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483
+D, [2018-03-08T11:51:53.630932 #2910] DEBUG -- :   Client Load (0.2ms)  SELECT  `clients`.* FROM `clients` ORDER BY `clients`.`id` ASC LIMIT 1
+D, [2018-03-08T11:51:53.710583 #2910] DEBUG -- :   Product Load (0.3ms)  SELECT  `products`.* FROM `products` ORDER BY `products`.`id` ASC LIMIT 1
+D, [2018-03-08T11:51:53.752120 #2910] DEBUG -- :   Product Load (0.4ms)  SELECT  `products`.* FROM `products` ORDER BY `products`.`id` ASC LIMIT 1
+D, [2018-03-08T11:51:53.753325 #2910] DEBUG -- :   Product Load (0.3ms)  SELECT  `products`.* FROM `products` ORDER BY `products`.`id` DESC LIMIT 1
+D, [2018-03-08T11:51:53.754189 #2910] DEBUG -- :    (0.2ms)  BEGIN
+D, [2018-03-08T11:51:53.757073 #2910] DEBUG -- :   SQL (1.5ms)  INSERT INTO `orders` (`created_at`, `client_id`) VALUES ('2018-03-08 10:51:53', 1)
+D, [2018-03-08T11:51:53.758233 #2910] DEBUG -- :   SQL (0.3ms)  INSERT INTO `order_items` (`quantity`, `item_price`, `order_id`, `product_id`) VALUES (2, 327.5, 23, 1)
+D, [2018-03-08T11:51:53.759148 #2910] DEBUG -- :   SQL (0.3ms)  INSERT INTO `order_items` (`quantity`, `item_price`, `order_id`, `product_id`) VALUES (3, 327.5, 23, 1)
+D, [2018-03-08T11:51:53.759914 #2910] DEBUG -- :   SQL (0.2ms)  INSERT INTO `order_items` (`quantity`, `item_price`, `order_id`, `product_id`) VALUES (4, 0.1, 23, 5)
+D, [2018-03-08T11:51:53.760441 #2910] DEBUG -- :    (0.4ms)  COMMIT
+D, [2018-03-08T11:51:53.760716 #2910] DEBUG -- :    (0.2ms)  BEGIN
+D, [2018-03-08T11:51:53.762653 #2910] DEBUG -- :   SQL (0.8ms)  UPDATE `orders` SET `status` = 'shipping' WHERE `orders`.`id` = 23
+D, [2018-03-08T11:51:53.763453 #2910] DEBUG -- :   Product Load (0.3ms)  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1
+D, [2018-03-08T11:51:53.764931 #2910] DEBUG -- :   SQL (0.3ms)  UPDATE `products` SET `stock_count` = 4 WHERE `products`.`id` = 1
+D, [2018-03-08T11:51:53.765747 #2910] DEBUG -- :   Product Load (0.2ms)  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1
+D, [2018-03-08T11:51:53.766543 #2910] DEBUG -- :   SQL (0.2ms)  UPDATE `products` SET `stock_count` = 1 WHERE `products`.`id` = 1
+D, [2018-03-08T11:51:53.768480 #2910] DEBUG -- :   Product Load (0.2ms)  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 5 LIMIT 1
+D, [2018-03-08T11:51:53.769246 #2910] DEBUG -- :   SQL (0.2ms)  UPDATE `products` SET `stock_count` = 84 WHERE `products`.`id` = 5
+D, [2018-03-08T11:51:53.775740 #2910] DEBUG -- :    (6.1ms)  COMMIT
+D, [2018-03-08T11:52:00.325217 #2943] DEBUG -- :    (0.3ms)  SET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483
+D, [2018-03-08T11:52:00.327391 #2943] DEBUG -- :   Client Load (0.3ms)  SELECT  `clients`.* FROM `clients` ORDER BY `clients`.`id` ASC LIMIT 1
+D, [2018-03-08T11:52:00.355301 #2943] DEBUG -- :   Product Load (0.3ms)  SELECT  `products`.* FROM `products` ORDER BY `products`.`id` ASC LIMIT 1
+D, [2018-03-08T11:52:00.369546 #2943] DEBUG -- :   Product Load (0.4ms)  SELECT  `products`.* FROM `products` ORDER BY `products`.`id` ASC LIMIT 1
+D, [2018-03-08T11:52:00.370756 #2943] DEBUG -- :   Product Load (0.3ms)  SELECT  `products`.* FROM `products` ORDER BY `products`.`id` DESC LIMIT 1
+D, [2018-03-08T11:52:00.371647 #2943] DEBUG -- :    (0.2ms)  BEGIN
+D, [2018-03-08T11:52:00.384552 #2943] DEBUG -- :    (0.2ms)  ROLLBACK
+D, [2018-03-08T11:52:09.091459 #2976] DEBUG -- :    (0.4ms)  SET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483
+D, [2018-03-08T11:52:09.093604 #2976] DEBUG -- :   Client Load (0.3ms)  SELECT  `clients`.* FROM `clients` ORDER BY `clients`.`id` ASC LIMIT 1
+D, [2018-03-08T11:52:09.120960 #2976] DEBUG -- :   Product Load (0.3ms)  SELECT  `products`.* FROM `products` ORDER BY `products`.`id` ASC LIMIT 1
+D, [2018-03-08T11:52:09.136040 #2976] DEBUG -- :   Product Load (0.3ms)  SELECT  `products`.* FROM `products` ORDER BY `products`.`id` ASC LIMIT 1
+D, [2018-03-08T11:52:09.137116 #2976] DEBUG -- :   Product Load (0.2ms)  SELECT  `products`.* FROM `products` ORDER BY `products`.`id` DESC LIMIT 1
+D, [2018-03-08T11:52:09.138042 #2976] DEBUG -- :    (0.2ms)  BEGIN
+D, [2018-03-08T11:52:09.148273 #2976] DEBUG -- :    (0.3ms)  ROLLBACK
+D, [2018-03-08T11:52:15.219502 #3009] DEBUG -- :    (0.4ms)  SET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483
+D, [2018-03-08T11:52:15.224176 #3009] DEBUG -- :   Client Load (0.3ms)  SELECT  `clients`.* FROM `clients` ORDER BY `clients`.`id` ASC LIMIT 1
+D, [2018-03-08T11:52:15.268873 #3009] DEBUG -- :   Product Load (0.3ms)  SELECT  `products`.* FROM `products` ORDER BY `products`.`id` ASC LIMIT 1
+D, [2018-03-08T11:52:15.282918 #3009] DEBUG -- :   Product Load (0.4ms)  SELECT  `products`.* FROM `products` ORDER BY `products`.`id` ASC LIMIT 1
+D, [2018-03-08T11:52:15.283924 #3009] DEBUG -- :   Product Load (0.3ms)  SELECT  `products`.* FROM `products` ORDER BY `products`.`id` DESC LIMIT 1
+D, [2018-03-08T11:52:15.284952 #3009] DEBUG -- :    (0.2ms)  BEGIN
+D, [2018-03-08T11:52:15.295751 #3009] DEBUG -- :    (0.3ms)  ROLLBACK
+D, [2018-03-08T11:52:23.311133 #3042] DEBUG -- :    (0.4ms)  SET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483
+D, [2018-03-08T11:52:23.313455 #3042] DEBUG -- :   Client Load (0.3ms)  SELECT  `clients`.* FROM `clients` ORDER BY `clients`.`id` ASC LIMIT 1
+D, [2018-03-08T11:52:23.340781 #3042] DEBUG -- :   Product Load (0.3ms)  SELECT  `products`.* FROM `products` ORDER BY `products`.`id` ASC LIMIT 1
+D, [2018-03-08T11:52:23.354962 #3042] DEBUG -- :   Product Load (0.3ms)  SELECT  `products`.* FROM `products` ORDER BY `products`.`id` ASC LIMIT 1
+D, [2018-03-08T11:52:23.355868 #3042] DEBUG -- :   Product Load (0.2ms)  SELECT  `products`.* FROM `products` ORDER BY `products`.`id` DESC LIMIT 1
+D, [2018-03-08T11:52:23.356714 #3042] DEBUG -- :    (0.2ms)  BEGIN
+D, [2018-03-08T11:52:23.359499 #3042] DEBUG -- :   SQL (1.2ms)  INSERT INTO `orders` (`created_at`, `client_id`) VALUES ('2018-03-08 10:52:23', 1)
+D, [2018-03-08T11:52:23.360949 #3042] DEBUG -- :   SQL (0.3ms)  INSERT INTO `order_items` (`quantity`, `item_price`, `order_id`, `product_id`) VALUES (2, 327.5, 24, 1)
+D, [2018-03-08T11:52:23.361966 #3042] DEBUG -- :   SQL (0.3ms)  INSERT INTO `order_items` (`quantity`, `item_price`, `order_id`, `product_id`) VALUES (3, 327.5, 24, 1)
+D, [2018-03-08T11:52:23.362887 #3042] DEBUG -- :   SQL (0.2ms)  INSERT INTO `order_items` (`quantity`, `item_price`, `order_id`, `product_id`) VALUES (4, 0.1, 24, 5)
+D, [2018-03-08T11:52:23.363471 #3042] DEBUG -- :    (0.4ms)  COMMIT
+D, [2018-03-08T11:52:23.363810 #3042] DEBUG -- :    (0.2ms)  BEGIN
+D, [2018-03-08T11:52:23.367075 #3042] DEBUG -- :   SQL (2.2ms)  UPDATE `orders` SET `status` = 'shipping' WHERE `orders`.`id` = 24
+D, [2018-03-08T11:52:23.368377 #3042] DEBUG -- :   Product Load (0.4ms)  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1
+D, [2018-03-08T11:52:23.369845 #3042] DEBUG -- :   SQL (0.3ms)  UPDATE `products` SET `stock_count` = 2 WHERE `products`.`id` = 1
+D, [2018-03-08T11:52:23.370645 #3042] DEBUG -- :   Product Load (0.2ms)  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1
+D, [2018-03-08T11:52:23.371387 #3042] DEBUG -- :   SQL (0.2ms)  UPDATE `products` SET `stock_count` = -1 WHERE `products`.`id` = 1
+D, [2018-03-08T11:52:23.371992 #3042] DEBUG -- :   Product Load (0.2ms)  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 5 LIMIT 1
+D, [2018-03-08T11:52:23.372674 #3042] DEBUG -- :   SQL (0.2ms)  UPDATE `products` SET `stock_count` = 80 WHERE `products`.`id` = 5
+D, [2018-03-08T11:52:23.374061 #3042] DEBUG -- :    (1.1ms)  COMMIT
+D, [2018-03-08T11:53:28.568105 #3187] DEBUG -- :    (0.3ms)  SET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483
+D, [2018-03-08T11:53:28.570436 #3187] DEBUG -- :   Client Load (0.2ms)  SELECT  `clients`.* FROM `clients` ORDER BY `clients`.`id` ASC LIMIT 1
+D, [2018-03-08T11:53:28.615334 #3187] DEBUG -- :   Product Load (0.2ms)  SELECT  `products`.* FROM `products` ORDER BY `products`.`id` ASC LIMIT 1
+D, [2018-03-08T11:53:28.628921 #3187] DEBUG -- :   Product Load (0.4ms)  SELECT  `products`.* FROM `products` ORDER BY `products`.`id` ASC LIMIT 1
+D, [2018-03-08T11:53:28.629850 #3187] DEBUG -- :   Product Load (0.3ms)  SELECT  `products`.* FROM `products` ORDER BY `products`.`id` DESC LIMIT 1
+D, [2018-03-08T11:53:28.630723 #3187] DEBUG -- :    (0.2ms)  BEGIN
+D, [2018-03-08T11:53:28.643842 #3187] DEBUG -- :    (0.3ms)  ROLLBACK
+D, [2018-03-09T10:53:21.092468 #11224] DEBUG -- :    (33.2ms)  SET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483
+D, [2018-03-09T10:53:21.144090 #11224] DEBUG -- :   Client Load (5.4ms)  SELECT  `clients`.* FROM `clients` ORDER BY `clients`.`id` ASC LIMIT 1
+D, [2018-03-09T10:53:21.270086 #11224] DEBUG -- :   Product Load (28.6ms)  SELECT  `products`.* FROM `products` ORDER BY `products`.`id` ASC LIMIT 1
+D, [2018-03-09T10:53:21.291244 #11224] DEBUG -- :   Product Load (0.5ms)  SELECT  `products`.* FROM `products` ORDER BY `products`.`id` ASC LIMIT 1
+D, [2018-03-09T10:53:21.292469 #11224] DEBUG -- :   Product Load (0.4ms)  SELECT  `products`.* FROM `products` ORDER BY `products`.`id` DESC LIMIT 1
+D, [2018-03-09T10:53:21.293473 #11224] DEBUG -- :    (0.2ms)  BEGIN
+D, [2018-03-09T10:53:21.327653 #11224] DEBUG -- :   SQL (31.3ms)  INSERT INTO `orders` (`created_at`, `client_id`) VALUES ('2018-03-09 09:53:21', 1)
+D, [2018-03-09T10:53:21.331568 #11224] DEBUG -- :   SQL (2.2ms)  INSERT INTO `order_items` (`quantity`, `item_price`, `order_id`, `product_id`) VALUES (2, 327.5, 26, 1)
+D, [2018-03-09T10:53:21.332968 #11224] DEBUG -- :   SQL (0.4ms)  INSERT INTO `order_items` (`quantity`, `item_price`, `order_id`, `product_id`) VALUES (3, 327.5, 26, 1)
+D, [2018-03-09T10:53:21.334008 #11224] DEBUG -- :   SQL (0.3ms)  INSERT INTO `order_items` (`quantity`, `item_price`, `order_id`, `product_id`) VALUES (4, 0.1, 26, 5)
+D, [2018-03-09T10:53:21.335703 #11224] DEBUG -- :    (1.4ms)  COMMIT
+D, [2018-03-09T10:53:21.336216 #11224] DEBUG -- :    (0.3ms)  BEGIN
+D, [2018-03-09T10:53:21.346397 #11224] DEBUG -- :   SQL (8.5ms)  UPDATE `orders` SET `status` = 'shipping' WHERE `orders`.`id` = 26
+D, [2018-03-09T10:53:21.347887 #11224] DEBUG -- :   Product Load (0.4ms)  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1
+D, [2018-03-09T10:53:21.349765 #11224] DEBUG -- :   SQL (0.4ms)  UPDATE `products` SET `stock_count` = 2 WHERE `products`.`id` = 1
+D, [2018-03-09T10:53:21.350968 #11224] DEBUG -- :   Product Load (0.3ms)  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1
+D, [2018-03-09T10:53:21.352109 #11224] DEBUG -- :   SQL (0.3ms)  UPDATE `products` SET `stock_count` = -1 WHERE `products`.`id` = 1
+D, [2018-03-09T10:53:21.353023 #11224] DEBUG -- :   Product Load (0.3ms)  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 5 LIMIT 1
+D, [2018-03-09T10:53:21.353860 #11224] DEBUG -- :   SQL (0.3ms)  UPDATE `products` SET `stock_count` = 72 WHERE `products`.`id` = 5
+D, [2018-03-09T10:53:21.360374 #11224] DEBUG -- :    (6.1ms)  COMMIT
+D, [2018-03-09T10:53:48.974952 #11261] DEBUG -- :    (0.4ms)  SET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483
+D, [2018-03-09T10:53:49.001212 #11261] DEBUG -- :   Client Load (5.6ms)  SELECT  `clients`.* FROM `clients` ORDER BY `clients`.`id` ASC LIMIT 1
+D, [2018-03-09T10:53:49.079186 #11261] DEBUG -- :   Product Load (0.3ms)  SELECT  `products`.* FROM `products` ORDER BY `products`.`id` ASC LIMIT 1
+D, [2018-03-09T10:53:49.116220 #11261] DEBUG -- :   Product Load (0.3ms)  SELECT  `products`.* FROM `products` ORDER BY `products`.`id` ASC LIMIT 1
+D, [2018-03-09T10:53:49.117157 #11261] DEBUG -- :   Product Load (0.3ms)  SELECT  `products`.* FROM `products` ORDER BY `products`.`id` DESC LIMIT 1
+D, [2018-03-09T10:53:49.118017 #11261] DEBUG -- :    (0.2ms)  BEGIN
+D, [2018-03-09T10:53:49.132367 #11261] DEBUG -- :    (0.3ms)  ROLLBACK

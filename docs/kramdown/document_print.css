@@ -1,0 +1,52 @@
+
+a {
+  word-wrap: break-word;
+}
+
+a[href^="http://"]:after,
+a[href^="https://"]:after {
+  content: " (" attr(href) ")";
+  font-size: 90%;
+}
+
+a[href^="#"]:after {
+  display: none;
+}
+
+
+h1 {
+  page-break-after: avoid;
+  page-break-before: always;
+}
+h1.no_toc {
+  page-break-after: auto;
+  page-break-before: auto;
+}
+
+h2, h3, h4, h5, h6 {
+  page-break-after: avoid;
+}
+
+p {
+  orphans:3;
+  widows:3;
+}
+
+table.CodeRay {
+  page-break-inside: avoid;
+}
+
+img {
+  max-width: 100%;
+}
+
+img.heading {
+  max-height: 100px;
+}
+
+/*
+#markdown-toc a:after,
+.CodeRay a:after {
+  content: none;
+}
+*/

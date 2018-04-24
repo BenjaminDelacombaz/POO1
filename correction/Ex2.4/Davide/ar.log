@@ -1,0 +1,105 @@
+# Logfile created on 2018-02-08 08:49:39 +0100 by logger.rb/56815
+D, [2018-02-08T08:49:39.598798 #92470] DEBUG -- :    (0.3ms)  SET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483
+D, [2018-02-08T08:49:39.603012 #92470] DEBUG -- :    (0.2ms)  BEGIN
+D, [2018-02-08T08:49:39.615186 #92470] DEBUG -- :   SQL (0.3ms)  INSERT INTO `clients` (`firstname`, `lastname`) VALUES ('John', 'Doe')
+D, [2018-02-08T08:49:39.615756 #92470] DEBUG -- :    (0.3ms)  COMMIT
+D, [2018-02-08T08:49:39.619226 #92470] DEBUG -- :    (0.1ms)  BEGIN
+D, [2018-02-08T08:49:39.619935 #92470] DEBUG -- :   SQL (0.1ms)  INSERT INTO `categories` (`name`, `description`) VALUES ('Calculators', 'Calculators for math lesson !')
+D, [2018-02-08T08:49:39.620408 #92470] DEBUG -- :    (0.3ms)  COMMIT
+D, [2018-02-08T08:49:39.624152 #92470] DEBUG -- :    (0.1ms)  BEGIN
+D, [2018-02-08T08:49:39.624865 #92470] DEBUG -- :   SQL (0.2ms)  INSERT INTO `products` (`name`, `price`, `description`) VALUES ('TInSpire CAS', 175, 'The best calculator !')
+D, [2018-02-08T08:49:39.625300 #92470] DEBUG -- :    (0.3ms)  COMMIT
+D, [2018-02-08T08:50:19.691817 #92475] DEBUG -- :    (0.3ms)  SET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483
+D, [2018-02-08T08:50:19.695695 #92475] DEBUG -- :    (0.1ms)  BEGIN
+D, [2018-02-08T08:50:19.701685 #92475] DEBUG -- :   SQL (0.3ms)  INSERT INTO `clients` (`firstname`, `lastname`) VALUES ('John', 'Doe')
+D, [2018-02-08T08:50:19.702670 #92475] DEBUG -- :    (0.8ms)  COMMIT
+D, [2018-02-08T08:50:19.705494 #92475] DEBUG -- :    (0.1ms)  BEGIN
+D, [2018-02-08T08:50:19.706247 #92475] DEBUG -- :   SQL (0.2ms)  INSERT INTO `categories` (`name`, `description`) VALUES ('Calculators', 'Calculators for math lesson !')
+D, [2018-02-08T08:50:19.706726 #92475] DEBUG -- :    (0.3ms)  COMMIT
+D, [2018-02-08T08:50:19.709840 #92475] DEBUG -- :    (0.1ms)  BEGIN
+D, [2018-02-08T08:50:19.710594 #92475] DEBUG -- :   SQL (0.2ms)  INSERT INTO `products` (`name`, `price`, `description`) VALUES ('TInSpire CAS', 175, 'The best calculator !')
+D, [2018-02-08T08:50:19.710977 #92475] DEBUG -- :    (0.2ms)  COMMIT
+D, [2018-02-08T08:54:02.108015 #92484] DEBUG -- :    (0.2ms)  SET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483
+D, [2018-02-08T08:54:02.111730 #92484] DEBUG -- :    (0.1ms)  BEGIN
+D, [2018-02-08T08:54:02.117592 #92484] DEBUG -- :   SQL (0.2ms)  INSERT INTO `clients` (`firstname`, `lastname`) VALUES ('John', 'Doe')
+D, [2018-02-08T08:54:02.118997 #92484] DEBUG -- :    (1.2ms)  COMMIT
+D, [2018-02-08T08:54:02.122199 #92484] DEBUG -- :    (0.1ms)  BEGIN
+D, [2018-02-08T08:54:02.122967 #92484] DEBUG -- :   SQL (0.2ms)  INSERT INTO `categories` (`name`, `description`) VALUES ('Calculators', 'Calculators for math lesson !')
+D, [2018-02-08T08:54:02.123428 #92484] DEBUG -- :    (0.3ms)  COMMIT
+D, [2018-02-08T08:54:02.126707 #92484] DEBUG -- :    (0.1ms)  BEGIN
+D, [2018-02-08T08:54:02.127365 #92484] DEBUG -- :   SQL (0.2ms)  INSERT INTO `products` (`name`, `price`, `description`) VALUES ('TInSpire CAS', 175, 'The best calculator !')
+D, [2018-02-08T08:54:02.127809 #92484] DEBUG -- :    (0.3ms)  COMMIT
+D, [2018-02-08T08:54:02.133044 #92484] DEBUG -- :    (0.2ms)  BEGIN
+D, [2018-02-08T08:54:02.143021 #92484] DEBUG -- :   SQL (0.2ms)  INSERT INTO `categories_products` (`category_id`, `product_id`) VALUES (3, 3)
+D, [2018-02-08T08:54:02.143573 #92484] DEBUG -- :    (0.3ms)  COMMIT
+D, [2018-02-08T08:54:02.143816 #92484] DEBUG -- :    (0.1ms)  BEGIN
+D, [2018-02-08T08:54:02.144328 #92484] DEBUG -- :    (0.1ms)  COMMIT
+D, [2018-02-15T08:59:32.201376 #9024] DEBUG -- :    (1.0ms)  SET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483
+D, [2018-02-15T09:23:14.337376 #5496] DEBUG -- :   Client Load (0.0ms)  SELECT  `clients`.* FROM `clients` ORDER BY `clients`.`id` ASC LIMIT 1
+D, [2018-02-15T09:23:14.358376 #5496] DEBUG -- :   Order Load (0.0ms)  SELECT `orders`.* FROM `orders` WHERE `orders`.`client_id` = 1
+D, [2018-02-15T09:23:48.403376 #1588] DEBUG -- :   Client Load (0.0ms)  SELECT  `clients`.* FROM `clients` ORDER BY `clients`.`id` ASC LIMIT 1
+D, [2018-02-15T09:23:48.423376 #1588] DEBUG -- :   Order Load (0.0ms)  SELECT `orders`.* FROM `orders` WHERE `orders`.`client_id` = 1
+D, [2018-02-15T09:23:48.440376 #1588] DEBUG -- :   Product Load (0.0ms)  SELECT `products`.* FROM `products` INNER JOIN `order_items` ON `products`.`id` = `order_items`.`product_id` WHERE `order_items`.`order_id` = 1 AND (price <= 0.2)
+D, [2018-02-15T09:24:15.453376 #9024] DEBUG -- :   Client Load (0.0ms)  SELECT  `clients`.* FROM `clients` ORDER BY `clients`.`id` ASC LIMIT 1
+D, [2018-02-15T09:24:15.485376 #9024] DEBUG -- :   Order Load (0.0ms)  SELECT `orders`.* FROM `orders` WHERE `orders`.`client_id` = 1
+D, [2018-02-15T09:24:16.627376 #9024] DEBUG -- :   Client Load (0.0ms)  SELECT  `clients`.* FROM `clients` ORDER BY `clients`.`id` ASC LIMIT 1
+D, [2018-02-15T09:24:16.628376 #9024] DEBUG -- :   Order Load (0.0ms)  SELECT `orders`.* FROM `orders` WHERE `orders`.`client_id` = 1
+D, [2018-02-15T09:25:03.212376 #9024] DEBUG -- :   Client Load (0.0ms)  SELECT  `clients`.* FROM `clients` ORDER BY `clients`.`id` ASC LIMIT 1
+D, [2018-02-15T09:25:03.213376 #9024] DEBUG -- :   Order Load (0.0ms)  SELECT `orders`.* FROM `orders` WHERE `orders`.`client_id` = 1
+D, [2018-02-15T09:25:06.227376 #9024] DEBUG -- :   Client Load (0.0ms)  SELECT  `clients`.* FROM `clients` ORDER BY `clients`.`id` ASC LIMIT 1
+D, [2018-02-15T09:25:06.228376 #9024] DEBUG -- :   Order Load (1.0ms)  SELECT `orders`.* FROM `orders` WHERE `orders`.`client_id` = 1
+D, [2018-02-15T09:27:49.595376 #8592] DEBUG -- :   Client Load (0.0ms)  SELECT  `clients`.* FROM `clients` ORDER BY `clients`.`id` ASC LIMIT 1
+D, [2018-02-15T09:27:49.617376 #8592] DEBUG -- :   Order Load (1.0ms)  SELECT `orders`.* FROM `orders` WHERE `orders`.`client_id` = 1
+D, [2018-02-15T09:27:49.631376 #8592] DEBUG -- :   Product Load (0.0ms)  SELECT `products`.* FROM `products` INNER JOIN `order_items` ON `products`.`id` = `order_items`.`product_id` WHERE `order_items`.`order_id` = 1 AND (price <= 0.2)
+D, [2018-02-15T09:52:15.086376 #3340] DEBUG -- :   Client Load (0.0ms)  SELECT  `clients`.* FROM `clients` ORDER BY `clients`.`id` ASC LIMIT 1
+D, [2018-02-15T09:52:35.738376 #9752] DEBUG -- :   Client Load (0.0ms)  SELECT  `clients`.* FROM `clients` ORDER BY `clients`.`id` ASC LIMIT 1
+D, [2018-02-15T09:55:18.369376 #7832] DEBUG -- :   Client Load (1.0ms)  SELECT  `clients`.* FROM `clients` ORDER BY `clients`.`id` ASC LIMIT 1
+D, [2018-02-15T09:58:55.571376 #10228] DEBUG -- :   Client Load (0.0ms)  SELECT  `clients`.* FROM `clients` ORDER BY `clients`.`id` ASC LIMIT 1
+D, [2018-02-15T09:59:20.173376 #10196] DEBUG -- :   Client Load (0.0ms)  SELECT  `clients`.* FROM `clients` ORDER BY `clients`.`id` ASC LIMIT 1
+D, [2018-02-15T09:59:35.066376 #10164] DEBUG -- :   Client Load (0.0ms)  SELECT  `clients`.* FROM `clients` ORDER BY `clients`.`id` ASC LIMIT 1
+D, [2018-02-15T10:00:17.992376 #7672] DEBUG -- :   Client Load (0.0ms)  SELECT  `clients`.* FROM `clients` ORDER BY `clients`.`id` ASC LIMIT 1
+D, [2018-02-15T10:10:26.068376 #8736] DEBUG -- :   Client Load (0.0ms)  SELECT  `clients`.* FROM `clients` ORDER BY `clients`.`id` ASC LIMIT 1
+D, [2018-02-15T10:11:10.344376 #9844] DEBUG -- :   Client Load (0.0ms)  SELECT  `clients`.* FROM `clients` ORDER BY `clients`.`id` ASC LIMIT 1
+D, [2018-02-15T10:12:50.929376 #9468] DEBUG -- :   Client Load (0.0ms)  SELECT  `clients`.* FROM `clients` ORDER BY `clients`.`id` ASC LIMIT 1
+D, [2018-02-15T10:13:42.191376 #7760] DEBUG -- :   Client Load (0.0ms)  SELECT  `clients`.* FROM `clients` ORDER BY `clients`.`id` ASC LIMIT 1
+D, [2018-02-15T10:14:02.808376 #1864] DEBUG -- :   Client Load (0.0ms)  SELECT  `clients`.* FROM `clients` ORDER BY `clients`.`id` ASC LIMIT 1
+D, [2018-02-15T10:14:43.075376 #10164] DEBUG -- :   Client Load (0.0ms)  SELECT  `clients`.* FROM `clients` ORDER BY `clients`.`id` ASC LIMIT 1
+D, [2018-02-15T10:15:12.646376 #8172] DEBUG -- :   Client Load (0.0ms)  SELECT  `clients`.* FROM `clients` ORDER BY `clients`.`id` ASC LIMIT 1
+D, [2018-02-16T10:53:48.095445 #8488] DEBUG -- :   Client Load (0.0ms)  SELECT  `clients`.* FROM `clients` ORDER BY `clients`.`id` ASC LIMIT 1
+D, [2018-02-16T10:55:30.766404 #3512] DEBUG -- :   Client Load (0.0ms)  SELECT  `clients`.* FROM `clients` ORDER BY `clients`.`id` ASC LIMIT 1
+D, [2018-02-16T10:55:30.798404 #3512] DEBUG -- :   Product Load (1.0ms)  SELECT DISTINCT `products`.* FROM `products` INNER JOIN `order_items` ON `products`.`id` = `order_items`.`product_id` INNER JOIN `orders` ON `order_items`.`order_id` = `orders`.`id` WHERE `orders`.`client_id` = 1 AND (price <= 0.2)
+D, [2018-02-16T10:55:30.800404 #3512] DEBUG -- :   OrderItem Load (0.0ms)  SELECT `order_items`.* FROM `order_items` WHERE (quantity >= 50)
+D, [2018-02-16T11:19:45.018404 #7620] DEBUG -- :   Client Load (0.0ms)  SELECT  `clients`.* FROM `clients` ORDER BY `clients`.`id` ASC LIMIT 1
+D, [2018-02-16T11:19:58.921404 #4472] DEBUG -- :   Client Load (0.0ms)  SELECT  `clients`.* FROM `clients` ORDER BY `clients`.`id` ASC LIMIT 1
+D, [2018-02-16T11:19:58.928404 #4472] DEBUG -- :    (1.0ms)  BEGIN
+D, [2018-02-16T11:19:58.929404 #4472] DEBUG -- :   SQL (0.0ms)  UPDATE `clients` SET `firstname` = 'Bruno', `lastname` = 'Carboni' WHERE `clients`.`id` = 1
+D, [2018-02-16T11:19:58.930404 #4472] DEBUG -- :    (1.0ms)  COMMIT
+D, [2018-02-16T11:20:51.484404 #8624] DEBUG -- :   Client Load (0.0ms)  SELECT  `clients`.* FROM `clients` ORDER BY `clients`.`id` ASC LIMIT 1
+D, [2018-02-16T11:20:51.491404 #8624] DEBUG -- :    (1.0ms)  BEGIN
+D, [2018-02-16T11:20:51.492404 #8624] DEBUG -- :   SQL (0.0ms)  UPDATE `clients` SET `firstname` = 'Bno' WHERE `clients`.`id` = 1
+D, [2018-02-16T11:20:51.492404 #8624] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-02-16T11:21:59.299404 #8620] DEBUG -- :   Client Load (0.0ms)  SELECT  `clients`.* FROM `clients` ORDER BY `clients`.`id` ASC LIMIT 1
+D, [2018-02-16T11:21:59.305404 #8620] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-16T11:21:59.306404 #8620] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-02-16T11:22:08.285404 #1596] DEBUG -- :   Client Load (0.0ms)  SELECT  `clients`.* FROM `clients` ORDER BY `clients`.`id` ASC LIMIT 1
+D, [2018-02-16T11:22:08.292404 #1596] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-16T11:22:08.294404 #1596] DEBUG -- :   SQL (1.0ms)  UPDATE `clients` SET `firstname` = 'Btno' WHERE `clients`.`id` = 1
+D, [2018-02-16T11:22:08.295404 #1596] DEBUG -- :    (1.0ms)  COMMIT
+D, [2018-02-16T11:23:52.785404 #3172] DEBUG -- :   Client Load (0.0ms)  SELECT  `clients`.* FROM `clients` ORDER BY `clients`.`id` ASC LIMIT 1
+D, [2018-02-16T11:23:52.792404 #3172] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-16T11:23:52.808404 #3172] DEBUG -- :    (0.0ms)  ROLLBACK
+D, [2018-02-16T11:24:53.526404 #2828] DEBUG -- :   Client Load (0.0ms)  SELECT  `clients`.* FROM `clients` ORDER BY `clients`.`id` ASC LIMIT 1
+D, [2018-02-16T11:24:53.532404 #2828] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-16T11:24:53.545404 #2828] DEBUG -- :    (0.0ms)  ROLLBACK
+D, [2018-02-16T11:25:19.722404 #1736] DEBUG -- :   Client Load (0.0ms)  SELECT  `clients`.* FROM `clients` ORDER BY `clients`.`id` ASC LIMIT 1
+D, [2018-02-16T11:25:19.730404 #1736] DEBUG -- :    (1.0ms)  BEGIN
+D, [2018-02-16T11:25:19.731404 #1736] DEBUG -- :   SQL (0.0ms)  UPDATE `clients` SET `firstname` = 'Brunos' WHERE `clients`.`id` = 1
+D, [2018-02-16T11:25:19.732404 #1736] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-02-16T11:26:36.558404 #6648] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-16T11:26:36.572404 #6648] DEBUG -- :   SQL (1.0ms)  INSERT INTO `clients` (`firstname`, `lastname`) VALUES ('Brunos', 'Carboni')
+D, [2018-02-16T11:26:36.573404 #6648] DEBUG -- :    (1.0ms)  COMMIT
+D, [2018-02-16T11:42:46.507404 #8592] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-16T11:42:46.546404 #8592] DEBUG -- :    (0.0ms)  ROLLBACK
+D, [2018-02-16T11:44:29.076404 #7672] DEBUG -- :    (1.0ms)  BEGIN
+D, [2018-02-16T11:44:29.089404 #7672] DEBUG -- :   SQL (0.0ms)  INSERT INTO `clients` (`firstname`, `lastname`) VALUES ('Brunos', 'Carboni')
+D, [2018-02-16T11:44:29.090404 #7672] DEBUG -- :    (1.0ms)  COMMIT

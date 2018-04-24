@@ -1,0 +1,134 @@
+# encoding: UTF-8
+
+presentation_filename = "#{ENV['title']}-Presentation.html"
+textbook_filename = "#{ENV['title']}-Textbook.html"
+
+namespace :document do
+  namespace :course do
+    
+    namespace :presentation do
+      desc "Generate the presentation, pass its title in `title`, optionally `source` as the directory path where to find markdown files (default to `title`)"
+      task :generate do
+        reveal_template = 'revealjs/index.html.erb'
+        title = ENV['title'] || fail("You must pass the document `title`!")
+        source_path = ENV['source'] || title
+    
+        heading_pattern = "#{source_path}/*-Presentation.yml"
+        heading_filename = Dir.glob(heading_pattern).first.to_s
+        if File.exists?(heading_filename)
+          require 'erb'
+          require 'yaml'
+          template = ERB.new(File.read(reveal_template))
+          @options = YAML.load_file(heading_filename)
+          @sections = Dir.glob("#{source_path}/*.md")
+          File.open(presentation_filename, 'w') {|file| file.write(template.result) }
+        else
+          puts "No #{heading_pattern} file, skipping generation"
+        end
+      end
+  
+      desc "Show the presentation, pass its title in `title` (see it on localhost:9999, or specify its port in `port`)"
+      task :show => presentation_filename do
+        title = ENV['title'] || fail("You must pass the document `title`!")
+        port = ENV['port'] || 9999
+    
+        require 'webrick'
+        `#{Gem.win_platform? ? 'start' : 'open'} "http://localhost:#{port}/#{presentation_filename}"`
+        WEBrick::HTTPServer.new(:Port => port, :DocumentRoot => Dir.pwd).start
+      end
+    end
+
+    namespace :textbook do
+      namespace :generate do
+        desc "Generate the textbook using kramdown, pass its title in `title`, you may pass your own template in `template`, optionally `source` as the directory path where to find markdown files (default to `title`)"
+        task :kramdown do
+          title = ENV['title'] || fail("You must pass the document `title`!")
+          source_path = ENV['source'] || title
+          template_filename = ENV['template'] || File.join(File.dirname(__FILE__), "kramdown/cpnv.html")
+      
+          hilite_special = lambda do |text|
+            text.gsub /__([\w$+-]+?)__/, '<span class="hilite">\1</span>'
+          end
+      
+          heading_pattern = "#{source_path}/*-Textbook.yml"
+          heading_filename = Dir.glob(heading_pattern).first.to_s
+          if File.exists?(heading_filename)
+            # We have to inject the graphviz handler into kramdown, so instead of running the CLI version, use the Ruby one
+            # `kramdown --template kramdown/template.html #{heading_filename} #{Dir.glob("#{title}/#{title}-[0-9][0-9]-*.md").join(' ')} >#{textbook_filename}`
+            require 'kramdown'
+            require 'yaml'
+            begin; require 'kramdown_graphviz'; rescue LoadError; puts "Kramdown Graphviz extension not available!"; end
+            source_content = Dir.glob("#{source_path}/*.md").inject('') {|memo, source_filename| memo << File.read(source_filename) << "\n" }
+            options = {
+              template: template_filename,
+              coderay_tab_width: 2,
+              coderay_css: 'class',
+              coderay_line_numbers: 'table'
+            }.update(YAML.load_file(heading_filename))
+            File.open(textbook_filename, 'w') {|file| file.write(hilite_special.call(Kramdown::Document.new(source_content, options).to_html)) }
+          else
+            puts "No #{heading_pattern} file, skipping generation"
+          end
+        end
+
+        desc "Generate the textbook using pandoc, pass its title in `title`, pass the output format in `format`, you may pass your own template in `template`, optionally `source` as the directory path where to find markdown files (default to `title`), optionnaly `output` as the output filename."
+        task :pandoc do
+          title = ENV['title'] || fail("You must pass the document `title`!")
+          source_path = ENV['source'] || title
+      
+          format = ENV['format'] || 'html'
+      
+          if format == 'pdf'
+            format = 'latex'
+            textbook_filename = "#{File.basename(textbook_filename, '.html')}.pdf"
+          end
+      
+          template_filename = ENV['template'] || "cpnv.#{format}"
+          textbook_filename = ENV['output'] if ENV['output']
+      
+          hilite_special = lambda do |text|
+            text.gsub /__([\w$+-]+?)__/, '<span class="hilite">\1</span>'
+          end
+      
+          heading_pattern = "#{source_path}/*-Textbook.yml"
+          heading_filename = Dir.glob(heading_pattern).first.to_s
+          if File.exists?(heading_filename)
+            # gather pandoc command switches from YAML meta data, convention: keys starts with CLA_, eg: CLA_toc_ will put --toc on the command line
+            require 'yaml'
+            cl_options = YAML.load_file(heading_filename).map {|key,value| key =~ /^CLA_(.+?)$/ ? (value == true ? "--#{$1}" : "--#{$1}=\"#{value}\"") : ''}.join(" ")
+            template_dirs = ['.', File.join(File.dirname(__FILE__), "pandoc"), "~/.pandoc/templates"]
+            template_paths = template_dirs.map {|dir| File.expand_path(File.join(dir, template_filename)) }
+            template_option = if template_filename = template_paths.find {|pathname| File.exists? pathname}
+              "--template=#{template_filename}"
+            end
+            
+            #cmdline = "pandoc -s #{heading_filename} #{source_path}/*.md -o #{textbook_filename} #{cl_options} -t #{format} #{template_option} --listings -Vtemplate_dir=#{File.dirname(template_filename)}"
+            cmdline = [%Q{cat "#{heading_filename}" "#{source_path}"/*.md}]
+            cmdline << %Q{ruby -e "ARGF.each_line {|line| puts line.gsub(/\{:.+?\}/, '')}"}
+            cmdline << %Q{ruby -e "ARGF.each_line {|line| puts line.tr('─┌┬┐└┴┘', %q{-/+\\\\\\\\\\\\\\+/})}"}
+            cmdline << %Q{pandoc -o "#{textbook_filename}" #{cl_options} -t #{format} "#{template_option}" --listings -Vtemplate_dir="#{File.dirname(template_filename)}"}
+            cmdline = cmdline.join(' | ')
+            puts cmdline if verbose == true
+            system cmdline
+          else
+            puts "No #{heading_pattern} file, skipping generation"
+          end
+        end
+      end
+  
+      desc "Generate the textbook using the DOCUMENT_GENERATOR backend, pass its title in `title`"
+      task :generate do
+        Rake::Task["document:course:textbook:generate:#{ENV['DOCUMENT_GENERATOR'] || 'kramdown'}"].invoke
+      end
+    end
+    
+    file textbook_filename => Dir.glob("#{ENV['title']}/*") do
+      Rake::Task['document:course:textbook:generate'].invoke
+    end
+
+    file presentation_filename => Dir.glob("#{ENV['title']}/*") do
+      Rake::Task['document:course:presentation:generate'].invoke
+    end
+    
+  end
+end

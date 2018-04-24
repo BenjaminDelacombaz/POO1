@@ -1,0 +1,156 @@
+/*
+
+phi-light for highlight.js
+
+*/
+
+pre code {
+  display: block; padding: 0.5em;
+  background: #dddddd;
+  color: #000000;
+  border-radius: 10px;
+}
+
+pre .keyword,
+pre .tag,
+pre .lisp .title,
+pre .nginx .title,
+pre .request,
+pre .status,
+pre .clojure .attribute {
+  color: #00007F;
+  font-weight: bold;
+}
+
+pre .css .class,
+pre .css .id {
+  color: #000000;
+}
+
+pre .django .template_tag,
+pre .django .variable,
+pre .django .filter .argument {
+  color: #B00080;
+}
+
+pre .number,
+pre .date {
+  color: #007F7F;
+}
+
+pre .dos .envvar,
+pre .dos .stream,
+pre .variable,
+pre .apache .sqbracket {
+  color: #B00080;
+}
+
+pre .dos .flow,
+pre .diff .change,
+pre .python .exception,
+pre .python .built_in,
+pre .literal,
+pre .tex .special {
+  color: #21439C;
+}
+
+pre .diff .chunk,
+pre .subst {
+  color: #8F8F8F;
+}
+
+pre .dos .keyword,
+pre .python .decorator,
+pre .title,
+pre .haskell .type,
+pre .diff .header,
+pre .apache .tag,
+pre .nginx .built_in,
+pre .tex .command,
+pre .prompt {
+    color: #007F7F;
+    font-weight: bold;
+}
+
+pre .constant {
+  color: #4B00DE;
+}
+
+pre .ruby .class .parent {
+    color: #0080FF;
+}
+pre .ruby .class .title {
+    color: #0000FF;
+}
+
+pre .dos .winutils,
+pre .ruby .symbol,
+pre .ruby .symbol .string {
+  color: #8B4A00;
+  background-color: inherit;
+}
+pre .ruby .symbol .string .subst {
+  color: #888888;
+  background-color: inherit;
+}
+
+pre .string,
+pre .ruby span:not(.symbol) .string {
+  background-color: #b8b8b8;
+  color: #000000;
+}
+
+pre .ruby .string .subst {
+  color: #303030;
+  background-color: #d0d0d0;
+}
+
+
+pre .diff .deletion,
+pre .tag .value,
+pre .preprocessor,
+pre .built_in,
+pre .sql .aggregate,
+pre .javadoc,
+pre .smalltalk .class,
+pre .smalltalk .localvars,
+pre .smalltalk .array,
+pre .attr_selector,
+pre .pseudo,
+pre .apache .cbracket,
+pre .tex .formula {
+  color: #220033;
+}
+
+pre .css .rules .value {
+  color: #008800;
+}
+pre .hexcolor {
+  color: #8B4A00;
+}
+
+pre .shebang,
+pre .diff .addition,
+pre .comment,
+pre .java .annotation,
+pre .template_comment,
+pre .pi,
+pre .doctype {
+  color: #007F00;
+  font-style: italic;
+}
+
+pre .coffeescript .javascript,
+pre .javascript .xml,
+pre .tex .formula,
+pre .xml .javascript,
+pre .xml .vbscript,
+pre .xml .css,
+pre .xml .cdata {
+  opacity: 0.5;
+}
+
+pre .hilite {
+  font-weight: bold;
+  color: red;
+}

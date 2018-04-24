@@ -1,0 +1,35 @@
+# Logfile created on 2018-02-01 10:36:17 +0100 by logger.rb/61378
+D, [2018-02-01T10:36:41.286093 #2796] DEBUG -- :    (0.0ms)  SET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483
+D, [2018-02-01T10:36:41.286093 #2796] DEBUG -- :    (0.0ms)  SELECT 1
+D, [2018-02-02T11:29:05.766551 #7784] DEBUG -- :    (0.0ms)  SET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483
+D, [2018-02-02T11:29:05.766551 #7784] DEBUG -- :    (0.0ms)  SELECT 1
+D, [2018-02-02T11:43:56.512072 #1212] DEBUG -- :    (0.0ms)  SET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483
+D, [2018-02-02T11:43:56.513072 #1212] DEBUG -- :    (0.0ms)  SELECT 1
+D, [2018-02-02T11:44:05.949072 #7820] DEBUG -- :    (0.0ms)  SET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483
+D, [2018-02-02T11:44:05.949072 #7820] DEBUG -- :    (0.0ms)  SELECT 1
+D, [2018-02-02T11:44:40.572072 #9136] DEBUG -- :    (0.0ms)  SET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483
+D, [2018-02-02T11:44:40.572072 #9136] DEBUG -- :    (0.0ms)  SELECT 1
+D, [2018-02-02T11:46:08.023072 #7588] DEBUG -- :    (0.0ms)  SET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483
+D, [2018-02-02T11:46:08.024072 #7588] DEBUG -- :    (0.0ms)  SELECT 1
+D, [2018-02-02T11:46:08.028072 #7588] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-02T11:46:08.054072 #7588] DEBUG -- :   SQL (1.0ms)  INSERT INTO `cars` (`color`) VALUES ('red')
+D, [2018-02-02T11:46:08.054072 #7588] DEBUG -- :    (0.0ms)  ROLLBACK
+D, [2018-02-02T11:47:48.977963 #5700] DEBUG -- :    (0.0ms)  SET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483
+D, [2018-02-02T11:47:48.977963 #5700] DEBUG -- :    (0.0ms)  SELECT 1
+D, [2018-02-02T11:47:48.977963 #5700] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-02T11:47:49.009163 #5700] DEBUG -- :   SQL (0.0ms)  INSERT INTO `cars` (`brand`, `color`, `door`) VALUES ('bwm', 'red', 5)
+D, [2018-02-02T11:47:49.009163 #5700] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-02-02T11:50:04.862485 #8388] DEBUG -- :    (0.0ms)  SET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483
+D, [2018-02-02T11:50:04.862485 #8388] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-02T11:50:04.893686 #8388] DEBUG -- :   SQL (0.0ms)  INSERT INTO `cars` (`brand`, `color`, `door`) VALUES ('bwm', 'red', 5)
+D, [2018-02-02T11:50:04.893686 #8388] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-02-02T11:50:41.989600 #8388] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-02T11:50:41.989600 #8388] DEBUG -- :   SQL (0.0ms)  INSERT INTO `cars` VALUES ()
+D, [2018-02-02T11:50:41.989600 #8388] DEBUG -- :    (0.0ms)  ROLLBACK
+D, [2018-02-02T11:51:30.243729 #8388] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-02T11:51:30.243729 #8388] DEBUG -- :   SQL (0.0ms)  INSERT INTO `cars` (`brand`, `color`, `door`) VALUES ('bwm', 'red', 5)
+D, [2018-02-02T11:51:30.243729 #8388] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-02-02T11:51:42.342963 #8388] DEBUG -- :   Car Load (0.0ms)  SELECT  `cars`.* FROM `cars` LIMIT 11
+D, [2018-02-02T11:57:22.754353 #8388] DEBUG -- :   Car Load (0.0ms)  SELECT  `cars`.* FROM `cars` WHERE `cars`.`id` = 1 LIMIT 1
+D, [2018-02-02T11:57:22.754353 #8388] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-02T11:57:22.754353 #8388] DEBUG -- :    (0.0ms)  ROLLBACK

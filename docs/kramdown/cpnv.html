@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+
+    <link href="kramdown/document.css" media="all" rel="stylesheet" type="text/css" />
+    <link href="kramdown/document_print.css" media="print" rel="stylesheet" type="text/css" />
+    <title><%= @converter.options[:title] %></title>
+    <meta name="generator" content="kramdown <%= ::Kramdown::VERSION %>" />
+  </head>
+  <body class="standalone markdown">
+
+    <h1 class="no_toc" id="main-title"><%= @converter.options[:title] %></h1>
+    
+    <% if abstract = @converter.options[:abstract] %>
+      <%= ::Kramdown::Document.new(abstract).to_html %>
+    <% end %>
+
+    <% if author = Array(@converter.options[:author]).join(', ') %>
+      <%= ::Kramdown::Document.new(author).to_html %>
+    <% end %>
+
+    <% if date = Array(@converter.options[:date]).join(', ') %>
+      <%= ::Kramdown::Document.new(date).to_html %>
+    <% end %>
+
+    <% if @converter.options[:CLA_toc]
+         toc_tree = @converter.generate_toc_tree(@converter.instance_variable_get(:@toc), :ol, {})
+         if toc_tree.children.size > 0
+        %>
+        <h1 class="no_toc" id="toc-header">Table des matières</h1>
+        <%= @converter.convert(toc_tree, 0) %>
+      <% end%>
+    <% end %>
+    
+    <%= @body %>
+  </body>
+</html>

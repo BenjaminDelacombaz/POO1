@@ -1,0 +1,68 @@
+/*
+highlight.js
+
+Customize styles with the following:
+  - Darkenize only SQL.
+  - Customize IRB
+
+*/
+
+/* IRB */
+pre code.irb {
+  background: #ddccaa;
+}
+
+pre .irb .input {
+  font-weight: bold;
+  opacity: 0.8;
+}
+
+pre .irb .output {
+  border-bottom: 1px solid;
+  display: inline-block;
+  width: 99%;
+  
+  font-style: italic;
+  opacity: 0.8;
+}
+
+pre .irb .prompt {
+  color: #004;
+}
+
+pre .irb .status {
+  color: #448;
+}
+
+pre .irb .string .subst {
+  color: #303030;
+  background-color: #d0d0d0;
+}
+
+
+/* SQL */
+pre code.sql {
+  background: #151925;
+  color: #ffffff;
+}
+
+pre .sql .keyword {
+  color: #FFAF03;
+}
+
+pre .sql .aggregate {
+  color: #FFEF03;
+}
+
+pre .sql .keyword {
+  text-transform: uppercase;
+}
+
+pre .sql .string {
+  color: #00ff00;
+  background-color: inherit;
+}
+
+pre .sql .number {
+  color: #88FFFF;
+}

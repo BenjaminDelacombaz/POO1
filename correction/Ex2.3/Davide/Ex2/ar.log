@@ -1,0 +1,37 @@
+# Logfile created on 2018-02-08 08:49:39 +0100 by logger.rb/56815
+D, [2018-02-08T08:49:39.598798 #92470] DEBUG -- :    (0.3ms)  SET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483
+D, [2018-02-08T08:49:39.603012 #92470] DEBUG -- :    (0.2ms)  BEGIN
+D, [2018-02-08T08:49:39.615186 #92470] DEBUG -- :   SQL (0.3ms)  INSERT INTO `clients` (`firstname`, `lastname`) VALUES ('John', 'Doe')
+D, [2018-02-08T08:49:39.615756 #92470] DEBUG -- :    (0.3ms)  COMMIT
+D, [2018-02-08T08:49:39.619226 #92470] DEBUG -- :    (0.1ms)  BEGIN
+D, [2018-02-08T08:49:39.619935 #92470] DEBUG -- :   SQL (0.1ms)  INSERT INTO `categories` (`name`, `description`) VALUES ('Calculators', 'Calculators for math lesson !')
+D, [2018-02-08T08:49:39.620408 #92470] DEBUG -- :    (0.3ms)  COMMIT
+D, [2018-02-08T08:49:39.624152 #92470] DEBUG -- :    (0.1ms)  BEGIN
+D, [2018-02-08T08:49:39.624865 #92470] DEBUG -- :   SQL (0.2ms)  INSERT INTO `products` (`name`, `price`, `description`) VALUES ('TInSpire CAS', 175, 'The best calculator !')
+D, [2018-02-08T08:49:39.625300 #92470] DEBUG -- :    (0.3ms)  COMMIT
+D, [2018-02-08T08:50:19.691817 #92475] DEBUG -- :    (0.3ms)  SET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483
+D, [2018-02-08T08:50:19.695695 #92475] DEBUG -- :    (0.1ms)  BEGIN
+D, [2018-02-08T08:50:19.701685 #92475] DEBUG -- :   SQL (0.3ms)  INSERT INTO `clients` (`firstname`, `lastname`) VALUES ('John', 'Doe')
+D, [2018-02-08T08:50:19.702670 #92475] DEBUG -- :    (0.8ms)  COMMIT
+D, [2018-02-08T08:50:19.705494 #92475] DEBUG -- :    (0.1ms)  BEGIN
+D, [2018-02-08T08:50:19.706247 #92475] DEBUG -- :   SQL (0.2ms)  INSERT INTO `categories` (`name`, `description`) VALUES ('Calculators', 'Calculators for math lesson !')
+D, [2018-02-08T08:50:19.706726 #92475] DEBUG -- :    (0.3ms)  COMMIT
+D, [2018-02-08T08:50:19.709840 #92475] DEBUG -- :    (0.1ms)  BEGIN
+D, [2018-02-08T08:50:19.710594 #92475] DEBUG -- :   SQL (0.2ms)  INSERT INTO `products` (`name`, `price`, `description`) VALUES ('TInSpire CAS', 175, 'The best calculator !')
+D, [2018-02-08T08:50:19.710977 #92475] DEBUG -- :    (0.2ms)  COMMIT
+D, [2018-02-08T08:54:02.108015 #92484] DEBUG -- :    (0.2ms)  SET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483
+D, [2018-02-08T08:54:02.111730 #92484] DEBUG -- :    (0.1ms)  BEGIN
+D, [2018-02-08T08:54:02.117592 #92484] DEBUG -- :   SQL (0.2ms)  INSERT INTO `clients` (`firstname`, `lastname`) VALUES ('John', 'Doe')
+D, [2018-02-08T08:54:02.118997 #92484] DEBUG -- :    (1.2ms)  COMMIT
+D, [2018-02-08T08:54:02.122199 #92484] DEBUG -- :    (0.1ms)  BEGIN
+D, [2018-02-08T08:54:02.122967 #92484] DEBUG -- :   SQL (0.2ms)  INSERT INTO `categories` (`name`, `description`) VALUES ('Calculators', 'Calculators for math lesson !')
+D, [2018-02-08T08:54:02.123428 #92484] DEBUG -- :    (0.3ms)  COMMIT
+D, [2018-02-08T08:54:02.126707 #92484] DEBUG -- :    (0.1ms)  BEGIN
+D, [2018-02-08T08:54:02.127365 #92484] DEBUG -- :   SQL (0.2ms)  INSERT INTO `products` (`name`, `price`, `description`) VALUES ('TInSpire CAS', 175, 'The best calculator !')
+D, [2018-02-08T08:54:02.127809 #92484] DEBUG -- :    (0.3ms)  COMMIT
+D, [2018-02-08T08:54:02.133044 #92484] DEBUG -- :    (0.2ms)  BEGIN
+D, [2018-02-08T08:54:02.143021 #92484] DEBUG -- :   SQL (0.2ms)  INSERT INTO `categories_products` (`category_id`, `product_id`) VALUES (3, 3)
+D, [2018-02-08T08:54:02.143573 #92484] DEBUG -- :    (0.3ms)  COMMIT
+D, [2018-02-08T08:54:02.143816 #92484] DEBUG -- :    (0.1ms)  BEGIN
+D, [2018-02-08T08:54:02.144328 #92484] DEBUG -- :    (0.1ms)  COMMIT
+D, [2018-02-15T08:59:32.201376 #9024] DEBUG -- :    (1.0ms)  SET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483

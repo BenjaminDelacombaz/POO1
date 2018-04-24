@@ -1,0 +1,113 @@
+# Logfile created on 2018-02-15 08:34:05 +0100 by logger.rb/54362
+D, [2018-02-15T08:34:52.606478 #5696] DEBUG -- :    (0.0ms)  SET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483
+D, [2018-02-15T08:34:52.610978 #5696] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-15T08:34:52.622978 #5696] DEBUG -- :   SQL (0.5ms)  INSERT INTO `categories` (`name`, `description`) VALUES ('Les trucs', 'Ouais')
+D, [2018-02-15T08:34:52.625478 #5696] DEBUG -- :    (2.0ms)  COMMIT
+D, [2018-02-15T08:36:08.411478 #7244] DEBUG -- :    (0.5ms)  SET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483
+D, [2018-02-15T08:36:08.416478 #7244] DEBUG -- :    (0.5ms)  BEGIN
+D, [2018-02-15T08:36:08.428478 #7244] DEBUG -- :   SQL (2.0ms)  INSERT INTO `categories` (`name`, `description`) VALUES ('Les machins', 'Non')
+D, [2018-02-15T08:36:08.429978 #7244] DEBUG -- :    (0.5ms)  COMMIT
+D, [2018-02-15T08:36:08.433978 #7244] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-15T08:36:08.435478 #7244] DEBUG -- :   SQL (0.5ms)  INSERT INTO `products` (`name`, `price`, `description`, `category_id`) VALUES ('Bidulo-machin', 10, 'C bi1', 1)
+D, [2018-02-15T08:36:08.437478 #7244] DEBUG -- :    (1.5ms)  COMMIT
+D, [2018-02-15T08:45:16.997478 #8796] DEBUG -- :    (0.0ms)  SET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483
+D, [2018-02-15T08:45:16.999978 #8796] DEBUG -- :   Product Load (0.0ms)  SELECT `products`.* FROM `products` WHERE `products`.`name` = 'Bidulo-machin'
+D, [2018-02-15T08:45:57.888478 #9004] DEBUG -- :    (0.0ms)  SET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483
+D, [2018-02-15T08:45:57.890478 #9004] DEBUG -- :   Product Load (0.0ms)  SELECT `products`.* FROM `products` WHERE `products`.`name` = 'Bidulo-machin'
+D, [2018-02-15T08:46:15.245978 #9160] DEBUG -- :    (0.0ms)  SET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483
+D, [2018-02-15T08:46:15.248978 #9160] DEBUG -- :   Product Load (0.5ms)  SELECT `products`.* FROM `products` WHERE `products`.`name` = 'Bidulo-machin'
+D, [2018-02-15T08:47:26.863978 #8036] DEBUG -- :    (0.0ms)  SET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483
+D, [2018-02-15T08:47:26.865478 #8036] DEBUG -- :   Product Load (0.5ms)  SELECT `products`.* FROM `products` WHERE (price < 30)
+D, [2018-02-15T08:59:19.229478 #8992] DEBUG -- :    (0.5ms)  SET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483
+D, [2018-02-15T08:59:19.234978 #8992] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-15T08:59:19.248478 #8992] DEBUG -- :   SQL (1.0ms)  INSERT INTO `products` (`name`, `price`, `description`, `category_id`) VALUES ('Vil brequin', 100, 'C bi1', 1)
+D, [2018-02-15T08:59:19.249978 #8992] DEBUG -- :    (1.0ms)  COMMIT
+D, [2018-02-15T08:59:19.250978 #8992] DEBUG -- :   Product Load (0.0ms)  SELECT `products`.* FROM `products` WHERE (price < 30)
+D, [2018-02-15T08:59:54.143978 #7656] DEBUG -- :    (0.0ms)  SET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483
+D, [2018-02-15T08:59:54.145478 #7656] DEBUG -- :   Product Load (0.0ms)  SELECT `products`.* FROM `products` WHERE (price < 30)
+D, [2018-02-15T09:00:24.780478 #9080] DEBUG -- :    (0.5ms)  SET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483
+D, [2018-02-15T09:00:24.786978 #9080] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-15T09:00:24.797978 #9080] DEBUG -- :   SQL (0.5ms)  INSERT INTO `products` (`name`, `price`, `description`, `category_id`) VALUES ('Chaussure trouée', 1, 'C bi1', 1)
+D, [2018-02-15T09:00:24.800978 #9080] DEBUG -- :    (1.0ms)  COMMIT
+D, [2018-02-15T09:00:24.801978 #9080] DEBUG -- :   Product Load (0.5ms)  SELECT `products`.* FROM `products` WHERE (price < 30)
+D, [2018-02-15T09:05:15.331978 #6936] DEBUG -- :    (0.0ms)  SET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483
+D, [2018-02-15T09:05:15.333478 #6936] DEBUG -- :   Product Load (0.0ms)  SELECT `products`.* FROM `products` WHERE (price < 30)
+D, [2018-02-15T09:05:15.345478 #6936] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-15T09:05:15.346478 #6936] DEBUG -- :   SQL (0.0ms)  INSERT INTO `order_items` (`quantity`, `item_price`, `order_id`, `product_id`) VALUES (2394, '10', 1, 1)
+D, [2018-02-15T09:05:15.347978 #6936] DEBUG -- :    (1.0ms)  COMMIT
+D, [2018-02-15T09:05:15.348978 #6936] DEBUG -- :    (0.5ms)  BEGIN
+D, [2018-02-15T09:05:15.350978 #6936] DEBUG -- :   SQL (1.5ms)  INSERT INTO `order_items` (`quantity`, `item_price`, `order_id`, `product_id`) VALUES (2, '10', 1, 1)
+D, [2018-02-15T09:05:15.351978 #6936] DEBUG -- :    (0.5ms)  COMMIT
+D, [2018-02-15T09:05:15.352978 #6936] DEBUG -- :   Order_item Load (0.0ms)  SELECT `order_items`.* FROM `order_items` WHERE (quantity >= 100)
+D, [2018-02-15T09:05:51.445478 #1992] DEBUG -- :    (0.0ms)  SET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483
+D, [2018-02-15T09:05:51.451478 #1992] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-15T09:05:51.461978 #1992] DEBUG -- :   SQL (0.0ms)  INSERT INTO `order_items` (`quantity`, `item_price`, `order_id`, `product_id`) VALUES (2394, '10', 1, 1)
+D, [2018-02-15T09:05:51.465978 #1992] DEBUG -- :    (3.0ms)  COMMIT
+D, [2018-02-15T09:05:51.466478 #1992] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-15T09:05:51.470978 #1992] DEBUG -- :   SQL (3.5ms)  INSERT INTO `order_items` (`quantity`, `item_price`, `order_id`, `product_id`) VALUES (2, '10', 1, 1)
+D, [2018-02-15T09:05:51.471978 #1992] DEBUG -- :    (0.5ms)  COMMIT
+D, [2018-02-15T09:05:51.472978 #1992] DEBUG -- :   Order_item Load (0.5ms)  SELECT `order_items`.* FROM `order_items` WHERE (quantity >= 100)
+D, [2018-02-15T09:06:48.920478 #9020] DEBUG -- :    (0.0ms)  SET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483
+D, [2018-02-15T09:06:48.921978 #9020] DEBUG -- :   Order_item Load (0.5ms)  SELECT `order_items`.* FROM `order_items` WHERE (quantity >= 100)
+D, [2018-02-15T09:08:56.294478 #8772] DEBUG -- :    (0.0ms)  SET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483
+D, [2018-02-15T09:08:56.295478 #8772] DEBUG -- :   Order_item Load (0.0ms)  SELECT `order_items`.* FROM `order_items` WHERE (quantity >= 100)
+D, [2018-02-15T09:08:56.304478 #8772] DEBUG -- :   Product Load (0.5ms)  SELECT  `products`.* FROM `products` WHERE `products`.`quantity` = 2394 LIMIT 1
+D, [2018-02-15T09:09:05.590478 #8428] DEBUG -- :    (0.0ms)  SET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483
+D, [2018-02-15T09:09:05.591978 #8428] DEBUG -- :   Order_item Load (0.5ms)  SELECT `order_items`.* FROM `order_items` WHERE (quantity >= 100)
+D, [2018-02-16T11:16:52.884500 #11056] DEBUG -- :    (0.0ms)  SET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483
+D, [2018-02-16T11:16:52.892500 #11056] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-16T11:16:52.924500 #11056] DEBUG -- :   Client Exists (0.5ms)  SELECT  1 AS one FROM `clients` WHERE `clients`.`firstname` IS NULL LIMIT 1
+D, [2018-02-16T11:16:52.931000 #11056] DEBUG -- :   Client Exists (0.5ms)  SELECT  1 AS one FROM `clients` WHERE `clients`.`lastname` = BINARY 'salut' LIMIT 1
+D, [2018-02-16T11:16:52.935500 #11056] DEBUG -- :    (0.0ms)  ROLLBACK
+D, [2018-02-16T11:16:52.941500 #11056] DEBUG -- :   Client Exists (0.5ms)  SELECT  1 AS one FROM `clients` WHERE `clients`.`firstname` IS NULL LIMIT 1
+D, [2018-02-16T11:16:52.947000 #11056] DEBUG -- :   Client Exists (0.5ms)  SELECT  1 AS one FROM `clients` WHERE `clients`.`lastname` = BINARY 'salut' LIMIT 1
+D, [2018-02-16T11:17:03.124500 #4084] DEBUG -- :    (0.5ms)  SET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483
+D, [2018-02-16T11:17:03.133000 #4084] DEBUG -- :    (0.5ms)  BEGIN
+D, [2018-02-16T11:17:03.162500 #4084] DEBUG -- :   Client Exists (0.5ms)  SELECT  1 AS one FROM `clients` WHERE `clients`.`firstname` IS NULL LIMIT 1
+D, [2018-02-16T11:17:03.168500 #4084] DEBUG -- :   Client Exists (0.5ms)  SELECT  1 AS one FROM `clients` WHERE `clients`.`lastname` = BINARY 'salut' LIMIT 1
+D, [2018-02-16T11:17:03.172500 #4084] DEBUG -- :    (0.5ms)  ROLLBACK
+D, [2018-02-16T11:17:03.177500 #4084] DEBUG -- :   Client Exists (0.5ms)  SELECT  1 AS one FROM `clients` WHERE `clients`.`firstname` IS NULL LIMIT 1
+D, [2018-02-16T11:17:03.181000 #4084] DEBUG -- :   Client Exists (0.0ms)  SELECT  1 AS one FROM `clients` WHERE `clients`.`lastname` = BINARY 'salut' LIMIT 1
+D, [2018-02-16T11:17:22.835500 #9000] DEBUG -- :    (0.0ms)  SET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483
+D, [2018-02-16T11:17:22.839500 #9000] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-16T11:17:22.852000 #9000] DEBUG -- :   Client Exists (0.5ms)  SELECT  1 AS one FROM `clients` WHERE `clients`.`firstname` = BINARY 'non' LIMIT 1
+D, [2018-02-16T11:17:22.854500 #9000] DEBUG -- :   Client Exists (0.5ms)  SELECT  1 AS one FROM `clients` WHERE `clients`.`lastname` = BINARY 'salut' LIMIT 1
+D, [2018-02-16T11:17:22.855500 #9000] DEBUG -- :   SQL (0.5ms)  INSERT INTO `clients` (`firstname`, `lastname`) VALUES ('non', 'salut')
+D, [2018-02-16T11:17:22.857500 #9000] DEBUG -- :    (1.5ms)  COMMIT
+D, [2018-02-16T11:17:22.859000 #9000] DEBUG -- :   Client Exists (0.5ms)  SELECT  1 AS one FROM `clients` WHERE `clients`.`firstname` = BINARY 'non' AND (`clients`.`id` != 28) LIMIT 1
+D, [2018-02-16T11:17:22.860000 #9000] DEBUG -- :   Client Exists (0.5ms)  SELECT  1 AS one FROM `clients` WHERE `clients`.`lastname` = BINARY 'salut' AND (`clients`.`id` != 28) LIMIT 1
+D, [2018-02-16T11:17:31.907500 #2508] DEBUG -- :    (0.5ms)  SET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483
+D, [2018-02-16T11:17:31.912500 #2508] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-16T11:17:31.938500 #2508] DEBUG -- :   Client Exists (0.5ms)  SELECT  1 AS one FROM `clients` WHERE `clients`.`firstname` = BINARY 'n' LIMIT 1
+D, [2018-02-16T11:17:31.944000 #2508] DEBUG -- :   Client Exists (0.5ms)  SELECT  1 AS one FROM `clients` WHERE `clients`.`lastname` = BINARY 'salut' LIMIT 1
+D, [2018-02-16T11:17:31.947000 #2508] DEBUG -- :    (0.0ms)  ROLLBACK
+D, [2018-02-16T11:17:31.948500 #2508] DEBUG -- :   Client Exists (0.5ms)  SELECT  1 AS one FROM `clients` WHERE `clients`.`firstname` = BINARY 'n' LIMIT 1
+D, [2018-02-16T11:17:31.949500 #2508] DEBUG -- :   Client Exists (0.5ms)  SELECT  1 AS one FROM `clients` WHERE `clients`.`lastname` = BINARY 'salut' LIMIT 1
+D, [2018-02-16T11:21:01.380500 #10736] DEBUG -- :    (0.5ms)  SET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483
+D, [2018-02-16T11:21:01.388000 #10736] DEBUG -- :   Order Load (0.5ms)  SELECT  `orders`.* FROM `orders` ORDER BY `orders`.`id` ASC LIMIT 1
+D, [2018-02-16T11:21:01.413500 #10736] DEBUG -- :   Client Load (0.5ms)  SELECT  `clients`.* FROM `clients` WHERE `clients`.`id` = 1 LIMIT 1
+D, [2018-02-16T11:21:29.268500 #1568] DEBUG -- :    (0.0ms)  SET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483
+D, [2018-02-16T11:21:29.270500 #1568] DEBUG -- :   Order Load (0.0ms)  SELECT  `orders`.* FROM `orders` ORDER BY `orders`.`id` ASC LIMIT 1
+D, [2018-02-16T11:21:29.287500 #1568] DEBUG -- :   Client Load (0.5ms)  SELECT  `clients`.* FROM `clients` WHERE `clients`.`id` = 1 LIMIT 1
+D, [2018-02-16T11:21:53.622000 #11096] DEBUG -- :    (0.0ms)  SET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483
+D, [2018-02-16T11:21:53.624000 #11096] DEBUG -- :   Order Load (0.0ms)  SELECT  `orders`.* FROM `orders` ORDER BY `orders`.`id` ASC LIMIT 1
+D, [2018-02-16T11:21:53.641500 #11096] DEBUG -- :   Client Load (0.5ms)  SELECT  `clients`.* FROM `clients` WHERE `clients`.`id` = 1 LIMIT 1
+D, [2018-02-16T11:22:44.454500 #8260] DEBUG -- :    (0.0ms)  SET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483
+D, [2018-02-16T11:22:44.458500 #8260] DEBUG -- :   Order_item Load (0.5ms)  SELECT  `order_items`.* FROM `order_items` ORDER BY `order_items`.`id` ASC LIMIT 1
+D, [2018-02-16T11:23:09.124000 #4080] DEBUG -- :    (0.5ms)  SET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483
+D, [2018-02-16T11:23:09.130000 #4080] DEBUG -- :   Order_item Load (0.5ms)  SELECT  `order_items`.* FROM `order_items` ORDER BY `order_items`.`id` ASC LIMIT 1
+D, [2018-02-16T11:23:16.892500 #8184] DEBUG -- :    (0.5ms)  SET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483
+D, [2018-02-16T11:23:16.899000 #8184] DEBUG -- :   Order_item Load (0.5ms)  SELECT  `order_items`.* FROM `order_items` ORDER BY `order_items`.`id` ASC LIMIT 1
+D, [2018-02-16T11:23:34.508000 #9368] DEBUG -- :    (0.5ms)  SET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483
+D, [2018-02-16T11:23:34.510500 #9368] DEBUG -- :   Order_item Load (0.0ms)  SELECT  `order_items`.* FROM `order_items` ORDER BY `order_items`.`id` ASC LIMIT 1
+D, [2018-02-16T11:23:55.987500 #9528] DEBUG -- :    (0.5ms)  SET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483
+D, [2018-02-16T11:23:55.990000 #9528] DEBUG -- :   Order_item Load (0.0ms)  SELECT  `order_items`.* FROM `order_items` ORDER BY `order_items`.`id` ASC LIMIT 1
+D, [2018-02-16T11:23:56.007000 #9528] DEBUG -- :   Product Load (0.0ms)  SELECT  `products`.* FROM `products` WHERE `products`.`order_item_id` = 1 LIMIT 11
+D, [2018-02-16T11:24:34.365500 #10548] DEBUG -- :    (0.5ms)  SET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483
+D, [2018-02-16T11:24:34.368000 #10548] DEBUG -- :   Product Load (0.5ms)  SELECT  `products`.* FROM `products` ORDER BY `products`.`id` ASC LIMIT 1
+D, [2018-02-16T11:24:51.172500 #10860] DEBUG -- :    (0.5ms)  SET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483
+D, [2018-02-16T11:24:51.178500 #10860] DEBUG -- :   Product Load (0.0ms)  SELECT  `products`.* FROM `products` ORDER BY `products`.`id` ASC LIMIT 1
+D, [2018-02-16T11:24:57.219000 #8188] DEBUG -- :    (0.0ms)  SET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483
+D, [2018-02-16T11:24:57.223500 #8188] DEBUG -- :   Product Load (0.5ms)  SELECT  `products`.* FROM `products` ORDER BY `products`.`id` ASC LIMIT 1
+D, [2018-02-16T11:25:09.651000 #3560] DEBUG -- :    (0.0ms)  SET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483
+D, [2018-02-16T11:25:09.656000 #3560] DEBUG -- :   Order_item Load (0.0ms)  SELECT  `order_items`.* FROM `order_items` ORDER BY `order_items`.`id` ASC LIMIT 1

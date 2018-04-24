@@ -1,0 +1,789 @@
+# Logfile created on 2018-02-08 09:21:47 +0100 by logger.rb/61378
+D, [2018-02-08T09:22:12.209902 #6684] DEBUG -- :    (0.0ms)  SET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483
+D, [2018-02-08T09:22:12.209902 #6684] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-08T09:22:12.241102 #6684] DEBUG -- :   SQL (0.0ms)  INSERT INTO `clients` (`firstname`, `lastname`) VALUES ('Jean', 'Dupond')
+D, [2018-02-08T09:22:12.241102 #6684] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-02-08T09:22:12.241102 #6684] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-08T09:22:12.241102 #6684] DEBUG -- :   SQL (0.0ms)  INSERT INTO `clients` (`firstname`, `lastname`) VALUES ('Michel', 'Marchand')
+D, [2018-02-08T09:22:12.256702 #6684] DEBUG -- :    (15.6ms)  COMMIT
+D, [2018-02-08T09:22:12.256702 #6684] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-08T09:22:12.256702 #6684] DEBUG -- :   SQL (0.0ms)  INSERT INTO `clients` (`firstname`, `lastname`) VALUES ('René', 'Betchen')
+D, [2018-02-08T09:22:12.272302 #6684] DEBUG -- :    (15.6ms)  COMMIT
+D, [2018-02-08T09:22:12.272302 #6684] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-08T09:22:12.272302 #6684] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories` (`name`, `description`) VALUES ('Fruits', 'Fruits en vrac')
+D, [2018-02-08T09:22:12.272302 #6684] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-02-08T09:22:12.272302 #6684] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-08T09:22:12.272302 #6684] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories` (`name`, `description`) VALUES ('Légumes', 'Légumes')
+D, [2018-02-08T09:22:12.287902 #6684] DEBUG -- :    (15.6ms)  COMMIT
+D, [2018-02-08T09:22:12.287902 #6684] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-08T09:22:12.287902 #6684] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories` (`name`, `description`) VALUES ('Féculents', 'Pates, riz')
+D, [2018-02-08T09:22:12.303502 #6684] DEBUG -- :    (15.6ms)  COMMIT
+D, [2018-02-08T09:22:12.303502 #6684] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-08T09:22:12.303502 #6684] DEBUG -- :   SQL (0.0ms)  INSERT INTO `products` (`name`, `price`, `description`) VALUES ('Ananas', '5.9', 'origine ')
+D, [2018-02-08T09:22:12.303502 #6684] DEBUG -- :    (0.0ms)  ROLLBACK
+D, [2018-02-08T09:23:58.108302 #8076] DEBUG -- :    (0.0ms)  SET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483
+D, [2018-02-08T09:23:58.108302 #8076] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-08T09:23:58.139502 #8076] DEBUG -- :   SQL (0.0ms)  INSERT INTO `clients` (`firstname`, `lastname`) VALUES ('Jean', 'Dupond')
+D, [2018-02-08T09:23:58.139502 #8076] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-02-08T09:23:58.139502 #8076] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-08T09:23:58.139502 #8076] DEBUG -- :   SQL (0.0ms)  INSERT INTO `clients` (`firstname`, `lastname`) VALUES ('Michel', 'Marchand')
+D, [2018-02-08T09:23:58.155102 #8076] DEBUG -- :    (15.6ms)  COMMIT
+D, [2018-02-08T09:23:58.155102 #8076] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-08T09:23:58.155102 #8076] DEBUG -- :   SQL (0.0ms)  INSERT INTO `clients` (`firstname`, `lastname`) VALUES ('René', 'Betchen')
+D, [2018-02-08T09:23:58.155102 #8076] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-02-08T09:23:58.155102 #8076] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-08T09:23:58.155102 #8076] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories` (`name`, `description`) VALUES ('Fruits', 'Fruits en vrac')
+D, [2018-02-08T09:23:58.170702 #8076] DEBUG -- :    (15.6ms)  COMMIT
+D, [2018-02-08T09:23:58.170702 #8076] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-08T09:23:58.170702 #8076] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories` (`name`, `description`) VALUES ('Légumes', 'Légumes')
+D, [2018-02-08T09:23:58.170702 #8076] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-02-08T09:23:58.170702 #8076] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-08T09:23:58.170702 #8076] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories` (`name`, `description`) VALUES ('Féculents', 'Pates, riz')
+D, [2018-02-08T09:23:58.170702 #8076] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-02-08T09:23:58.170702 #8076] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-08T09:23:58.186302 #8076] DEBUG -- :   SQL (0.0ms)  INSERT INTO `products` (`name`, `price`, `description`) VALUES ('Ananas', '5.9', 'origine ')
+D, [2018-02-08T09:23:58.186302 #8076] DEBUG -- :    (0.0ms)  ROLLBACK
+D, [2018-02-08T09:25:41.236102 #6468] DEBUG -- :    (0.0ms)  SET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483
+D, [2018-02-08T09:25:41.236102 #6468] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-08T09:25:41.267302 #6468] DEBUG -- :   SQL (0.0ms)  INSERT INTO `clients` (`firstname`, `lastname`) VALUES ('Jean', 'Dupond')
+D, [2018-02-08T09:25:41.267302 #6468] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-02-08T09:25:41.267302 #6468] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-08T09:25:41.267302 #6468] DEBUG -- :   SQL (0.0ms)  INSERT INTO `clients` (`firstname`, `lastname`) VALUES ('Michel', 'Marchand')
+D, [2018-02-08T09:25:41.282902 #6468] DEBUG -- :    (15.6ms)  COMMIT
+D, [2018-02-08T09:25:41.282902 #6468] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-08T09:25:41.282902 #6468] DEBUG -- :   SQL (0.0ms)  INSERT INTO `clients` (`firstname`, `lastname`) VALUES ('René', 'Betchen')
+D, [2018-02-08T09:25:41.282902 #6468] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-02-08T09:25:41.298502 #6468] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-08T09:25:41.298502 #6468] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories` (`name`, `description`) VALUES ('Fruits', 'Fruits en vrac')
+D, [2018-02-08T09:25:41.298502 #6468] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-02-08T09:25:41.298502 #6468] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-08T09:25:41.298502 #6468] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories` (`name`, `description`) VALUES ('Légumes', 'Légumes')
+D, [2018-02-08T09:25:41.314102 #6468] DEBUG -- :    (15.6ms)  COMMIT
+D, [2018-02-08T09:25:41.314102 #6468] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-08T09:25:41.314102 #6468] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories` (`name`, `description`) VALUES ('Féculents', 'Pates, riz')
+D, [2018-02-08T09:25:41.314102 #6468] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-02-08T09:25:41.329702 #6468] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-08T09:25:41.329702 #6468] DEBUG -- :   SQL (0.0ms)  INSERT INTO `products` (`name`, `price`, `description`) VALUES ('Ananas', 5.9, 'origine ')
+D, [2018-02-08T09:25:41.329702 #6468] DEBUG -- :    (0.0ms)  ROLLBACK
+D, [2018-02-08T09:26:07.593631 #5260] DEBUG -- :    (0.0ms)  SET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483
+D, [2018-02-08T09:26:07.593631 #5260] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-08T09:26:07.624832 #5260] DEBUG -- :   SQL (0.0ms)  INSERT INTO `clients` (`firstname`, `lastname`) VALUES ('Jean', 'Dupond')
+D, [2018-02-08T09:26:07.624832 #5260] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-02-08T09:26:07.624832 #5260] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-08T09:26:07.624832 #5260] DEBUG -- :   SQL (0.0ms)  INSERT INTO `clients` (`firstname`, `lastname`) VALUES ('Michel', 'Marchand')
+D, [2018-02-08T09:26:07.640432 #5260] DEBUG -- :    (15.6ms)  COMMIT
+D, [2018-02-08T09:26:07.640432 #5260] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-08T09:26:07.640432 #5260] DEBUG -- :   SQL (0.0ms)  INSERT INTO `clients` (`firstname`, `lastname`) VALUES ('René', 'Betchen')
+D, [2018-02-08T09:26:07.640432 #5260] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-02-08T09:26:07.640432 #5260] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-08T09:26:07.640432 #5260] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories` (`name`, `description`) VALUES ('Fruits', 'Fruits en vrac')
+D, [2018-02-08T09:26:07.656032 #5260] DEBUG -- :    (15.6ms)  COMMIT
+D, [2018-02-08T09:26:07.656032 #5260] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-08T09:26:07.656032 #5260] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories` (`name`, `description`) VALUES ('Légumes', 'Légumes')
+D, [2018-02-08T09:26:07.656032 #5260] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-02-08T09:26:07.656032 #5260] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-08T09:26:07.656032 #5260] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories` (`name`, `description`) VALUES ('Féculents', 'Pates, riz')
+D, [2018-02-08T09:26:07.671632 #5260] DEBUG -- :    (15.6ms)  COMMIT
+D, [2018-02-08T09:26:07.671632 #5260] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-08T09:26:07.671632 #5260] DEBUG -- :   SQL (0.0ms)  INSERT INTO `products` (`name`, `price`, `description`) VALUES ('Ananas', 5.9, 'origine ')
+D, [2018-02-08T09:26:07.671632 #5260] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-02-08T10:04:23.097712 #7700] DEBUG -- :    (0.0ms)  SET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483
+D, [2018-02-08T10:04:23.113313 #7700] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-08T10:04:23.128914 #7700] DEBUG -- :   SQL (0.0ms)  INSERT INTO `clients` (`firstname`, `lastname`) VALUES ('Jean', 'Dupond')
+D, [2018-02-08T10:04:23.128914 #7700] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-02-08T10:04:23.128914 #7700] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-08T10:04:23.128914 #7700] DEBUG -- :   SQL (0.0ms)  INSERT INTO `clients` (`firstname`, `lastname`) VALUES ('Michel', 'Marchand')
+D, [2018-02-08T10:04:23.160116 #7700] DEBUG -- :    (31.2ms)  COMMIT
+D, [2018-02-08T10:04:23.160116 #7700] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-08T10:04:23.160116 #7700] DEBUG -- :   SQL (0.0ms)  INSERT INTO `clients` (`firstname`, `lastname`) VALUES ('René', 'Betchen')
+D, [2018-02-08T10:04:23.160116 #7700] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-02-08T10:04:23.160116 #7700] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-08T10:04:23.160116 #7700] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories` (`name`, `description`) VALUES ('Fruits', 'Fruits en vrac')
+D, [2018-02-08T10:04:23.175717 #7700] DEBUG -- :    (15.6ms)  COMMIT
+D, [2018-02-08T10:04:23.175717 #7700] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-08T10:04:23.175717 #7700] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories` (`name`, `description`) VALUES ('Légumes', 'Légumes')
+D, [2018-02-08T10:04:23.175717 #7700] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-02-08T10:04:23.175717 #7700] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-08T10:04:23.175717 #7700] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories` (`name`, `description`) VALUES ('Féculents', 'Pates, riz')
+D, [2018-02-08T10:04:23.191318 #7700] DEBUG -- :    (15.6ms)  COMMIT
+D, [2018-02-08T10:04:23.191318 #7700] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-08T10:04:23.191318 #7700] DEBUG -- :   SQL (0.0ms)  INSERT INTO `products` (`name`, `price`, `description`) VALUES ('Ananas', 5.9, 'origine afrique')
+D, [2018-02-08T10:04:23.191318 #7700] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-02-08T10:04:23.191318 #7700] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-08T10:04:23.191318 #7700] DEBUG -- :   SQL (0.0ms)  INSERT INTO `products` (`name`, `price`, `description`) VALUES ('Pomme de terre', 1.85, 'origine Suisse')
+D, [2018-02-08T10:04:23.206920 #7700] DEBUG -- :    (15.6ms)  COMMIT
+D, [2018-02-08T10:04:23.206920 #7700] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-08T10:04:23.206920 #7700] DEBUG -- :   SQL (0.0ms)  INSERT INTO `products` (`name`, `price`, `description`) VALUES ('Pomme', 0.35, 'origine France')
+D, [2018-02-08T10:04:23.206920 #7700] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-02-08T10:04:23.222521 #7700] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-08T10:04:23.222521 #7700] DEBUG -- :   SQL (0.0ms)  INSERT INTO `orders` (`created_at`, `shipped_at`, `status`, `client_id`) VALUES ('2018-02-03', '2018-03-04', 2, 13)
+D, [2018-02-08T10:04:23.222521 #7700] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-02-08T10:04:23.222521 #7700] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-08T10:04:23.222521 #7700] DEBUG -- :   SQL (0.0ms)  INSERT INTO `orders` (`created_at`, `shipped_at`, `status`, `client_id`) VALUES ('2017-02-03', '2017-03-04', 1, 13)
+D, [2018-02-08T10:04:23.238122 #7700] DEBUG -- :    (15.6ms)  COMMIT
+D, [2018-02-08T10:04:23.238122 #7700] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-08T10:04:23.238122 #7700] DEBUG -- :   SQL (0.0ms)  INSERT INTO `orders` (`created_at`, `shipped_at`, `status`, `client_id`) VALUES ('2018-01-01', '2018-02-01', 3, 14)
+D, [2018-02-08T10:04:23.238122 #7700] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-02-08T10:05:09.599328 #740] DEBUG -- :    (0.0ms)  SET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483
+D, [2018-02-08T10:05:09.599328 #740] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-08T10:05:09.614929 #740] DEBUG -- :   SQL (0.0ms)  INSERT INTO `clients` (`firstname`, `lastname`) VALUES ('Jean', 'Dupond')
+D, [2018-02-08T10:05:09.630529 #740] DEBUG -- :    (15.6ms)  COMMIT
+D, [2018-02-08T10:05:09.630529 #740] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-08T10:05:09.630529 #740] DEBUG -- :   SQL (0.0ms)  INSERT INTO `clients` (`firstname`, `lastname`) VALUES ('Michel', 'Marchand')
+D, [2018-02-08T10:05:09.630529 #740] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-02-08T10:05:09.630529 #740] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-08T10:05:09.630529 #740] DEBUG -- :   SQL (0.0ms)  INSERT INTO `clients` (`firstname`, `lastname`) VALUES ('René', 'Betchen')
+D, [2018-02-08T10:05:09.646130 #740] DEBUG -- :    (15.6ms)  COMMIT
+D, [2018-02-08T10:05:09.646130 #740] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-08T10:05:09.646130 #740] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories` (`name`, `description`) VALUES ('Fruits', 'Fruits en vrac')
+D, [2018-02-08T10:05:09.646130 #740] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-02-08T10:05:09.646130 #740] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-08T10:05:09.646130 #740] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories` (`name`, `description`) VALUES ('Légumes', 'Légumes')
+D, [2018-02-08T10:05:09.661730 #740] DEBUG -- :    (15.6ms)  COMMIT
+D, [2018-02-08T10:05:09.661730 #740] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-08T10:05:09.661730 #740] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories` (`name`, `description`) VALUES ('Féculents', 'Pates, riz')
+D, [2018-02-08T10:05:09.661730 #740] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-02-08T10:05:09.661730 #740] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-08T10:05:09.661730 #740] DEBUG -- :   SQL (0.0ms)  INSERT INTO `products` (`name`, `price`, `description`) VALUES ('Ananas', 5.9, 'origine afrique')
+D, [2018-02-08T10:05:09.677331 #740] DEBUG -- :    (15.6ms)  COMMIT
+D, [2018-02-08T10:05:09.677331 #740] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-08T10:05:09.677331 #740] DEBUG -- :   SQL (0.0ms)  INSERT INTO `products` (`name`, `price`, `description`) VALUES ('Pomme de terre', 1.85, 'origine Suisse')
+D, [2018-02-08T10:05:09.677331 #740] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-02-08T10:05:09.677331 #740] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-08T10:05:09.677331 #740] DEBUG -- :   SQL (0.0ms)  INSERT INTO `products` (`name`, `price`, `description`) VALUES ('Pomme', 0.35, 'origine France')
+D, [2018-02-08T10:05:09.692931 #740] DEBUG -- :    (15.6ms)  COMMIT
+D, [2018-02-08T10:05:09.692931 #740] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-08T10:05:09.692931 #740] DEBUG -- :   SQL (0.0ms)  INSERT INTO `orders` (`created_at`, `shipped_at`, `status`, `client_id`) VALUES ('2018-02-03', '2018-03-04', 2, 16)
+D, [2018-02-08T10:05:09.708532 #740] DEBUG -- :    (15.6ms)  COMMIT
+D, [2018-02-08T10:05:09.708532 #740] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-08T10:05:09.708532 #740] DEBUG -- :   SQL (0.0ms)  INSERT INTO `orders` (`created_at`, `shipped_at`, `status`, `client_id`) VALUES ('2017-02-03', '2017-03-04', 1, 16)
+D, [2018-02-08T10:05:09.708532 #740] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-02-08T10:05:09.708532 #740] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-08T10:05:09.708532 #740] DEBUG -- :   SQL (0.0ms)  INSERT INTO `orders` (`created_at`, `shipped_at`, `status`, `client_id`) VALUES ('2018-01-01', '2018-02-01', 3, 17)
+D, [2018-02-08T10:05:09.724132 #740] DEBUG -- :    (15.6ms)  COMMIT
+D, [2018-02-08T10:05:54.809964 #7868] DEBUG -- :    (0.0ms)  SET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483
+D, [2018-02-08T10:05:54.825565 #7868] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-08T10:05:54.841165 #7868] DEBUG -- :   SQL (0.0ms)  INSERT INTO `clients` (`firstname`, `lastname`) VALUES ('Jean', 'Dupond')
+D, [2018-02-08T10:05:54.856766 #7868] DEBUG -- :    (15.6ms)  COMMIT
+D, [2018-02-08T10:05:54.856766 #7868] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-08T10:05:54.856766 #7868] DEBUG -- :   SQL (0.0ms)  INSERT INTO `clients` (`firstname`, `lastname`) VALUES ('Michel', 'Marchand')
+D, [2018-02-08T10:05:54.856766 #7868] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-02-08T10:05:54.856766 #7868] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-08T10:05:54.856766 #7868] DEBUG -- :   SQL (0.0ms)  INSERT INTO `clients` (`firstname`, `lastname`) VALUES ('René', 'Betchen')
+D, [2018-02-08T10:05:54.856766 #7868] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-02-08T10:05:54.872366 #7868] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-08T10:05:54.872366 #7868] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories` (`name`, `description`) VALUES ('Fruits', 'Fruits en vrac')
+D, [2018-02-08T10:05:54.872366 #7868] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-02-08T10:05:54.872366 #7868] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-08T10:05:54.872366 #7868] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories` (`name`, `description`) VALUES ('Légumes', 'Légumes')
+D, [2018-02-08T10:05:54.872366 #7868] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-02-08T10:05:54.872366 #7868] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-08T10:05:54.887967 #7868] DEBUG -- :   SQL (15.6ms)  INSERT INTO `categories` (`name`, `description`) VALUES ('Féculents', 'Pates, riz')
+D, [2018-02-08T10:05:54.887967 #7868] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-02-08T10:05:54.903567 #7868] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-08T10:05:54.903567 #7868] DEBUG -- :   SQL (0.0ms)  INSERT INTO `products` (`name`, `price`, `description`) VALUES ('Ananas', 5.9, 'origine afrique')
+D, [2018-02-08T10:05:54.919168 #7868] DEBUG -- :    (15.6ms)  COMMIT
+D, [2018-02-08T10:05:54.919168 #7868] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-08T10:05:54.919168 #7868] DEBUG -- :   SQL (0.0ms)  INSERT INTO `products` (`name`, `price`, `description`) VALUES ('Pomme de terre', 1.85, 'origine Suisse')
+D, [2018-02-08T10:05:54.919168 #7868] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-02-08T10:05:54.919168 #7868] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-08T10:05:54.919168 #7868] DEBUG -- :   SQL (0.0ms)  INSERT INTO `products` (`name`, `price`, `description`) VALUES ('Pomme', 0.35, 'origine France')
+D, [2018-02-08T10:05:54.919168 #7868] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-02-08T10:05:54.934768 #7868] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-08T10:05:54.934768 #7868] DEBUG -- :   SQL (0.0ms)  INSERT INTO `orders` (`created_at`, `shipped_at`, `status`, `client_id`) VALUES ('2018-02-03', '2018-03-04', 2, 19)
+D, [2018-02-08T10:05:54.950369 #7868] DEBUG -- :    (15.6ms)  COMMIT
+D, [2018-02-08T10:05:54.950369 #7868] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-08T10:05:54.950369 #7868] DEBUG -- :   SQL (0.0ms)  INSERT INTO `orders` (`created_at`, `shipped_at`, `status`, `client_id`) VALUES ('2017-02-03', '2017-03-04', 1, 19)
+D, [2018-02-08T10:05:54.950369 #7868] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-02-08T10:05:54.950369 #7868] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-08T10:05:54.950369 #7868] DEBUG -- :   SQL (0.0ms)  INSERT INTO `orders` (`created_at`, `shipped_at`, `status`, `client_id`) VALUES ('2018-01-01', '2018-02-01', 3, 20)
+D, [2018-02-08T10:05:54.950369 #7868] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-02-08T10:06:03.382848 #6300] DEBUG -- :    (0.0ms)  SET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483
+D, [2018-02-08T10:06:03.382848 #6300] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-08T10:06:03.398449 #6300] DEBUG -- :   SQL (0.0ms)  INSERT INTO `clients` (`firstname`, `lastname`) VALUES ('Jean', 'Dupond')
+D, [2018-02-08T10:06:03.414049 #6300] DEBUG -- :    (15.6ms)  COMMIT
+D, [2018-02-08T10:06:03.414049 #6300] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-08T10:06:03.414049 #6300] DEBUG -- :   SQL (0.0ms)  INSERT INTO `clients` (`firstname`, `lastname`) VALUES ('Michel', 'Marchand')
+D, [2018-02-08T10:06:03.414049 #6300] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-02-08T10:06:03.414049 #6300] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-08T10:06:03.414049 #6300] DEBUG -- :   SQL (0.0ms)  INSERT INTO `clients` (`firstname`, `lastname`) VALUES ('René', 'Betchen')
+D, [2018-02-08T10:06:03.414049 #6300] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-02-08T10:06:03.429650 #6300] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-08T10:06:03.429650 #6300] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories` (`name`, `description`) VALUES ('Fruits', 'Fruits en vrac')
+D, [2018-02-08T10:06:03.445250 #6300] DEBUG -- :    (15.6ms)  COMMIT
+D, [2018-02-08T10:06:03.445250 #6300] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-08T10:06:03.445250 #6300] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories` (`name`, `description`) VALUES ('Légumes', 'Légumes')
+D, [2018-02-08T10:06:03.445250 #6300] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-02-08T10:06:03.445250 #6300] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-08T10:06:03.445250 #6300] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories` (`name`, `description`) VALUES ('Féculents', 'Pates, riz')
+D, [2018-02-08T10:06:03.445250 #6300] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-02-08T10:06:03.460851 #6300] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-08T10:06:03.460851 #6300] DEBUG -- :   SQL (0.0ms)  INSERT INTO `products` (`name`, `price`, `description`) VALUES ('Ananas', 5.9, 'origine afrique')
+D, [2018-02-08T10:06:03.460851 #6300] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-02-08T10:06:03.460851 #6300] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-08T10:06:03.476451 #6300] DEBUG -- :   SQL (15.6ms)  INSERT INTO `products` (`name`, `price`, `description`) VALUES ('Pomme de terre', 1.85, 'origine Suisse')
+D, [2018-02-08T10:06:03.476451 #6300] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-02-08T10:06:03.476451 #6300] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-08T10:06:03.476451 #6300] DEBUG -- :   SQL (0.0ms)  INSERT INTO `products` (`name`, `price`, `description`) VALUES ('Pomme', 0.35, 'origine France')
+D, [2018-02-08T10:06:03.476451 #6300] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-02-08T10:06:03.492052 #6300] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-08T10:06:03.492052 #6300] DEBUG -- :   SQL (0.0ms)  INSERT INTO `orders` (`created_at`, `shipped_at`, `status`, `client_id`) VALUES ('2018-02-03', '2018-03-04', 2, 22)
+D, [2018-02-08T10:06:03.507652 #6300] DEBUG -- :    (15.6ms)  COMMIT
+D, [2018-02-08T10:06:03.507652 #6300] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-08T10:06:03.507652 #6300] DEBUG -- :   SQL (0.0ms)  INSERT INTO `orders` (`created_at`, `shipped_at`, `status`, `client_id`) VALUES ('2017-02-03', '2017-03-04', 1, 22)
+D, [2018-02-08T10:06:03.507652 #6300] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-02-08T10:06:03.507652 #6300] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-08T10:06:03.507652 #6300] DEBUG -- :   SQL (0.0ms)  INSERT INTO `orders` (`created_at`, `shipped_at`, `status`, `client_id`) VALUES ('2018-01-01', '2018-02-01', 3, 23)
+D, [2018-02-08T10:06:03.523253 #6300] DEBUG -- :    (15.6ms)  COMMIT
+D, [2018-02-08T10:06:11.343653 #7172] DEBUG -- :    (0.0ms)  SET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483
+D, [2018-02-08T10:06:11.343653 #7172] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-08T10:06:11.359254 #7172] DEBUG -- :   SQL (0.0ms)  INSERT INTO `clients` (`firstname`, `lastname`) VALUES ('Jean', 'Dupond')
+D, [2018-02-08T10:06:11.374854 #7172] DEBUG -- :    (15.6ms)  COMMIT
+D, [2018-02-08T10:06:11.374854 #7172] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-08T10:06:11.374854 #7172] DEBUG -- :   SQL (0.0ms)  INSERT INTO `clients` (`firstname`, `lastname`) VALUES ('Michel', 'Marchand')
+D, [2018-02-08T10:06:11.390455 #7172] DEBUG -- :    (15.6ms)  COMMIT
+D, [2018-02-08T10:06:11.390455 #7172] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-08T10:06:11.390455 #7172] DEBUG -- :   SQL (0.0ms)  INSERT INTO `clients` (`firstname`, `lastname`) VALUES ('René', 'Betchen')
+D, [2018-02-08T10:06:11.390455 #7172] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-02-08T10:06:11.406055 #7172] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-08T10:06:11.406055 #7172] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories` (`name`, `description`) VALUES ('Fruits', 'Fruits en vrac')
+D, [2018-02-08T10:06:11.406055 #7172] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-02-08T10:06:11.406055 #7172] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-08T10:06:11.406055 #7172] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories` (`name`, `description`) VALUES ('Légumes', 'Légumes')
+D, [2018-02-08T10:06:11.406055 #7172] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-02-08T10:06:11.406055 #7172] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-08T10:06:11.406055 #7172] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories` (`name`, `description`) VALUES ('Féculents', 'Pates, riz')
+D, [2018-02-08T10:06:11.421656 #7172] DEBUG -- :    (15.6ms)  COMMIT
+D, [2018-02-08T10:06:11.421656 #7172] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-08T10:06:11.421656 #7172] DEBUG -- :   SQL (0.0ms)  INSERT INTO `products` (`name`, `price`, `description`) VALUES ('Ananas', 5.9, 'origine afrique')
+D, [2018-02-08T10:06:11.421656 #7172] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-02-08T10:06:11.421656 #7172] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-08T10:06:11.421656 #7172] DEBUG -- :   SQL (0.0ms)  INSERT INTO `products` (`name`, `price`, `description`) VALUES ('Pomme de terre', 1.85, 'origine Suisse')
+D, [2018-02-08T10:06:11.437256 #7172] DEBUG -- :    (15.6ms)  COMMIT
+D, [2018-02-08T10:06:11.437256 #7172] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-08T10:06:11.437256 #7172] DEBUG -- :   SQL (0.0ms)  INSERT INTO `products` (`name`, `price`, `description`) VALUES ('Pomme', 0.35, 'origine France')
+D, [2018-02-08T10:06:11.468457 #7172] DEBUG -- :    (31.2ms)  COMMIT
+D, [2018-02-08T10:06:11.468457 #7172] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-08T10:06:11.468457 #7172] DEBUG -- :   SQL (0.0ms)  INSERT INTO `orders` (`created_at`, `shipped_at`, `status`, `client_id`) VALUES ('2018-02-03', '2018-03-04', 2, 25)
+D, [2018-02-08T10:06:11.484058 #7172] DEBUG -- :    (15.6ms)  COMMIT
+D, [2018-02-08T10:06:11.484058 #7172] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-08T10:06:11.484058 #7172] DEBUG -- :   SQL (0.0ms)  INSERT INTO `orders` (`created_at`, `shipped_at`, `status`, `client_id`) VALUES ('2017-02-03', '2017-03-04', 1, 25)
+D, [2018-02-08T10:06:11.484058 #7172] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-02-08T10:06:11.484058 #7172] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-08T10:06:11.484058 #7172] DEBUG -- :   SQL (0.0ms)  INSERT INTO `orders` (`created_at`, `shipped_at`, `status`, `client_id`) VALUES ('2018-01-01', '2018-02-01', 3, 26)
+D, [2018-02-08T10:06:11.499658 #7172] DEBUG -- :    (15.6ms)  COMMIT
+D, [2018-02-08T10:07:49.720782 #7908] DEBUG -- :    (15.6ms)  SET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483
+D, [2018-02-08T10:07:49.720782 #7908] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-08T10:07:49.736383 #7908] DEBUG -- :   SQL (0.0ms)  INSERT INTO `clients` (`firstname`, `lastname`) VALUES ('Jean', 'Dupond')
+D, [2018-02-08T10:07:49.751983 #7908] DEBUG -- :    (15.6ms)  COMMIT
+D, [2018-02-08T10:07:49.751983 #7908] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-08T10:07:49.751983 #7908] DEBUG -- :   SQL (0.0ms)  INSERT INTO `clients` (`firstname`, `lastname`) VALUES ('Michel', 'Marchand')
+D, [2018-02-08T10:07:49.751983 #7908] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-02-08T10:07:49.751983 #7908] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-08T10:07:49.751983 #7908] DEBUG -- :   SQL (0.0ms)  INSERT INTO `clients` (`firstname`, `lastname`) VALUES ('René', 'Betchen')
+D, [2018-02-08T10:07:49.751983 #7908] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-02-08T10:07:49.751983 #7908] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-08T10:07:49.751983 #7908] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories` (`name`, `description`) VALUES ('Fruits', 'Fruits en vrac')
+D, [2018-02-08T10:07:49.767584 #7908] DEBUG -- :    (15.6ms)  COMMIT
+D, [2018-02-08T10:07:49.767584 #7908] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-08T10:07:49.767584 #7908] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories` (`name`, `description`) VALUES ('Légumes', 'Légumes')
+D, [2018-02-08T10:07:49.767584 #7908] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-02-08T10:07:49.767584 #7908] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-08T10:07:49.767584 #7908] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories` (`name`, `description`) VALUES ('Féculents', 'Pates, riz')
+D, [2018-02-08T10:07:49.767584 #7908] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-02-08T10:07:49.767584 #7908] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-08T10:07:49.783184 #7908] DEBUG -- :   SQL (0.0ms)  INSERT INTO `products` (`name`, `price`, `description`) VALUES ('Ananas', 5.9, 'origine afrique')
+D, [2018-02-08T10:07:49.783184 #7908] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-02-08T10:07:49.783184 #7908] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-08T10:07:49.783184 #7908] DEBUG -- :   SQL (0.0ms)  INSERT INTO `products` (`name`, `price`, `description`) VALUES ('Pomme de terre', 1.85, 'origine Suisse')
+D, [2018-02-08T10:07:49.783184 #7908] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-02-08T10:07:49.783184 #7908] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-08T10:07:49.783184 #7908] DEBUG -- :   SQL (0.0ms)  INSERT INTO `products` (`name`, `price`, `description`) VALUES ('Pomme', 0.35, 'origine France')
+D, [2018-02-08T10:07:49.798785 #7908] DEBUG -- :    (15.6ms)  COMMIT
+D, [2018-02-08T10:07:49.798785 #7908] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-08T10:07:49.798785 #7908] DEBUG -- :   SQL (0.0ms)  INSERT INTO `orders` (`created_at`, `shipped_at`, `status`, `client_id`) VALUES ('2018-02-03', '2018-03-04', 2, 28)
+D, [2018-02-08T10:07:49.814385 #7908] DEBUG -- :    (15.6ms)  COMMIT
+D, [2018-02-08T10:07:49.814385 #7908] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-08T10:07:49.814385 #7908] DEBUG -- :   SQL (0.0ms)  INSERT INTO `orders` (`created_at`, `shipped_at`, `status`, `client_id`) VALUES ('2017-02-03', '2017-03-04', 1, 28)
+D, [2018-02-08T10:07:49.814385 #7908] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-02-08T10:07:49.814385 #7908] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-08T10:07:49.814385 #7908] DEBUG -- :   SQL (0.0ms)  INSERT INTO `orders` (`created_at`, `shipped_at`, `status`, `client_id`) VALUES ('2018-01-01', '2018-02-01', 3, 29)
+D, [2018-02-08T10:07:49.829986 #7908] DEBUG -- :    (15.6ms)  COMMIT
+D, [2018-02-08T10:08:54.345658 #7508] DEBUG -- :    (0.0ms)  SET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483
+D, [2018-02-08T10:08:54.345658 #7508] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-08T10:08:54.361259 #7508] DEBUG -- :   SQL (0.0ms)  INSERT INTO `clients` (`firstname`, `lastname`) VALUES ('Jean', 'Dupond')
+D, [2018-02-08T10:08:54.361259 #7508] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-02-08T10:08:54.376859 #7508] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-08T10:08:54.376859 #7508] DEBUG -- :   SQL (0.0ms)  INSERT INTO `clients` (`firstname`, `lastname`) VALUES ('Michel', 'Marchand')
+D, [2018-02-08T10:08:54.376859 #7508] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-02-08T10:08:54.376859 #7508] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-08T10:08:54.376859 #7508] DEBUG -- :   SQL (0.0ms)  INSERT INTO `clients` (`firstname`, `lastname`) VALUES ('René', 'Betchen')
+D, [2018-02-08T10:08:54.392460 #7508] DEBUG -- :    (15.6ms)  COMMIT
+D, [2018-02-08T10:08:54.392460 #7508] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-08T10:08:54.392460 #7508] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories` (`name`, `description`) VALUES ('Fruits', 'Fruits en vrac')
+D, [2018-02-08T10:08:54.392460 #7508] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-02-08T10:08:54.392460 #7508] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-08T10:08:54.392460 #7508] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories` (`name`, `description`) VALUES ('Légumes', 'Légumes')
+D, [2018-02-08T10:08:54.408060 #7508] DEBUG -- :    (15.6ms)  COMMIT
+D, [2018-02-08T10:08:54.408060 #7508] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-08T10:08:54.408060 #7508] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories` (`name`, `description`) VALUES ('Féculents', 'Pates, riz')
+D, [2018-02-08T10:08:54.408060 #7508] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-02-08T10:08:54.408060 #7508] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-08T10:08:54.423661 #7508] DEBUG -- :   SQL (0.0ms)  INSERT INTO `products` (`name`, `price`, `description`) VALUES ('Ananas', 5.9, 'origine afrique')
+D, [2018-02-08T10:08:54.423661 #7508] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-02-08T10:08:54.423661 #7508] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-08T10:08:54.423661 #7508] DEBUG -- :   SQL (0.0ms)  INSERT INTO `products` (`name`, `price`, `description`) VALUES ('Pomme de terre', 1.85, 'origine Suisse')
+D, [2018-02-08T10:08:54.423661 #7508] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-02-08T10:08:54.423661 #7508] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-08T10:08:54.423661 #7508] DEBUG -- :   SQL (0.0ms)  INSERT INTO `products` (`name`, `price`, `description`) VALUES ('Pomme', 0.35, 'origine France')
+D, [2018-02-08T10:08:54.439261 #7508] DEBUG -- :    (15.6ms)  COMMIT
+D, [2018-02-08T10:08:54.439261 #7508] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-08T10:08:54.439261 #7508] DEBUG -- :   SQL (0.0ms)  INSERT INTO `orders` (`created_at`, `shipped_at`, `status`, `client_id`) VALUES ('2018-02-03', '2018-03-04', 2, 31)
+D, [2018-02-08T10:08:54.454862 #7508] DEBUG -- :    (15.6ms)  COMMIT
+D, [2018-02-08T10:08:54.454862 #7508] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-08T10:08:54.454862 #7508] DEBUG -- :   SQL (0.0ms)  INSERT INTO `orders` (`created_at`, `shipped_at`, `status`, `client_id`) VALUES ('2017-02-03', '2017-03-04', 1, 31)
+D, [2018-02-08T10:08:54.454862 #7508] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-02-08T10:08:54.470462 #7508] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-08T10:08:54.470462 #7508] DEBUG -- :   SQL (0.0ms)  INSERT INTO `orders` (`created_at`, `shipped_at`, `status`, `client_id`) VALUES ('2018-01-01', '2018-02-01', 3, 32)
+D, [2018-02-08T10:08:54.470462 #7508] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-02-08T10:12:27.130052 #7248] DEBUG -- :    (0.0ms)  SET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483
+D, [2018-02-08T10:12:27.130052 #7248] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-08T10:12:27.145653 #7248] DEBUG -- :   SQL (0.0ms)  INSERT INTO `clients` (`firstname`, `lastname`) VALUES ('Jean', 'Dupond')
+D, [2018-02-08T10:12:27.145653 #7248] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-02-08T10:12:27.145653 #7248] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-08T10:12:27.239254 #7248] DEBUG -- :   SQL (93.6ms)  INSERT INTO `clients` (`firstname`, `lastname`) VALUES ('Michel', 'Marchand')
+D, [2018-02-08T10:12:27.254854 #7248] DEBUG -- :    (15.6ms)  COMMIT
+D, [2018-02-08T10:12:27.254854 #7248] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-08T10:12:27.254854 #7248] DEBUG -- :   SQL (0.0ms)  INSERT INTO `clients` (`firstname`, `lastname`) VALUES ('René', 'Betchen')
+D, [2018-02-08T10:12:27.254854 #7248] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-02-08T10:12:27.270454 #7248] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-08T10:12:27.270454 #7248] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories` (`name`, `description`) VALUES ('Fruits', 'Fruits en vrac')
+D, [2018-02-08T10:12:27.270454 #7248] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-02-08T10:12:27.270454 #7248] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-08T10:12:27.270454 #7248] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories` (`name`, `description`) VALUES ('Légumes', 'Légumes')
+D, [2018-02-08T10:12:27.286054 #7248] DEBUG -- :    (15.6ms)  COMMIT
+D, [2018-02-08T10:12:27.286054 #7248] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-08T10:12:27.286054 #7248] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories` (`name`, `description`) VALUES ('Féculents', 'Pates, riz')
+D, [2018-02-08T10:12:27.286054 #7248] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-02-08T10:12:27.286054 #7248] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-08T10:12:27.286054 #7248] DEBUG -- :   SQL (0.0ms)  INSERT INTO `products` (`name`, `price`, `description`) VALUES ('Ananas', 5.9, 'origine afrique')
+D, [2018-02-08T10:12:27.301655 #7248] DEBUG -- :    (15.6ms)  COMMIT
+D, [2018-02-08T10:12:27.301655 #7248] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-08T10:12:27.301655 #7248] DEBUG -- :   SQL (0.0ms)  INSERT INTO `products` (`name`, `price`, `description`) VALUES ('Pomme de terre', 1.85, 'origine Suisse')
+D, [2018-02-08T10:12:27.317255 #7248] DEBUG -- :    (15.6ms)  COMMIT
+D, [2018-02-08T10:12:27.317255 #7248] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-08T10:12:27.317255 #7248] DEBUG -- :   SQL (0.0ms)  INSERT INTO `products` (`name`, `price`, `description`) VALUES ('Pomme', 0.35, 'origine France')
+D, [2018-02-08T10:12:27.317255 #7248] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-02-08T10:12:27.332855 #7248] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-08T10:12:27.332855 #7248] DEBUG -- :   SQL (0.0ms)  INSERT INTO `orders` (`created_at`, `shipped_at`, `status`, `client_id`) VALUES ('2018-02-03', '2018-03-04', 2, 34)
+D, [2018-02-08T10:12:27.332855 #7248] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-02-08T10:12:27.332855 #7248] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-08T10:12:27.332855 #7248] DEBUG -- :   SQL (0.0ms)  INSERT INTO `orders` (`created_at`, `shipped_at`, `status`, `client_id`) VALUES ('2017-02-03', '2017-03-04', 1, 34)
+D, [2018-02-08T10:12:27.348455 #7248] DEBUG -- :    (15.6ms)  COMMIT
+D, [2018-02-08T10:12:27.348455 #7248] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-08T10:12:27.348455 #7248] DEBUG -- :   SQL (0.0ms)  INSERT INTO `orders` (`created_at`, `shipped_at`, `status`, `client_id`) VALUES ('2018-01-01', '2018-02-01', 3, 35)
+D, [2018-02-08T10:12:27.348455 #7248] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-02-08T10:12:27.364055 #7248] DEBUG -- :   OrderItem Load (0.0ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 22
+D, [2018-02-08T10:12:56.093412 #7884] DEBUG -- :    (0.0ms)  SET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483
+D, [2018-02-08T10:12:56.093412 #7884] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-08T10:12:56.109012 #7884] DEBUG -- :   SQL (0.0ms)  INSERT INTO `clients` (`firstname`, `lastname`) VALUES ('Jean', 'Dupond')
+D, [2018-02-08T10:12:56.124612 #7884] DEBUG -- :    (15.6ms)  COMMIT
+D, [2018-02-08T10:12:56.124612 #7884] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-08T10:12:56.124612 #7884] DEBUG -- :   SQL (0.0ms)  INSERT INTO `clients` (`firstname`, `lastname`) VALUES ('Michel', 'Marchand')
+D, [2018-02-08T10:12:56.124612 #7884] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-02-08T10:12:56.124612 #7884] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-08T10:12:56.140213 #7884] DEBUG -- :   SQL (0.0ms)  INSERT INTO `clients` (`firstname`, `lastname`) VALUES ('René', 'Betchen')
+D, [2018-02-08T10:12:56.140213 #7884] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-02-08T10:12:56.140213 #7884] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-08T10:12:56.140213 #7884] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories` (`name`, `description`) VALUES ('Fruits', 'Fruits en vrac')
+D, [2018-02-08T10:12:56.140213 #7884] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-02-08T10:12:56.140213 #7884] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-08T10:12:56.140213 #7884] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories` (`name`, `description`) VALUES ('Légumes', 'Légumes')
+D, [2018-02-08T10:12:56.155813 #7884] DEBUG -- :    (15.6ms)  COMMIT
+D, [2018-02-08T10:12:56.155813 #7884] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-08T10:12:56.155813 #7884] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories` (`name`, `description`) VALUES ('Féculents', 'Pates, riz')
+D, [2018-02-08T10:12:56.155813 #7884] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-02-08T10:12:56.155813 #7884] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-08T10:12:56.155813 #7884] DEBUG -- :   SQL (0.0ms)  INSERT INTO `products` (`name`, `price`, `description`) VALUES ('Ananas', 5.9, 'origine afrique')
+D, [2018-02-08T10:12:56.187013 #7884] DEBUG -- :    (31.2ms)  COMMIT
+D, [2018-02-08T10:12:56.187013 #7884] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-08T10:12:56.187013 #7884] DEBUG -- :   SQL (0.0ms)  INSERT INTO `products` (`name`, `price`, `description`) VALUES ('Pomme de terre', 1.85, 'origine Suisse')
+D, [2018-02-08T10:12:56.202613 #7884] DEBUG -- :    (15.6ms)  COMMIT
+D, [2018-02-08T10:12:56.202613 #7884] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-08T10:12:56.202613 #7884] DEBUG -- :   SQL (0.0ms)  INSERT INTO `products` (`name`, `price`, `description`) VALUES ('Pomme', 0.35, 'origine France')
+D, [2018-02-08T10:12:56.202613 #7884] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-02-08T10:12:56.218214 #7884] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-08T10:12:56.218214 #7884] DEBUG -- :   SQL (0.0ms)  INSERT INTO `orders` (`created_at`, `shipped_at`, `status`, `client_id`) VALUES ('2018-02-03', '2018-03-04', 2, 37)
+D, [2018-02-08T10:12:56.218214 #7884] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-02-08T10:12:56.218214 #7884] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-08T10:12:56.218214 #7884] DEBUG -- :   SQL (0.0ms)  INSERT INTO `orders` (`created_at`, `shipped_at`, `status`, `client_id`) VALUES ('2017-02-03', '2017-03-04', 1, 37)
+D, [2018-02-08T10:12:56.233814 #7884] DEBUG -- :    (15.6ms)  COMMIT
+D, [2018-02-08T10:12:56.233814 #7884] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-08T10:12:56.233814 #7884] DEBUG -- :   SQL (0.0ms)  INSERT INTO `orders` (`created_at`, `shipped_at`, `status`, `client_id`) VALUES ('2018-01-01', '2018-02-01', 3, 38)
+D, [2018-02-08T10:12:56.233814 #7884] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-02-08T10:12:56.249414 #7884] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-08T10:12:56.249414 #7884] DEBUG -- :   SQL (0.0ms)  INSERT INTO `order_items` (`quantity`, `item_price`, `order_id`, `product_id`) VALUES (2.0, 5.9, 25, 26)
+D, [2018-02-08T10:12:56.249414 #7884] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-02-08T10:12:56.249414 #7884] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-08T10:12:56.249414 #7884] DEBUG -- :   SQL (0.0ms)  INSERT INTO `order_items` (`quantity`, `item_price`, `order_id`, `product_id`) VALUES (3.0, 0.35, 26, 28)
+D, [2018-02-08T10:12:56.265014 #7884] DEBUG -- :    (15.6ms)  COMMIT
+D, [2018-02-08T10:26:29.295037 #3200] DEBUG -- :    (0.0ms)  SET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483
+D, [2018-02-08T10:26:29.295037 #3200] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-08T10:26:29.310637 #3200] DEBUG -- :   SQL (0.0ms)  INSERT INTO `clients` (`firstname`, `lastname`) VALUES ('Jean', 'Dupond')
+D, [2018-02-08T10:26:29.326237 #3200] DEBUG -- :    (15.6ms)  COMMIT
+D, [2018-02-08T10:26:29.326237 #3200] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-08T10:26:29.326237 #3200] DEBUG -- :   SQL (0.0ms)  INSERT INTO `clients` (`firstname`, `lastname`) VALUES ('Michel', 'Marchand')
+D, [2018-02-08T10:26:29.341837 #3200] DEBUG -- :    (15.6ms)  COMMIT
+D, [2018-02-08T10:26:29.341837 #3200] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-08T10:26:29.341837 #3200] DEBUG -- :   SQL (0.0ms)  INSERT INTO `clients` (`firstname`, `lastname`) VALUES ('René', 'Betchen')
+D, [2018-02-08T10:26:29.341837 #3200] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-02-08T10:26:29.341837 #3200] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-08T10:26:29.341837 #3200] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories` (`name`, `description`) VALUES ('Fruits', 'Fruits en vrac')
+D, [2018-02-08T10:26:29.357437 #3200] DEBUG -- :    (15.6ms)  COMMIT
+D, [2018-02-08T10:26:29.357437 #3200] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-08T10:26:29.357437 #3200] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories` (`name`, `description`) VALUES ('Légumes', 'Légumes')
+D, [2018-02-08T10:26:29.373037 #3200] DEBUG -- :    (15.6ms)  COMMIT
+D, [2018-02-08T10:26:29.373037 #3200] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-08T10:26:29.373037 #3200] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories` (`name`, `description`) VALUES ('Féculents', 'Pates, riz')
+D, [2018-02-08T10:26:29.373037 #3200] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-02-08T10:26:29.388637 #3200] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-08T10:26:29.388637 #3200] DEBUG -- :   SQL (0.0ms)  INSERT INTO `products` (`name`, `price`, `description`) VALUES ('Ananas', 5.9, 'origine afrique')
+D, [2018-02-08T10:26:29.388637 #3200] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-02-08T10:26:29.388637 #3200] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-08T10:26:29.388637 #3200] DEBUG -- :   SQL (0.0ms)  INSERT INTO `products` (`name`, `price`, `description`) VALUES ('Pomme de terre', 1.85, 'origine Suisse')
+D, [2018-02-08T10:26:29.404238 #3200] DEBUG -- :    (15.6ms)  COMMIT
+D, [2018-02-08T10:26:29.404238 #3200] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-08T10:26:29.404238 #3200] DEBUG -- :   SQL (0.0ms)  INSERT INTO `products` (`name`, `price`, `description`) VALUES ('Pomme', 0.35, 'origine France')
+D, [2018-02-08T10:26:29.404238 #3200] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-02-08T10:26:29.419838 #3200] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-08T10:26:29.419838 #3200] DEBUG -- :   SQL (0.0ms)  INSERT INTO `orders` (`created_at`, `shipped_at`, `status`, `client_id`) VALUES ('2018-02-03', '2018-03-04', 2, 40)
+D, [2018-02-08T10:26:29.419838 #3200] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-02-08T10:26:29.419838 #3200] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-08T10:26:29.419838 #3200] DEBUG -- :   SQL (0.0ms)  INSERT INTO `orders` (`created_at`, `shipped_at`, `status`, `client_id`) VALUES ('2017-02-03', '2017-03-04', 1, 40)
+D, [2018-02-08T10:26:29.435438 #3200] DEBUG -- :    (15.6ms)  COMMIT
+D, [2018-02-08T10:26:29.435438 #3200] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-08T10:26:29.435438 #3200] DEBUG -- :   SQL (0.0ms)  INSERT INTO `orders` (`created_at`, `shipped_at`, `status`, `client_id`) VALUES ('2018-01-01', '2018-02-01', 3, 41)
+D, [2018-02-08T10:26:29.451038 #3200] DEBUG -- :    (15.6ms)  COMMIT
+D, [2018-02-08T10:26:29.452038 #3200] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-08T10:26:29.452038 #3200] DEBUG -- :   SQL (0.0ms)  INSERT INTO `order_items` (`quantity`, `item_price`, `order_id`, `product_id`) VALUES (2.0, 5.9, 28, 29)
+D, [2018-02-08T10:26:29.452038 #3200] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-02-08T10:26:29.452038 #3200] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-08T10:26:29.452038 #3200] DEBUG -- :   SQL (0.0ms)  INSERT INTO `order_items` (`quantity`, `item_price`, `order_id`, `product_id`) VALUES (3.0, 0.35, 29, 31)
+D, [2018-02-08T10:26:29.467638 #3200] DEBUG -- :    (15.6ms)  COMMIT
+D, [2018-02-08T10:40:31.244662 #1756] DEBUG -- :    (0.0ms)  SET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483
+D, [2018-02-08T10:40:31.244662 #1756] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-08T10:40:31.260262 #1756] DEBUG -- :   SQL (0.0ms)  INSERT INTO `clients` (`firstname`, `lastname`) VALUES ('Jean', 'Dupond')
+D, [2018-02-08T10:40:31.275862 #1756] DEBUG -- :    (15.6ms)  COMMIT
+D, [2018-02-08T10:40:31.275862 #1756] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-08T10:40:31.275862 #1756] DEBUG -- :   SQL (0.0ms)  INSERT INTO `clients` (`firstname`, `lastname`) VALUES ('Michel', 'Marchand')
+D, [2018-02-08T10:40:31.275862 #1756] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-02-08T10:40:31.275862 #1756] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-08T10:40:31.275862 #1756] DEBUG -- :   SQL (0.0ms)  INSERT INTO `clients` (`firstname`, `lastname`) VALUES ('René', 'Betchen')
+D, [2018-02-08T10:40:31.291463 #1756] DEBUG -- :    (15.6ms)  COMMIT
+D, [2018-02-08T10:40:31.291463 #1756] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-08T10:40:31.291463 #1756] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories` (`name`, `description`) VALUES ('Fruits', 'Fruits en vrac')
+D, [2018-02-08T10:40:31.291463 #1756] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-02-08T10:40:31.291463 #1756] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-08T10:40:31.291463 #1756] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories` (`name`, `description`) VALUES ('Légumes', 'Légumes')
+D, [2018-02-08T10:40:31.307063 #1756] DEBUG -- :    (15.6ms)  COMMIT
+D, [2018-02-08T10:40:31.307063 #1756] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-08T10:40:31.307063 #1756] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories` (`name`, `description`) VALUES ('Féculents', 'Pates, riz')
+D, [2018-02-08T10:40:31.307063 #1756] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-02-08T10:40:31.307063 #1756] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-08T10:40:31.307063 #1756] DEBUG -- :   SQL (0.0ms)  INSERT INTO `products` (`name`, `price`, `description`) VALUES ('Ananas', 5.9, 'origine afrique')
+D, [2018-02-08T10:40:31.322663 #1756] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-02-08T10:40:31.322663 #1756] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-08T10:40:31.322663 #1756] DEBUG -- :   SQL (0.0ms)  INSERT INTO `products` (`name`, `price`, `description`) VALUES ('Pomme de terre', 1.85, 'origine Suisse')
+D, [2018-02-08T10:40:31.322663 #1756] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-02-08T10:40:31.322663 #1756] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-08T10:40:31.322663 #1756] DEBUG -- :   SQL (0.0ms)  INSERT INTO `products` (`name`, `price`, `description`) VALUES ('Pomme', 0.35, 'origine France')
+D, [2018-02-08T10:40:31.338263 #1756] DEBUG -- :    (15.6ms)  COMMIT
+D, [2018-02-08T10:40:31.338263 #1756] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-08T10:40:31.338263 #1756] DEBUG -- :   SQL (0.0ms)  INSERT INTO `orders` (`created_at`, `shipped_at`, `status`, `client_id`) VALUES ('2018-02-03', '2018-03-04', 2, 43)
+D, [2018-02-08T10:40:31.353863 #1756] DEBUG -- :    (15.6ms)  COMMIT
+D, [2018-02-08T10:40:31.353863 #1756] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-08T10:40:31.353863 #1756] DEBUG -- :   SQL (0.0ms)  INSERT INTO `orders` (`created_at`, `shipped_at`, `status`, `client_id`) VALUES ('2017-02-03', '2017-03-04', 1, 43)
+D, [2018-02-08T10:40:31.369463 #1756] DEBUG -- :    (15.6ms)  COMMIT
+D, [2018-02-08T10:40:31.369463 #1756] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-08T10:40:31.369463 #1756] DEBUG -- :   SQL (0.0ms)  INSERT INTO `orders` (`created_at`, `shipped_at`, `status`, `client_id`) VALUES ('2018-01-01', '2018-02-01', 3, 44)
+D, [2018-02-08T10:40:31.369463 #1756] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-02-08T10:40:31.400663 #1756] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-08T10:40:31.400663 #1756] DEBUG -- :   SQL (0.0ms)  INSERT INTO `order_items` (`quantity`, `item_price`, `order_id`, `product_id`) VALUES (2.0, 5.9, 31, 32)
+D, [2018-02-08T10:40:31.400663 #1756] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-02-08T10:40:31.400663 #1756] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-08T10:40:31.400663 #1756] DEBUG -- :   SQL (0.0ms)  INSERT INTO `order_items` (`quantity`, `item_price`, `order_id`, `product_id`) VALUES (3.0, 0.35, 32, 34)
+D, [2018-02-08T10:40:31.416263 #1756] DEBUG -- :    (15.6ms)  COMMIT
+D, [2018-02-09T10:51:46.473163 #8288] DEBUG -- :    (0.0ms)  SET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483
+D, [2018-02-09T10:51:46.488763 #8288] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-09T10:51:46.519963 #8288] DEBUG -- :   SQL (0.0ms)  INSERT INTO `clients` (`firstname`, `lastname`) VALUES ('Jean', 'Dupond')
+D, [2018-02-09T10:51:46.519963 #8288] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-02-09T10:51:46.519963 #8288] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-09T10:51:46.519963 #8288] DEBUG -- :   SQL (0.0ms)  INSERT INTO `clients` (`firstname`, `lastname`) VALUES ('Michel', 'Marchand')
+D, [2018-02-09T10:51:46.519963 #8288] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-02-09T10:51:46.519963 #8288] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-09T10:51:46.535563 #8288] DEBUG -- :   SQL (0.0ms)  INSERT INTO `clients` (`firstname`, `lastname`) VALUES ('René', 'Betchen')
+D, [2018-02-09T10:51:46.551163 #8288] DEBUG -- :    (15.6ms)  COMMIT
+D, [2018-02-09T10:51:46.551163 #8288] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-09T10:51:46.551163 #8288] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories` (`name`, `description`) VALUES ('Fruits', 'Fruits en vrac')
+D, [2018-02-09T10:51:46.566763 #8288] DEBUG -- :    (15.6ms)  COMMIT
+D, [2018-02-09T10:51:46.566763 #8288] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-09T10:51:46.566763 #8288] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories` (`name`, `description`) VALUES ('Légumes', 'Légumes')
+D, [2018-02-09T10:51:46.566763 #8288] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-02-09T10:51:46.566763 #8288] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-09T10:51:46.566763 #8288] DEBUG -- :   SQL (0.0ms)  INSERT INTO `categories` (`name`, `description`) VALUES ('Féculents', 'Pates, riz')
+D, [2018-02-09T10:51:46.566763 #8288] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-02-09T10:51:46.582363 #8288] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-09T10:51:46.582363 #8288] DEBUG -- :   SQL (0.0ms)  INSERT INTO `products` (`name`, `price`, `description`) VALUES ('Ananas', 5.9, 'origine afrique')
+D, [2018-02-09T10:51:46.582363 #8288] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-02-09T10:51:46.582363 #8288] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-09T10:51:46.582363 #8288] DEBUG -- :   SQL (0.0ms)  INSERT INTO `products` (`name`, `price`, `description`) VALUES ('Pomme de terre', 1.85, 'origine Suisse')
+D, [2018-02-09T10:51:46.597963 #8288] DEBUG -- :    (15.6ms)  COMMIT
+D, [2018-02-09T10:51:46.597963 #8288] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-09T10:51:46.597963 #8288] DEBUG -- :   SQL (0.0ms)  INSERT INTO `products` (`name`, `price`, `description`) VALUES ('Pomme', 0.35, 'origine France')
+D, [2018-02-09T10:51:46.597963 #8288] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-02-09T10:51:46.613563 #8288] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-09T10:51:46.613563 #8288] DEBUG -- :   SQL (0.0ms)  INSERT INTO `orders` (`created_at`, `shipped_at`, `status`, `client_id`) VALUES ('2018-02-03', '2018-03-04', 2, 46)
+D, [2018-02-09T10:51:46.629163 #8288] DEBUG -- :    (15.6ms)  COMMIT
+D, [2018-02-09T10:51:46.629163 #8288] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-09T10:51:46.629163 #8288] DEBUG -- :   SQL (0.0ms)  INSERT INTO `orders` (`created_at`, `shipped_at`, `status`, `client_id`) VALUES ('2017-02-03', '2017-03-04', 1, 46)
+D, [2018-02-09T10:51:46.629163 #8288] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-02-09T10:51:46.629163 #8288] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-09T10:51:46.629163 #8288] DEBUG -- :   SQL (0.0ms)  INSERT INTO `orders` (`created_at`, `shipped_at`, `status`, `client_id`) VALUES ('2018-01-01', '2018-02-01', 3, 47)
+D, [2018-02-09T10:51:46.644763 #8288] DEBUG -- :    (15.6ms)  COMMIT
+D, [2018-02-09T10:51:46.660363 #8288] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-09T10:51:46.660363 #8288] DEBUG -- :   SQL (0.0ms)  INSERT INTO `order_items` (`quantity`, `item_price`, `order_id`, `product_id`) VALUES (2.0, 5.9, 34, 35)
+D, [2018-02-09T10:51:46.675963 #8288] DEBUG -- :    (15.6ms)  COMMIT
+D, [2018-02-09T10:51:46.675963 #8288] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-09T10:51:46.675963 #8288] DEBUG -- :   SQL (0.0ms)  INSERT INTO `order_items` (`quantity`, `item_price`, `order_id`, `product_id`) VALUES (3.0, 0.35, 35, 37)
+D, [2018-02-09T10:51:46.675963 #8288] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-02-09T11:14:58.149142 #8528] DEBUG -- :    (0.0ms)  SET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483
+D, [2018-02-09T11:14:58.149142 #8528] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-09T11:14:58.164742 #8528] DEBUG -- :   SQL (0.0ms)  INSERT INTO `clients` (`firstname`, `lastname`) VALUES ('Jean', 'Dupond')
+D, [2018-02-09T11:14:58.180342 #8528] DEBUG -- :    (15.6ms)  COMMIT
+D, [2018-02-09T11:14:58.180342 #8528] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-09T11:14:58.180342 #8528] DEBUG -- :   SQL (0.0ms)  INSERT INTO `clients` (`firstname`, `lastname`) VALUES ('Michel', 'Marchand')
+D, [2018-02-09T11:14:58.180342 #8528] DEBUG -- :    (0.0ms)  COMMIT
+D, [2018-02-09T11:14:58.180342 #8528] DEBUG -- :    (0.0ms)  BEGIN
+D, [2018-02-09T11:14:58.180342 #8528] DEBUG -- :   SQL (0.0ms)  INSERT INTO `clients` (`firstname`, `lastname`) VALUES ('René', 'Betchen')
+D, [2018-02-09T11:14:58.195942 #8528] DEBUG -- :    (15.6ms)  COMMIT
+D, [2018-02-09T12:15:37.743983 #7760] DEBUG -- :    (0.0ms)  SET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483
+D, [2018-02-09T12:15:37.743983 #7760] DEBUG -- :   Product Load (0.0ms)  SELECT `products`.* FROM `products` WHERE (price <= 0.2)
+D, [2018-02-09T12:16:24.816383 #5392] DEBUG -- :    (0.0ms)  SET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483
+D, [2018-02-09T12:16:24.816383 #5392] DEBUG -- :   Product Load (0.0ms)  SELECT `products`.* FROM `products` WHERE (price <= 0.2)
+D, [2018-02-15T08:07:33.770632 #5604] DEBUG -- :    (0.0ms)  SET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483
+D, [2018-02-15T08:08:06.951483 #7160] DEBUG -- :    (0.0ms)  SET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483
+D, [2018-02-15T08:08:06.951483 #7160] DEBUG -- :   Product Load (0.0ms)  SELECT  `products`.* FROM `products` WHERE (price <= 0.2) ORDER BY `products`.`id` ASC LIMIT 1
+D, [2018-02-15T08:19:57.874947 #7072] DEBUG -- :    (0.0ms)  SET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483
+D, [2018-02-15T08:19:57.874947 #7072] DEBUG -- :   Product Load (0.0ms)  SELECT  `products`.* FROM `products` WHERE (price <= 0.2) ORDER BY `products`.`id` ASC LIMIT 1
+D, [2018-02-15T08:20:27.287658 #7944] DEBUG -- :    (0.0ms)  SET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483
+D, [2018-02-15T08:20:27.287658 #7944] DEBUG -- :   Product Load (0.0ms)  SELECT  `products`.* FROM `products` WHERE (price <= 0.2) ORDER BY `products`.`id` ASC LIMIT 1
+D, [2018-02-15T08:20:39.627101 #7652] DEBUG -- :    (0.0ms)  SET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483
+D, [2018-02-15T08:20:39.627101 #7652] DEBUG -- :   Product Load (0.0ms)  SELECT  `products`.* FROM `products` WHERE (price <= 0.2) ORDER BY `products`.`id` ASC LIMIT 1
+D, [2018-02-15T08:20:39.627101 #7652] DEBUG -- :   OrderItem Load (0.0ms)  SELECT `order_items`.* FROM `order_items` WHERE (quantity <= 100)
+D, [2018-02-15T08:20:57.465456 #4012] DEBUG -- :    (0.0ms)  SET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483
+D, [2018-02-15T08:20:57.465456 #4012] DEBUG -- :   Product Load (0.0ms)  SELECT  `products`.* FROM `products` WHERE (price <= 0.2) ORDER BY `products`.`id` ASC LIMIT 1
+D, [2018-02-15T08:20:57.481056 #4012] DEBUG -- :   OrderItem Load (15.6ms)  SELECT  `order_items`.* FROM `order_items` WHERE (quantity <= 100) ORDER BY `order_items`.`id` ASC LIMIT 1
+D, [2018-02-15T08:20:57.496656 #4012] DEBUG -- :   Product Load (0.0ms)  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1
+D, [2018-02-15T08:21:10.319696 #5176] DEBUG -- :    (0.0ms)  SET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483
+D, [2018-02-15T08:21:10.319696 #5176] DEBUG -- :   Product Load (0.0ms)  SELECT  `products`.* FROM `products` WHERE (price <= 0.2) ORDER BY `products`.`id` ASC LIMIT 1
+D, [2018-02-15T08:21:10.335296 #5176] DEBUG -- :   OrderItem Load (0.0ms)  SELECT  `order_items`.* FROM `order_items` WHERE (quantity <= 100) ORDER BY `order_items`.`id` ASC LIMIT 1
+D, [2018-02-15T08:21:10.350896 #5176] DEBUG -- :   Product Load (0.0ms)  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1
+D, [2018-02-15T08:22:00.064437 #4940] DEBUG -- :    (0.0ms)  SET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483
+D, [2018-02-15T08:22:00.064437 #4940] DEBUG -- :   Product Load (0.0ms)  SELECT  `products`.* FROM `products` WHERE (price <= 0.2) ORDER BY `products`.`id` ASC LIMIT 1
+D, [2018-02-15T08:22:00.080037 #4940] DEBUG -- :   OrderItem Load (0.0ms)  SELECT  `order_items`.* FROM `order_items` WHERE (quantity <= 100) ORDER BY `order_items`.`id` ASC LIMIT 1
+D, [2018-02-15T08:22:00.095637 #4940] DEBUG -- :   Product Load (0.0ms)  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1
+D, [2018-02-15T08:22:21.175514 #8748] DEBUG -- :    (0.0ms)  SET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483
+D, [2018-02-15T08:22:21.175514 #8748] DEBUG -- :   Product Load (0.0ms)  SELECT  `products`.* FROM `products` WHERE (price <= 0.2) ORDER BY `products`.`id` ASC LIMIT 1
+D, [2018-02-15T08:22:21.191114 #8748] DEBUG -- :   OrderItem Load (0.0ms)  SELECT  `order_items`.* FROM `order_items` WHERE (quantity <= 100.0) ORDER BY `order_items`.`id` ASC LIMIT 1
+D, [2018-02-15T08:22:21.206714 #8748] DEBUG -- :   Product Load (0.0ms)  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1
+D, [2018-02-15T08:22:45.314599 #7220] DEBUG -- :    (0.0ms)  SET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483
+D, [2018-02-15T08:22:45.314599 #7220] DEBUG -- :   Product Load (0.0ms)  SELECT  `products`.* FROM `products` WHERE (price <= 0.2) ORDER BY `products`.`id` ASC LIMIT 1
+D, [2018-02-15T08:22:45.330199 #7220] DEBUG -- :   OrderItem Load (0.0ms)  SELECT  `order_items`.* FROM `order_items` WHERE (quantity >= 100.0) ORDER BY `order_items`.`id` ASC LIMIT 1
+D, [2018-02-15T08:22:45.345798 #7220] DEBUG -- :   Product Load (0.0ms)  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1
+D, [2018-02-15T08:27:52.944001 #9016] DEBUG -- :    (0.0ms)  SET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483
+D, [2018-02-15T08:27:52.944001 #9016] DEBUG -- :   Client Load (0.0ms)  SELECT  `clients`.* FROM `clients` ORDER BY `clients`.`id` ASC LIMIT 1
+D, [2018-02-15T08:28:16.135801 #4012] DEBUG -- :    (0.0ms)  SET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483
+D, [2018-02-15T08:28:16.135801 #4012] DEBUG -- :   Client Load (0.0ms)  SELECT  `clients`.* FROM `clients` ORDER BY `clients`.`id` ASC LIMIT 1
+D, [2018-02-15T08:29:02.221001 #5176] DEBUG -- :    (0.0ms)  SET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483
+D, [2018-02-15T08:29:02.236601 #5176] DEBUG -- :   Client Load (15.6ms)  SELECT  `clients`.* FROM `clients` ORDER BY `clients`.`id` ASC LIMIT 1
+D, [2018-02-15T08:29:02.252201 #5176] DEBUG -- :   Order Load (0.0ms)  SELECT  `orders`.* FROM `orders` WHERE `orders`.`client_id` = 1 LIMIT 11
+D, [2018-02-15T08:31:24.837801 #5012] DEBUG -- :    (0.0ms)  SET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483
+D, [2018-02-15T08:31:24.837801 #5012] DEBUG -- :   Client Load (0.0ms)  SELECT  `clients`.* FROM `clients` ORDER BY `clients`.`id` ASC LIMIT 1
+D, [2018-02-15T08:31:24.869001 #5012] DEBUG -- :   Order Load (0.0ms)  SELECT  `orders`.* FROM `orders` WHERE `orders`.`client_id` = 1 LIMIT 11
+D, [2018-02-15T08:31:56.849801 #6612] DEBUG -- :    (0.0ms)  SET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483
+D, [2018-02-15T08:31:56.865401 #6612] DEBUG -- :   Client Load (0.0ms)  SELECT  `clients`.* FROM `clients` ORDER BY `clients`.`id` ASC LIMIT 1
+D, [2018-02-15T08:31:56.866401 #6612] DEBUG -- :   Order Load (0.0ms)  SELECT  `orders`.* FROM `orders` WHERE `orders`.`client_id` = 1 ORDER BY `orders`.`id` ASC LIMIT 1
+D, [2018-02-15T08:32:19.106801 #608] DEBUG -- :    (0.0ms)  SET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483
+D, [2018-02-15T08:32:19.106801 #608] DEBUG -- :   Client Load (0.0ms)  SELECT  `clients`.* FROM `clients` ORDER BY `clients`.`id` ASC LIMIT 1
+D, [2018-02-15T08:32:19.138001 #608] DEBUG -- :   Order Load (0.0ms)  SELECT  `orders`.* FROM `orders` WHERE `orders`.`client_id` = 1 ORDER BY `orders`.`id` ASC LIMIT 1
+D, [2018-02-15T08:32:19.138001 #608] DEBUG -- :   OrderItem Load (0.0ms)  SELECT  `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 4 AND (quantity >= 50) LIMIT 11
+D, [2018-02-15T08:33:01.216201 #6136] DEBUG -- :    (0.0ms)  SET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483
+D, [2018-02-15T08:33:01.216201 #6136] DEBUG -- :   Client Load (0.0ms)  SELECT  `clients`.* FROM `clients` ORDER BY `clients`.`id` ASC LIMIT 1
+D, [2018-02-15T08:33:01.231801 #6136] DEBUG -- :   Order Load (0.0ms)  SELECT  `orders`.* FROM `orders` WHERE `orders`.`client_id` = 1 ORDER BY `orders`.`id` ASC LIMIT 1
+D, [2018-02-15T08:33:01.247401 #6136] DEBUG -- :   OrderItem Load (0.0ms)  SELECT  `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 4 AND (quantity >= 50) ORDER BY `order_items`.`id` ASC LIMIT 1
+D, [2018-02-15T08:33:01.247401 #6136] DEBUG -- :   Product Load (0.0ms)  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 4 LIMIT 1
+D, [2018-02-15T08:33:20.997401 #4080] DEBUG -- :    (0.0ms)  SET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483
+D, [2018-02-15T08:33:20.997401 #4080] DEBUG -- :   Client Load (0.0ms)  SELECT  `clients`.* FROM `clients` ORDER BY `clients`.`id` ASC LIMIT 1
+D, [2018-02-15T08:33:21.013001 #4080] DEBUG -- :   Order Load (0.0ms)  SELECT  `orders`.* FROM `orders` WHERE `orders`.`client_id` = 1 ORDER BY `orders`.`id` ASC LIMIT 1
+D, [2018-02-15T08:33:21.028601 #4080] DEBUG -- :   OrderItem Load (0.0ms)  SELECT  `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 4 AND (quantity >= 50) ORDER BY `order_items`.`id` ASC LIMIT 1
+D, [2018-02-15T08:33:21.028601 #4080] DEBUG -- :   Product Load (0.0ms)  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 4 LIMIT 1
+D, [2018-02-15T08:34:02.203220 #5736] DEBUG -- :    (15.6ms)  SET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483
+D, [2018-02-15T08:34:02.203220 #5736] DEBUG -- :   Client Load (0.0ms)  SELECT  `clients`.* FROM `clients` ORDER BY `clients`.`id` ASC LIMIT 1
+D, [2018-02-15T08:34:02.218820 #5736] DEBUG -- :   Order Load (0.0ms)  SELECT  `orders`.* FROM `orders` WHERE `orders`.`client_id` = 1 ORDER BY `orders`.`id` ASC LIMIT 1
+D, [2018-02-15T08:34:02.234420 #5736] DEBUG -- :   OrderItem Load (0.0ms)  SELECT  `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 4 AND (quantity >= 50) ORDER BY `order_items`.`id` ASC LIMIT 1
+D, [2018-02-15T08:34:02.234420 #5736] DEBUG -- :   Product Load (0.0ms)  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 4 LIMIT 1
+D, [2018-02-15T08:36:01.624857 #7668] DEBUG -- :    (0.0ms)  SET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483
+D, [2018-02-15T08:36:01.624857 #7668] DEBUG -- :   Client Load (0.0ms)  SELECT  `clients`.* FROM `clients` ORDER BY `clients`.`id` ASC LIMIT 1
+D, [2018-02-15T08:36:01.656057 #7668] DEBUG -- :   Order Load (0.0ms)  SELECT `orders`.* FROM `orders` WHERE `orders`.`client_id` = 1
+D, [2018-02-15T08:36:01.656057 #7668] DEBUG -- :   OrderItem Load (0.0ms)  SELECT  `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 4 AND (quantity >= 50) ORDER BY `order_items`.`id` ASC LIMIT 1
+D, [2018-02-15T08:36:01.671656 #7668] DEBUG -- :   Product Load (0.0ms)  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 4 LIMIT 1
+D, [2018-02-15T08:36:34.550316 #8660] DEBUG -- :    (0.0ms)  SET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483
+D, [2018-02-15T08:36:34.552316 #8660] DEBUG -- :   Client Load (0.0ms)  SELECT  `clients`.* FROM `clients` ORDER BY `clients`.`id` ASC LIMIT 1
+D, [2018-02-15T08:36:34.579316 #8660] DEBUG -- :   Order Load (1.0ms)  SELECT `orders`.* FROM `orders` WHERE `orders`.`client_id` = 1
+D, [2018-02-15T08:36:34.589316 #8660] DEBUG -- :   OrderItem Load (1.0ms)  SELECT  `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 4 AND (quantity >= 50) ORDER BY `order_items`.`id` ASC LIMIT 1
+D, [2018-02-15T08:36:34.594316 #8660] DEBUG -- :   Product Load (0.0ms)  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 4 LIMIT 1
+D, [2018-02-15T08:42:49.614621 #5728] DEBUG -- :    (0.0ms)  SET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483
+D, [2018-02-15T08:42:49.614621 #5728] DEBUG -- :   Client Load (0.0ms)  SELECT  `clients`.* FROM `clients` ORDER BY `clients`.`id` ASC LIMIT 1
+D, [2018-02-15T08:42:49.630221 #5728] DEBUG -- :   Order Load (0.0ms)  SELECT `orders`.* FROM `orders` WHERE `orders`.`client_id` = 1
+D, [2018-02-15T08:42:49.645821 #5728] DEBUG -- :   OrderItem Load (0.0ms)  SELECT  `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 4 AND (quantity >= 50) ORDER BY `order_items`.`id` ASC LIMIT 1
+D, [2018-02-15T08:42:49.645821 #5728] DEBUG -- :   Product Load (0.0ms)  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 4 LIMIT 1
+D, [2018-02-15T08:43:32.148021 #3580] DEBUG -- :    (0.0ms)  SET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483
+D, [2018-02-15T08:43:32.163621 #3580] DEBUG -- :   Client Load (15.6ms)  SELECT  `clients`.* FROM `clients` ORDER BY `clients`.`id` ASC LIMIT 1
+D, [2018-02-15T08:43:32.179221 #3580] DEBUG -- :   Order Load (0.0ms)  SELECT `orders`.* FROM `orders` WHERE `orders`.`client_id` = 1
+D, [2018-02-15T08:43:32.194821 #3580] DEBUG -- :   OrderItem Load (0.0ms)  SELECT  `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 4 AND (quantity >= 50) ORDER BY `order_items`.`id` ASC LIMIT 1
+D, [2018-02-15T08:43:32.194821 #3580] DEBUG -- :   Product Load (0.0ms)  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 4 LIMIT 1
+D, [2018-02-15T08:43:46.017221 #9188] DEBUG -- :    (0.0ms)  SET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483
+D, [2018-02-15T08:43:46.017221 #9188] DEBUG -- :   Client Load (0.0ms)  SELECT  `clients`.* FROM `clients` ORDER BY `clients`.`id` ASC LIMIT 1
+D, [2018-02-15T08:43:46.032821 #9188] DEBUG -- :   Order Load (0.0ms)  SELECT `orders`.* FROM `orders` WHERE `orders`.`client_id` = 1
+D, [2018-02-15T08:43:46.048421 #9188] DEBUG -- :   OrderItem Load (0.0ms)  SELECT  `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 4 AND (quantity >= 50) ORDER BY `order_items`.`id` ASC LIMIT 1
+D, [2018-02-15T08:43:46.048421 #9188] DEBUG -- :   Product Load (0.0ms)  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 4 LIMIT 1
+D, [2018-02-15T08:44:18.398621 #6116] DEBUG -- :    (0.0ms)  SET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483
+D, [2018-02-15T08:44:18.398621 #6116] DEBUG -- :   Client Load (0.0ms)  SELECT  `clients`.* FROM `clients` ORDER BY `clients`.`id` ASC LIMIT 1
+D, [2018-02-15T08:44:18.429821 #6116] DEBUG -- :   Order Load (0.0ms)  SELECT `orders`.* FROM `orders` WHERE `orders`.`client_id` = 1
+D, [2018-02-15T08:44:18.445421 #6116] DEBUG -- :   OrderItem Load (15.6ms)  SELECT  `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 4 AND (quantity >= 50) LIMIT 11
+D, [2018-02-15T08:46:08.923221 #4832] DEBUG -- :    (0.0ms)  SET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483
+D, [2018-02-15T08:46:08.923221 #4832] DEBUG -- :   Client Load (0.0ms)  SELECT  `clients`.* FROM `clients` ORDER BY `clients`.`id` ASC LIMIT 1
+D, [2018-02-15T08:46:08.938821 #4832] DEBUG -- :   Order Load (0.0ms)  SELECT `orders`.* FROM `orders` WHERE `orders`.`client_id` = 1
+D, [2018-02-15T08:46:08.954421 #4832] DEBUG -- :   OrderItem Load (0.0ms)  SELECT  `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 4 AND (quantity >= 50) LIMIT 11
+D, [2018-02-15T08:46:34.020221 #2580] DEBUG -- :    (0.0ms)  SET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483
+D, [2018-02-15T08:46:34.020221 #2580] DEBUG -- :   Client Load (0.0ms)  SELECT  `clients`.* FROM `clients` ORDER BY `clients`.`id` ASC LIMIT 1
+D, [2018-02-15T08:46:34.051421 #2580] DEBUG -- :   Order Load (0.0ms)  SELECT `orders`.* FROM `orders` WHERE `orders`.`client_id` = 1
+D, [2018-02-15T08:46:34.051421 #2580] DEBUG -- :   OrderItem Load (0.0ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 4 AND (quantity >= 50)
+D, [2018-02-15T08:47:05.274421 #8848] DEBUG -- :    (0.0ms)  SET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483
+D, [2018-02-15T08:47:05.274421 #8848] DEBUG -- :   Client Load (0.0ms)  SELECT  `clients`.* FROM `clients` ORDER BY `clients`.`id` ASC LIMIT 1
+D, [2018-02-15T08:47:05.290021 #8848] DEBUG -- :   Order Load (0.0ms)  SELECT `orders`.* FROM `orders` WHERE `orders`.`client_id` = 1
+D, [2018-02-15T08:47:05.305621 #8848] DEBUG -- :   OrderItem Load (0.0ms)  SELECT  `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 4 AND (quantity >= 50) LIMIT 11
+D, [2018-02-15T08:47:28.550821 #4364] DEBUG -- :    (0.0ms)  SET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483
+D, [2018-02-15T08:47:28.550821 #4364] DEBUG -- :   Client Load (0.0ms)  SELECT  `clients`.* FROM `clients` ORDER BY `clients`.`id` ASC LIMIT 1
+D, [2018-02-15T08:47:28.566421 #4364] DEBUG -- :   Order Load (0.0ms)  SELECT `orders`.* FROM `orders` WHERE `orders`.`client_id` = 1
+D, [2018-02-15T08:47:28.582021 #4364] DEBUG -- :   OrderItem Load (0.0ms)  SELECT  `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 4 AND (quantity >= 50) LIMIT 11
+D, [2018-02-15T08:48:22.327221 #7732] DEBUG -- :    (0.0ms)  SET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483
+D, [2018-02-15T08:48:22.327221 #7732] DEBUG -- :   Client Load (0.0ms)  SELECT  `clients`.* FROM `clients` ORDER BY `clients`.`id` ASC LIMIT 1
+D, [2018-02-15T08:48:22.358421 #7732] DEBUG -- :   Order Load (0.0ms)  SELECT `orders`.* FROM `orders` WHERE `orders`.`client_id` = 1
+D, [2018-02-15T08:48:22.374021 #7732] DEBUG -- :   OrderItem Load (0.0ms)  SELECT  `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 4 LIMIT 11
+D, [2018-02-15T08:49:22.089421 #7076] DEBUG -- :    (0.0ms)  SET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483
+D, [2018-02-15T08:49:22.089421 #7076] DEBUG -- :   Client Load (0.0ms)  SELECT  `clients`.* FROM `clients` ORDER BY `clients`.`id` ASC LIMIT 1
+D, [2018-02-15T08:49:22.105021 #7076] DEBUG -- :   Order Load (0.0ms)  SELECT `orders`.* FROM `orders` WHERE `orders`.`client_id` = 1
+D, [2018-02-15T08:49:22.120621 #7076] DEBUG -- :   OrderItem Load (0.0ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 4
+D, [2018-02-15T08:49:22.120621 #7076] DEBUG -- :   Product Load (0.0ms)  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 4 LIMIT 1
+D, [2018-02-15T08:49:36.418221 #5664] DEBUG -- :    (0.0ms)  SET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483
+D, [2018-02-15T08:49:36.418221 #5664] DEBUG -- :   Client Load (0.0ms)  SELECT  `clients`.* FROM `clients` ORDER BY `clients`.`id` ASC LIMIT 1
+D, [2018-02-15T08:49:36.433821 #5664] DEBUG -- :   Order Load (0.0ms)  SELECT `orders`.* FROM `orders` WHERE `orders`.`client_id` = 1
+D, [2018-02-15T08:49:36.449421 #5664] DEBUG -- :   OrderItem Load (0.0ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 4 AND (quantity >= 50)
+D, [2018-02-15T08:49:36.449421 #5664] DEBUG -- :   Product Load (0.0ms)  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 4 LIMIT 1
+D, [2018-02-15T08:49:51.008621 #1004] DEBUG -- :    (0.0ms)  SET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483
+D, [2018-02-15T08:49:51.008621 #1004] DEBUG -- :   Client Load (0.0ms)  SELECT  `clients`.* FROM `clients` ORDER BY `clients`.`id` ASC LIMIT 1
+D, [2018-02-15T08:49:51.024221 #1004] DEBUG -- :   Order Load (0.0ms)  SELECT `orders`.* FROM `orders` WHERE `orders`.`client_id` = 1
+D, [2018-02-15T08:49:51.039821 #1004] DEBUG -- :   OrderItem Load (0.0ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 4 AND (quantity >= 50)
+D, [2018-02-15T08:49:51.039821 #1004] DEBUG -- :   Product Load (0.0ms)  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 4 LIMIT 1
+D, [2018-02-15T08:50:02.113421 #6808] DEBUG -- :    (0.0ms)  SET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483
+D, [2018-02-15T08:50:02.113421 #6808] DEBUG -- :   Client Load (0.0ms)  SELECT  `clients`.* FROM `clients` ORDER BY `clients`.`id` ASC LIMIT 1
+D, [2018-02-15T08:50:02.129021 #6808] DEBUG -- :   Order Load (0.0ms)  SELECT `orders`.* FROM `orders` WHERE `orders`.`client_id` = 1
+D, [2018-02-15T08:50:02.144621 #6808] DEBUG -- :   OrderItem Load (0.0ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 4 AND (quantity >= 50)
+D, [2018-02-15T08:50:02.144621 #6808] DEBUG -- :   Product Load (0.0ms)  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 4 LIMIT 1
+D, [2018-02-15T08:51:03.828206 #2352] DEBUG -- :    (0.0ms)  SET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483
+D, [2018-02-15T08:51:03.828206 #2352] DEBUG -- :   Client Load (0.0ms)  SELECT  `clients`.* FROM `clients` ORDER BY `clients`.`id` ASC LIMIT 1
+D, [2018-02-15T08:51:03.843806 #2352] DEBUG -- :   Order Load (0.0ms)  SELECT `orders`.* FROM `orders` WHERE `orders`.`client_id` = 1
+D, [2018-02-15T08:51:03.859406 #2352] DEBUG -- :   OrderItem Load (0.0ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 4 AND (quantity >= 50)
+D, [2018-02-15T08:51:03.859406 #2352] DEBUG -- :   Product Load (0.0ms)  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 4 LIMIT 1
+D, [2018-02-15T08:51:29.138825 #7372] DEBUG -- :    (0.0ms)  SET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483
+D, [2018-02-15T08:51:29.138825 #7372] DEBUG -- :   Client Load (0.0ms)  SELECT  `clients`.* FROM `clients` ORDER BY `clients`.`id` ASC LIMIT 1
+D, [2018-02-15T08:51:29.170025 #7372] DEBUG -- :   Order Load (0.0ms)  SELECT `orders`.* FROM `orders` WHERE `orders`.`client_id` = 1
+D, [2018-02-15T08:51:29.170025 #7372] DEBUG -- :   OrderItem Load (0.0ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 4 AND (quantity >= 50)
+D, [2018-02-15T08:51:29.185624 #7372] DEBUG -- :   Product Load (0.0ms)  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 4 LIMIT 1
+D, [2018-02-15T08:53:04.416938 #8256] DEBUG -- :    (0.0ms)  SET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483
+D, [2018-02-15T08:53:04.416938 #8256] DEBUG -- :   Client Load (0.0ms)  SELECT  `clients`.* FROM `clients` ORDER BY `clients`.`id` ASC LIMIT 1
+D, [2018-02-15T08:53:04.432538 #8256] DEBUG -- :   Order Load (0.0ms)  SELECT `orders`.* FROM `orders` WHERE `orders`.`client_id` = 1
+D, [2018-02-15T08:53:04.448138 #8256] DEBUG -- :   OrderItem Load (0.0ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 4 AND (quantity >= 50)
+D, [2018-02-15T08:54:18.208401 #8416] DEBUG -- :    (0.0ms)  SET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483
+D, [2018-02-15T08:54:18.208401 #8416] DEBUG -- :   Client Load (0.0ms)  SELECT  `clients`.* FROM `clients` ORDER BY `clients`.`id` ASC LIMIT 1
+D, [2018-02-15T08:54:18.239601 #8416] DEBUG -- :   Order Load (0.0ms)  SELECT `orders`.* FROM `orders` WHERE `orders`.`client_id` = 1
+D, [2018-02-15T08:54:18.255200 #8416] DEBUG -- :   OrderItem Load (0.0ms)  SELECT  `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 4 AND (quantity >= 50) LIMIT 11
+D, [2018-02-15T08:55:50.103859 #1368] DEBUG -- :    (0.0ms)  SET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483
+D, [2018-02-15T08:55:50.103859 #1368] DEBUG -- :   Client Load (0.0ms)  SELECT  `clients`.* FROM `clients` ORDER BY `clients`.`id` ASC LIMIT 1
+D, [2018-02-15T08:55:50.119459 #1368] DEBUG -- :   Order Load (0.0ms)  SELECT  `orders`.* FROM `orders` WHERE `orders`.`client_id` = 1 LIMIT 11
+D, [2018-02-15T08:58:36.827015 #5364] DEBUG -- :    (0.0ms)  SET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483
+D, [2018-02-15T08:58:36.827015 #5364] DEBUG -- :   Client Load (0.0ms)  SELECT  `clients`.* FROM `clients` ORDER BY `clients`.`id` ASC LIMIT 1
+D, [2018-02-15T08:58:36.858214 #5364] DEBUG -- :   Order Load (0.0ms)  SELECT `orders`.* FROM `orders` WHERE `orders`.`client_id` = 1
+D, [2018-02-15T08:58:36.873814 #5364] DEBUG -- :   Product Load (0.0ms)  SELECT `products`.* FROM `products` INNER JOIN `order_items` ON `products`.`id` = `order_items`.`product_id` WHERE `order_items`.`order_id` = 4 AND (price <= 0.2)
+D, [2018-02-15T09:00:34.412203 #2292] DEBUG -- :    (0.0ms)  SET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483
+D, [2018-02-15T09:00:34.412203 #2292] DEBUG -- :   Client Load (0.0ms)  SELECT  `clients`.* FROM `clients` ORDER BY `clients`.`id` ASC LIMIT 1
+D, [2018-02-15T09:00:34.427803 #2292] DEBUG -- :   Order Load (0.0ms)  SELECT `orders`.* FROM `orders` WHERE `orders`.`client_id` = 1
+D, [2018-02-15T09:00:34.443403 #2292] DEBUG -- :   Product Load (0.0ms)  SELECT `products`.* FROM `products` INNER JOIN `order_items` ON `products`.`id` = `order_items`.`product_id` WHERE `order_items`.`order_id` = 4 AND (price <= 0.2)
+D, [2018-02-15T09:00:34.459002 #2292] DEBUG -- :   Client Load (0.0ms)  SELECT  `clients`.* FROM `clients` ORDER BY `clients`.`id` ASC LIMIT 1
+D, [2018-02-15T09:00:34.459002 #2292] DEBUG -- :   Order Load (0.0ms)  SELECT  `orders`.* FROM `orders` WHERE `orders`.`client_id` = 1 LIMIT 11
+D, [2018-02-15T09:01:30.816398 #8976] DEBUG -- :    (0.0ms)  SET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483
+D, [2018-02-15T09:01:30.816398 #8976] DEBUG -- :   Client Load (0.0ms)  SELECT  `clients`.* FROM `clients` ORDER BY `clients`.`id` ASC LIMIT 1
+D, [2018-02-15T09:01:30.848598 #8976] DEBUG -- :   Order Load (0.0ms)  SELECT `orders`.* FROM `orders` WHERE `orders`.`client_id` = 1
+D, [2018-02-15T09:01:30.879798 #8976] DEBUG -- :   Product Load (0.0ms)  SELECT `products`.* FROM `products` INNER JOIN `order_items` ON `products`.`id` = `order_items`.`product_id` WHERE `order_items`.`order_id` = 4 AND (price <= 0.2)
+D, [2018-02-15T09:01:30.879798 #8976] DEBUG -- :   Client Load (0.0ms)  SELECT  `clients`.* FROM `clients` ORDER BY `clients`.`id` ASC LIMIT 1
+D, [2018-02-15T09:01:30.879798 #8976] DEBUG -- :   Order Load (0.0ms)  SELECT  `orders`.* FROM `orders` WHERE `orders`.`client_id` = 1 LIMIT 11
+D, [2018-02-15T09:02:49.456398 #8768] DEBUG -- :    (0.0ms)  SET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483
+D, [2018-02-15T09:02:49.456398 #8768] DEBUG -- :   Client Load (0.0ms)  SELECT  `clients`.* FROM `clients` ORDER BY `clients`.`id` ASC LIMIT 1
+D, [2018-02-15T09:02:49.487598 #8768] DEBUG -- :   Order Load (0.0ms)  SELECT `orders`.* FROM `orders` WHERE `orders`.`client_id` = 1
+D, [2018-02-15T09:02:49.503198 #8768] DEBUG -- :   Product Load (0.0ms)  SELECT `products`.* FROM `products` INNER JOIN `order_items` ON `products`.`id` = `order_items`.`product_id` WHERE `order_items`.`order_id` = 4 AND (price <= 0.2)
+D, [2018-02-15T09:02:49.503198 #8768] DEBUG -- :   Client Load (0.0ms)  SELECT  `clients`.* FROM `clients` ORDER BY `clients`.`id` ASC LIMIT 1
+D, [2018-02-15T09:02:49.503198 #8768] DEBUG -- :   Order Load (0.0ms)  SELECT `orders`.* FROM `orders` WHERE `orders`.`client_id` = 1
+D, [2018-02-15T09:02:49.503198 #8768] DEBUG -- :   OrderItem Load (0.0ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 4 AND (quantity >= 50)
+D, [2018-02-15T09:02:49.518798 #8768] DEBUG -- :   Product Load (0.0ms)  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 4 LIMIT 1
+D, [2018-02-15T09:08:22.152505 #4200] DEBUG -- :    (0.0ms)  SET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483
+D, [2018-02-15T09:08:22.152505 #4200] DEBUG -- :   Client Load (0.0ms)  SELECT  `clients`.* FROM `clients` ORDER BY `clients`.`id` ASC LIMIT 1
+D, [2018-02-15T09:08:22.183705 #4200] DEBUG -- :   Order Load (0.0ms)  SELECT `orders`.* FROM `orders` WHERE `orders`.`client_id` = 1
+D, [2018-02-15T09:08:22.199305 #4200] DEBUG -- :   Product Load (0.0ms)  SELECT `products`.* FROM `products` INNER JOIN `order_items` ON `products`.`id` = `order_items`.`product_id` WHERE `order_items`.`order_id` = 4 AND (price <= 0.2)
+D, [2018-02-15T09:08:22.214905 #4200] DEBUG -- :   Client Load (0.0ms)  SELECT  `clients`.* FROM `clients` ORDER BY `clients`.`id` ASC LIMIT 1
+D, [2018-02-15T09:08:22.214905 #4200] DEBUG -- :   Order Load (0.0ms)  SELECT `orders`.* FROM `orders` WHERE `orders`.`client_id` = 1
+D, [2018-02-15T09:08:22.214905 #4200] DEBUG -- :   OrderItem Load (0.0ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 4 AND (quantity >= 50)
+D, [2018-02-15T09:08:22.214905 #4200] DEBUG -- :   Product Load (0.0ms)  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 4 LIMIT 1
+D, [2018-02-15T09:08:36.588345 #8812] DEBUG -- :    (0.0ms)  SET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483
+D, [2018-02-15T09:08:36.588345 #8812] DEBUG -- :   Client Load (0.0ms)  SELECT  `clients`.* FROM `clients` ORDER BY `clients`.`id` ASC LIMIT 1
+D, [2018-02-15T09:08:36.603946 #8812] DEBUG -- :   Order Load (0.0ms)  SELECT `orders`.* FROM `orders` WHERE `orders`.`client_id` = 1
+D, [2018-02-15T09:08:36.635146 #8812] DEBUG -- :   Product Load (15.6ms)  SELECT `products`.* FROM `products` INNER JOIN `order_items` ON `products`.`id` = `order_items`.`product_id` WHERE `order_items`.`order_id` = 4 AND (price <= 0.2)
+D, [2018-02-15T09:08:36.635146 #8812] DEBUG -- :   Client Load (0.0ms)  SELECT  `clients`.* FROM `clients` ORDER BY `clients`.`id` ASC LIMIT 1
+D, [2018-02-15T09:08:36.635146 #8812] DEBUG -- :   Order Load (0.0ms)  SELECT `orders`.* FROM `orders` WHERE `orders`.`client_id` = 1
+D, [2018-02-15T09:08:36.635146 #8812] DEBUG -- :   OrderItem Load (0.0ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 4 AND (quantity >= 50)
+D, [2018-02-15T09:08:36.635146 #8812] DEBUG -- :   Product Load (0.0ms)  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 4 LIMIT 1
+D, [2018-02-15T09:09:00.213983 #3952] DEBUG -- :    (0.0ms)  SET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483
+D, [2018-02-15T09:09:00.213983 #3952] DEBUG -- :   Client Load (0.0ms)  SELECT  `clients`.* FROM `clients` ORDER BY `clients`.`id` ASC LIMIT 1
+D, [2018-02-15T09:09:00.245183 #3952] DEBUG -- :   Order Load (0.0ms)  SELECT `orders`.* FROM `orders` WHERE `orders`.`client_id` = 1
+D, [2018-02-15T09:09:00.260783 #3952] DEBUG -- :   Product Load (0.0ms)  SELECT `products`.* FROM `products` INNER JOIN `order_items` ON `products`.`id` = `order_items`.`product_id` WHERE `order_items`.`order_id` = 4 AND (price <= 0.2)
+D, [2018-02-15T09:09:00.276383 #3952] DEBUG -- :   Client Load (0.0ms)  SELECT  `clients`.* FROM `clients` ORDER BY `clients`.`id` ASC LIMIT 1
+D, [2018-02-15T09:09:00.276383 #3952] DEBUG -- :   Order Load (0.0ms)  SELECT `orders`.* FROM `orders` WHERE `orders`.`client_id` = 1
+D, [2018-02-15T09:09:00.276383 #3952] DEBUG -- :   OrderItem Load (0.0ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 4 AND (quantity >= 50)
+D, [2018-02-15T09:09:00.276383 #3952] DEBUG -- :   Product Load (0.0ms)  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 4 LIMIT 1
+D, [2018-02-15T09:09:09.939320 #8732] DEBUG -- :    (0.0ms)  SET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483
+D, [2018-02-15T09:09:09.939320 #8732] DEBUG -- :   Client Load (0.0ms)  SELECT  `clients`.* FROM `clients` ORDER BY `clients`.`id` ASC LIMIT 1
+D, [2018-02-15T09:09:09.970520 #8732] DEBUG -- :   Order Load (0.0ms)  SELECT `orders`.* FROM `orders` WHERE `orders`.`client_id` = 1
+D, [2018-02-15T09:09:09.986120 #8732] DEBUG -- :   Product Load (0.0ms)  SELECT `products`.* FROM `products` INNER JOIN `order_items` ON `products`.`id` = `order_items`.`product_id` WHERE `order_items`.`order_id` = 4 AND (price <= 0.2)
+D, [2018-02-15T09:09:09.986120 #8732] DEBUG -- :   Client Load (0.0ms)  SELECT  `clients`.* FROM `clients` ORDER BY `clients`.`id` ASC LIMIT 1
+D, [2018-02-15T09:09:09.986120 #8732] DEBUG -- :   Order Load (0.0ms)  SELECT `orders`.* FROM `orders` WHERE `orders`.`client_id` = 1
+D, [2018-02-15T09:09:09.986120 #8732] DEBUG -- :   OrderItem Load (0.0ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 4 AND (quantity >= 50)
+D, [2018-02-15T09:09:10.001721 #8732] DEBUG -- :   Product Load (0.0ms)  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 4 LIMIT 1
+D, [2018-02-15T09:09:17.217493 #7820] DEBUG -- :    (0.0ms)  SET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483
+D, [2018-02-15T09:09:17.217493 #7820] DEBUG -- :   Client Load (0.0ms)  SELECT  `clients`.* FROM `clients` ORDER BY `clients`.`id` ASC LIMIT 1
+D, [2018-02-15T09:09:17.248693 #7820] DEBUG -- :   Order Load (0.0ms)  SELECT `orders`.* FROM `orders` WHERE `orders`.`client_id` = 1
+D, [2018-02-15T09:09:17.249693 #7820] DEBUG -- :   Product Load (0.0ms)  SELECT `products`.* FROM `products` INNER JOIN `order_items` ON `products`.`id` = `order_items`.`product_id` WHERE `order_items`.`order_id` = 4 AND (price <= 0.2)
+D, [2018-02-15T09:09:17.249693 #7820] DEBUG -- :   Client Load (0.0ms)  SELECT  `clients`.* FROM `clients` ORDER BY `clients`.`id` ASC LIMIT 1
+D, [2018-02-15T09:09:17.265294 #7820] DEBUG -- :   Order Load (15.6ms)  SELECT `orders`.* FROM `orders` WHERE `orders`.`client_id` = 1
+D, [2018-02-15T09:09:17.280894 #7820] DEBUG -- :   OrderItem Load (15.6ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 4 AND (quantity >= 50)
+D, [2018-02-15T09:09:17.280894 #7820] DEBUG -- :   Product Load (0.0ms)  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 4 LIMIT 1
+D, [2018-02-15T09:09:17.280894 #7820] DEBUG -- :   Product Load (0.0ms)  SELECT `products`.* FROM `products`

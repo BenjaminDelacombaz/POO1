@@ -1,0 +1,269 @@
+D, [2018-04-20T10:29:34.843768 #70083] DEBUG -- :    (0.3ms)  SET  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483
+D, [2018-04-20T10:29:34.869694 #70083] DEBUG -- :    (24.9ms)  TRUNCATE bookable_items
+D, [2018-04-20T10:29:34.871729 #70083] DEBUG -- :    (1.8ms)  TRUNCATE bookable_items_groups
+D, [2018-04-20T10:29:34.872720 #70083] DEBUG -- :    (0.8ms)  TRUNCATE bookings_items
+D, [2018-04-20T10:29:34.873691 #70083] DEBUG -- :    (0.8ms)  TRUNCATE equipment_responsibles
+D, [2018-04-20T10:29:34.876580 #70083] DEBUG -- :    (2.7ms)  TRUNCATE events
+D, [2018-04-20T10:29:34.878728 #70083] DEBUG -- :    (2.0ms)  TRUNCATE events_users
+D, [2018-04-20T10:29:34.879649 #70083] DEBUG -- :    (0.8ms)  TRUNCATE groups
+D, [2018-04-20T10:29:34.881628 #70083] DEBUG -- :    (1.8ms)  TRUNCATE groups_users
+D, [2018-04-20T10:29:34.883519 #70083] DEBUG -- :    (1.7ms)  TRUNCATE manuals
+D, [2018-04-20T10:29:34.884415 #70083] DEBUG -- :    (0.8ms)  TRUNCATE users
+D, [2018-04-20T10:29:34.891866 #70083] DEBUG -- :    (0.2ms)  BEGIN
+D, [2018-04-20T10:29:34.899876 #70083] DEBUG -- :   SQL (0.4ms)  INSERT INTO `users` (`firstname`, `lastname`, `email`) VALUES ('Joe', 'Dalton', 'joe@dalton.com')
+D, [2018-04-20T10:29:34.900275 #70083] DEBUG -- :    (0.2ms)  COMMIT
+D, [2018-04-20T10:29:34.900612 #70083] DEBUG -- :    (0.1ms)  BEGIN
+D, [2018-04-20T10:29:34.901156 #70083] DEBUG -- :   SQL (0.2ms)  INSERT INTO `users` (`firstname`, `lastname`, `email`) VALUES ('Averell', 'Dalton', 'averell@dalton.com')
+D, [2018-04-20T10:29:34.901451 #70083] DEBUG -- :    (0.2ms)  COMMIT
+D, [2018-04-20T10:29:34.901727 #70083] DEBUG -- :    (0.1ms)  BEGIN
+D, [2018-04-20T10:29:34.913515 #70083] DEBUG -- :   SQL (11.4ms)  INSERT INTO `users` (`firstname`, `lastname`, `email`) VALUES ('Lucky', 'Luke', 'luke@theforce.com')
+D, [2018-04-20T10:29:34.914043 #70083] DEBUG -- :    (0.2ms)  COMMIT
+D, [2018-04-20T10:29:34.914571 #70083] DEBUG -- :    (0.2ms)  BEGIN
+D, [2018-04-20T10:29:34.921044 #70083] DEBUG -- :   SQL (5.9ms)  INSERT INTO `users` (`firstname`, `lastname`, `email`) VALUES ('Jolly', 'Jumper', 'jolly@jumper.com')
+D, [2018-04-20T10:29:34.921755 #70083] DEBUG -- :    (0.3ms)  COMMIT
+D, [2018-04-20T10:29:34.932800 #70083] DEBUG -- :    (0.2ms)  BEGIN
+D, [2018-04-20T10:29:34.933974 #70083] DEBUG -- :   SQL (0.3ms)  INSERT INTO `groups` (`name`) VALUES ('The good')
+D, [2018-04-20T10:29:34.934458 #70083] DEBUG -- :    (0.2ms)  COMMIT
+D, [2018-04-20T10:29:34.934849 #70083] DEBUG -- :    (0.2ms)  BEGIN
+D, [2018-04-20T10:29:34.936994 #70083] DEBUG -- :   SQL (1.7ms)  INSERT INTO `groups` (`name`) VALUES ('The bad')
+D, [2018-04-20T10:29:34.937438 #70083] DEBUG -- :    (0.2ms)  COMMIT
+D, [2018-04-20T10:29:34.937839 #70083] DEBUG -- :    (0.2ms)  BEGIN
+D, [2018-04-20T10:29:34.939709 #70083] DEBUG -- :   SQL (1.4ms)  INSERT INTO `groups` (`name`) VALUES ('The ugly')
+D, [2018-04-20T10:29:34.940276 #70083] DEBUG -- :    (0.2ms)  COMMIT
+D, [2018-04-20T10:29:34.949488 #70083] DEBUG -- :    (0.2ms)  BEGIN
+D, [2018-04-20T10:29:34.985901 #70083] DEBUG -- :   SQL (6.1ms)  INSERT INTO `groups_users` (`user_id`, `group_id`) VALUES (3, 1)
+D, [2018-04-20T10:29:34.986654 #70083] DEBUG -- :    (0.3ms)  COMMIT
+D, [2018-04-20T10:29:34.987325 #70083] DEBUG -- :    (0.3ms)  BEGIN
+D, [2018-04-20T10:29:34.990278 #70083] DEBUG -- :   SQL (0.4ms)  INSERT INTO `groups_users` (`user_id`, `group_id`) VALUES (4, 3)
+D, [2018-04-20T10:29:34.990769 #70083] DEBUG -- :    (0.3ms)  COMMIT
+D, [2018-04-20T10:29:34.991258 #70083] DEBUG -- :    (0.2ms)  BEGIN
+D, [2018-04-20T10:29:34.993210 #70083] DEBUG -- :   SQL (0.3ms)  INSERT INTO `groups_users` (`user_id`, `group_id`) VALUES (1, 2)
+D, [2018-04-20T10:29:34.993597 #70083] DEBUG -- :    (0.2ms)  COMMIT
+D, [2018-04-20T10:29:34.993996 #70083] DEBUG -- :    (0.2ms)  BEGIN
+D, [2018-04-20T10:29:34.995445 #70083] DEBUG -- :   SQL (0.3ms)  INSERT INTO `groups_users` (`user_id`, `group_id`) VALUES (2, 2)
+D, [2018-04-20T10:29:34.997409 #70083] DEBUG -- :    (0.2ms)  COMMIT
+D, [2018-04-20T10:29:35.012001 #70083] DEBUG -- :    (0.2ms)  BEGIN
+D, [2018-04-20T10:29:35.014102 #70083] DEBUG -- :   SQL (1.1ms)  INSERT INTO `bookable_items` (`type`, `name`) VALUES ('Vehicle', 'Diligence')
+D, [2018-04-20T10:29:35.014624 #70083] DEBUG -- :    (0.2ms)  COMMIT
+D, [2018-04-20T10:29:35.015099 #70083] DEBUG -- :    (0.2ms)  BEGIN
+D, [2018-04-20T10:29:35.016906 #70083] DEBUG -- :   SQL (1.2ms)  INSERT INTO `bookable_items` (`type`, `name`) VALUES ('Vehicle', 'Hearse')
+D, [2018-04-20T10:29:35.017392 #70083] DEBUG -- :    (0.2ms)  COMMIT
+D, [2018-04-20T10:29:35.024912 #70083] DEBUG -- :    (0.3ms)  BEGIN
+D, [2018-04-20T10:29:35.031389 #70083] DEBUG -- :   SQL (5.7ms)  INSERT INTO `manuals` (`title`, `file_name`, `item_id`, `item_type`) VALUES ('How to drive a dilly', 'howtodrive.pdf', 1, 'BookableItem')
+D, [2018-04-20T10:29:35.031931 #70083] DEBUG -- :    (0.2ms)  COMMIT
+D, [2018-04-20T10:29:35.032541 #70083] DEBUG -- :    (0.2ms)  BEGIN
+D, [2018-04-20T10:29:35.033524 #70083] DEBUG -- :   SQL (0.4ms)  INSERT INTO `manuals` (`title`, `file_name`, `item_id`, `item_type`) VALUES ('RIP', 'rip.pdf', 2, 'BookableItem')
+D, [2018-04-20T10:29:35.033974 #70083] DEBUG -- :    (0.2ms)  COMMIT
+D, [2018-04-20T10:29:35.036991 #70083] DEBUG -- :    (0.2ms)  BEGIN
+D, [2018-04-20T10:29:35.037976 #70083] DEBUG -- :   SQL (0.3ms)  INSERT INTO `bookable_items` (`type`, `name`) VALUES ('Equipment', 'Tar')
+D, [2018-04-20T10:29:35.038410 #70083] DEBUG -- :    (0.2ms)  COMMIT
+D, [2018-04-20T10:29:35.038813 #70083] DEBUG -- :    (0.2ms)  BEGIN
+D, [2018-04-20T10:29:35.045078 #70083] DEBUG -- :   SQL (5.7ms)  INSERT INTO `bookable_items` (`type`, `name`) VALUES ('Equipment', 'Feather')
+D, [2018-04-20T10:29:35.045828 #70083] DEBUG -- :    (0.3ms)  COMMIT
+D, [2018-04-20T10:29:35.047107 #70083] DEBUG -- :    (0.3ms)  BEGIN
+D, [2018-04-20T10:29:35.054737 #70083] DEBUG -- :   SQL (0.3ms)  INSERT INTO `equipment_responsibles` (`equipment_id`, `user_id`) VALUES (3, 3)
+D, [2018-04-20T10:29:35.055139 #70083] DEBUG -- :    (0.2ms)  COMMIT
+D, [2018-04-20T10:29:35.055583 #70083] DEBUG -- :    (0.2ms)  BEGIN
+D, [2018-04-20T10:29:35.057464 #70083] DEBUG -- :   SQL (0.2ms)  INSERT INTO `equipment_responsibles` (`equipment_id`, `user_id`) VALUES (4, 4)
+D, [2018-04-20T10:29:35.057800 #70083] DEBUG -- :    (0.2ms)  COMMIT
+D, [2018-04-20T10:29:35.060538 #70083] DEBUG -- :    (0.2ms)  BEGIN
+D, [2018-04-20T10:29:35.061541 #70083] DEBUG -- :   SQL (0.2ms)  INSERT INTO `bookable_items` (`type`, `name`) VALUES ('Room', 'Saloon')
+D, [2018-04-20T10:29:35.061946 #70083] DEBUG -- :    (0.2ms)  COMMIT
+D, [2018-04-20T10:29:35.062314 #70083] DEBUG -- :    (0.2ms)  BEGIN
+D, [2018-04-20T10:29:35.062984 #70083] DEBUG -- :   SQL (0.2ms)  INSERT INTO `bookable_items` (`type`, `name`) VALUES ('Room', 'Church')
+D, [2018-04-20T10:29:35.063320 #70083] DEBUG -- :    (0.2ms)  COMMIT
+D, [2018-04-20T10:29:35.064177 #70083] DEBUG -- :    (0.2ms)  BEGIN
+D, [2018-04-20T10:29:35.069565 #70083] DEBUG -- :   SQL (0.3ms)  INSERT INTO `bookable_items_groups` (`bookable_item_id`, `group_id`) VALUES (1, 1)
+D, [2018-04-20T10:29:35.069931 #70083] DEBUG -- :    (0.2ms)  COMMIT
+D, [2018-04-20T10:29:35.070254 #70083] DEBUG -- :    (0.2ms)  BEGIN
+D, [2018-04-20T10:29:35.072953 #70083] DEBUG -- :   SQL (1.8ms)  INSERT INTO `bookable_items_groups` (`bookable_item_id`, `group_id`) VALUES (1, 2)
+D, [2018-04-20T10:29:35.073425 #70083] DEBUG -- :    (0.2ms)  COMMIT
+D, [2018-04-20T10:29:35.073766 #70083] DEBUG -- :    (0.2ms)  BEGIN
+D, [2018-04-20T10:29:35.076176 #70083] DEBUG -- :   SQL (1.1ms)  INSERT INTO `bookable_items_groups` (`bookable_item_id`, `group_id`) VALUES (1, 3)
+D, [2018-04-20T10:29:35.076609 #70083] DEBUG -- :    (0.2ms)  COMMIT
+D, [2018-04-20T10:29:35.077020 #70083] DEBUG -- :    (0.2ms)  BEGIN
+D, [2018-04-20T10:29:35.079029 #70083] DEBUG -- :   SQL (0.3ms)  INSERT INTO `bookable_items_groups` (`bookable_item_id`, `group_id`) VALUES (2, 2)
+D, [2018-04-20T10:29:35.079376 #70083] DEBUG -- :    (0.2ms)  COMMIT
+D, [2018-04-20T10:29:35.079767 #70083] DEBUG -- :    (0.2ms)  BEGIN
+D, [2018-04-20T10:29:35.083686 #70083] DEBUG -- :   SQL (1.0ms)  INSERT INTO `bookable_items_groups` (`bookable_item_id`, `group_id`) VALUES (3, 1)
+D, [2018-04-20T10:29:35.084104 #70083] DEBUG -- :    (0.2ms)  COMMIT
+D, [2018-04-20T10:29:35.084489 #70083] DEBUG -- :    (0.2ms)  BEGIN
+D, [2018-04-20T10:29:35.086289 #70083] DEBUG -- :   SQL (0.3ms)  INSERT INTO `bookable_items_groups` (`bookable_item_id`, `group_id`) VALUES (4, 3)
+D, [2018-04-20T10:29:35.086613 #70083] DEBUG -- :    (0.2ms)  COMMIT
+D, [2018-04-20T10:29:35.086909 #70083] DEBUG -- :    (0.1ms)  BEGIN
+D, [2018-04-20T10:29:35.088355 #70083] DEBUG -- :   SQL (0.2ms)  INSERT INTO `bookable_items_groups` (`bookable_item_id`, `group_id`) VALUES (5, 1)
+D, [2018-04-20T10:29:35.088609 #70083] DEBUG -- :    (0.1ms)  COMMIT
+D, [2018-04-20T10:29:35.088841 #70083] DEBUG -- :    (0.1ms)  BEGIN
+D, [2018-04-20T10:29:35.089858 #70083] DEBUG -- :   SQL (0.2ms)  INSERT INTO `bookable_items_groups` (`bookable_item_id`, `group_id`) VALUES (5, 2)
+D, [2018-04-20T10:29:35.090113 #70083] DEBUG -- :    (0.1ms)  COMMIT
+D, [2018-04-20T10:29:35.090421 #70083] DEBUG -- :    (0.2ms)  BEGIN
+D, [2018-04-20T10:29:35.092731 #70083] DEBUG -- :   SQL (1.1ms)  INSERT INTO `bookable_items_groups` (`bookable_item_id`, `group_id`) VALUES (6, 1)
+D, [2018-04-20T10:29:35.093166 #70083] DEBUG -- :    (0.2ms)  COMMIT
+D, [2018-04-20T10:29:35.093508 #70083] DEBUG -- :    (0.2ms)  BEGIN
+D, [2018-04-20T10:29:35.095033 #70083] DEBUG -- :   SQL (0.3ms)  INSERT INTO `bookable_items_groups` (`bookable_item_id`, `group_id`) VALUES (6, 3)
+D, [2018-04-20T10:29:35.095377 #70083] DEBUG -- :    (0.2ms)  COMMIT
+D, [2018-04-20T10:29:35.096080 #70083] DEBUG -- :   User Load (0.3ms)  SELECT  `users`.* FROM `users` ORDER BY `users`.`id` ASC LIMIT 1
+D, [2018-04-20T10:29:35.127828 #70083] DEBUG -- :    (0.3ms)  BEGIN
+D, [2018-04-20T10:29:35.130284 #70083] DEBUG -- :   SQL (1.1ms)  INSERT INTO `events` (`title`, `starts_at`, `ends_at`, `created_by_id`, `created_at`) VALUES ('Simple event', '2018-04-20 08:29:35', '2018-04-20 09:29:35', 1, '2018-04-20 08:29:35')
+D, [2018-04-20T10:29:35.140071 #70083] DEBUG -- :   User Load (0.6ms)  SELECT `users`.* FROM `users` INNER JOIN `events_users` ON `users`.`id` = `events_users`.`user_id` WHERE `events_users`.`event_id` = 1
+I, [2018-04-20T10:29:35.140485 #70083]  INFO -- : Sending mail 'New event 1' to ["Joe Dalton <joe@dalton.com>"]
+Title: Simple event
+Created by : Joe Dalton
+Starts at: 2018-04-20 08:29:35 UTC
+Ends at  : 2018-04-20 09:29:35 UTC
+
+
+D, [2018-04-20T10:29:35.146459 #70083] DEBUG -- :    (5.8ms)  COMMIT
+D, [2018-04-20T10:29:35.147661 #70083] DEBUG -- :   User Load (0.4ms)  SELECT  `users`.* FROM `users` WHERE `users`.`firstname` = 'Lucky' LIMIT 1
+D, [2018-04-20T10:29:35.148203 #70083] DEBUG -- :   User Load (0.3ms)  SELECT  `users`.* FROM `users` WHERE `users`.`firstname` = 'Jolly' LIMIT 1
+D, [2018-04-20T10:29:35.149163 #70083] DEBUG -- :   User Load (0.3ms)  SELECT `users`.* FROM `users` WHERE `users`.`lastname` = 'Dalton'
+D, [2018-04-20T10:29:35.176909 #70083] DEBUG -- :    (0.2ms)  BEGIN
+D, [2018-04-20T10:29:35.178508 #70083] DEBUG -- :   SQL (0.3ms)  INSERT INTO `events` (`title`, `starts_at`, `ends_at`, `created_for_id`, `created_by_id`, `created_at`) VALUES ('Bar Mitzvah', '2018-04-20 08:29:35', '2018-04-20 09:29:35', 4, 3, '2018-04-20 08:29:35')
+D, [2018-04-20T10:29:35.179542 #70083] DEBUG -- :   SQL (0.3ms)  INSERT INTO `events_users` (`event_id`, `user_id`) VALUES (2, 1)
+D, [2018-04-20T10:29:35.181290 #70083] DEBUG -- :   SQL (1.3ms)  INSERT INTO `events_users` (`event_id`, `user_id`) VALUES (2, 2)
+I, [2018-04-20T10:29:35.182136 #70083]  INFO -- : Sending mail 'New event 2' to ["Joe Dalton <joe@dalton.com>", "Averell Dalton <averell@dalton.com>", "Lucky Luke <luke@theforce.com>", "Jolly Jumper <jolly@jumper.com>"]
+Title: Bar Mitzvah
+Created by : Lucky Luke
+Created for: Jolly Jumper
+Starts at: 2018-04-20 08:29:35 UTC
+Ends at  : 2018-04-20 09:29:35 UTC
+
+
+Attendees:
+  Joe Dalton
+  Averell Dalton
+D, [2018-04-20T10:29:35.182688 #70083] DEBUG -- :    (0.4ms)  COMMIT
+D, [2018-04-20T10:29:35.183295 #70083] DEBUG -- :   User Load (0.3ms)  SELECT  `users`.* FROM `users` WHERE `users`.`firstname` = 'Lucky' LIMIT 1
+D, [2018-04-20T10:29:35.184421 #70083] DEBUG -- :   User Load (0.3ms)  SELECT `users`.* FROM `users` WHERE `users`.`lastname` = 'Dalton'
+D, [2018-04-20T10:29:35.188776 #70083] DEBUG -- :    (0.2ms)  BEGIN
+D, [2018-04-20T10:29:35.190022 #70083] DEBUG -- :   SQL (0.3ms)  INSERT INTO `events` (`title`, `starts_at`, `ends_at`, `created_by_id`, `created_at`) VALUES ('Hanging', '2018-04-20 08:59:35', '2018-04-20 10:29:35', 3, '2018-04-20 08:29:35')
+D, [2018-04-20T10:29:35.190862 #70083] DEBUG -- :   SQL (0.3ms)  INSERT INTO `events_users` (`event_id`, `user_id`) VALUES (3, 1)
+D, [2018-04-20T10:29:35.191461 #70083] DEBUG -- :   SQL (0.3ms)  INSERT INTO `events_users` (`event_id`, `user_id`) VALUES (3, 2)
+I, [2018-04-20T10:29:35.191840 #70083]  INFO -- : Sending mail 'New event 3' to ["Joe Dalton <joe@dalton.com>", "Averell Dalton <averell@dalton.com>", "Lucky Luke <luke@theforce.com>"]
+Title: Hanging
+Created by : Lucky Luke
+Starts at: 2018-04-20 08:59:35 UTC
+Ends at  : 2018-04-20 10:29:35 UTC
+
+
+Attendees:
+  Joe Dalton
+  Averell Dalton
+D, [2018-04-20T10:29:35.192368 #70083] DEBUG -- :    (0.5ms)  COMMIT
+D, [2018-04-20T10:29:35.192864 #70083] DEBUG -- :   User Load (0.3ms)  SELECT  `users`.* FROM `users` WHERE `users`.`firstname` = 'Lucky' LIMIT 1
+D, [2018-04-20T10:29:35.193813 #70083] DEBUG -- :   Room Load (0.3ms)  SELECT  `bookable_items`.* FROM `bookable_items` WHERE `bookable_items`.`type` IN ('Room') AND `bookable_items`.`name` = 'Church' LIMIT 1
+D, [2018-04-20T10:29:35.205808 #70083] DEBUG -- :    (0.2ms)  BEGIN
+D, [2018-04-20T10:29:35.208773 #70083] DEBUG -- :   Booking Exists (0.3ms)  SELECT  1 AS one FROM `events` INNER JOIN `bookings_items` ON `events`.`id` = `bookings_items`.`booking_id` WHERE `events`.`type` IN ('Booking') AND `bookings_items`.`bookable_item_id` = 6 AND (starts_at < '2018-04-20 10:29:35' AND ends_at > '2018-04-20 08:29:35') LIMIT 1
+D, [2018-04-20T10:29:35.211953 #70083] DEBUG -- :   Group Load (1.9ms)  SELECT `groups`.* FROM `groups` INNER JOIN `bookable_items_groups` ON `groups`.`id` = `bookable_items_groups`.`group_id` WHERE `bookable_items_groups`.`bookable_item_id` = 6
+D, [2018-04-20T10:29:35.214802 #70083] DEBUG -- :   Group Load (0.4ms)  SELECT `groups`.* FROM `groups` INNER JOIN `groups_users` ON `groups`.`id` = `groups_users`.`group_id` WHERE `groups_users`.`user_id` = 3
+D, [2018-04-20T10:29:35.217127 #70083] DEBUG -- :   SQL (1.2ms)  INSERT INTO `events` (`type`, `title`, `starts_at`, `ends_at`, `created_by_id`, `created_at`) VALUES ('Booking', 'Ceremony', '2018-04-20 08:29:35', '2018-04-20 10:29:35', 3, '2018-04-20 08:29:35')
+D, [2018-04-20T10:29:35.219419 #70083] DEBUG -- :   SQL (1.3ms)  INSERT INTO `bookings_items` (`bookable_item_id`, `booking_id`) VALUES (6, 4)
+D, [2018-04-20T10:29:35.223420 #70083] DEBUG -- :   User Load (2.5ms)  SELECT `users`.* FROM `users` INNER JOIN `events_users` ON `users`.`id` = `events_users`.`user_id` WHERE `events_users`.`event_id` = 4
+I, [2018-04-20T10:29:35.224055 #70083]  INFO -- : Sending mail 'New booking 4' to ["Lucky Luke <luke@theforce.com>"]
+Title: Ceremony
+Created by : Lucky Luke
+Starts at: 2018-04-20 08:29:35 UTC
+Ends at  : 2018-04-20 10:29:35 UTC
+Items: Church
+
+D, [2018-04-20T10:29:35.224849 #70083] DEBUG -- :    (0.6ms)  COMMIT
+D, [2018-04-20T10:29:35.225511 #70083] DEBUG -- :   User Load (0.3ms)  SELECT  `users`.* FROM `users` WHERE `users`.`firstname` = 'Lucky' LIMIT 1
+D, [2018-04-20T10:29:35.226162 #70083] DEBUG -- :   Room Load (0.3ms)  SELECT  `bookable_items`.* FROM `bookable_items` WHERE `bookable_items`.`type` IN ('Room') AND `bookable_items`.`name` = 'Saloon' LIMIT 1
+D, [2018-04-20T10:29:35.228674 #70083] DEBUG -- :    (0.2ms)  BEGIN
+D, [2018-04-20T10:29:35.231085 #70083] DEBUG -- :   Booking Exists (0.4ms)  SELECT  1 AS one FROM `events` INNER JOIN `bookings_items` ON `events`.`id` = `bookings_items`.`booking_id` WHERE `events`.`type` IN ('Booking') AND `bookings_items`.`bookable_item_id` = 5 AND (starts_at < '2018-04-20 09:29:35' AND ends_at > '2018-04-20 08:29:35') LIMIT 1
+D, [2018-04-20T10:29:35.233309 #70083] DEBUG -- :   Group Load (1.1ms)  SELECT `groups`.* FROM `groups` INNER JOIN `bookable_items_groups` ON `groups`.`id` = `bookable_items_groups`.`group_id` WHERE `bookable_items_groups`.`bookable_item_id` = 5
+D, [2018-04-20T10:29:35.234441 #70083] DEBUG -- :   Group Load (0.3ms)  SELECT `groups`.* FROM `groups` INNER JOIN `groups_users` ON `groups`.`id` = `groups_users`.`group_id` WHERE `groups_users`.`user_id` = 3
+D, [2018-04-20T10:29:35.236273 #70083] DEBUG -- :   SQL (0.9ms)  INSERT INTO `events` (`type`, `title`, `starts_at`, `ends_at`, `created_by_id`, `created_at`) VALUES ('Booking', 'Mini fiesta', '2018-04-20 08:29:35', '2018-04-20 09:29:35', 3, '2018-04-20 08:29:35')
+D, [2018-04-20T10:29:35.237456 #70083] DEBUG -- :   SQL (0.4ms)  INSERT INTO `bookings_items` (`bookable_item_id`, `booking_id`) VALUES (5, 5)
+D, [2018-04-20T10:29:35.238978 #70083] DEBUG -- :   User Load (0.3ms)  SELECT `users`.* FROM `users` INNER JOIN `events_users` ON `users`.`id` = `events_users`.`user_id` WHERE `events_users`.`event_id` = 5
+I, [2018-04-20T10:29:35.239235 #70083]  INFO -- : Sending mail 'New booking 5' to ["Lucky Luke <luke@theforce.com>"]
+Title: Mini fiesta
+Created by : Lucky Luke
+Starts at: 2018-04-20 08:29:35 UTC
+Ends at  : 2018-04-20 09:29:35 UTC
+Items: Saloon
+
+D, [2018-04-20T10:29:35.239732 #70083] DEBUG -- :    (0.4ms)  COMMIT
+D, [2018-04-20T10:29:35.240127 #70083] DEBUG -- :   User Load (0.2ms)  SELECT  `users`.* FROM `users` WHERE `users`.`firstname` = 'Lucky' LIMIT 1
+D, [2018-04-20T10:29:35.240583 #70083] DEBUG -- :   Room Load (0.2ms)  SELECT  `bookable_items`.* FROM `bookable_items` WHERE `bookable_items`.`type` IN ('Room') AND `bookable_items`.`name` = 'Saloon' LIMIT 1
+D, [2018-04-20T10:29:35.243769 #70083] DEBUG -- :    (0.2ms)  BEGIN
+D, [2018-04-20T10:29:35.246049 #70083] DEBUG -- :   Booking Exists (0.4ms)  SELECT  1 AS one FROM `events` INNER JOIN `bookings_items` ON `events`.`id` = `bookings_items`.`booking_id` WHERE `events`.`type` IN ('Booking') AND `bookings_items`.`bookable_item_id` = 5 AND (starts_at < '2018-04-20 10:59:35' AND ends_at > '2018-04-20 10:29:35') LIMIT 1
+D, [2018-04-20T10:29:35.247267 #70083] DEBUG -- :   Group Load (0.3ms)  SELECT `groups`.* FROM `groups` INNER JOIN `bookable_items_groups` ON `groups`.`id` = `bookable_items_groups`.`group_id` WHERE `bookable_items_groups`.`bookable_item_id` = 5
+D, [2018-04-20T10:29:35.248206 #70083] DEBUG -- :   Group Load (0.2ms)  SELECT `groups`.* FROM `groups` INNER JOIN `groups_users` ON `groups`.`id` = `groups_users`.`group_id` WHERE `groups_users`.`user_id` = 3
+D, [2018-04-20T10:29:35.250183 #70083] DEBUG -- :   SQL (1.2ms)  INSERT INTO `events` (`type`, `title`, `starts_at`, `ends_at`, `created_by_id`, `created_at`) VALUES ('Booking', 'Another fiesta', '2018-04-20 10:29:35', '2018-04-20 10:59:35', 3, '2018-04-20 08:29:35')
+D, [2018-04-20T10:29:35.252273 #70083] DEBUG -- :   SQL (1.1ms)  INSERT INTO `bookings_items` (`bookable_item_id`, `booking_id`) VALUES (5, 6)
+D, [2018-04-20T10:29:35.254905 #70083] DEBUG -- :   User Load (1.3ms)  SELECT `users`.* FROM `users` INNER JOIN `events_users` ON `users`.`id` = `events_users`.`user_id` WHERE `events_users`.`event_id` = 6
+I, [2018-04-20T10:29:35.255304 #70083]  INFO -- : Sending mail 'New booking 6' to ["Lucky Luke <luke@theforce.com>"]
+Title: Another fiesta
+Created by : Lucky Luke
+Starts at: 2018-04-20 10:29:35 UTC
+Ends at  : 2018-04-20 10:59:35 UTC
+Items: Saloon
+
+D, [2018-04-20T10:29:35.255816 #70083] DEBUG -- :    (0.4ms)  COMMIT
+D, [2018-04-20T10:29:35.256311 #70083] DEBUG -- :   User Load (0.3ms)  SELECT  `users`.* FROM `users` WHERE `users`.`firstname` = 'Lucky' LIMIT 1
+D, [2018-04-20T10:29:35.257418 #70083] DEBUG -- :   Equipment Load (0.3ms)  SELECT `bookable_items`.* FROM `bookable_items` WHERE `bookable_items`.`type` IN ('Equipment')
+D, [2018-04-20T10:29:35.259605 #70083] DEBUG -- :   User Load (0.3ms)  SELECT `users`.* FROM `users` WHERE `users`.`lastname` = 'Dalton'
+D, [2018-04-20T10:29:35.261410 #70083] DEBUG -- :    (0.2ms)  BEGIN
+D, [2018-04-20T10:29:35.265823 #70083] DEBUG -- :   Booking Exists (1.5ms)  SELECT  1 AS one FROM `events` INNER JOIN `bookings_items` ON `events`.`id` = `bookings_items`.`booking_id` WHERE `events`.`type` IN ('Booking') AND `bookings_items`.`bookable_item_id` = 3 AND (starts_at < '2018-04-20 13:29:35' AND ends_at > '2018-04-20 10:29:35') LIMIT 1
+D, [2018-04-20T10:29:35.268038 #70083] DEBUG -- :   Booking Exists (0.4ms)  SELECT  1 AS one FROM `events` INNER JOIN `bookings_items` ON `events`.`id` = `bookings_items`.`booking_id` WHERE `events`.`type` IN ('Booking') AND `bookings_items`.`bookable_item_id` = 4 AND (starts_at < '2018-04-20 13:29:35' AND ends_at > '2018-04-20 10:29:35') LIMIT 1
+D, [2018-04-20T10:29:35.269409 #70083] DEBUG -- :   Group Load (0.3ms)  SELECT `groups`.* FROM `groups` INNER JOIN `bookable_items_groups` ON `groups`.`id` = `bookable_items_groups`.`group_id` WHERE `bookable_items_groups`.`bookable_item_id` = 3
+D, [2018-04-20T10:29:35.270623 #70083] DEBUG -- :   Group Load (0.3ms)  SELECT `groups`.* FROM `groups` INNER JOIN `bookable_items_groups` ON `groups`.`id` = `bookable_items_groups`.`group_id` WHERE `bookable_items_groups`.`bookable_item_id` = 4
+D, [2018-04-20T10:29:35.271642 #70083] DEBUG -- :   Group Load (0.3ms)  SELECT `groups`.* FROM `groups` INNER JOIN `groups_users` ON `groups`.`id` = `groups_users`.`group_id` WHERE `groups_users`.`user_id` = 3
+D, [2018-04-20T10:29:35.272747 #70083] DEBUG -- :   SQL (0.3ms)  INSERT INTO `events` (`type`, `title`, `starts_at`, `ends_at`, `created_by_id`, `created_at`) VALUES ('Booking', 'Lynching', '2018-04-20 10:29:35', '2018-04-20 13:29:35', 3, '2018-04-20 08:29:35')
+D, [2018-04-20T10:29:35.274495 #70083] DEBUG -- :   SQL (1.1ms)  INSERT INTO `events_users` (`event_id`, `user_id`) VALUES (7, 1)
+D, [2018-04-20T10:29:35.275414 #70083] DEBUG -- :   SQL (0.3ms)  INSERT INTO `events_users` (`event_id`, `user_id`) VALUES (7, 2)
+D, [2018-04-20T10:29:35.276269 #70083] DEBUG -- :   SQL (0.2ms)  INSERT INTO `bookings_items` (`bookable_item_id`, `booking_id`) VALUES (3, 7)
+D, [2018-04-20T10:29:35.276847 #70083] DEBUG -- :   SQL (0.2ms)  INSERT INTO `bookings_items` (`bookable_item_id`, `booking_id`) VALUES (4, 7)
+D, [2018-04-20T10:29:35.278990 #70083] DEBUG -- :   User Load (0.4ms)  SELECT `users`.* FROM `users` INNER JOIN `equipment_responsibles` ON `users`.`id` = `equipment_responsibles`.`user_id` WHERE `equipment_responsibles`.`equipment_id` = 3
+D, [2018-04-20T10:29:35.280950 #70083] DEBUG -- :   User Load (1.3ms)  SELECT `users`.* FROM `users` INNER JOIN `equipment_responsibles` ON `users`.`id` = `equipment_responsibles`.`user_id` WHERE `equipment_responsibles`.`equipment_id` = 4
+I, [2018-04-20T10:29:35.281439 #70083]  INFO -- : Sending mail 'New booking 7' to ["Joe Dalton <joe@dalton.com>", "Averell Dalton <averell@dalton.com>", "Lucky Luke <luke@theforce.com>", "Jolly Jumper <jolly@jumper.com>"]
+Title: Lynching
+Created by : Lucky Luke
+Starts at: 2018-04-20 10:29:35 UTC
+Ends at  : 2018-04-20 13:29:35 UTC
+Items: Tar, Feather
+
+Attendees:
+  Joe Dalton
+  Averell Dalton
+D, [2018-04-20T10:29:35.281984 #70083] DEBUG -- :    (0.4ms)  COMMIT
+D, [2018-04-20T10:29:35.282442 #70083] DEBUG -- :    (0.2ms)  BEGIN
+D, [2018-04-20T10:29:35.284211 #70083] DEBUG -- :   SQL (1.2ms)  INSERT INTO `groups` (`name`) VALUES ('None')
+D, [2018-04-20T10:29:35.284714 #70083] DEBUG -- :    (0.2ms)  COMMIT
+D, [2018-04-20T10:29:35.285120 #70083] DEBUG -- :    (0.2ms)  BEGIN
+D, [2018-04-20T10:29:35.286779 #70083] DEBUG -- :   SQL (1.1ms)  INSERT INTO `groups` (`name`) VALUES ('Empty')
+D, [2018-04-20T10:29:35.287316 #70083] DEBUG -- :    (0.2ms)  COMMIT
+D, [2018-04-20T10:29:35.288299 #70083] DEBUG -- :   Booking Load (0.4ms)  SELECT  `events`.* FROM `events` WHERE `events`.`type` IN ('Booking') ORDER BY (ends_at - starts_at) DESC LIMIT 1
+D, [2018-04-20T10:29:35.296662 #70083] DEBUG -- :   BookableItem Load (5.9ms)  SELECT `bookable_items`.* FROM `bookable_items` LEFT OUTER JOIN `bookings_items` ON `bookings_items`.`bookable_item_id` = `bookable_items`.`id` LEFT OUTER JOIN `events` ON `events`.`id` = `bookings_items`.`booking_id` AND `events`.`type` IN ('Booking') WHERE `events`.`id` IS NULL
+D, [2018-04-20T10:29:35.298386 #70083] DEBUG -- :   Booking Load (0.5ms)  SELECT `events`.* FROM `events` WHERE `events`.`type` IN ('Booking')
+D, [2018-04-20T10:29:35.306365 #70083] DEBUG -- :   HABTM_Items Load (0.4ms)  SELECT `bookings_items`.* FROM `bookings_items` WHERE `bookings_items`.`booking_id` IN (4, 5, 6, 7)
+D, [2018-04-20T10:29:35.310576 #70083] DEBUG -- :   BookableItem Load (0.3ms)  SELECT `bookable_items`.* FROM `bookable_items` WHERE `bookable_items`.`id` IN (6, 5, 3, 4)
+D, [2018-04-20T10:29:35.311528 #70083] DEBUG -- :   BookableItem Load (0.3ms)  SELECT `bookable_items`.* FROM `bookable_items`
+D, [2018-04-20T10:29:35.312264 #70083] DEBUG -- :   BookableItem Load (0.3ms)  SELECT `bookable_items`.* FROM `bookable_items`
+D, [2018-04-20T10:29:35.313318 #70083] DEBUG -- :   BookableItem Load (0.4ms)  SELECT `bookable_items`.* FROM `bookable_items` INNER JOIN `bookings_items` ON `bookings_items`.`bookable_item_id` = `bookable_items`.`id` INNER JOIN `events` ON `events`.`id` = `bookings_items`.`booking_id` AND `events`.`type` IN ('Booking')
+D, [2018-04-20T10:29:35.321735 #70083] DEBUG -- :   BookableItem Load (6.1ms)  SELECT `bookable_items`.* FROM `bookable_items` WHERE (`bookable_items`.`id` NOT IN (SELECT `bookable_items`.`id` FROM `bookable_items` INNER JOIN `bookings_items` ON `bookings_items`.`bookable_item_id` = `bookable_items`.`id` INNER JOIN `events` ON `events`.`id` = `bookings_items`.`booking_id` AND `events`.`type` IN ('Booking')))
+D, [2018-04-20T10:29:35.323247 #70083] DEBUG -- :   BookableItem Load (0.5ms)  SELECT  `bookable_items`.* FROM `bookable_items` WHERE `bookable_items`.`name` = 'Tar' LIMIT 1
+D, [2018-04-20T10:29:35.325922 #70083] DEBUG -- :   Booking Load (0.4ms)  SELECT `events`.* FROM `events` INNER JOIN `bookings_items` ON `events`.`id` = `bookings_items`.`booking_id` WHERE `events`.`type` IN ('Booking') AND `bookings_items`.`bookable_item_id` = 3
+D, [2018-04-20T10:29:35.327446 #70083] DEBUG -- :   User Load (0.3ms)  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1
+D, [2018-04-20T10:29:35.328747 #70083] DEBUG -- :   User Load (0.4ms)  SELECT `users`.* FROM `users` INNER JOIN `events_users` ON `users`.`id` = `events_users`.`user_id` WHERE `events_users`.`event_id` = 7
+D, [2018-04-20T10:29:35.331805 #70083] DEBUG -- :   BookableItem Load (0.3ms)  SELECT `bookable_items`.* FROM `bookable_items` INNER JOIN `bookings_items` ON `bookable_items`.`id` = `bookings_items`.`bookable_item_id` WHERE `bookings_items`.`booking_id` = 7
+D, [2018-04-20T10:29:35.333883 #70083] DEBUG -- :   User Load (1.0ms)  SELECT `users`.* FROM `users` INNER JOIN `equipment_responsibles` ON `users`.`id` = `equipment_responsibles`.`user_id` WHERE `equipment_responsibles`.`equipment_id` = 3
+D, [2018-04-20T10:29:35.335019 #70083] DEBUG -- :   User Load (0.3ms)  SELECT `users`.* FROM `users` INNER JOIN `equipment_responsibles` ON `users`.`id` = `equipment_responsibles`.`user_id` WHERE `equipment_responsibles`.`equipment_id` = 4
+D, [2018-04-20T10:29:35.336178 #70083] DEBUG -- :   Group Load (0.2ms)  SELECT `groups`.* FROM `groups` LEFT OUTER JOIN `groups_users` ON `groups_users`.`group_id` = `groups`.`id` LEFT OUTER JOIN `users` ON `users`.`id` = `groups_users`.`user_id` WHERE `users`.`id` IS NULL
+D, [2018-04-20T10:29:35.339240 #70083] DEBUG -- :   Group Load (1.4ms)  SELECT `groups`.* FROM `groups` LEFT OUTER JOIN `groups_users` ON `groups_users`.`group_id` = `groups`.`id` LEFT OUTER JOIN `users` ON `users`.`id` = `groups_users`.`user_id` WHERE `users`.`id` IS NULL
+D, [2018-04-20T10:29:35.339585 #70083] DEBUG -- :    (0.2ms)  BEGIN
+D, [2018-04-20T10:29:35.340412 #70083] DEBUG -- :   SQL (0.2ms)  DELETE FROM `groups_users` WHERE `groups_users`.`group_id` = 4
+D, [2018-04-20T10:29:35.340992 #70083] DEBUG -- :   SQL (0.2ms)  DELETE FROM `groups` WHERE `groups`.`id` = 4
+D, [2018-04-20T10:29:35.341296 #70083] DEBUG -- :    (0.2ms)  COMMIT
+D, [2018-04-20T10:29:35.341544 #70083] DEBUG -- :    (0.1ms)  BEGIN
+D, [2018-04-20T10:29:35.342142 #70083] DEBUG -- :   SQL (0.2ms)  DELETE FROM `groups_users` WHERE `groups_users`.`group_id` = 5
+D, [2018-04-20T10:29:35.342584 #70083] DEBUG -- :   SQL (0.2ms)  DELETE FROM `groups` WHERE `groups`.`id` = 5
+D, [2018-04-20T10:29:35.342836 #70083] DEBUG -- :    (0.1ms)  COMMIT
+D, [2018-04-20T10:29:35.343257 #70083] DEBUG -- :   Group Load (0.3ms)  SELECT `groups`.* FROM `groups`
+D, [2018-04-20T10:29:35.344700 #70083] DEBUG -- :   User Exists (0.3ms)  SELECT  1 AS one FROM `users` INNER JOIN `groups_users` ON `users`.`id` = `groups_users`.`user_id` WHERE `groups_users`.`group_id` = 1 LIMIT 1
+D, [2018-04-20T10:29:35.346504 #70083] DEBUG -- :   User Exists (0.9ms)  SELECT  1 AS one FROM `users` INNER JOIN `groups_users` ON `users`.`id` = `groups_users`.`user_id` WHERE `groups_users`.`group_id` = 2 LIMIT 1
+D, [2018-04-20T10:29:35.347550 #70083] DEBUG -- :   User Exists (0.2ms)  SELECT  1 AS one FROM `users` INNER JOIN `groups_users` ON `users`.`id` = `groups_users`.`user_id` WHERE `groups_users`.`group_id` = 3 LIMIT 1
+D, [2018-04-20T10:29:35.348383 #70083] DEBUG -- :   Booking Exists (0.2ms)  SELECT  1 AS one FROM `events` WHERE `events`.`type` IN ('Booking') AND (starts_at < '2018-04-20 08:29:35.095405' AND ends_at > '2018-04-20 08:29:35.095405') LIMIT 1
+D, [2018-04-20T10:29:35.349009 #70083] DEBUG -- :   Booking Exists (0.2ms)  SELECT  1 AS one FROM `events` WHERE `events`.`type` IN ('Booking') AND (starts_at < '2018-04-20 12:29:35.095405' AND ends_at > '2018-04-20 12:29:35.095405') LIMIT 1
+D, [2018-04-20T10:29:35.349596 #70083] DEBUG -- :   Booking Exists (0.2ms)  SELECT  1 AS one FROM `events` WHERE `events`.`type` IN ('Booking') AND (starts_at < '2018-04-20 14:29:35.095405' AND ends_at > '2018-04-20 14:29:35.095405') LIMIT 1

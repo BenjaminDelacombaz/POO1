@@ -1,0 +1,6 @@
+rake db:create
+rake db:new_migration name=CreateClient options="firstname:string{50} lastname:string{50}"
+rake db:new_migration name=CreateProduct options="name:string{50} price:decimal{8,2} description:string category:references"
+rake db:new_migration name=CreateCategory options="name:string{50} description:string"
+rake db:new_migration name=CreateOrder options="created_at:datetime shipped_at:datetime status:string{20} client:references"
+rake db:new_migration name=CreateOrderItem options="quantity:integer item_price:decimal{8,2} order:references product:references"

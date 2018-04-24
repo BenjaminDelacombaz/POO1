@@ -1,0 +1,54 @@
+POO1
+
+1) create a file "Rakefile" with the code below:
+require 'active_record_migrations'
+ActiveRecordMigrations.load_tasks
+
+2) Create a file config.yml in folder db
+ development:
+  adapter: 'mysql2'
+  host: 'localhost'
+  username: 'root'
+  password: ''
+  database: 'commerce'
+  
+3) Create table with rake
+
+rake db:new_migration name=CreateClient options="firstname:string{50} lastname:string{50}"
+
+
+4) Modify connection.rb file:
+
+require 'active_record'
+
+ActiveRecord::Base.establish_connection(YAML.load_file('db/config.yml')['development'])
+
+require 'logger'
+ActiveSupport::LogSubscriber.colorize_logging = false
+ActiveRecord::Base.logger = Logger.new("ar.log")
+
+
+5) Migrate:
+rake db:migrate
+
+x)
+rake db:new_migration name=CreateClient options="firstname:string{50} lastname:string{50}"
+rake db:new_migration name=CreateCategory options="name:string{50} description:string"
+rake db:new_migration name=CreateProduct options="name:string{50} price:decimal{8,2} description:string category:references"
+rake db:new_migration name=CreateOrder options="created_at:datetime shipped_at: datetime status:string{20} client:references"
+rake db:new_migration name=CreateItem options="quantity:integer item_price:decimal{8,2} order:references product:references"
+
+
+db/seeds.rb
+
+%w{client product order order_item}.each {|file| require_relative file}
+
+Product.create name: "Ski de pistes", description: "Pour débutants", price: BigDecimal('372.50')
+Product.create name: "Ski de fonds", description: "Pour les endurants", price: BigDecimal('99.50')
+Product.create name: "Gants", description: "One size", price: BigDecimal('19.50')
+Product.create name: "Carambar", price: BigDecimal('0.20')
+Product.create name: "Chiclette", price: BigDecimal('0.10')
+
+Client.create firstname: 'Pascal', lastname: 'Hurni'
+Client.create firstname: 'Xavier'. lastname: 'Carrel'
+Client.create firstname: 'Jérome', lastname: 'Chevillat'

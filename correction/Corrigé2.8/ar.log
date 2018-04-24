@@ -1,0 +1,85 @@
+D, [2017-03-22T08:40:54.965690 #99447] DEBUG -- :   Company Load (1.2ms)  SELECT  `clients`.* FROM `clients` WHERE `clients`.`type` IN ('Company') ORDER BY `clients`.`id` ASC LIMIT 1
+D, [2017-03-22T08:42:14.510970 #99549] DEBUG -- :   Company Load (0.2ms)  SELECT  `clients`.* FROM `clients` WHERE `clients`.`type` IN ('Company') ORDER BY `clients`.`id` ASC LIMIT 1
+D, [2017-03-22T08:42:14.551914 #99549] DEBUG -- :   Product Load (0.2ms)  SELECT  `products`.* FROM `products` ORDER BY `products`.`id` DESC LIMIT 1
+D, [2017-03-22T08:42:14.562174 #99549] DEBUG -- :    (0.2ms)  BEGIN
+D, [2017-03-22T08:42:14.569729 #99549] DEBUG -- :    (0.1ms)  ROLLBACK
+D, [2017-03-22T08:48:11.028615 #99778] DEBUG -- :   Company Load (0.2ms)  SELECT  `clients`.* FROM `clients` WHERE `clients`.`type` IN ('Company') ORDER BY `clients`.`id` ASC LIMIT 1
+D, [2017-03-22T08:48:11.075537 #99778] DEBUG -- :   Product Load (0.2ms)  SELECT  `products`.* FROM `products` ORDER BY `products`.`id` DESC LIMIT 1
+D, [2017-03-22T08:48:11.080783 #99778] DEBUG -- :    (0.1ms)  BEGIN
+D, [2017-03-22T08:48:11.092054 #99778] DEBUG -- :   Client Load (0.3ms)  SELECT  `clients`.* FROM `clients` WHERE `clients`.`id` = 5 LIMIT 1
+D, [2017-03-22T08:48:11.116531 #99778] DEBUG -- :   SQL (23.3ms)  INSERT INTO `comments` (`body`, `author_id`, `target_type`, `target_id`) VALUES ('Super produit!', 5, 'Product', 5)
+D, [2017-03-22T08:48:11.117544 #99778] DEBUG -- :    (0.6ms)  COMMIT
+D, [2017-03-22T08:48:11.119210 #99778] DEBUG -- :   Supplier Load (0.2ms)  SELECT  `suppliers`.* FROM `suppliers` ORDER BY `suppliers`.`id` ASC LIMIT 1
+D, [2017-03-22T08:48:11.124297 #99778] DEBUG -- :    (0.1ms)  BEGIN
+D, [2017-03-22T08:48:11.126200 #99778] DEBUG -- :   Supplier Load (0.2ms)  SELECT  `suppliers`.* FROM `suppliers` WHERE `suppliers`.`id` = 1 LIMIT 1
+D, [2017-03-22T08:48:11.127926 #99778] DEBUG -- :   SQL (1.1ms)  INSERT INTO `comments` (`body`, `author_id`, `target_type`, `target_id`) VALUES ('Super fournisseur!', 5, 'Supplier', 1)
+D, [2017-03-22T08:48:11.128335 #99778] DEBUG -- :    (0.2ms)  COMMIT
+D, [2017-03-22T08:48:11.129360 #99778] DEBUG -- :   Individual Load (0.2ms)  SELECT  `clients`.* FROM `clients` WHERE `clients`.`type` IN ('Individual') ORDER BY `clients`.`id` ASC LIMIT 1
+D, [2017-03-22T08:48:11.133061 #99778] DEBUG -- :   Supplier Load (0.2ms)  SELECT  `suppliers`.* FROM `suppliers` ORDER BY `suppliers`.`id` DESC LIMIT 1
+D, [2017-03-22T08:48:11.133301 #99778] DEBUG -- :    (0.1ms)  BEGIN
+D, [2017-03-22T08:48:11.134585 #99778] DEBUG -- :   Client Load (0.2ms)  SELECT  `clients`.* FROM `clients` WHERE `clients`.`id` = 4 LIMIT 1
+D, [2017-03-22T08:48:11.136276 #99778] DEBUG -- :   SQL (1.0ms)  INSERT INTO `comments` (`body`, `author_id`, `target_type`, `target_id`) VALUES ('Evitez ce fournisseur!', 4, 'Supplier', 2)
+D, [2017-03-22T08:48:11.142355 #99778] DEBUG -- :    (5.8ms)  COMMIT
+D, [2017-03-22T08:48:11.143229 #99778] DEBUG -- :   Product Load (0.3ms)  SELECT  `products`.* FROM `products` ORDER BY `products`.`id` ASC LIMIT 1
+D, [2017-03-22T08:48:11.145882 #99778] DEBUG -- :    (0.1ms)  BEGIN
+D, [2017-03-22T08:48:11.148268 #99778] DEBUG -- :   Product Load (0.2ms)  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1
+D, [2017-03-22T08:48:11.150143 #99778] DEBUG -- :   SQL (1.1ms)  INSERT INTO `comments` (`body`, `author_id`, `target_type`, `target_id`) VALUES ('Fuyez ce produit!', 4, 'Product', 1)
+D, [2017-03-22T08:48:11.150831 #99778] DEBUG -- :    (0.4ms)  COMMIT
+D, [2017-03-22T08:48:11.152541 #99778] DEBUG -- :   Comment Load (0.3ms)  SELECT `comments`.* FROM `comments` WHERE `comments`.`author_id` = 5
+D, [2017-03-22T08:48:11.153409 #99778] DEBUG -- :   Comment Load (0.2ms)  SELECT `comments`.* FROM `comments` WHERE `comments`.`author_id` = 4
+D, [2017-03-22T08:49:46.392953 #99813] DEBUG -- :   Company Load (0.2ms)  SELECT  `clients`.* FROM `clients` WHERE `clients`.`type` IN ('Company') ORDER BY `clients`.`id` ASC LIMIT 1
+D, [2017-03-22T08:49:46.435938 #99813] DEBUG -- :   Product Load (0.2ms)  SELECT  `products`.* FROM `products` ORDER BY `products`.`id` DESC LIMIT 1
+D, [2017-03-22T08:49:46.457695 #99813] DEBUG -- :    (0.2ms)  BEGIN
+D, [2017-03-22T08:49:46.467163 #99813] DEBUG -- :   Client Load (0.3ms)  SELECT  `clients`.* FROM `clients` WHERE `clients`.`id` = 5 LIMIT 1
+D, [2017-03-22T08:49:46.474319 #99813] DEBUG -- :   SQL (6.2ms)  INSERT INTO `comments` (`body`, `author_id`, `target_type`, `target_id`) VALUES ('Super produit!', 5, 'Product', 5)
+D, [2017-03-22T08:49:46.480676 #99813] DEBUG -- :    (6.1ms)  COMMIT
+D, [2017-03-22T08:49:46.482189 #99813] DEBUG -- :   Supplier Load (0.3ms)  SELECT  `suppliers`.* FROM `suppliers` ORDER BY `suppliers`.`id` ASC LIMIT 1
+D, [2017-03-22T08:49:46.508970 #99813] DEBUG -- :    (0.1ms)  BEGIN
+D, [2017-03-22T08:49:46.511303 #99813] DEBUG -- :   Supplier Load (0.3ms)  SELECT  `suppliers`.* FROM `suppliers` WHERE `suppliers`.`id` = 1 LIMIT 1
+D, [2017-03-22T08:49:46.518426 #99813] DEBUG -- :   SQL (6.4ms)  INSERT INTO `comments` (`body`, `author_id`, `target_type`, `target_id`) VALUES ('Super fournisseur!', 5, 'Supplier', 1)
+D, [2017-03-22T08:49:46.519209 #99813] DEBUG -- :    (0.5ms)  COMMIT
+D, [2017-03-22T08:49:46.520706 #99813] DEBUG -- :   Individual Load (0.3ms)  SELECT  `clients`.* FROM `clients` WHERE `clients`.`type` IN ('Individual') ORDER BY `clients`.`id` ASC LIMIT 1
+D, [2017-03-22T08:49:46.528452 #99813] DEBUG -- :   Supplier Load (0.3ms)  SELECT  `suppliers`.* FROM `suppliers` ORDER BY `suppliers`.`id` DESC LIMIT 1
+D, [2017-03-22T08:49:46.528953 #99813] DEBUG -- :    (0.1ms)  BEGIN
+D, [2017-03-22T08:49:46.530915 #99813] DEBUG -- :   Client Load (0.2ms)  SELECT  `clients`.* FROM `clients` WHERE `clients`.`id` = 4 LIMIT 1
+D, [2017-03-22T08:49:46.532234 #99813] DEBUG -- :   SQL (0.6ms)  INSERT INTO `comments` (`body`, `author_id`, `target_type`, `target_id`) VALUES ('Evitez ce fournisseur!', 4, 'Supplier', 2)
+D, [2017-03-22T08:49:46.532640 #99813] DEBUG -- :    (0.3ms)  COMMIT
+D, [2017-03-22T08:49:46.533126 #99813] DEBUG -- :   Product Load (0.2ms)  SELECT  `products`.* FROM `products` ORDER BY `products`.`id` ASC LIMIT 1
+D, [2017-03-22T08:49:46.535072 #99813] DEBUG -- :    (0.1ms)  BEGIN
+D, [2017-03-22T08:49:46.536698 #99813] DEBUG -- :   Product Load (0.2ms)  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1
+D, [2017-03-22T08:49:46.537977 #99813] DEBUG -- :   SQL (0.8ms)  INSERT INTO `comments` (`body`, `author_id`, `target_type`, `target_id`) VALUES ('Fuyez ce produit!', 4, 'Product', 1)
+D, [2017-03-22T08:49:46.538280 #99813] DEBUG -- :    (0.2ms)  COMMIT
+D, [2017-03-22T08:49:46.539252 #99813] DEBUG -- :   Comment Load (0.2ms)  SELECT `comments`.* FROM `comments` WHERE `comments`.`author_id` = 5
+D, [2017-03-22T08:49:46.540323 #99813] DEBUG -- :   Product Load (0.2ms)  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 5 LIMIT 1
+D, [2017-03-22T08:49:46.541283 #99813] DEBUG -- :   Supplier Load (0.2ms)  SELECT  `suppliers`.* FROM `suppliers` WHERE `suppliers`.`id` = 1 LIMIT 1
+D, [2017-03-22T08:49:46.542391 #99813] DEBUG -- :   Supplier Load (0.3ms)  SELECT  `suppliers`.* FROM `suppliers` WHERE `suppliers`.`id` = 1 LIMIT 1
+D, [2017-03-22T08:49:46.543589 #99813] DEBUG -- :   Comment Load (0.3ms)  SELECT `comments`.* FROM `comments` WHERE `comments`.`author_id` = 4
+D, [2017-03-22T08:49:46.545135 #99813] DEBUG -- :   Supplier Load (0.2ms)  SELECT  `suppliers`.* FROM `suppliers` WHERE `suppliers`.`id` = 2 LIMIT 1
+D, [2017-03-22T08:49:46.546309 #99813] DEBUG -- :   Product Load (0.2ms)  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1
+D, [2017-03-22T08:49:46.547326 #99813] DEBUG -- :   Product Load (0.2ms)  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1
+D, [2017-03-22T09:14:49.726760 #497] DEBUG -- :   Company Load (0.2ms)  SELECT  `clients`.* FROM `clients` WHERE `clients`.`type` IN ('Company') ORDER BY `clients`.`id` ASC LIMIT 1
+D, [2017-03-22T09:14:49.776280 #497] DEBUG -- :   Product Load (0.4ms)  SELECT  `products`.* FROM `products` ORDER BY `products`.`id` DESC LIMIT 1
+D, [2017-03-22T09:14:49.782749 #497] DEBUG -- :    (0.1ms)  BEGIN
+D, [2017-03-22T09:14:49.792694 #497] DEBUG -- :   Client Load (0.2ms)  SELECT  `clients`.* FROM `clients` WHERE `clients`.`id` = 5 LIMIT 1
+D, [2017-03-22T09:14:49.806522 #497] DEBUG -- :   SQL (12.8ms)  INSERT INTO `comments` (`body`, `author_id`, `target_type`, `target_id`) VALUES ('Super produit!', 5, 'Product', 5)
+D, [2017-03-22T09:14:49.817916 #497] DEBUG -- :    (11.0ms)  COMMIT
+D, [2017-03-22T09:14:49.819613 #497] DEBUG -- :   Supplier Load (0.2ms)  SELECT  `suppliers`.* FROM `suppliers` ORDER BY `suppliers`.`id` ASC LIMIT 1
+D, [2017-03-22T09:14:49.825778 #497] DEBUG -- :    (0.1ms)  BEGIN
+D, [2017-03-22T09:14:49.827964 #497] DEBUG -- :   Supplier Load (0.2ms)  SELECT  `suppliers`.* FROM `suppliers` WHERE `suppliers`.`id` = 1 LIMIT 1
+D, [2017-03-22T09:14:49.829698 #497] DEBUG -- :   SQL (1.0ms)  INSERT INTO `comments` (`body`, `author_id`, `target_type`, `target_id`) VALUES ('Super fournisseur!', 5, 'Supplier', 1)
+D, [2017-03-22T09:14:49.830176 #497] DEBUG -- :    (0.2ms)  COMMIT
+D, [2017-03-22T09:14:49.831222 #497] DEBUG -- :   Individual Load (0.2ms)  SELECT  `clients`.* FROM `clients` WHERE `clients`.`type` IN ('Individual') ORDER BY `clients`.`id` ASC LIMIT 1
+D, [2017-03-22T09:14:49.834848 #497] DEBUG -- :   Supplier Load (0.2ms)  SELECT  `suppliers`.* FROM `suppliers` ORDER BY `suppliers`.`id` DESC LIMIT 1
+D, [2017-03-22T09:14:49.835130 #497] DEBUG -- :    (0.1ms)  BEGIN
+D, [2017-03-22T09:14:49.836531 #497] DEBUG -- :   Client Load (0.2ms)  SELECT  `clients`.* FROM `clients` WHERE `clients`.`id` = 4 LIMIT 1
+D, [2017-03-22T09:14:49.838112 #497] DEBUG -- :   SQL (0.9ms)  INSERT INTO `comments` (`body`, `author_id`, `target_type`, `target_id`) VALUES ('Evitez ce fournisseur!', 4, 'Supplier', 2)
+D, [2017-03-22T09:14:49.838699 #497] DEBUG -- :    (0.3ms)  COMMIT
+D, [2017-03-22T09:14:49.839342 #497] DEBUG -- :   Product Load (0.2ms)  SELECT  `products`.* FROM `products` ORDER BY `products`.`id` ASC LIMIT 1
+D, [2017-03-22T09:14:49.841386 #497] DEBUG -- :    (0.1ms)  BEGIN
+D, [2017-03-22T09:14:49.843115 #497] DEBUG -- :   Product Load (0.2ms)  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1
+D, [2017-03-22T09:14:49.844733 #497] DEBUG -- :   SQL (1.1ms)  INSERT INTO `comments` (`body`, `author_id`, `target_type`, `target_id`) VALUES ('Fuyez ce produit!', 4, 'Product', 1)
+D, [2017-03-22T09:14:49.845373 #497] DEBUG -- :    (0.4ms)  COMMIT
+D, [2017-03-22T09:14:49.846866 #497] DEBUG -- :   Comment Load (0.3ms)  SELECT `comments`.* FROM `comments` WHERE `comments`.`author_id` = 5
+D, [2017-03-22T09:14:49.848033 #497] DEBUG -- :   Supplier Load (0.2ms)  SELECT  `suppliers`.* FROM `suppliers` WHERE `suppliers`.`id` = 1 LIMIT 1
+D, [2017-03-22T09:14:49.848614 #497] DEBUG -- :   Comment Load (0.2ms)  SELECT `comments`.* FROM `comments` WHERE `comments`.`author_id` = 4
+D, [2017-03-22T09:14:49.849596 #497] DEBUG -- :   Product Load (0.2ms)  SELECT  `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1

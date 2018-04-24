@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <link href="pandoc/document.css" media="all" rel="stylesheet" type="text/css" />
+    <link href="pandoc/document_print.css" media="print" rel="stylesheet" type="text/css" />
+    <meta name="generator" content="pandoc" />
+    
+    $for(author-meta)$
+      <meta name="author" content="$author-meta$" />
+    $endfor$
+    $if(date-meta)$
+      <meta name="date" content="$date-meta$" />
+    $endif$
+    $if(keywords)$
+      <meta name="keywords" content="$for(keywords)$$keywords$$sep$, $endfor$" />
+    $endif$
+      <title>$if(title-prefix)$$title-prefix$ – $endif$$pagetitle$</title>
+      <style type="text/css">code{white-space: pre;}</style>
+    $if(quotes)$
+      <style type="text/css">q { quotes: "“" "”" "‘" "’"; }</style>
+    $endif$
+    $if(highlighting-css)$
+      <style type="text/css">
+    $highlighting-css$
+      </style>
+    $endif$
+    $for(css)$
+      <link rel="stylesheet" href="$css$" type="text/css" />
+    $endfor$
+    $if(math)$
+      $math$
+    $endif$
+    $for(header-includes)$
+      $header-includes$
+    $endfor$
+  </head>
+  
+  <body class="standalone markdown">
+
+    $for(include-before)$
+    $include-before$
+    $endfor$
+    
+    $if(title)$
+    <h1 class="no_toc" id="main-title">$title$</h1>
+    $if(subtitle)$
+    <p class="subtitle">$subtitle$</p>
+    $endif$
+    $for(author)$
+    <p class="author">$author$</p>
+    $endfor$
+    $if(date)$
+    <p class="date">$date$</p>
+    $endif$
+    $endif$
+    
+    $if(CLA_toc)$
+    <h1 class="no_toc" id="toc-header">Table des matières</h1>
+    <div id="toc-container">
+    $toc$
+    </div>
+    $endif$
+
+    $body$
+
+    $for(include-after)$
+    $include-after$
+    $endfor$
+
+  </body>
+</html>
